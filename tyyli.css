@@ -1,8 +1,3 @@
-#map {
-	height: 500px; /* Korkeus kartalle */
-	width: 100%;
-}
-
 /* Koko sivun säiliö */
 body, html {
   height: 100%;
@@ -10,13 +5,13 @@ body, html {
 }
 
 /* Pääkontaineri flexillä */
-.container {
+#container {
   display: flex;
   height: 100%;
 }
 
 /* Vasemman reunan filter-laatikko */
-.filters {
+#filters {
   width: 250px;       /* kuinka leveä filter-laatikko on */
   padding: 10px;
   background-color: #f0f0f0;
@@ -24,7 +19,7 @@ body, html {
 }
 
 /* Oikean reunan kartta */
-.map {
+#map {
   flex: 1;           /* vie loput tilasta */
   height: 100%;
 }
