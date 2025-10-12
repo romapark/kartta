@@ -43,20 +43,53 @@
     attribution: '© OpenStreetMap'
   }).addTo(map);
 
+
+  let markers = []; // tallennetaan kaikki markkerit
+
   fetch('ski_resorts.json')
-    .then(r => r.json())
-    .then(data => data.forEach(r => 
-      L.marker([r.lat, r.lon])
-      .addTo(map)
-      .bindPopup(`
-        <b>${r.name}</b><br>
-        Kausi: ${r.seasonStart} – ${r.seasonEnd}<br>
-        Puistot: Pro ${r.proPark ? '✔' : '✖'}, Medium ${r.mediumPark ? '✔' : '✖'}, Beginner ${r.beginnerPark ? '✔' : '✖'}<br>
-        Superpipe: ${r.superpipe ? '✔' : '✖'}, Minipipe: ${r.minipipe ? '✔' : '✖'}<br>
-        Puiston kunto: ${r.parkCondition}
-      `)
-    ))
-    .catch(console.error);
+  .then(r => r.json())
+  .then(data => {
+    data.forEach(r => {
+      let marker = L.marker([r.lat, r.lon])
+        .addTo(map)
+        .bindPopup(`
+          <b>${r.name}</b><br>
+          Kausi: ${r.seasonStart} – ${r.seasonEnd}<br>
+          Pro Park: ${r.proPark ? '✔' : '✖'}<br>
+          Medium Park: ${r.mediumPark ? '✔' : '✖'}<br>
+          Beginner Park: ${r.beginnerPark ? '✔' : '✖'}<br>
+          Superpipe: ${r.superpipe ? '✔' : '✖'}<br>
+          Minipipe: ${r.minipipe ? '✔' : '✖'}<br>
+          Puiston kunto: ${r.parkCondition}
+        `);
+      marker.data = r;
+      markers.push(marker);
+    });
+  });
+
+  // Filtterin logiikka
+  document.getElementById('applyFilters').addEventListener('click', () => {
+    const pro = document.getElementById('proPark').checked;
+    const medium = document.getElementById('mediumPark').checked;
+    const beginner = document.getElementById('beginnerPark').checked;
+    const superpipe = document.getElementById('superpipe').checked;
+    const minipipe = document.getElementById('minipipe').checked;
+
+    markers.forEach(m => {
+      const d = m.data;
+      const show = (!pro || d.proPark) &&
+                   (!medium || d.mediumPark) &&
+                   (!beginner || d.beginnerPark) &&
+                   (!superpipe || d.superpipe) &&
+                   (!minipipe || d.minipipe);
+
+      if (show) {
+        m.addTo(map);
+      } else {
+        map.removeLayer(m);
+      }
+    });
+  });
 
 
 </script>
