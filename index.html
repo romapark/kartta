@@ -18,7 +18,7 @@
 </head>
 <body>
 
-<h2>Oma karttasovellus</h2>
+<h2>Karttasovellus</h2>
 <div id="map"></div>
 
 <!-- Leafletin JS -->
@@ -37,6 +37,25 @@
   // Lisätään markkeri
   var marker = L.marker([60.1699, 24.9384]).addTo(map);
   marker.bindPopup("<b>Tämä on kohde!</b><br>Helsinki.").openPopup();
+
+  const skiResorts = [
+    { name: "Levi", lat: 67.799, lon: 23.635 },
+    { name: "Ruka", lat: 65.134, lon: 29.183 },
+    { name: "Yll\u00e4s", lat: 67.730, lon: 24.130 },
+    { name: "Saariselk\u00e4", lat: 68.419, lon: 27.380 },
+    { name: "Tahko", lat: 62.595, lon: 29.187 },
+    { name: "Himos", lat: 61.944, lon: 25.327 },
+    { name: "Messil\u00e4", lat: 60.970, lon: 25.722 },
+    { name: "Salla", lat: 66.558, lon: 29.221 },
+    { name: "Vuokatti", lat: 64.033, lon: 29.191 },
+    { name: "Iso-Sy\u00f6te", lat: 65.635, lon: 29.400 }
+  ];
+
+  skiResorts.forEach(resort => {
+    L.marker([resort.lat, resort.lon])
+      .addTo(map)
+      .bindPopup(`<b>${resort.name}</b>`);
+  });
 
   var viiva = L.polyline([
     [60.1699, 24.9384],  // Helsinki
