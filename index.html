@@ -37,6 +37,26 @@
   // Lisätään markkeri
   var marker = L.marker([60.1699, 24.9384]).addTo(map);
   marker.bindPopup("<b>Tämä on kohde!</b><br>Helsinki.").openPopup();
+
+  var viiva = L.polyline([
+    [60.1699, 24.9384],  // Helsinki
+    [60.2055, 24.6559]   // Espoo
+  ], {
+    color: 'red',         // viivan väri
+    weight: 4,            // viivan paksuus
+    opacity: 0.7          // läpinäkyvyys
+  }).addTo(map);
+
+  var alue = L.polygon([
+  [60.1699, 24.9384],  // Helsinki
+  [60.2055, 24.6559],  // Espoo
+  [60.22, 25.0]        // Esimerkkipiste
+], {
+  color: 'blue',
+  fillColor: '#blue',
+  fillOpacity: 0.3
+}).addTo(map);
+
 </script>
 
 </body>
