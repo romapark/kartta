@@ -100,12 +100,12 @@
       const d = m.data;
 
       // Tarkistetaan park-ominaisuudet
-      const show = (!pro || d.pro) &&
-                   (!medium || d.medium) &&
-                   (!beginner || d.beginner) &&
-                   (!superpipe || d.superpipe) &&
-                   (!minipipe || d.minipipe) &&
-                   (!moguls || d.moguls);
+      const parkOk = (!pro || d.pro) &&
+                    (!medium || d.medium) &&
+                    (!beginner || d.beginner) &&
+                    (!superpipe || d.superpipe) &&
+                    (!minipipe || d.minipipe) &&
+                    (!moguls || d.moguls);
 
       // Tarkistetaan aukiolokuukaudet
       let seasonOk = true;
