@@ -1,3 +1,8 @@
+#map {
+	height: 500px; /* Korkeus kartalle */
+	width: 100%;
+}
+
 /* Koko sivun säiliö */
 body, html {
   height: 100%;
