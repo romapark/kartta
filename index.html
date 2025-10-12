@@ -23,7 +23,19 @@
 
 <div id="filters">
   <fieldset>
-    <legend>Resort open</legend>
+    <legend>Open Months</legend>
+    <label><input type="checkbox" value="1"> January</label>
+    <label><input type="checkbox" value="2"> February</label>
+    <label><input type="checkbox" value="3"> March</label>
+    <label><input type="checkbox" value="4"> April</label>
+    <label><input type="checkbox" value="5"> May</label>
+    <label><input type="checkbox" value="6"> June</label>
+    <label><input type="checkbox" value="7"> July</label>
+    <label><input type="checkbox" value="8"> August</label>
+    <label><input type="checkbox" value="9"> September</label>
+    <label><input type="checkbox" value="10"> October</label>
+    <label><input type="checkbox" value="11"> November</label>
+    <label><input type="checkbox" value="12"> December</label>
   </fieldset>
   <fieldset>
     <legend>Parks</legend>
@@ -81,16 +93,36 @@
     const beginner = document.getElementById('beginner').checked;
     const superpipe = document.getElementById('superpipe').checked;
     const minipipe = document.getElementById('minipipe').checked;
+    const selectedMonths = Array.from(document.querySelectorAll("#filters input[type=checkbox]:checked")).map(cb => parseInt(cb.value));
 
     markers.forEach(m => {
       const d = m.data;
+
+      // Tarkistetaan park-ominaisuudet
       const show = (!pro || d.pro) &&
                    (!medium || d.medium) &&
                    (!beginner || d.beginner) &&
                    (!superpipe || d.superpipe) &&
                    (!minipipe || d.minipipe);
 
-      if (show) {
+      // Tarkistetaan aukiolokuukaudet
+      let seasonOk = true;
+      if (selectedMonths.length > 0) {
+        const startMonth = new Date(d.seasonStart).getMonth() + 1;
+        const endMonth   = new Date(d.seasonEnd).getMonth() + 1;
+
+        seasonOk = selectedMonths.some(month => {
+          if (startMonth <= endMonth) {
+            return month >= startMonth && month <= endMonth;
+          } else {
+            // Kausi menee vuodenvaihteen yli
+            return month >= startMonth || month <= endMonth;
+          }
+        });
+      }
+
+      // Näytetään marker vain jos molemmat ehdot täyttyvät
+      if (parkOk && seasonOk) {
         m.addTo(map);
       } else {
         map.removeLayer(m);
