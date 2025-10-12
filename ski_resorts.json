@@ -24,7 +24,11 @@
     { "name": "Purnu", "lat": 61.733, "lon": 25.867 },
     { "name": "Pyhä", "lat": 67.023, "lon": 27.241 },
     { "name": "Riihivuori", "lat": 62.108, "lon": 25.690 },
-    { "name": "Ritovalkea", "lat": 66.805, "lon": 24.119 },
+    { 
+        "name": "Ritovalkea", 
+        "lat": 66.805, 
+        "lon": 24.119 
+    },
     { 
         "name": "Ruka", 
         "lat": 66.166, 
@@ -36,7 +40,14 @@
         "beginner": true, 
         "superpipe": false, 
         "minipipe": true, 
-        "parkCondition": "good" 
+        "parkCondition": "good",
+        "moguls": true,
+        "slopeLenght": "undefined",
+        "slopeNumber": "undefined",
+        "black": "undefined",
+        "red": "undefined",
+        "green": "undefined",
+        "blue": "undefined"
     },
     { "name": "Salla", "lat": 66.762, "lon": 28.788 },
     { "name": "Sappee", "lat": 61.389, "lon": 24.508 },
