@@ -35,6 +35,17 @@
   // Lisätään markkeri
   var marker = L.marker([60.1699, 24.9384]).addTo(map);
   marker.bindPopup("<b>Tämä on kohde!</b><br>Helsinki.").openPopup();
+
+  var kohteet = [
+	{ nimi: "Koirapuisto", lat: 60.185, lon: 24.95 },
+	{ nimi: "Lemmikkikahvila", lat: 60.165, lon: 24.92 }
+	];
+
+	kohteet.forEach(function(kohde) {
+	L.marker([kohde.lat, kohde.lon])
+		.addTo(map)
+		.bindPopup("<b>" + kohde.nimi + "</b>");
+	});
 </script>
 
 </body>
