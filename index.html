@@ -34,12 +34,8 @@
     attribution: '© OpenStreetMap'
   }).addTo(map);
 
-  // Lisätään markkeri
-  var marker = L.marker([60.1699, 24.9384]).addTo(map);
-  marker.bindPopup("<b>Tämä on kohde!</b><br>Helsinki.").openPopup();
-
   const skiResorts = [
-    { name: "Levi", lat: 67.799, lon: 23.635 },
+    { name: "Levi", lat: 67.803, lon: 24.809 },
     { name: "Ruka", lat: 65.134, lon: 29.183 },
     { name: "Yll\u00e4s", lat: 67.730, lon: 24.130 },
     { name: "Saariselk\u00e4", lat: 68.419, lon: 27.380 },
@@ -48,7 +44,42 @@
     { name: "Messil\u00e4", lat: 60.970, lon: 25.722 },
     { name: "Salla", lat: 66.558, lon: 29.221 },
     { name: "Vuokatti", lat: 64.033, lon: 29.191 },
-    { name: "Iso-Sy\u00f6te", lat: 65.635, lon: 29.400 }
+    { name: "Iso-Sy\u00f6te", lat: 65.635, lon: 29.400 },
+    { name: "Pallas", lat: 68.000, lon: 24.250 },
+    { name: "Pyh\u00e4", lat: 66.500, lon: 27.000 },
+    { name: "Olos", lat: 67.950, lon: 24.150 },
+    { name: "Luosto", lat: 67.500, lon: 26.750 },
+    { name: "Ounasvaara", lat: 65.000, lon: 25.750 },
+    { name: "Ritovalkea", lat: 66.000, lon: 24.500 },
+    { name: "Ukkohalla", lat: 64.000, lon: 28.000 },
+    { name: "Kallin hiihtokeskus", lat: 64.000, lon: 27.500 },
+    { name: "Köykkyri", lat: 64.500, lon: 27.000 },
+    { name: "Kallio", lat: 63.500, lon: 26.500 },
+    { name: "Ski Saariselk\u00e4", lat: 68.400, lon: 27.400 },
+    { name: "Suomu", lat: 66.500, lon: 27.500 },
+    { name: "Taivalvaara", lat: 64.500, lon: 28.500 },
+    { name: "Iso-Yll\u00e4s", lat: 67.800, lon: 24.200 },
+    { name: "K\u00e4r\u00e4j\u00e4rvi", lat: 66.500, lon: 27.500 },
+    { name: "H\u00e4k\u00e4rinteet", lat: 64.500, lon: 27.500 },
+    { name: "Ruka", lat: 65.134, lon: 29.183 },
+    { name: "Peuramaa", lat: 60.000, lon: 24.000 },
+    { name: "Solvalla", lat: 60.000, lon: 24.000 },
+    { name: "Vihti Ski Center", lat: 60.000, lon: 24.000 },
+    { name: "Sappee", lat: 61.000, lon: 24.000 },
+    { name: "Serena Ski", lat: 60.000, lon: 24.000 },
+    { name: "Talma Ski", lat: 60.000, lon: 24.000 },
+    { name: "Påminne", lat: 60.000, lon: 24.000 },
+    { name: "Ellivuori", lat: 61.000, lon: 24.000 },
+    { name: "Hiittenharju", lat: 61.000, lon: 24.000 },
+    { name: "J\u00e4mi", lat: 61.000, lon: 24.000 },
+    { name: "Kauniainen", lat: 60.000, lon: 24.000 },
+    { name: "Tornikeskus", lat: 60.000, lon: 24.000 },
+    { name: "Kokonniemi", lat: 60.000, lon: 24.000 },
+    { name: "Konka Ski", lat: 60.000, lon: 24.000 },
+    { name: "Alhovuori", lat: 60.000, lon: 24.000 },
+    { name: "Korkeakangas", lat: 60.000, lon: 24.000 },
+    { name: "Ski Tornim\u00e4ki", lat: 60.000, lon: 24.000 },
+    { name: "Kalpalinna", lat: 60.000, lon: 24.000 }
   ];
 
   skiResorts.forEach(resort => {
