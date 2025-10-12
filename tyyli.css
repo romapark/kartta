@@ -1,0 +1,25 @@
+/* Koko sivun säiliö */
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+/* Pääkontaineri flexillä */
+.container {
+  display: flex;
+  height: 100%;
+}
+
+/* Vasemman reunan filter-laatikko */
+.filters {
+  width: 250px;       /* kuinka leveä filter-laatikko on */
+  padding: 10px;
+  background-color: #f0f0f0;
+  box-sizing: border-box;
+}
+
+/* Oikean reunan kartta */
+.map {
+  flex: 1;           /* vie loput tilasta */
+  height: 100%;
+}
