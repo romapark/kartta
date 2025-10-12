@@ -93,6 +93,7 @@
     const beginner = document.getElementById('beginner').checked;
     const superpipe = document.getElementById('superpipe').checked;
     const minipipe = document.getElementById('minipipe').checked;
+    const moguls = document.getElementById('moguls').checked;
     const selectedMonths = Array.from(document.querySelectorAll("#filters input[type=checkbox]:checked")).map(cb => parseInt(cb.value));
 
     markers.forEach(m => {
@@ -103,7 +104,8 @@
                    (!medium || d.medium) &&
                    (!beginner || d.beginner) &&
                    (!superpipe || d.superpipe) &&
-                   (!minipipe || d.minipipe);
+                   (!minipipe || d.minipipe) &&
+                   (!moguls || d.moguls);
 
       // Tarkistetaan aukiolokuukaudet
       let seasonOk = true;
