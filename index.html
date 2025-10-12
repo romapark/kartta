@@ -1,74 +1,41 @@
-<!DOCTYPE html> 
-<html lang="fi" xmlns="http://www.w3.org/1999/xhtml" xml:lang="fi">
-    <head>
-        <meta charset="utf-8"/>
-	<!-- Älä muuta tai poista seuraavia script-elementtejä
-	Kurssin oma tarkistin tarkistaa sivusi kieliopin ja harjoitustyöhön liittyviä 
-	ongelmia ja ilmoittaa virheistä selaimen konsolissa. Tämä ei kuitenkaan korvaa kurssin
-	varsinaista harjoitustyötarkistuskonetta. Konsolin ja virheilmoitukset 
-	saat esille seuraavasti:
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karttaesimerkki</title>
 
-	Firefox: SHIFT+CTRL+K tai Tools|Web developer|Web console 
-
-	Chrome: SHIFT + CTRL + J tai Command + Option + J (Mac) tai ...|More tools|developer tools|console
-
-	Kaikki virheilmoitukset taltioidaan myös kurssin omaan tietokantaan ja niitä 
-	hyödynnetään kurssimateriaalin ja tarkistimien jatkokehityksessä. --> 
-	<script src="https://appro.mit.jyu.fi/tools/htmlinspector/html-inspector.js"></script> 
-	<script src="https://appro.mit.jyu.fi/tools/itkp1011/itkp1011.js"></script> 
-	<!-- tästä eteenpäin voit muutella vapaasti -->
-        
-        <title>ITKP1011-Harjoitustyö</title>
-		<link rel="StyleSheet" href="tyyli.css" type="text/css" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-    </head>
+  <!-- Leafletin CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  
+  <style>
+    #map {
+      height: 500px; /* Korkeus kartalle */
+      width: 100%;
+    }
+  </style>
+</head>
 <body>
 
-<nav class="navbartop">
-  <ul>
-	<li><a href="https://www.jyu.fi/">Jyväskylän yliopisto</a></li>
-	<li><a href="https://www.jyu.fi/it/">Informaatioteknologian tiedekunta</a></li>
-	<li><a href="https://www.jyu.fi/it/fi/opiskelu/kandidaatti-ja-maisteriohjelmat/tietotekniikka">Tietotekniikan oppiaine</a></li>
-	<li><a href="https://appro.mit.jyu.fi/itkp1011/">ITKP1011</a></li>
-  </ul>
-</nav>
+<h2>Oma karttasovellus</h2>
+<div id="map"></div>
 
-<!--#include virtual="/~romapark/ante/itkp1011.ssi"-->
+<!-- Leafletin JS -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script>
+  // Luodaan kartta
+  var map = L.map('map').setView([60.1699, 24.9384], 13); // Helsinki
 
-<h1>ITKP1011-Harjoitustyö</h1>
+  // Lisätään OpenStreetMap-laatat
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '© OpenStreetMap'
+  }).addTo(map);
 
-<p>
-Integer eget vestibulum ligula. Donec varius, lorem in tempor luctus, ligula sem pharetra erat, non sollicitudin dolor enim ut urna. Donec efficitur nunc ac dolor accumsan pharetra. Nullam at turpis congue, tincidunt lacus eget, consequat metus. Aliquam finibus eleifend elementum. Donec varius egestas velit a hendrerit. Maecenas luctus, orci et placerat sodales, sapien dui pretium purus, et ornare nisi ex id augue. Sed felis nisi, vehicula sit amet lorem eu, eleifend tincidunt augue. In rutrum dictum dictum. Fusce dignissim leo lorem, eu vestibulum magna placerat nec. Maecenas ac placerat tellus, sed faucibus tellus.
-</p>
-
-<p>
-Suspendisse condimentum consectetur urna, ac placerat justo venenatis ut. Sed vel orci dignissim nibh commodo semper at et sem. Quisque purus magna, consectetur eget fringilla placerat, consectetur tristique sapien. Integer a felis feugiat, euismod dolor nec, semper magna. Morbi faucibus in nunc vel rutrum. Donec pulvinar sodales mauris, a ultrices felis maximus non. Morbi ex neque, eleifend ut quam a, aliquam consequat dui.
-</p>
-
-<p>
-Vestibulum interdum dolor id ante blandit, sed iaculis augue viverra. Curabitur egestas finibus erat, nec laoreet libero tempor vitae. Proin id commodo dolor. In hac habitasse platea dictumst. Donec maximus laoreet lobortis. Pellentesque et turpis in diam gravida mattis a eget dolor. Etiam condimentum ante et odio laoreet ultricies. Phasellus sem tellus, ornare quis tempus non, ornare non sapien. Sed sit amet mattis magna. Nam malesuada lacus quam, quis cursus massa aliquet et. Nunc vel tellus eu sem sodales accumsan ac ut quam. Phasellus lacus lectus, tempus sed dapibus id, vestibulum a dui. Sed varius, nibh a semper fermentum, leo eros imperdiet sem, elementum porta sem purus non erat. Pellentesque quis placerat odio.
-</p>
-
-<div class="etusivukuva">
-  <a href="etusivu1.jpg">
-    <img alt="etusivun kuva" src="etusivu1_small.jpg" />
-  </a>
-  <p>etusivu 1</p>
-</div>
-
-<p class="clear">
-Donec in suscipit neque. Proin cursus metus non libero iaculis pretium. Morbi faucibus eleifend mi et ullamcorper. Phasellus non purus eu nisi faucibus blandit tincidunt ut mauris. Suspendisse condimentum felis eu enim molestie consequat. Pellentesque sit amet mattis justo, non finibus purus. Phasellus vel nisi justo. Donec vehicula consequat sapien eu sagittis. Aliquam facilisis lacus eros, sed gravida ex ullamcorper eu. Maecenas accumsan, lorem a vestibulum suscipit, sem turpis facilisis orci, ac accumsan metus dolor et orci. Vivamus rutrum odio nec elementum elementum. Vivamus sollicitudin nulla libero. Sed a accumsan ipsum.
-</p>
-
-<p>
-Etiam eget libero nec augue imperdiet blandit. Aliquam erat volutpat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer malesuada dignissim sollicitudin. Cras a euismod nulla, eu porttitor lorem. Donec convallis suscipit lorem eu ullamcorper. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec accumsan, ante sit amet sodales placerat, erat risus hendrerit ipsum, bibendum dignissim tortor diam a ligula.
-</p>
-
-
-<footer>
-	<a href="./">ITKP1011 Harjoitustyö</a>
-	<p>©</p>
-</footer>
+  // Lisätään markkeri
+  var marker = L.marker([60.1699, 24.9384]).addTo(map);
+  marker.bindPopup("<b>Tämä on kohde!</b><br>Helsinki.").openPopup();
+</script>
 
 </body>
 </html>
