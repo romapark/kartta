@@ -57,10 +57,10 @@
         .bindPopup(`
           <b>${r.name}</b><br>
           Season dates: ${r.seasonStart} – ${r.seasonEnd}<br>
-          <b>Park features:</b><br>
-          ${["proPark", "mediumPark", "beginnerPark", "superpipe", "minipipe"]
+          <b>Parks:</b><br>
+          ${["pro", "medium", "beginner", "superpipe", "minipipe"]
               .filter(f => r[f])
-              .join(', ')}
+              .join(', ')}<br>
           Park condition: ${r.parkCondition}
         `);
       marker.data = r;

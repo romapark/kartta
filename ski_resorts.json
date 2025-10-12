@@ -31,9 +31,9 @@
         "lon": 29.152, 
         "seasonStart": "2025-10-14", 
         "seasonEnd": "2026-05-10", 
-        "proPark": true, 
-        "mediumPark": true, 
-        "beginnerPark": true, 
+        "pro": true, 
+        "medium": true, 
+        "beginner": true, 
         "superpipe": false, 
         "minipipe": true, 
         "parkCondition": "good" 
