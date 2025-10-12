@@ -46,6 +46,8 @@
 
   let markers = []; // tallennetaan kaikki markkerit
 
+
+  //tietotaulut
   fetch('ski_resorts.json')
   .then(r => r.json())
   .then(data => {
@@ -54,13 +56,12 @@
         .addTo(map)
         .bindPopup(`
           <b>${r.name}</b><br>
-          Kausi: ${r.seasonStart} – ${r.seasonEnd}<br>
-          Pro Park: ${r.proPark ? '✔' : '✖'}<br>
-          Medium Park: ${r.mediumPark ? '✔' : '✖'}<br>
-          Beginner Park: ${r.beginnerPark ? '✔' : '✖'}<br>
-          Superpipe: ${r.superpipe ? '✔' : '✖'}<br>
-          Minipipe: ${r.minipipe ? '✔' : '✖'}<br>
-          Puiston kunto: ${r.parkCondition}
+          Season dates: ${r.seasonStart} – ${r.seasonEnd}<br>
+          <b>Park features:</b><br>
+          ${["proPark", "mediumPark", "beginnerPark", "superpipe", "minipipe"]
+              .filter(f => r[f])
+              .join(', ')}
+          Park condition: ${r.parkCondition}
         `);
       marker.data = r;
       markers.push(marker);
