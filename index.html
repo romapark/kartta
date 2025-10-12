@@ -57,8 +57,7 @@
         .bindPopup(`
           <b>${r.name}</b><br>
           Season dates: ${r.seasonStart} – ${r.seasonEnd}<br>
-          <b>Parks:</b><br>
-          ${["pro", "medium", "beginner", "superpipe", "minipipe"]
+          Parks: ${["pro", "medium", "beginner", "superpipe", "minipipe"]
               .filter(f => r[f])
               .join(', ')}<br>
           Park condition: ${r.parkCondition}
@@ -70,17 +69,17 @@
 
   // Filtterin logiikka
   document.getElementById('applyFilters').addEventListener('click', () => {
-    const pro = document.getElementById('proPark').checked;
-    const medium = document.getElementById('mediumPark').checked;
-    const beginner = document.getElementById('beginnerPark').checked;
+    const pro = document.getElementById('pro').checked;
+    const medium = document.getElementById('medium').checked;
+    const beginner = document.getElementById('beginner').checked;
     const superpipe = document.getElementById('superpipe').checked;
     const minipipe = document.getElementById('minipipe').checked;
 
     markers.forEach(m => {
       const d = m.data;
-      const show = (!pro || d.proPark) &&
-                   (!medium || d.mediumPark) &&
-                   (!beginner || d.beginnerPark) &&
+      const show = (!pro || d.pro) &&
+                   (!medium || d.medium) &&
+                   (!beginner || d.beginner) &&
                    (!superpipe || d.superpipe) &&
                    (!minipipe || d.minipipe);
 
