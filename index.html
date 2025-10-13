@@ -30,10 +30,9 @@
     <button id="applyFilters">Filter</button>
   </div>
 
-  <div id="infoBox">
-    <div>
-      <span id="closeInfo">&times;</span>
-    </div>
+  <div id="infoBox" style="display:none;">
+    <span id="closeInfo" style="cursor:pointer;">&times;</span>
+    <div id="infoContent"></div>
   </div>
 
   <div id="map"></div>
@@ -62,6 +61,7 @@
   
   const infoBox = document.getElementById('infoBox');
   const closeBtn = document.getElementById('closeInfo');
+  const infoContent = document.getElementById('infoContent');
 
   closeBtn.addEventListener('click', () => {      // infoboxin sulkeminen napista
     infoBox.style.display = 'none';
@@ -75,17 +75,15 @@
       let marker = L.marker([r.lat, r.lon])
         .addTo(map)
         .on('click', () => {
-          // Kun markkeria klikataan, päivitetään infoBox
-          infoBox.innerHTML = `
+          infoContent.innerHTML = `
             <b>${r.name}</b><br>
             Season dates: ${r.seasonStart} – ${r.seasonEnd}<br>
             Parks: ${["pro","medium","beginner","superpipe","minipipe"]
                       .filter(f => r[f]).join(', ')}<br>
             Park condition: ${r.parkCondition}
           `;
-          infoBox.style.display = 'block'; // Näytetään infoboxi kun markkeria painetaan
+          infoBox.style.display = 'block';
         });
-
       marker.data = r;
       markers.push(marker);
     });
