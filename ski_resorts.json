@@ -81,7 +81,13 @@
     "name": "Laajavuori",
     "country": "fi",
     "lat": "62.257",
-    "lon": "25.683"
+    "lon": "25.683",
+    "pro": false,
+    "beginner": true,
+    "superpipe": false,
+    "minipipe": false,
+    "parkCondition": "poor",
+    "moguls": true
   },
   {
     "name": "Levi",
