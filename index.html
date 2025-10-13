@@ -32,7 +32,7 @@
 
   <div id="infoBox">
     <div>
-      <span id="closeInfo" style="cursor:pointer; font-weight:bold;">&times;</span>
+      <span id="closeInfo">&times;</span>
     </div>
   </div>
 
@@ -42,7 +42,9 @@
 <!-- Leafletin JS -->
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
-<script>
+
+<!-- Kartta ---------------->
+><script>
   // Luodaan kartta
   var map = L.map('map').setView([60.1699, 24.9384], 5); // Helsinki
 
@@ -51,12 +53,21 @@
     maxZoom: 19,
     attribution: '© OpenStreetMap'
   }).addTo(map);
+</script>
 
+<!-- InfoBoxi ja markkerit ----------------->
+<script>
+
+  let markers = []; // tallennetaan kaikki markkerit jotka lisätään kartalle
+  
   const infoBox = document.getElementById('infoBox');
-  let markers = []; // tallennetaan kaikki markkerit
+  const closeBtn = document.getElementById('closeInfo');
 
+  closeBtn.addEventListener('click', () => {      // infoboxin sulkeminen napista
+    infoBox.style.display = 'none';
+  });
 
-  //tietotaulut
+  //luodaan tietotaulut
   fetch('ski_resorts.json')
   .then(r => r.json())
   .then(data => {
@@ -72,14 +83,18 @@
                       .filter(f => r[f]).join(', ')}<br>
             Park condition: ${r.parkCondition}
           `;
-          infoBox.style.display = 'block'; // Näytetään laatikko
+          infoBox.style.display = 'block'; // Näytetään infoboxi kun markkeria painetaan
         });
 
       marker.data = r;
       markers.push(marker);
     });
   });
+</script>
 
+
+<!-- Filteröinti ----------------->
+<script>
   // Filtterin logiikka
   document.getElementById('applyFilters').addEventListener('click', () => {
     const pro = document.getElementById('pro').checked;
@@ -103,18 +118,6 @@
       }
     });
   });
-
-
-</script>
-
-<script>
-  const closeBtn = document.getElementById('closeInfo');
-
-  closeBtn.addEventListener('click', () => {
-    infoBox.style.display = 'none';
-  });
-
-
 </script>
 
 </body>
