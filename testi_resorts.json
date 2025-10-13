@@ -1,0 +1,287 @@
+[
+  {
+    "name": "Alhovuori",
+    "country": "fi",
+    "lat": "60.496",
+    "lon": "24.148"
+  },
+  {
+    "name": "Ellivuori",
+    "country": "fi",
+    "lat": "61.401",
+    "lon": "23.055"
+  },
+  {
+    "name": "Himos",
+    "country": "fi",
+    "lat": "61.879",
+    "lon": "25.305"
+  },
+  {
+    "name": "Hiittenharju",
+    "country": "fi",
+    "lat": "61.295",
+    "lon": "22.146"
+  },
+  {
+    "name": "HÃ¤kÃ¤Â­rinteet",
+    "country": "fi",
+    "lat": "62.349",
+    "lon": "26.615"
+  },
+  {
+    "name": "Iso-SyÃ¶te",
+    "country": "fi",
+    "lat": "65.625",
+    "lon": "27.609"
+  },
+  {
+    "name": "Kallin hiihtokeskus",
+    "country": "fi",
+    "lat": "65.818",
+    "lon": "24.523"
+  },
+  {
+    "name": "Kalpalinna",
+    "country": "fi",
+    "lat": "60.930",
+    "lon": "24.595"
+  },
+  {
+    "name": "Kasurila",
+    "country": "fi",
+    "lat": "63.039",
+    "lon": "27.708"
+  },
+  {
+    "name": "Kauniaisten hiihtokeskus",
+    "country": "fi",
+    "lat": "60.219",
+    "lon": "24.703"
+  },
+  {
+    "name": "Konka Ski",
+    "country": "fi",
+    "lat": "61.437",
+    "lon": "29.330"
+  },
+  {
+    "name": "Korkeakangas",
+    "country": "fi",
+    "lat": "61.252",
+    "lon": "24.091"
+  },
+  {
+    "name": "KÃ¶ykkyri",
+    "country": "fi",
+    "lat": "64.901",
+    "lon": "25.559"
+  },
+  {
+    "name": "Laajavuori",
+    "country": "fi",
+    "lat": "62.257",
+    "lon": "25.683"
+  },
+  {
+    "name": "Levi",
+    "country": "fi",
+    "lat": "67.803",
+    "lon": "24.809"
+  },
+  {
+    "name": "Luosto",
+    "country": "fi",
+    "lat": "67.149",
+    "lon": "26.898"
+  },
+  {
+    "name": "MessilÃ¤",
+    "country": "fi",
+    "lat": "61.015",
+    "lon": "25.550"
+  },
+  {
+    "name": "Olos",
+    "country": "fi",
+    "lat": "67.926",
+    "lon": "23.811"
+  },
+  {
+    "name": "Ounasvaara",
+    "country": "fi",
+    "lat": "66.502",
+    "lon": "25.802"
+  },
+  {
+    "name": "Pallas",
+    "country": "fi",
+    "lat": "68.046",
+    "lon": "24.061"
+  },
+  {
+    "name": "Peuramaa",
+    "country": "fi",
+    "lat": "60.100",
+    "lon": "24.465"
+  },
+  {
+    "name": "Porvoo Ski",
+    "country": "fi",
+    "lat": "60.382",
+    "lon": "25.658"
+  },
+  {
+    "name": "Purnu",
+    "country": "fi",
+    "lat": "61.733",
+    "lon": "25.867"
+  },
+  {
+    "name": "PyhÃ¤",
+    "country": "fi",
+    "lat": "67.023",
+    "lon": "27.241"
+  },
+  {
+    "name": "Riihivuori",
+    "country": "fi",
+    "lat": "62.108",
+    "lon": "25.690"
+  },
+  {
+    "name": "Ritovalkea",
+    "country": "fi",
+    "lat": "66.805",
+    "lon": "24.119"
+  },
+  {
+    "name": "Ruka",
+    "country": "fi",
+    "lat": "66.166",
+    "lon": "29.152",
+    "seasonStart": "2025-10-14",
+    "seasonEnd": "2026-05-10",
+    "pro": true,
+    "medium": true,
+    "beginner": true,
+    "superpipe": false,
+    "minipipe": true,
+    "parkCondition": "good",
+    "moguls": true
+  },
+  {
+    "name": "Salla",
+    "country": "fi",
+    "lat": "66.762",
+    "lon": "28.788"
+  },
+  {
+    "name": "Sappee",
+    "country": "fi",
+    "lat": "61.389",
+    "lon": "24.508"
+  },
+  {
+    "name": "SaariselkÃ¤",
+    "country": "fi",
+    "lat": "68.433",
+    "lon": "27.444"
+  },
+  {
+    "name": "Serena Ski",
+    "country": "fi",
+    "lat": "60.326",
+    "lon": "24.733"
+  },
+  {
+    "name": "Solvalla",
+    "country": "fi",
+    "lat": "60.299",
+    "lon": "24.552"
+  },
+  {
+    "name": "Sveitsin hiihtokeskus",
+    "country": "fi",
+    "lat": "60.655",
+    "lon": "24.817"
+  },
+  {
+    "name": "Hirvensalon hiihtokeskus",
+    "country": "fi",
+    "lat": "60.415",
+    "lon": "22.223"
+  },
+  {
+    "name": "HupiSki TornimÃ¤ki",
+    "country": "fi",
+    "lat": "61.666",
+    "lon": "27.343"
+  },
+  {
+    "name": "Suomutunturi",
+    "country": "fi",
+    "lat": "66.552",
+    "lon": "28.009"
+  },
+  {
+    "name": "Tahko",
+    "country": "fi",
+    "lat": "63.291",
+    "lon": "28.015"
+  },
+  {
+    "name": "Taivalvaara",
+    "country": "fi",
+    "lat": "65.564",
+    "lon": "28.203"
+  },
+  {
+    "name": "Talma Ski",
+    "country": "fi",
+    "lat": "60.396",
+    "lon": "25.182"
+  },
+  {
+    "name": "Tornikeskus",
+    "country": "fi",
+    "lat": "60.365",
+    "lon": "24.758"
+  },
+  {
+    "name": "Ukkohalla",
+    "country": "fi",
+    "lat": "64.737",
+    "lon": "28.258"
+  },
+  {
+    "name": "Ukko-Koli",
+    "country": "fi",
+    "lat": "63.098",
+    "lon": "29.806"
+  },
+  {
+    "name": "Vihti Ski Center",
+    "country": "fi",
+    "lat": "60.376",
+    "lon": "24.368"
+  },
+  {
+    "name": "Vuokatti",
+    "country": "fi",
+    "lat": "64.127",
+    "lon": "28.270"
+  },
+  {
+    "name": "YllÃ¤s",
+    "country": "fi",
+    "lat": "67.564",
+    "lon": "24.222"
+  },
+  {
+    "name": "PÃ¥minne",
+    "country": "fi",
+    "lat": "60.099",
+    "lon": "23.605"
+  }
+]
