@@ -24,13 +24,13 @@
     "lon": "22.146"
   },
   {
-    "name": "HÃ¤kÃ¤Â­rinteet",
+    "name": "Häkä­rinteet",
     "country": "fi",
     "lat": "62.349",
     "lon": "26.615"
   },
   {
-    "name": "Iso-SyÃ¶te",
+    "name": "Iso-Syöte",
     "country": "fi",
     "lat": "65.625",
     "lon": "27.609"
@@ -72,7 +72,7 @@
     "lon": "24.091"
   },
   {
-    "name": "KÃ¶ykkyri",
+    "name": "Köykkyri",
     "country": "fi",
     "lat": "64.901",
     "lon": "25.559"
@@ -96,7 +96,7 @@
     "lon": "26.898"
   },
   {
-    "name": "MessilÃ¤",
+    "name": "Messilä",
     "country": "fi",
     "lat": "61.015",
     "lon": "25.550"
@@ -138,7 +138,7 @@
     "lon": "25.867"
   },
   {
-    "name": "PyhÃ¤",
+    "name": "Pyhä",
     "country": "fi",
     "lat": "67.023",
     "lon": "27.241"
@@ -183,7 +183,7 @@
     "lon": "24.508"
   },
   {
-    "name": "SaariselkÃ¤",
+    "name": "Saariselkä",
     "country": "fi",
     "lat": "68.433",
     "lon": "27.444"
@@ -213,7 +213,7 @@
     "lon": "22.223"
   },
   {
-    "name": "HupiSki TornimÃ¤ki",
+    "name": "HupiSki Tornimäki",
     "country": "fi",
     "lat": "61.666",
     "lon": "27.343"
@@ -273,13 +273,13 @@
     "lon": "28.270"
   },
   {
-    "name": "YllÃ¤s",
+    "name": "Ylläs",
     "country": "fi",
     "lat": "67.564",
     "lon": "24.222"
   },
   {
-    "name": "PÃ¥minne",
+    "name": "Påminne",
     "country": "fi",
     "lat": "60.099",
     "lon": "23.605"
