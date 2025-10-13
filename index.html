@@ -50,24 +50,37 @@
   let markers = []; // tallennetaan kaikki markkerit
 
 
-  //tietotaulut
-  fetch('ski_resorts.json')
-  .then(r => r.json())
-  .then(data => {
-    data.forEach(r => {
-      let marker = L.marker([r.lat, r.lon])
-        .addTo(map)
-        .bindPopup(`
-          <b>${r.name}</b><br>
-          Season dates: ${r.seasonStart} – ${r.seasonEnd}<br>
-          Parks: ${["pro", "medium", "beginner", "superpipe", "minipipe"]
-              .filter(f => r[f])
-              .join(', ')}<br>
-          Park condition: ${r.parkCondition}
-        `);
-      marker.data = r;
-      markers.push(marker);
-    });
+  Papa.parse("https://docs.google.com/spreadsheets/d/e/2PACX-1vThmKqPSHyVmucq094HTnClwDkDp2fZi9tgzzVHZTahCKjeS8gNyGXGK5TyGzFTXysn6vsKq09CoBtc/pub?output=csv", {
+      download: true,
+      header: true,
+      complete: function(results) {
+          const data = results.data; // Tämä on nyt JSON-taulukko
+
+          data.forEach(r => {
+              // Muunna boolean-arvot
+              ["pro","medium","beginner","superpipe","minipipe","moguls"].forEach(f => {
+                  r[f] = r[f] === "TRUE";
+              });
+
+              // Muunna lat/lon luvuiksi
+              const lat = parseFloat(r.lat);
+              const lon = parseFloat(r.lon);
+
+              let marker = L.marker([lat, lon])
+                  .addTo(map)
+                  .bindPopup(`
+                      <b>${r.name}</b><br>
+                      Season dates: ${r.seasonStart} – ${r.seasonEnd}<br>
+                      Parks: ${["pro","medium","beginner","superpipe","minipipe"]
+                          .filter(f => r[f])
+                          .join(', ')}<br>
+                      Park condition: ${r.parkCondition || 'N/A'}
+                  `);
+
+              marker.data = r;
+              markers.push(marker);
+          });
+      }
   });
 
   // Filtterin logiikka
