@@ -72,6 +72,7 @@
                       .filter(f => r[f]).join(', ')}<br>
             Park condition: ${r.parkCondition}
           `;
+          infoBox.style.display = 'block'; // Näytetään laatikko
         });
 
       marker.data = r;
