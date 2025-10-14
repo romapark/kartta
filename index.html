@@ -56,34 +56,52 @@
 
 <!-- InfoBoxi ja markkerit ----------------->
 <script>
-  const infoBox = document.getElementById('infoBox');
-  const closeBtn = document.getElementById('closeInfo');
-  const infoContent = document.getElementById('infoContent');
+  // -----------------------------
+  // HTML-elementtien hakeminen
+  // -----------------------------
+  const infoBox = document.getElementById('infoBox');       // InfoBox, joka näyttää tiedot
+  const closeBtn = document.getElementById('closeInfo');    // Sulje-nappi
+  const infoContent = document.getElementById('infoContent'); // Sisältö infoBoxissa
 
-  closeBtn.addEventListener('click', () => {      // infoboxin sulkeminen napista
+  // -----------------------------
+  // Sulje infobox -nappiin click-event
+  // -----------------------------
+  closeBtn.addEventListener('click', () => {
     infoBox.style.display = 'none';
   });
 
-  let markers = []; // tallennetaan kaikki markkerit
-  
-  // Luodaan tietotaulut
+  // -----------------------------
+  // Muuttujat
+  // -----------------------------
+  let allData = [];              // Tallennetaan kaikki ladatut resortit
+  let allMarkers = [];           // Tallennetaan kaikki markerit myöhempää filteröintiä varten
+  let visibleMarkers = L.layerGroup().addTo(map); // LayerGroup, johon piirretään vain näkyvillä olevat markerit (lazy loading)
+
+  // -----------------------------
+  // Data ladattavaksi JSON-tiedostosta
+  // -----------------------------
   fetch('ski_resorts.json')
     .then(r => r.json())
     .then(data => {
-      data.forEach(r => {
-        // Canvas-pohjainen marker
+      allData = data; // tallennetaan koko dataset
+
+      // -----------------------------
+      // Luodaan markerit ja tallennetaan ne allMarkers-taulukkoon
+      // -----------------------------
+      allData.forEach(r => {
+        // Canvas-pohjainen marker (nopea suuriin datasettiin)
         const marker = L.circleMarker([r.lat, r.lon], {
-          radius: 6,               // markerin koko
-          color: '#0074D9',        // reunaväri
-          fillColor: '#0074D9',    // täyttöväri
-          fillOpacity: 0.7
-        }).addTo(map);
+          radius: 3,          // markerin koko
+          color: '#0074D9',   // reunaväri
+          fillColor: '#0074D9',// täyttöväri
+          fillOpacity: 0.7    // läpinäkyvyys
+        });
 
-        // Tallennetaan data markerille (jos tarvitaan myöhemmin)
-        marker.data = r;
-        markers.push(marker);
+        marker.data = r; // tallennetaan markerille sen data, jotta voidaan suodattaa tai näyttää tietoja
 
-        // Canvas-markerien click-event
+        // -----------------------------
+        // Click-event markerille (näyttää tiedot infoBoxissa)
+        // -----------------------------
         marker.on('click', () => {
           infoContent.innerHTML = `
             <b>${r.name}</b><br>
@@ -94,8 +112,34 @@
           `;
           infoBox.style.display = 'block';
         });
+
+        allMarkers.push(marker); // tallennetaan marker myöhempää käyttöä varten
       });
+
+      updateMarkers(); // piirretään ensimmäiset markerit näkyville
     });
+
+  // -----------------------------
+  // Funktio, joka päivittää markerit kartan näkyvän alueen mukaan (lazy loading)
+  // -----------------------------
+  function updateMarkers() {
+    visibleMarkers.clearLayers(); // tyhjennetään edelliset näkyvillä olevat markerit
+    const bounds = map.getBounds(); // haetaan nykyiset kartan boundsit
+
+    allMarkers.forEach(marker => {
+      const latlng = [marker.data.lat, marker.data.lon];
+
+      // Piirretään marker vain, jos se osuu nykyiseen näkymään
+      if (bounds.contains(latlng)) {
+        visibleMarkers.addLayer(marker);
+      }
+    });
+  }
+
+  // -----------------------------
+  // Päivitetään markerit aina kun karttaa siirretään tai zoomataan
+  // -----------------------------
+  map.on('moveend', updateMarkers);
 </script>
 
 
@@ -109,7 +153,7 @@
     const superpipe = document.getElementById('superpipe').checked;
     const minipipe = document.getElementById('minipipe').checked;
 
-    markers.forEach(m => {
+    allMarkers.forEach(m => {
       const d = m.data;
       const show = (!pro || d.pro) &&
                    (!medium || d.medium) &&
