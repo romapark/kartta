@@ -194,7 +194,7 @@
     searchInput.value = marker.data.name;
 
     // Zoomataan ja avataan info
-    map.setView([marker.data.lat, marker.data.lon], 20);
+    map.setView([marker.data.lat, marker.data.lon], 15);
 
     // Simuloidaan klikkausta, jos haluat näyttää infon laatikossa
     if (marker.fire) marker.fire('click');
