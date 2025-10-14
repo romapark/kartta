@@ -151,7 +151,7 @@
 
     // Etsitään osumat nimistä
     const matches = markers
-      .filter(m => m.data.name.toLowerCase().includes(query))
+      .filter(m => m.data.name && m.data.name.toLowerCase().includes(query))
       .slice(0, 10); // Näytetään enintään 10 ehdotusta
 
     // Jos ei tuloksia
