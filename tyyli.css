@@ -12,16 +12,21 @@ body, html {
 
 /* Vasemman reunan filter-laatikko */
 #filters {
-  width: 250px;       /* kuinka leveä filter-laatikko on */
-  padding: 10px;
-  box-sizing: border-box;
-  border-color: #152843;
+	width: 250px;       /* kuinka leveä filter-laatikko on */
+	padding: 10px;
+	box-sizing: border-box;
+	border-color: #152843;
+}
+
+#infoBox {
+	border-color: #152843;
+  	border-radius: 2rem;
 }
 
 /* Oikean reunan kartta */
 #map {
-  flex: 1;           /* vie loput tilasta */
-  height: 100%;
-  border-color: #152843;
-  border-radius: 2rem;
+	flex: 1;           /* vie loput tilasta */
+	height: 100%;
+	border-color: #152843;
+	border-radius: 2rem;
 }
