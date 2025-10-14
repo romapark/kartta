@@ -23,6 +23,32 @@ body, html {
   	border-radius: 2rem;
 }
 
+#searchBox {
+	position:absolute;
+	top:10px;
+	left:10px;
+	z-index:1000;
+	background:white;
+	padding:8px;
+	border-radius:8px;
+	box-shadow:0 0 5px rgba(0,0,0,0.3);
+	width:220px;
+}
+
+#searchInput {
+	padding:6px;
+	width:100%;
+	box-sizing:border-box;
+}
+
+#suggestions {
+	list-style:none;
+	margin:4px 0 0 0;
+	padding:0;
+	max-height:150px;
+	overflow-y:auto;
+}
+
 /* Oikean reunan kartta */
 #map {
 	flex: 1;           /* vie loput tilasta */
