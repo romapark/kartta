@@ -56,9 +56,6 @@
 
 <!-- InfoBoxi ja markkerit ----------------->
 <script>
-
-  let markers = []; // tallennetaan kaikki markkerit jotka lisätään kartalle
-  
   const infoBox = document.getElementById('infoBox');
   const closeBtn = document.getElementById('closeInfo');
   const infoContent = document.getElementById('infoContent');
@@ -67,14 +64,27 @@
     infoBox.style.display = 'none';
   });
 
-  //luodaan tietotaulut
+  let markers = []; // tallennetaan kaikki markkerit
+  
+  // Luodaan tietotaulut
   fetch('ski_resorts.json')
-  .then(r => r.json())
-  .then(data => {
-    data.forEach(r => {
-      let marker = L.marker([r.lat, r.lon])
-        .addTo(map)
-        .on('click', () => {
+    .then(r => r.json())
+    .then(data => {
+      data.forEach(r => {
+        // Canvas-pohjainen marker
+        const marker = L.circleMarker([r.lat, r.lon], {
+          radius: 6,               // markerin koko
+          color: '#0074D9',        // reunaväri
+          fillColor: '#0074D9',    // täyttöväri
+          fillOpacity: 0.7
+        }).addTo(map);
+
+        // Tallennetaan data markerille (jos tarvitaan myöhemmin)
+        marker.data = r;
+        markers.push(marker);
+
+        // Canvas-markerien click-event
+        marker.on('click', () => {
           infoContent.innerHTML = `
             <b>${r.name}</b><br>
             Season dates: ${r.seasonStart} – ${r.seasonEnd}<br>
@@ -84,10 +94,8 @@
           `;
           infoBox.style.display = 'block';
         });
-      marker.data = r;
-      markers.push(marker);
+      });
     });
-  });
 </script>
 
 
