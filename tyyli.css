@@ -44,6 +44,7 @@ body, html {
 	padding:6px;
 	width:100%;
 	box-sizing:border-box;
+	z-index: 9999;
 }
 
 #suggestions {
