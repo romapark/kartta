@@ -60,30 +60,30 @@
   const closeBtn = document.getElementById('closeInfo');
   const infoContent = document.getElementById('infoContent');
 
-  closeBtn.addEventListener('click', () => {
+  closeBtn.addEventListener('click', () => {      // infoboxin sulkeminen napista
     infoBox.style.display = 'none';
   });
 
-  let allData = [];
-  let allMarkers = [];
-  let visibleMarkers = L.layerGroup().addTo(map);
-
-  // Ladataan JSON-data
+  let markers = []; // tallennetaan kaikki markkerit
+  
+  // Luodaan tietotaulut
   fetch('ski_resorts.json')
     .then(r => r.json())
     .then(data => {
-      allData = data;
-
-      allData.forEach(r => {
+      data.forEach(r => {
+        // Canvas-pohjainen marker
         const marker = L.circleMarker([r.lat, r.lon], {
-          radius: 3,
-          color: '#0074D9',
-          fillColor: '#0074D9',
+          radius: 3,               // markerin koko
+          color: '#0074D9',        // reunaväri
+          fillColor: '#0074D9',    // täyttöväri
           fillOpacity: 0.7
-        });
+        }).addTo(map);
 
+        // Tallennetaan data markerille (jos tarvitaan myöhemmin)
         marker.data = r;
+        markers.push(marker);
 
+        // Canvas-markerien click-event
         marker.on('click', () => {
           infoContent.innerHTML = `
             <b>${r.name}</b><br>
@@ -94,34 +94,14 @@
           `;
           infoBox.style.display = 'block';
         });
-
-        allMarkers.push(marker);
       });
-
-      updateMarkers(); // piirretään markerit näkyville
     });
-
-  // Lazy loading - päivitysfunktio
-  function updateMarkers() {
-    visibleMarkers.clearLayers();
-    const bounds = map.getBounds();
-
-    allMarkers.forEach(marker => {
-      const latlng = [marker.data.lat, marker.data.lon];
-      if (bounds.contains(latlng)) {
-        visibleMarkers.addLayer(marker);
-      }
-    });
-  }
-
-  // Päivitä näkyvät markerit aina kartan liikkuessa
-  map.on('moveend', updateMarkers);
 </script>
 
 
 <!-- Filteröinti ----------------->
 <script>
- // Filteröinti - muokkaa näkyviä markkereita
+  // Filtterin logiikka
   document.getElementById('applyFilters').addEventListener('click', () => {
     const pro = document.getElementById('pro').checked;
     const medium = document.getElementById('medium').checked;
@@ -129,12 +109,7 @@
     const superpipe = document.getElementById('superpipe').checked;
     const minipipe = document.getElementById('minipipe').checked;
 
-    // Tyhjennetään näkyvät markkerit layeristä
-    visibleMarkers.clearLayers();
-
-    // Lisää vain ne markerit, jotka täyttävät filtteri- ja näkymäehdot
-    const bounds = map.getBounds();
-    allMarkers.forEach(m => {
+    markers.forEach(m => {
       const d = m.data;
       const show = (!pro || d.pro) &&
                    (!medium || d.medium) &&
@@ -142,8 +117,10 @@
                    (!superpipe || d.superpipe) &&
                    (!minipipe || d.minipipe);
 
-      if (show && bounds.contains([d.lat, d.lon])) {
-        visibleMarkers.addLayer(m);
+      if (show) {
+        m.addTo(map);
+      } else {
+        map.removeLayer(m);
       }
     });
   });
