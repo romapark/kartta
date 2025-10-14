@@ -152,6 +152,15 @@
     // Etsitään osumat nimistä
     const matches = markers
       .filter(m => m.data.name && m.data.name.toLowerCase().includes(query))
+      //järjestetään osumat
+      .sort((a, b) => {
+        const nameA = a.data.name.toLowerCase();
+        const nameB = b.data.name.toLowerCase();
+        const indexA = nameA.indexOf(query);
+        const indexB = nameB.indexOf(query);
+        // Pienempi indeksi (eli alkuun osuva) menee ensin
+        return indexA - indexB;
+      })
       .slice(0, 10); // Näytetään enintään 10 ehdotusta
 
     // Jos ei tuloksia
