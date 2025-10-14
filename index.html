@@ -150,7 +150,7 @@
     if (!query) return; // Jos hakukenttä tyhjä, lopeta
 
     // Etsitään osumat nimistä
-    const matches = allMarkers
+    const matches = markers
       .filter(m => m.data.name.toLowerCase().includes(query))
       .slice(0, 10); // Näytetään enintään 10 ehdotusta
 
