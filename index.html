@@ -72,8 +72,8 @@
     .then(data => {
       data.forEach(r => {
         // Canvas-pohjainen marker
-        const marker = L.Circle([r.lat, r.lon], {
-          radius: 3,               // markerin koko
+        const marker = L.CircleMarker([r.lat, r.lon], {
+          radius: 2,               // markerin koko
           color: '#0074D9',        // reunaväri
           fillColor: '#0074D9',    // täyttöväri
           fillOpacity: 0.7
