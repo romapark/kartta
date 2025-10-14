@@ -135,5 +135,63 @@
   });
 </script>
 
+
+<!-- Hakulaatikko ----------------->
+<script>
+
+  const searchInput = document.getElementById('searchInput');
+  const suggestions = document.getElementById('suggestions');
+
+  // Reagoidaan käyttäjän kirjoitukseen
+  searchInput.addEventListener('input', () => {
+    const query = searchInput.value.toLowerCase().trim();
+    suggestions.innerHTML = ''; // Tyhjennä vanhat ehdotukset
+
+    if (!query) return; // Jos hakukenttä tyhjä, lopeta
+
+    // Etsitään osumat nimistä
+    const matches = allMarkers
+      .filter(m => m.data.name.toLowerCase().includes(query))
+      .slice(0, 10); // Näytetään enintään 10 ehdotusta
+
+    // Jos ei tuloksia
+    if (matches.length === 0) {
+      const li = document.createElement('li');
+      li.textContent = 'Ei tuloksia';
+      li.style.padding = '4px';
+      li.style.color = '#888';
+      suggestions.appendChild(li);
+      return;
+    }
+
+    // Luodaan lista osumista
+    matches.forEach(m => {
+      const li = document.createElement('li');
+      li.textContent = m.data.name;
+      li.style.padding = '4px 6px';
+      li.style.cursor = 'pointer';
+      li.addEventListener('mouseover', () => (li.style.background = '#eee'));
+      li.addEventListener('mouseout', () => (li.style.background = 'white'));
+      li.addEventListener('click', () => selectMarker(m));
+
+      suggestions.appendChild(li);
+    });
+  });
+
+  // Kun käyttäjä valitsee kohteen
+  function selectMarker(marker) {
+    // Tyhjennetään ehdotukset
+    suggestions.innerHTML = '';
+    searchInput.value = marker.data.name;
+
+    // Zoomataan ja avataan info
+    map.setView([marker.data.lat, marker.data.lon], 10);
+
+    // Simuloidaan klikkausta, jos haluat näyttää infon laatikossa
+    if (marker.fire) marker.fire('click');
+  }
+
+</script>
+
 </body>
 </html>
