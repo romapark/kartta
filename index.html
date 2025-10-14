@@ -56,52 +56,34 @@
 
 <!-- InfoBoxi ja markkerit ----------------->
 <script>
-  // -----------------------------
-  // HTML-elementtien hakeminen
-  // -----------------------------
-  const infoBox = document.getElementById('infoBox');       // InfoBox, joka näyttää tiedot
-  const closeBtn = document.getElementById('closeInfo');    // Sulje-nappi
-  const infoContent = document.getElementById('infoContent'); // Sisältö infoBoxissa
+  const infoBox = document.getElementById('infoBox');
+  const closeBtn = document.getElementById('closeInfo');
+  const infoContent = document.getElementById('infoContent');
 
-  // -----------------------------
-  // Sulje infobox -nappiin click-event
-  // -----------------------------
   closeBtn.addEventListener('click', () => {
     infoBox.style.display = 'none';
   });
 
-  // -----------------------------
-  // Muuttujat
-  // -----------------------------
-  let allData = [];              // Tallennetaan kaikki ladatut resortit
-  let allMarkers = [];           // Tallennetaan kaikki markerit myöhempää filteröintiä varten
-  let visibleMarkers = L.layerGroup().addTo(map); // LayerGroup, johon piirretään vain näkyvillä olevat markerit (lazy loading)
+  let allData = [];
+  let allMarkers = [];
+  let visibleMarkers = L.layerGroup().addTo(map);
 
-  // -----------------------------
-  // Data ladattavaksi JSON-tiedostosta
-  // -----------------------------
+  // Ladataan JSON-data
   fetch('ski_resorts.json')
     .then(r => r.json())
     .then(data => {
-      allData = data; // tallennetaan koko dataset
+      allData = data;
 
-      // -----------------------------
-      // Luodaan markerit ja tallennetaan ne allMarkers-taulukkoon
-      // -----------------------------
       allData.forEach(r => {
-        // Canvas-pohjainen marker (nopea suuriin datasettiin)
         const marker = L.circleMarker([r.lat, r.lon], {
-          radius: 3,          // markerin koko
-          color: '#0074D9',   // reunaväri
-          fillColor: '#0074D9',// täyttöväri
-          fillOpacity: 0.7    // läpinäkyvyys
+          radius: 3,
+          color: '#0074D9',
+          fillColor: '#0074D9',
+          fillOpacity: 0.7
         });
 
-        marker.data = r; // tallennetaan markerille sen data, jotta voidaan suodattaa tai näyttää tietoja
+        marker.data = r;
 
-        // -----------------------------
-        // Click-event markerille (näyttää tiedot infoBoxissa)
-        // -----------------------------
         marker.on('click', () => {
           infoContent.innerHTML = `
             <b>${r.name}</b><br>
@@ -113,39 +95,33 @@
           infoBox.style.display = 'block';
         });
 
-        allMarkers.push(marker); // tallennetaan marker myöhempää käyttöä varten
+        allMarkers.push(marker);
       });
 
-      updateMarkers(); // piirretään ensimmäiset markerit näkyville
+      updateMarkers(); // piirretään markerit näkyville
     });
 
-  // -----------------------------
-  // Funktio, joka päivittää markerit kartan näkyvän alueen mukaan (lazy loading)
-  // -----------------------------
+  // Lazy loading - päivitysfunktio
   function updateMarkers() {
-    visibleMarkers.clearLayers(); // tyhjennetään edelliset näkyvillä olevat markerit
-    const bounds = map.getBounds(); // haetaan nykyiset kartan boundsit
+    visibleMarkers.clearLayers();
+    const bounds = map.getBounds();
 
     allMarkers.forEach(marker => {
       const latlng = [marker.data.lat, marker.data.lon];
-
-      // Piirretään marker vain, jos se osuu nykyiseen näkymään
       if (bounds.contains(latlng)) {
         visibleMarkers.addLayer(marker);
       }
     });
   }
 
-  // -----------------------------
-  // Päivitetään markerit aina kun karttaa siirretään tai zoomataan
-  // -----------------------------
+  // Päivitä näkyvät markerit aina kartan liikkuessa
   map.on('moveend', updateMarkers);
 </script>
 
 
 <!-- Filteröinti ----------------->
 <script>
-  // Filtterin logiikka
+ // Filteröinti - muokkaa näkyviä markkereita
   document.getElementById('applyFilters').addEventListener('click', () => {
     const pro = document.getElementById('pro').checked;
     const medium = document.getElementById('medium').checked;
@@ -153,6 +129,11 @@
     const superpipe = document.getElementById('superpipe').checked;
     const minipipe = document.getElementById('minipipe').checked;
 
+    // Tyhjennetään näkyvät markkerit layeristä
+    visibleMarkers.clearLayers();
+
+    // Lisää vain ne markerit, jotka täyttävät filtteri- ja näkymäehdot
+    const bounds = map.getBounds();
     allMarkers.forEach(m => {
       const d = m.data;
       const show = (!pro || d.pro) &&
@@ -161,10 +142,8 @@
                    (!superpipe || d.superpipe) &&
                    (!minipipe || d.minipipe);
 
-      if (show) {
-        m.addTo(map);
-      } else {
-        map.removeLayer(m);
+      if (show && bounds.contains([d.lat, d.lon])) {
+        visibleMarkers.addLayer(m);
       }
     });
   });
