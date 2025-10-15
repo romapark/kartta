@@ -1,18 +1,14 @@
-/* Koko sivun säiliö */
 body, html {
   height: 100%;
   margin: 0;
 }
 
-
-
-/* Pääkontaineri flexillä */
 #container {
   display: flex;
   height: 100%;
 }
 
-/* Vasemman reunan filter-laatikko */
+/* ---Filter laatikko----------------------------------------- */
 #filters {
 	width: 250px;       /* kuinka leveä filter-laatikko on */
 	padding: 10px;
@@ -20,6 +16,8 @@ body, html {
 	border-color: #152843;
 }
 
+
+/* ---Info laatikko-----------------------------------------------*/
 #infoBox {
 	border-color: #152843;
   	border-radius: 2rem;
@@ -35,10 +33,12 @@ body, html {
 	cursor:pointer;
 }
 
+
+/*---hakulaatikko------------------------------------------*/
 #searchBox {
 	position:absolute;
 	top:10px;
-	left:10px;
+	left:500px;
 	z-index:1000;
 	background:white;
 	padding:8px;
@@ -78,12 +78,12 @@ body, html {
   transition: background-color 0.2s; /* pehmeä hover-efekti */
 }
 
-/* Hover-tila */
+/*Hover-tila */
 .suggestion-item:hover {
   background: #eee;
 }
 
-/* Oikean reunan kartta */
+/*---kartta-----------------------------------------------------------------*/
 #map {
 	flex: 1;           /* vie loput tilasta */
 	height: 100%;
