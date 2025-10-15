@@ -1,6 +1,8 @@
 body, html {
   height: 100%;
   margin: 0;
+  font-family: "Arial", sans-serif; 
+  font-size: 14px; 
 }
 
 #container {
@@ -10,12 +12,43 @@ body, html {
 
 /* ---Filter laatikko----------------------------------------- */
 #filters {
-	width: 250px;       /* kuinka leveä filter-laatikko on */
-	padding: 10px;
+	width: 13em; 
+	max-height: 100%;
+	padding: 0.5em;
 	box-sizing: border-box;
-	border-color: #152843;
+	border: 1px solid #152843;
+	overflow-y: auto;
 }
 
+#filters fieldset {
+	border: none;
+  border-bottom: 1px solid #152843;  /* laatikon reunus */
+}
+
+#filters legend {
+  font-weight: bold;
+	font-size: 1.1em;
+  color: #152843;
+	padding-top: 1em;
+  
+}
+
+#applyFilters {
+	background-color: #152843; /* taustaväri */
+  color: white;              /* tekstin väri */
+  border: none;              /* reunus */
+  padding: 10px 20px;        /* sisämarginaalit */
+  border-radius: 13px;        /* pyöristetyt kulmat */
+  cursor: pointer;           /* hiiren osoitin */
+}
+
+#applyFilters:hover {
+  background-color: #1e375c;
+}
+
+#applyFilters:active {
+  background-color: #0f1a2b;
+}
 
 /* ---Info laatikko-----------------------------------------------*/
 #infoBox {
