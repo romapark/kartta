@@ -23,8 +23,8 @@ body, html {
 
 #filters-content {
 		overflow-y: auto;
-	  flex-grow: 1;          /**/ /* vie kaiken tilan napin alapuolelle */
-    margin-bottom: 0.5em;/**/
+	  flex-grow: 1; 
+    margin-bottom: 0.5em;
 }
 
 #filters fieldset {
@@ -43,11 +43,11 @@ body, html {
 #applyFilters {
 	background-color: #152843; /* taustaväri */
   color: white;              /* tekstin väri */
+	font-weight: bold;
   border: none;              /* reunus */
   padding: 10px 20px;        /* sisämarginaalit */
   border-radius: 13px;        /* pyöristetyt kulmat */
   cursor: pointer;           /* hiiren osoitin */
-	flex-shrink: 0;  /**/
 	transition: background 0.2s;
 }
 
