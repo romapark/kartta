@@ -70,7 +70,7 @@
   const infoContent = document.getElementById('infoContent');
 
   closeBtn.addEventListener('click', () => {      // infoboxin sulkeminen napista
-    infoBox.style.display = 'none';
+    infoBox.classList.remove('visible');
   });
 
   let markers = []; // tallennetaan kaikki markkerit
@@ -101,7 +101,7 @@
                       .filter(f => r[f]).join(', ')}<br>
             Park condition: ${r.park_condition}
           `;
-          infoBox.style.display = 'block';
+          infoBox.classList.add('visible');     //näyttää infoboxin
         });
       });
     });

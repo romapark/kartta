@@ -4,6 +4,8 @@ body, html {
   margin: 0;
 }
 
+
+
 /* Pääkontaineri flexillä */
 #container {
   display: flex;
@@ -23,6 +25,11 @@ body, html {
   	border-radius: 2rem;
 	display:none;
 }
+
+#infoBox.visible {
+  display: block;
+}
+
 
 #closeInfo {
 	cursor:pointer;
