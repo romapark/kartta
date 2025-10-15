@@ -17,7 +17,14 @@ body, html {
 	padding: 0.5em;
 	box-sizing: border-box;
 	border: 1px solid #152843;
-	overflow-y: auto;
+	display: flex;
+  flex-direction: column;
+}
+
+#filters-content {
+		overflow-y: auto;
+	  flex-grow: 1;          /**/ /* vie kaiken tilan napin alapuolelle */
+    margin-bottom: 0.5em;/**/
 }
 
 #filters fieldset {
@@ -40,6 +47,8 @@ body, html {
   padding: 10px 20px;        /* sisämarginaalit */
   border-radius: 13px;        /* pyöristetyt kulmat */
   cursor: pointer;           /* hiiren osoitin */
+	flex-shrink: 0;  /**/
+	transition: background 0.2s;
 }
 
 #applyFilters:hover {
