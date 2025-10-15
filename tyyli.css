@@ -62,6 +62,27 @@ body, html {
 	overflow-y:auto;
 }
 
+/* Lista, kun ei tuloksia */
+.suggestion-no-results {
+  padding: 4px;
+  color: #888;
+  list-style: none; /* Poistaa mahdolliset pisteet */
+}
+
+/* Listaehdotukset */
+.suggestion-item {
+  padding: 4px 6px;
+  cursor: pointer;
+  list-style: none;
+  background-color: white;        /* määrittele lähtötaustaväri */
+  transition: background-color 0.2s; /* pehmeä hover-efekti */
+}
+
+/* Hover-tila */
+.suggestion-item:hover {
+  background: #eee;
+}
+
 /* Oikean reunan kartta */
 #map {
 	flex: 1;           /* vie loput tilasta */

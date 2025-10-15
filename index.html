@@ -167,8 +167,7 @@
     if (matches.length === 0) {
       const li = document.createElement('li');
       li.textContent = 'Ei tuloksia';
-      li.style.padding = '4px';
-      li.style.color = '#888';
+      li.classList.add('suggestion-no-results'); // CSS-luokka
       suggestions.appendChild(li);
       return;
     }
@@ -177,12 +176,8 @@
     matches.forEach(m => {
       const li = document.createElement('li');
       li.textContent = m.data.name;
-      li.style.padding = '4px 6px';
-      li.style.cursor = 'pointer';
-      li.addEventListener('mouseover', () => (li.style.background = '#eee'));
-      li.addEventListener('mouseout', () => (li.style.background = 'white'));
+      li.classList.add('suggestion-item'); // CSS-luokka
       li.addEventListener('click', () => selectMarker(m));
-
       suggestions.appendChild(li);
     });
   });
