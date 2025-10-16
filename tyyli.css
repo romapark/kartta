@@ -72,7 +72,11 @@ body, html {
 	top: 0.1em;      /* 1em marginaali ylhäällä */
 	bottom: 0.1em;
 	z-index: 1000;
-	width: 15em;
+	width: 18em;
+	padding: 0.5em;
+	padding-top: 0.8em;
+	box-sizing: border-box;
+	box-shadow:0 0 5px rgba(0,0,0,0.3);
 }
 
 #infoBox.visible {
@@ -81,6 +85,11 @@ body, html {
 
 #info-name {
 	font-weight: bold;
+	font-size: 1.4em;
+}
+
+h3 {
+	font-size: 1.1em;
 }
 
 #closeInfoButton {
@@ -98,27 +107,36 @@ body, html {
 	right: 0.2em;
 	top: 0.2em;
 	cursor:pointer;
+	transition: background-color 0.2s;
+}
+
+#closeInfoButton:hover {
+  background: #eee;
 }
 
 
 /*---hakulaatikko------------------------------------------*/
 #searchBox {
 	position:absolute;
-	top:10px;
-	left:500px;
+	top:0.5em;
+	left: 32em;
 	z-index:1000;
 	background:white;
 	padding:8px;
-	border-radius:8px;
+	border-radius:20px;
 	box-shadow:0 0 5px rgba(0,0,0,0.3);
 	width:220px;
+	border: 1px solid #152843;
 }
 
+
 #searchInput {
-	padding:6px;
 	width:100%;
 	box-sizing:border-box;
 	z-index: 9999;
+	border: none;           /* poistaa reunaviivan */
+  outline: none;          /* poistaa sinisen korostuksen klikatessa */
+  background: transparent;
 }
 
 #suggestions {
