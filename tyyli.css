@@ -61,8 +61,6 @@ body, html {
 
 /* ---Info laatikko-----------------------------------------------*/
 #infoBox {
-	border-color: #152843;
-  	border-radius: 2rem;
 	display:none;
 }
 
