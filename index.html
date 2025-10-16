@@ -41,10 +41,15 @@
     <button id="applyFilters">FILTER</button>
   </div>
 
-  <div id="infoBox">
-    <span id="closeInfo">&times;</span>
-    <div id="infoContent"></div>
+<div id="infoBox">
+  <span id="closeInfo">&times;</span>
+  <div id="infoContent">
+    <div class="info-name"></div>
+    <div class="info-dates"></div>
+    <div class="info-parks"></div>
+    <div class="info-condition"></div>
   </div>
+</div>
 
   <div id="map"></div>
 </div>
@@ -96,14 +101,12 @@
 
         // Canvas-markerien click-event
         marker.on('click', () => {
-          infoContent.innerHTML = `
-            <b>${r.name}</b><br>
-            Season dates: ${r.season_start} – ${r.season_end}<br>
-            Parks: ${["pro","medium","beginner","superpipe","minipipe"]
-                      .filter(f => r[f]).join(', ')}<br>
-            Park condition: ${r.park_condition}
-          `;
-          infoBox.classList.add('visible');     //näyttää infoboxin
+          document.querySelector("#infoContent .info-name").textContent = r.name;
+          document.querySelector("#infoContent .info-dates").textContent = `Season dates: ${r.season_start} – ${r.season_end}`;
+          document.querySelector("#infoContent .info-parks").textContent = `Parks: ${["pro","medium","beginner","superpipe","minipipe"].filter(f => r[f]).join(', ')}`;
+          document.querySelector("#infoContent .info-condition").textContent = `Park condition: ${r.park_condition}`;
+
+          infoBox.classList.add('visible'); // näyttää infoboxin
         });
       });
     });
