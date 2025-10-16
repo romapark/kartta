@@ -45,11 +45,21 @@
   <span id="closeInfo">&times;</span>
   <div id="infoContent">
     <div class="info-name"></div>
-    <div class="info-dates"></div>
-    <div class="info-parks"></div>
-    <div class="info-condition"></div>
+    <div class="info-dates">
+      <h3>Season dates</h3>
+      <div class="info-dates-value"></div>
+    </div>
+    <div class="info-parks">
+      <h3>Parks</h3>
+      <div class="info-parks-value"></div>
+    </div>
+    <div class="info-condition">
+      <h3>Park condition</h3>
+      <div class="info-condition-value"></div>
+    </div>
   </div>
 </div>
+
 
   <div id="map"></div>
 </div>
@@ -101,10 +111,10 @@
 
         // Canvas-markerien click-event
         marker.on('click', () => {
-          document.querySelector("#infoContent .info-name").textContent = r.name;
-          document.querySelector("#infoContent .info-dates").textContent = `Season dates: ${r.season_start} – ${r.season_end}`;
-          document.querySelector("#infoContent .info-parks").textContent = `Parks: ${["pro","medium","beginner","superpipe","minipipe"].filter(f => r[f]).join(', ')}`;
-          document.querySelector("#infoContent .info-condition").textContent = `Park condition: ${r.park_condition}`;
+          document.querySelector(".info-name-value").textContent = r.name;
+          document.querySelector(".info-dates-value").textContent = `${r.season_start} – ${r.season_end}`;
+          document.querySelector(".info-parks-value").textContent = ["pro","medium","beginner","superpipe","minipipe"].filter(f => r[f]).join(', ');
+          document.querySelector(".info-condition-value").textContent = r.park_condition;
 
           infoBox.classList.add('visible'); // näyttää infoboxin
         });
