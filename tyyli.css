@@ -12,7 +12,7 @@ body, html {
 }
 
 /* ---Filter laatikko----------------------------------------- */
-#filters {
+#filterBox {
 	width: 13em; 
 	max-height: 100%;
 	padding: 0.5em;
@@ -29,12 +29,12 @@ body, html {
     margin-bottom: 0.5em;
 }
 
-#filters fieldset {
+#filterBox fieldset {
 	border: none;
   border-bottom: 1px solid #152843;  /* laatikon reunus */
 }
 
-#filters legend {
+#filterBox legend {
   font-weight: bold;
 	font-size: 1.1em;
   color: #152843;
@@ -42,7 +42,7 @@ body, html {
   
 }
 
-#applyFilters {
+#filterButton {
 	background-color: #152843; /* taustaväri */
   color: white;              /* tekstin väri */
 	font-weight: bold;
@@ -53,11 +53,11 @@ body, html {
 	transition: background 0.2s;
 }
 
-#applyFilters:hover {
+#filterButton:hover {
   background-color: #1e375c;
 }
 
-#applyFilters:active {
+#filterButton:active {
   background-color: #0f1a2b;
 }
 
@@ -72,8 +72,7 @@ body, html {
 	top: 0.1em;      /* 1em marginaali ylhäällä */
 	bottom: 0.1em;
 	z-index: 1000;
-
-	
+	width: 15em;
 }
 
 #infoBox.visible {
@@ -81,9 +80,25 @@ body, html {
 }
 
 
-#closeInfo {
+#closeInfoButton {
+	display: inline-block;
+	width: 24px;           /* Neliön leveys */
+  height: 24px;
+	background-color: white;
+  border: 1px solid #152843;
+	border-radius: 20px;
+	text-align: center;
+	line-height: 24px;
+	font-weight: bold;
+	user-select: none;
+	position: absolute;
+	right: 0.2em;
+	top: 0.2em;
+	
 	cursor:pointer;
+	
 }
+
 
 
 /*---hakulaatikko------------------------------------------*/

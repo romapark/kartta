@@ -17,7 +17,7 @@
 </div>
 
 <div id="container">
-  <div id="filters">
+  <div id="filterBox">
     <div id="filters-content">
       <fieldset>
         <legend>Ski Resort</legend>
@@ -38,11 +38,11 @@
         <legend>Transport</legend>
       </fieldset>
     </div>
-    <button id="applyFilters">FILTER</button>
+    <button id="filterButton">FILTER</button>
   </div>
 
 <div id="infoBox">
-  <span id="closeInfo">&times;</span>
+  <span id="closeInfoButton">&times;</span>
   <div id="infoContent">
     <div class="info-name"></div>
     <div class="info-dates">
@@ -90,7 +90,7 @@
 <!-- InfoBoxi ja markkerit ----------------->
 <script>
   const infoBox = document.getElementById('infoBox');
-  const closeBtn = document.getElementById('closeInfo');
+  const closeBtn = document.getElementById('closeInfoButton');
   const infoContent = document.getElementById('infoContent');
 
   closeBtn.addEventListener('click', () => {      // infoboxin sulkeminen napista
@@ -133,7 +133,7 @@
 <!-- Filteröinti ----------------->
 <script>
   // Filtterin logiikka
-  document.getElementById('applyFilters').addEventListener('click', () => {
+  document.getElementById('filterButton').addEventListener('click', () => {
     const pro = document.getElementById('pro').checked;
     const medium = document.getElementById('medium').checked;
     const beginner = document.getElementById('beginner').checked;
