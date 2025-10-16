@@ -208,7 +208,7 @@
   function selectMarker(marker) {
     // Tyhjennetään ehdotukset
     suggestions.innerHTML = '';
-    //searchInput.value = marker.data.name;
+    searchInput.value = searchInput;
 
     // Zoomataan ja avataan info
     map.setView([marker.data.lat, marker.data.lon], 15);
