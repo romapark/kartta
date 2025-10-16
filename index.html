@@ -12,7 +12,8 @@
 <body>
 
 <div id="searchBox">
-  <input type="text" id="searchInput" placeholder="Search...">
+  <input type="text" id="searchInput">
+  <span id="placeholder">Search...</span>
   <ul id="suggestions"></ul>
 </div>
 
@@ -208,7 +209,7 @@
   function selectMarker(marker) {
     // Tyhjennetään ehdotukset
     suggestions.innerHTML = '';
-    searchInput.value = searchInput;
+    searchInput.value = marker.data.name;
 
     // Zoomataan ja avataan info
     map.setView([marker.data.lat, marker.data.lon], 15);
