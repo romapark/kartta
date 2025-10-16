@@ -111,7 +111,7 @@
 
         // Canvas-markerien click-event
         marker.on('click', () => {
-          document.querySelector(".info-name-value").textContent = r.name;
+          document.querySelector(".info-name").textContent = r.name;
           document.querySelector(".info-dates-value").textContent = `${r.season_start} – ${r.season_end}`;
           document.querySelector(".info-parks-value").textContent = ["pro","medium","beginner","superpipe","minipipe"].filter(f => r[f]).join(', ');
           document.querySelector(".info-condition-value").textContent = r.park_condition;
