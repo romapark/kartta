@@ -70,23 +70,20 @@
 
 <!-- Kartta ---------------->
 <script>
-  // Luodaan kartta
-  var map = L.map('map').setView([60.1699, 24.9384], 5); // Helsinki
+  // Luodaan kartta yhdellä kertaa ja poistetaan oletuspainike
+  var map = L.map('map', {
+      zoomControl: false
+  }).setView([60.1699, 24.9384], 5);
 
   // Lisätään OpenStreetMap-laatat
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '© OpenStreetMap'
+      maxZoom: 19,
+      attribution: '© OpenStreetMap'
   }).addTo(map);
-
-  // Poistetaan oletuspainike kartalta
-  var map = L.map('map', {
-      zoomControl: false
-  });
 
   // Lisätään zoom-painike uuteen paikkaan
   L.control.zoom({
-      position: 'topright' // vaihtoehdot: topleft, topright, bottomleft, bottomright
+      position: 'topright' // topleft, topright, bottomleft, bottomright
   }).addTo(map);
 </script>
 
