@@ -8,6 +8,7 @@ body, html {
 #container {
   display: flex;
   height: 100%;
+	position: relative;
 }
 
 /* ---Filter laatikko----------------------------------------- */
@@ -19,6 +20,7 @@ body, html {
 	border: 1px solid #152843;
 	display: flex;
   flex-direction: column;
+	background: white;
 }
 
 #filters-content {
@@ -62,6 +64,16 @@ body, html {
 /* ---Info laatikko-----------------------------------------------*/
 #infoBox {
 	display:none;
+	border: 1px solid #152843;
+	border-radius: 10px;
+	background: white;
+	position: absolute;
+	left: 13.1em;
+	top: 0.1em;      /* 1em marginaali ylhäällä */
+	bottom: 0.1em;
+	z-index: 1000;
+
+	
 }
 
 #infoBox.visible {
