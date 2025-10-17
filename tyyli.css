@@ -1,14 +1,14 @@
 body, html {
   height: 100%;
   margin: 0;
-  font-family: "Arial", sans-serif; 
-  font-size: 14px; 
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
 }
 
 #container {
   display: flex;
   height: 100%;
-	position: relative;
+  position: relative;
 }
 
 /* ---Filter laatikko----------------------------------------- */
@@ -30,8 +30,9 @@ body, html {
 }
 
 #filterBox fieldset {
-	border: none;
-  border-bottom: 1px solid #152843;  /* laatikon reunus */
+  border: none;
+  border-bottom: 1px solid #152843;
+  margin-bottom: 0.5em;
 }
 
 #filterBox legend {
@@ -42,14 +43,15 @@ body, html {
   
 }
 
+/*
 #filterButton {
-	background-color: #152843; /* taustaväri */
-  color: white;              /* tekstin väri */
+	background-color: #152843; 
+  color: white;              
 	font-weight: bold;
-  border: none;              /* reunus */
-  padding: 10px 20px;        /* sisämarginaalit */
-  border-radius: 13px;        /* pyöristetyt kulmat */
-  cursor: pointer;           /* hiiren osoitin */
+  border: none;              
+  padding: 10px 20px;        
+  border-radius: 13px;       
+  cursor: pointer;          
 	transition: background 0.2s;
 }
 
@@ -60,6 +62,7 @@ body, html {
 #filterButton:active {
   background-color: #0f1a2b;
 }
+*/
 
 /* ---Info laatikko-----------------------------------------------*/
 #infoBox {
@@ -77,6 +80,7 @@ body, html {
 	padding-top: 0.8em;
 	box-sizing: border-box;
 	box-shadow:0 0 5px rgba(0,0,0,0.3);
+	overflow-y: auto;
 }
 
 #infoBox.visible {
@@ -86,15 +90,17 @@ body, html {
 #info-name {
 	font-weight: bold;
 	font-size: 1.4em;
+	margin-top: 0.2em;
 }
 
 h3 {
 	font-size: 1.1em;
+	margin-bottom: 0.3em;
 }
 
 #closeInfoButton {
 	display: inline-block;
-	width: 24px;           /* Neliön leveys */
+	width: 24px;          
   height: 24px;
 	background-color: white;
   border: 1px solid #152843;
@@ -147,29 +153,26 @@ h3 {
 	overflow-y:auto;
 }
 
-/* Lista, kun ei tuloksia */
-.suggestion-no-results {
+.no-results {
   padding: 4px;
   color: #888;
-  list-style: none; /* Poistaa mahdolliset pisteet */
+  list-style: none;
 }
 
-/* Listaehdotukset */
-.suggestion-item {
+#suggestions li {
   padding: 4px 6px;
   cursor: pointer;
   list-style: none;
-  background-color: white;        /* määrittele lähtötaustaväri */
-  transition: background-color 0.2s; /* pehmeä hover-efekti */
+  background-color: white;
+  transition: background-color 0.2s;
 }
 
-/*Hover-tila */
-.suggestion-item:hover {
+#suggestions li:hover {
   background: #eee;
 }
 
 /*---kartta-----------------------------------------------------------------*/
 #map {
-	flex: 1;           /* vie loput tilasta */
+	flex: 1;           
 	height: 100%;
 }
