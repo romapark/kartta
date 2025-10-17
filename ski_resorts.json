@@ -26495,7 +26495,7 @@
   },
   {
     "name": "Abisko",
-    "country": "Norway",
+    "country": "Sweden",
     "status": "operating",
     "vertical_m": "502",
     "lift_count": "1",
@@ -26840,7 +26840,7 @@
   },
   {
     "name": "Alpine Snowsports Aldershot",
-    "country": "United Kingdom (England)",
+    "country": "United Kingdom",
     "status": "operating",
     "lat": "51.256386",
     "lon": "-0.749005"
@@ -27001,7 +27001,7 @@
   },
   {
     "name": "Ankenes Alpinanlegg",
-    "country": "Sweden",
+    "country": "Norway",
     "vertical_m": "316",
     "lift_count": "2",
     "lat": "68.413223",
@@ -27633,7 +27633,7 @@
   },
   {
     "name": "Baili",
-    "country": "Lithuania",
+    "country": "Latvia",
     "status": "operating",
     "vertical_m": "27",
     "lift_count": "7",
@@ -28248,7 +28248,7 @@
   },
   {
     "name": "Bjørkelangen skisenter",
-    "country": "Sweden",
+    "country": "Norway",
     "status": "operating",
     "vertical_m": "101",
     "lift_count": "1",
@@ -28257,7 +28257,7 @@
   },
   {
     "name": "Björkliden",
-    "country": "Norway",
+    "country": "Sweden",
     "status": "operating",
     "vertical_m": "509",
     "lift_count": "5",
@@ -28301,7 +28301,7 @@
   },
   {
     "name": "Bleikvassli skibakke",
-    "country": "Sweden",
+    "country": "Norway",
     "status": "operating",
     "vertical_m": "39",
     "lift_count": "1",
@@ -28448,7 +28448,7 @@
   },
   {
     "name": "Bornholms Ski Venner",
-    "country": "Sweden",
+    "country": "Denmark",
     "status": "operating",
     "lat": "55.184570",
     "lon": "14.952781"
@@ -29920,7 +29920,7 @@
   },
   {
     "name": "CopenHill",
-    "country": "Sweden",
+    "country": "Denmark",
     "status": "operating",
     "vertical_m": "0",
     "lift_count": "5",
@@ -30137,7 +30137,7 @@
   },
   {
     "name": "Dąbrówka",
-    "country": "Lithuania",
+    "country": "Poland",
     "status": "operating",
     "vertical_m": "36",
     "lift_count": "1",
@@ -30552,7 +30552,7 @@
   },
   {
     "name": "Dundret / Gallivare",
-    "country": "Norway",
+    "country": "Sweden",
     "status": "operating",
     "vertical_m": "330",
     "lift_count": "8",
@@ -30639,7 +30639,7 @@
   },
   {
     "name": "Egļukalns",
-    "country": "Lithuania",
+    "country": "Latvia",
     "status": "operating",
     "vertical_m": "35",
     "lift_count": "4",
@@ -31498,7 +31498,7 @@
   },
   {
     "name": "Fjätervålen",
-    "country": "Norway",
+    "country": "Sweden",
     "vertical_m": "376",
     "lift_count": "4",
     "lat": "61.938770",
@@ -32181,7 +32181,7 @@
   },
   {
     "name": "Germundö Alpin",
-    "country": "Sweden",
+    "country": "Finland",
     "status": "operating",
     "vertical_m": "39",
     "lift_count": "1",
@@ -32327,7 +32327,7 @@
   },
   {
     "name": "Glomfjord Alpinsenter",
-    "country": "Sweden",
+    "country": "Norway",
     "status": "operating",
     "vertical_m": "194",
     "lift_count": "2",
@@ -32784,7 +32784,7 @@
   },
   {
     "name": "Grong skisenter",
-    "country": "Sweden",
+    "country": "Norway",
     "status": "operating",
     "vertical_m": "451",
     "lift_count": "4",
@@ -32820,7 +32820,7 @@
   },
   {
     "name": "Grovelfjall",
-    "country": "Norway",
+    "country": "Sweden",
     "vertical_m": "157",
     "lift_count": "6",
     "lat": "62.083498",
@@ -33574,7 +33574,7 @@
   },
   {
     "name": "Hetta Hiihtomaa",
-    "country": "Norway",
+    "country": "Finland",
     "status": "operating",
     "vertical_m": "98",
     "lift_count": "2",
@@ -34067,7 +34067,7 @@
   },
   {
     "name": "Holtanlia",
-    "country": "Sweden",
+    "country": "Norway",
     "status": "operating",
     "vertical_m": "334",
     "lift_count": "1",
@@ -34228,7 +34228,7 @@
   },
   {
     "name": "Hovfjället",
-    "country": "Norway",
+    "country": "Sweden",
     "status": "operating",
     "vertical_m": "147",
     "lift_count": "5",
@@ -34815,7 +34815,7 @@
   },
   {
     "name": "Jonavos slidinėjimo centras",
-    "country": "Latvia",
+    "country": "Lithuania",
     "status": "operating",
     "vertical_m": "23",
     "lift_count": "1",
@@ -34989,7 +34989,7 @@
   },
   {
     "name": "Kalita Kalnas",
-    "country": "Latvia",
+    "country": "Lithuania",
     "status": "operating",
     "vertical_m": "36",
     "lift_count": "2",
@@ -35070,7 +35070,7 @@
   },
   {
     "name": "Kamparkalns",
-    "country": "Sweden",
+    "country": "Latvia",
     "status": "operating",
     "vertical_m": "31",
     "lift_count": "2",
@@ -35670,7 +35670,7 @@
   },
   {
     "name": "Kläppen",
-    "country": "Finland",
+    "country": "Sweden",
     "status": "operating",
     "vertical_m": "297",
     "lift_count": "22",
@@ -35679,7 +35679,7 @@
   },
   {
     "name": "Klövsjö / Storhogna",
-    "country": "Finland",
+    "country": "Sweden",
     "status": "operating",
     "vertical_m": "419",
     "lift_count": "17",
@@ -35724,7 +35724,7 @@
   },
   {
     "name": "Knockhatch Ski & Snowboard Centre",
-    "country": "France",
+    "country": "United Kingdom / UK",
     "status": "operating",
     "vertical_m": "18",
     "lift_count": "2",
@@ -35945,7 +35945,7 @@
   },
   {
     "name": "Kongstind",
-    "country": "Sweden",
+    "country": "Norway",
     "lat": "68.249757",
     "lon": "14.533385"
   },
@@ -37447,7 +37447,7 @@
   },
   {
     "name": "Lemberga Hūte",
-    "country": "Sweden",
+    "country": "Latvia",
     "status": "operating",
     "vertical_m": "51",
     "lift_count": "4",
@@ -37964,7 +37964,7 @@
   },
   {
     "name": "Lierne skisenter",
-    "country": "Sweden",
+    "country": "Norway",
     "status": "operating",
     "vertical_m": "139",
     "lift_count": "1",
@@ -38016,7 +38016,7 @@
   },
   {
     "name": "Lindvallen",
-    "country": "Finland",
+    "country": "Sweden",
     "status": "operating",
     "vertical_m": "294",
     "lift_count": "35",
@@ -38145,7 +38145,7 @@
   },
   {
     "name": "Lofoten",
-    "country": "Sweden",
+    "country": "Norway",
     "status": "operating",
     "vertical_m": "299",
     "lat": "68.133516",
@@ -38162,7 +38162,7 @@
   },
   {
     "name": "Logoisk",
-    "country": "Lithuania",
+    "country": "Belarus",
     "vertical_m": "80",
     "lift_count": "3",
     "lat": "54.183574",
@@ -39133,7 +39133,7 @@
   },
   {
     "name": "Meråker alpinsenter",
-    "country": "Sweden",
+    "country": "Norway",
     "status": "operating",
     "vertical_m": "459",
     "lift_count": "6",
@@ -40110,7 +40110,7 @@
   },
   {
     "name": "Narvik",
-    "country": "Sweden",
+    "country": "Norway",
     "status": "operating",
     "vertical_m": "550",
     "lift_count": "5",
@@ -40475,7 +40475,7 @@
   },
   {
     "name": "Nybro Backen",
-    "country": "Finland",
+    "country": "Sweden",
     "status": "operating",
     "vertical_m": "167",
     "lift_count": "3",
@@ -40881,7 +40881,7 @@
   },
   {
     "name": "Ormbergsbacken",
-    "country": "Finland",
+    "country": "Sweden",
     "status": "operating",
     "vertical_m": "35",
     "lift_count": "1",
@@ -40906,7 +40906,7 @@
   },
   {
     "name": "Oslo Skisenter",
-    "country": "Sweden",
+    "country": "Norway",
     "status": "operating",
     "vertical_m": "156",
     "lift_count": "4",
