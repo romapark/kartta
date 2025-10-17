@@ -3,257 +3,183 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Karttaesimerkki</title>
+  <title>Ski Resort Map</title>
 
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <link rel="stylesheet" href="tyyli.css" />
-  
 </head>
 <body>
 
-<div id="searchBox">
-  <input type="text" id="searchInput" placeholder="Search...">
-  <ul id="suggestions"></ul>
-</div>
+  <!-- 🔎 Haku -->
+  <div id="searchBox">
+    <input type="text" id="searchInput" placeholder="Search resort...">
+    <ul id="suggestions"></ul>
+  </div>
 
-<div id="container">
-  <div id="filterBox">
-    <div id="filters-content">
-      <fieldset>
-        <legend>Ski Resort</legend>
+  <div id="container">
+
+    <!-- 🧩 Suodattimet -->
+    <div id="filterBox">
+      <div id="filters-content">
+        <fieldset>
+          <legend>Ski Resort</legend>
           <label for="countryInput">Select country:</label><br>
           <input id="countryInput" type="text" placeholder="Country..." list="countryList" />
           <datalist id="countryList"></datalist>
-      </fieldset>
-      <fieldset>
-        <legend>Slopes</legend>
-      </fieldset>
-      <fieldset>
-        <legend>Parks</legend>
-        <label><input type="checkbox" id="pro"> Pro</label><br>
-        <label><input type="checkbox" id="medium"> Medium</label><br>
-        <label><input type="checkbox" id="beginner"> Beginner</label><br>
-        <label><input type="checkbox" id="superpipe"> Superpipe</label><br>
-        <label><input type="checkbox" id="minipipe"> Minipipe</label><br>
-        <label><input type="checkbox" id="moguls"> Moguls</label>
-      </fieldset>
-      <fieldset>
-        <legend>Transport</legend>
-      </fieldset>
+        </fieldset>
+
+        <fieldset>
+          <legend>Parks</legend>
+          <label><input type="checkbox" id="pro"> Pro</label><br>
+          <label><input type="checkbox" id="medium"> Medium</label><br>
+          <label><input type="checkbox" id="beginner"> Beginner</label><br>
+          <label><input type="checkbox" id="superpipe"> Superpipe</label><br>
+          <label><input type="checkbox" id="minipipe"> Minipipe</label><br>
+          <label><input type="checkbox" id="moguls"> Moguls</label>
+        </fieldset>
+      </div>
     </div>
-    <button id="filterButton">FILTER</button>
+
+    <!-- ℹ️ InfoBox -->
+    <div id="infoBox">
+      <span id="closeInfoButton">&times;</span>
+      <div id="infoContent">
+        <h2 id="info-name"></h2>
+        <div><strong>Season:</strong> <span id="info-dates-value"></span></div>
+        <div><strong>Parks:</strong> <span id="info-parks-value"></span></div>
+        <div><strong>Condition:</strong> <span id="info-condition-value"></span></div>
+      </div>
+    </div>
+
+    <!-- 🗺️ Kartta -->
+    <div id="map"></div>
+
   </div>
 
-<div id="infoBox">
-  <span id="closeInfoButton">&times;</span>
-  <div id="infoContent">
-    <div id="info-name"></div>
-    <div id="info-dates">
-      <h3>Season dates</h3>
-      <div id="info-dates-value"></div>
-    </div>
-    <div id="info-parks">
-      <h3>Parks</h3>
-      <div id="info-parks-value"></div>
-    </div>
-    <div id="info-condition">
-      <h3>Park condition</h3>
-      <div id="info-condition-value"></div>
-    </div>
-  </div>
-</div>
+  <!-- 📜 Leaflet -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
+  <!-- ⚙️ Sovelluslogiikka -->
+  <script>
+  document.addEventListener("DOMContentLoaded", async () => {
 
-  <div id="map"></div>
-</div>
-
-<!-- Leafletin JS -->
-<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-
-
-<!-- Kartta ---------------->
-<script>
-  // Luodaan kartta yhdellä kertaa ja poistetaan oletuspainike
-  var map = L.map('map', {
-      zoomControl: false
-  }).setView([60.1699, 24.9384], 5);
-
-  // Lisätään OpenStreetMap-laatat
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    // ==== KARTTA ====
+    const map = L.map('map', { zoomControl: false }).setView([60.17, 24.94], 5);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 15,
       attribution: '© OpenStreetMap'
-  }).addTo(map);
+    }).addTo(map);
+    L.control.zoom({ position: 'topright' }).addTo(map);
 
-  // Lisätään zoom-painike uuteen paikkaan
-  L.control.zoom({
-      position: 'topright' // topleft, topright, bottomleft, bottomright
-  }).addTo(map);
-</script>
+    // ==== ELEMENTIT ====
+    const infoBox = document.getElementById('infoBox');
+    const closeBtn = document.getElementById('closeInfoButton');
+    const searchInput = document.getElementById('searchInput');
+    const suggestions = document.getElementById('suggestions');
+    const datalist = document.getElementById('countryList');
 
-<!-- InfoBoxi ja markkerit ----------------->
-<script>
-  const infoBox = document.getElementById('infoBox');
-  const closeBtn = document.getElementById('closeInfoButton');
-  const infoContent = document.getElementById('infoContent');
+    closeBtn.onclick = () => infoBox.classList.remove('visible');
 
-  closeBtn.addEventListener('click', () => {      // infoboxin sulkeminen napista
-    infoBox.classList.remove('visible');
-  });
+    let markers = [];
+    let data = [];
 
-  let markers = []; // tallennetaan kaikki markkerit
-  let allData = []; //tallentaa kaiken json tiedon
-  
-  // Luodaan tietotaulut
-  fetch('ski_resorts.json')
-    .then(r => r.json())
-    .then(data => {
-      allData = data;
-      data.forEach(r => {
-        // Canvas-pohjainen marker
-        const marker = L.circleMarker([r.lat, r.lon], {
-          radius: 2,               // markerin koko
-          color: '#0074D9',        // reunaväri
-          fillColor: '#0074D9',    // täyttöväri
-          fillOpacity: 0.7
-        }).addTo(map);
-
-        // Tallennetaan data markerille (jos tarvitaan myöhemmin)
-        marker.data = r;
-        markers.push(marker);
-
-        // Canvas-markerien click-event
-        marker.on('click', () => {
-          document.querySelector("#info-name").textContent = r.name;
-          document.querySelector("#info-dates-value").textContent = `${r.season_start} – ${r.season_end}`;
-          document.querySelector("#info-parks-value").textContent = ["pro","medium","beginner","superpipe","minipipe"].filter(f => r[f]).join(', ');
-          document.querySelector("#info-condition-value").textContent = r.park_condition;
-
-          infoBox.classList.add('visible'); // näyttää infoboxin
-        });
-      });
-
-      //luodaan countrie datalista
-      const countries = [...new Set(data.map(r => r.country))].sort();
-      const datalist = document.getElementById("countryList");
-      countries.forEach(c => {
-        const opt = document.createElement("option");
-        opt.value = c;
-        datalist.appendChild(opt);
-      });
-    });
-</script>
-
-
-<!-- Filteröinti ----------------->
-<script>
-
-
-  // Filtterin logiikka
-  document.getElementById('filterButton').addEventListener('click', () => {
-    const pro = document.getElementById('pro').checked;
-    const medium = document.getElementById('medium').checked;
-    const beginner = document.getElementById('beginner').checked;
-    const superpipe = document.getElementById('superpipe').checked;
-    const minipipe = document.getElementById('minipipe').checked;
-    const moguls = document.getElementById('moguls').checked;
-    const country = document.getElementById('countryInput').value.trim().toLowerCase();
-
-
-    markers.forEach(m => {
-      const d = m.data;
-      const matchCountry = !country || (d.country && d.country.toLowerCase() === country);
-      const matchParks = (!pro || d.pro) &&
-                   (!medium || d.medium) &&
-                   (!beginner || d.beginner) &&
-                   (!superpipe || d.superpipe) &&
-                   (!minipipe || d.minipipe)&&
-                   (!moguls || d.moguls);
-
-      const show = matchCountry && matchParks;
-
-      if (show) {
-        m.addTo(map);
-      } else {
-        map.removeLayer(m);
-      }
-    });
-    // Zoomaa näkyviin jääviin markkereihin
-    const visible = markers.filter(m => map.hasLayer(m));
-    if (visible.length > 0) {
-      const group = L.featureGroup(visible);
-      map.fitBounds(group.getBounds());
-    }
-  });
-
-  // --- Kun käyttäjä vaihtaa maata (input change) ---
-  document.getElementById("countryInput").addEventListener("change", () => {
-    document.getElementById("filterButton").click();
-  });
-
-
-</script>
-
-
-<!-- Hakulaatikko ----------------->
-<script>
-
-  const searchInput = document.getElementById('searchInput');
-  const suggestions = document.getElementById('suggestions');
- 
-  // Reagoidaan käyttäjän kirjoitukseen
-  searchInput.addEventListener('input', () => {
-    const query = searchInput.value.toLowerCase().trim();
-    suggestions.innerHTML = ''; // Tyhjennä vanhat ehdotukset
-
-    if (!query) return; // Jos hakukenttä tyhjä, lopeta
-
-    // Etsitään osumat nimistä
-    const matches = markers
-      .filter(m => m.data.name && m.data.name.toLowerCase().includes(query))
-      //järjestetään osumat
-      .sort((a, b) => {
-        const nameA = a.data.name.toLowerCase();
-        const nameB = b.data.name.toLowerCase();
-        const indexA = nameA.indexOf(query);
-        const indexB = nameB.indexOf(query);
-        // Pienempi indeksi (eli alkuun osuva) menee ensin
-        return indexA - indexB;
-      })
-      .slice(0, 10); // Näytetään enintään 10 ehdotusta
-
-    // Jos ei tuloksia
-    if (matches.length === 0) {
-      const li = document.createElement('li');
-      li.textContent = 'Ei tuloksia';
-      li.classList.add('suggestion-no-results'); // CSS-luokka
-      suggestions.appendChild(li);
+    // ==== LADATAAN DATA ====
+    try {
+      data = await (await fetch('ski_resorts.json')).json();
+    } catch (err) {
+      console.error("JSON lataus epäonnistui:", err);
       return;
     }
 
-    // Luodaan lista osumista
-    matches.forEach(m => {
-      const li = document.createElement('li');
-      li.textContent = m.data.name;
-      li.classList.add('suggestion-item'); // CSS-luokka
-      li.addEventListener('click', () => selectMarker(m));
-      suggestions.appendChild(li);
+    // ==== MARKKERIT ====
+    data.forEach(r => {
+      const m = createMarker(r).addTo(map);
+      markers.push(m);
     });
+
+    // ==== TÄYTÄ MAAT DATALISTIIN ====
+    const countries = [...new Set(data.map(r => r.country))].sort();
+    datalist.innerHTML = countries.map(c => `<option value="${c}">`).join('');
+
+    // ==== FILTTERIT ====
+    document.querySelectorAll('#filterBox input').forEach(el => {
+      el.addEventListener('input', applyFilters);
+    });
+
+    // ==== HAKU ====
+    searchInput.addEventListener('input', handleSearch);
+
+    // ==== FUNKTIOT ====
+    function createMarker(r) {
+      const marker = L.circleMarker([r.lat, r.lon], {
+        radius: 2,
+        color: '#0074D9',
+        fillColor: '#0074D9',
+        fillOpacity: 0.7
+      });
+      marker.data = r;
+      marker.on('click', () => showInfo(r));
+      return marker;
+    }
+
+    function showInfo(r) {
+      document.getElementById("info-name").textContent = r.name;
+      document.getElementById("info-dates-value").textContent = `${r.season_start} – ${r.season_end}`;
+      document.getElementById("info-parks-value").textContent = ["pro","medium","beginner","superpipe","minipipe","moguls"]
+        .filter(f => r[f]).join(', ');
+      document.getElementById("info-condition-value").textContent = r.park_condition || 'Unknown';
+      infoBox.classList.add('visible');
+    }
+
+    function applyFilters() {
+      const country = document.getElementById('countryInput').value.trim().toLowerCase();
+      const filters = ['pro','medium','beginner','superpipe','minipipe','moguls']
+        .reduce((acc, id) => ({ ...acc, [id]: document.getElementById(id).checked }), {});
+
+      markers.forEach(m => {
+        const d = m.data;
+        const matchCountry = !country || d.country?.toLowerCase().includes(country);
+        const matchParks = Object.entries(filters).every(([k, v]) => !v || d[k]);
+        if (matchCountry && matchParks) m.addTo(map);
+        else map.removeLayer(m);
+      });
+
+      const visible = markers.filter(m => map.hasLayer(m));
+      if (visible.length) map.fitBounds(L.featureGroup(visible).getBounds());
+    }
+
+    function handleSearch() {
+      const query = searchInput.value.toLowerCase().trim();
+      suggestions.innerHTML = '';
+      if (!query) return;
+
+      const matches = markers
+        .filter(m => m.data.name?.toLowerCase().includes(query))
+        .sort((a, b) => a.data.name.localeCompare(b.data.name))
+        .slice(0, 10);
+
+      if (!matches.length) {
+        suggestions.innerHTML = '<li class="no-results">Ei tuloksia</li>';
+        return;
+      }
+
+      matches.forEach(m => {
+        const li = document.createElement('li');
+        li.textContent = m.data.name;
+        li.onclick = () => selectMarker(m);
+        suggestions.appendChild(li);
+      });
+    }
+
+    function selectMarker(marker) {
+      suggestions.innerHTML = '';
+      searchInput.value = marker.data.name;
+      map.setView([marker.data.lat, marker.data.lon], 14);
+      marker.fire('click');
+    }
+
   });
-
-  // Kun käyttäjä valitsee kohteen
-  function selectMarker(marker) {
-    // Tyhjennetään ehdotukset
-    suggestions.innerHTML = '';
-    searchInput.value = marker.data.name;
-
-    // Zoomataan ja avataan info
-    map.setView([marker.data.lat, marker.data.lon], 15);
-
-    // Simuloidaan klikkausta, jos haluat näyttää infon laatikossa
-    if (marker.fire) marker.fire('click');
-  }
-
-</script>
+  </script>
 
 </body>
 </html>
