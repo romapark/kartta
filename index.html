@@ -185,7 +185,10 @@
     }
   });
 
-  
+  // --- Kun käyttäjä vaihtaa maata (input change) ---
+  document.getElementById("countryInput").addEventListener("change", () => {
+    document.getElementById("filterButton").click();
+  });
 
 
 </script>
