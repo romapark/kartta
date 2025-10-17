@@ -21,6 +21,9 @@
     <div id="filters-content">
       <fieldset>
         <legend>Ski Resort</legend>
+          <label for="countryInput">Valitse maa:</label><br>
+          <input id="countryInput" type="text" placeholder="Kirjoita maa" list="countryList" />
+          <datalist id="countryList"></datalist>
       </fieldset>
       <fieldset>
         <legend>Slopes</legend>
@@ -163,7 +166,7 @@
 
   const searchInput = document.getElementById('searchInput');
   const suggestions = document.getElementById('suggestions');
-
+ 
   // Reagoidaan käyttäjän kirjoitukseen
   searchInput.addEventListener('input', () => {
     const query = searchInput.value.toLowerCase().trim();
