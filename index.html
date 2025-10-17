@@ -21,8 +21,8 @@
     <div id="filters-content">
       <fieldset>
         <legend>Ski Resort</legend>
-          <label for="countryInput">Valitse maa:</label><br>
-          <input id="countryInput" type="text" placeholder="Kirjoita maa" list="countryList" />
+          <label for="countryInput">Select country:</label><br>
+          <input id="countryInput" type="text" placeholder="Country..." list="countryList" />
           <datalist id="countryList"></datalist>
       </fieldset>
       <fieldset>
@@ -80,7 +80,7 @@
 
   // Lisätään OpenStreetMap-laatat
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 19,
+      maxZoom: 15,
       attribution: '© OpenStreetMap'
   }).addTo(map);
 
@@ -101,11 +101,13 @@
   });
 
   let markers = []; // tallennetaan kaikki markkerit
+  let allData = []; //tallentaa kaiken json tiedon
   
   // Luodaan tietotaulut
   fetch('ski_resorts.json')
     .then(r => r.json())
     .then(data => {
+      allData = data;
       data.forEach(r => {
         // Canvas-pohjainen marker
         const marker = L.circleMarker([r.lat, r.lon], {
@@ -129,12 +131,23 @@
           infoBox.classList.add('visible'); // näyttää infoboxin
         });
       });
+
+      //luodaan countrie datalista
+      const countries = [...new Set(data.map(r => r.country))].sort();
+      const datalist = document.getElementById("countryList");
+      countries.forEach(c => {
+        const opt = document.createElement("option");
+        opt.value = c;
+        datalist.appendChild(opt);
+      });
     });
 </script>
 
 
 <!-- Filteröinti ----------------->
 <script>
+
+
   // Filtterin logiikka
   document.getElementById('filterButton').addEventListener('click', () => {
     const pro = document.getElementById('pro').checked;
@@ -142,14 +155,21 @@
     const beginner = document.getElementById('beginner').checked;
     const superpipe = document.getElementById('superpipe').checked;
     const minipipe = document.getElementById('minipipe').checked;
+    const moguls = document.getElementById('moguls').checked;
+    const country = document.getElementById('countryInput').value.trim().toLowerCase();
+
 
     markers.forEach(m => {
       const d = m.data;
-      const show = (!pro || d.pro) &&
+      const matchCountry = !country || (d.country && d.country.toLowerCase() === country);
+      const matchParks = (!pro || d.pro) &&
                    (!medium || d.medium) &&
                    (!beginner || d.beginner) &&
                    (!superpipe || d.superpipe) &&
-                   (!minipipe || d.minipipe);
+                   (!minipipe || d.minipipe)&&
+                   (!moguls || d.moguls);
+
+      const show = matchCountry && matchParks;
 
       if (show) {
         m.addTo(map);
@@ -157,7 +177,17 @@
         map.removeLayer(m);
       }
     });
+    // Zoomaa näkyviin jääviin markkereihin
+    const visible = markers.filter(m => map.hasLayer(m));
+    if (visible.length > 0) {
+      const group = L.featureGroup(visible);
+      map.fitBounds(group.getBounds());
+    }
   });
+
+  
+
+
 </script>
 
 
