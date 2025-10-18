@@ -166,18 +166,27 @@
       infoBox.classList.add('visible');
     }
 
-    function showIfExists(elementId, value, prefix = "", customValue = null) {
+    function showIfExists(elementId, value, prefix = "", customValue = null, falseValue = "None") {
       const el = document.getElementById(elementId);
 
-      if (value !== undefined && value !== null && value !== "") {
-        // Jos value on boolean true ja customValue annettu, käytä customValuea
-        const displayValue = (value === true && customValue !== null) ? customValue : value;
-
-        el.innerHTML = prefix + displayValue;
-        el.style.display = "inline-block"; // tai block tarpeen mukaan
-      } else {
+      // Jos arvo on undefined tai null, piilotetaan elementti
+      if (value === undefined || value === null || value === "") {
         el.style.display = "none";
+        return;
       }
+
+      let displayValue;
+
+      if (value === true && customValue !== null) {
+        displayValue = customValue;          // true -> käytä customValuea
+      } else if (value === false) {
+        displayValue = falseValue;           // false -> käytä falseValuea ("None")
+      } else {
+        displayValue = value;                // muulloin näytä itse arvo
+      }
+
+      el.innerHTML = prefix + displayValue;
+      el.style.display = "inline-block";     // tai block tarpeen mukaan
     }
 
     function applyFilters() {
