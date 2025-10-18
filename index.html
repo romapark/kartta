@@ -55,9 +55,14 @@
     <div id="infoBox">
       <span id="closeInfoButton">&times;</span>
       <div id="infoContent">
-        <h2 id="info-name"></h2>
+
+        <h2 id="resort-name"></h2>
         <p id="overall-description-text"></p>
-        <div><strong>Season:</strong> <span id="info-dates-value"></span></div>
+
+        <h3>Resort info</h3>
+        <div><strong>Season:</strong> <span id="season-text"></span></div>
+
+        <h3>Terrain park</h3>
         <div><strong>Parks:</strong> <span id="info-parks-value"></span></div>
         <div><strong>Condition:</strong> <span id="info-condition-value"></span></div>
       </div>
@@ -134,9 +139,9 @@
     }
 
     function showInfo(r) {
-      document.getElementById("info-name").textContent = r.name;
+      document.getElementById("resort-name").textContent = r.name;
       document.getElementById("overall-description-text").textContent = r.overall_description;
-      document.getElementById("info-dates-value").textContent = `${r.season_start} – ${r.season_end}`;
+      document.getElementById("season-text").textContent = `${r.season_start} – ${r.season_end}`;
       document.getElementById("info-parks-value").textContent = ["xl_park", "l_park","m_park","s_park","superpipe","minipipe","moguls"]
         .filter(f => r[f]).join(', ');
       document.getElementById("info-condition-value").textContent = r.park_condition || 'Unknown';
