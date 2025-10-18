@@ -146,13 +146,13 @@
       document.getElementById("resort-name").textContent = r.name;
       document.getElementById("overall-description-text").textContent = r.overall_description;
       document.getElementById("season-text").textContent = `${r.season_start} – ${r.season_end}`;
-      document.getElementById("height-text").textContent = `${vertical_m}m`;
-      document.getElementById("lift-count-text").textContent = lift_count;
-      document.getElementById("run-count-text").textContent = run_count;
-      document.getElementById("green-run-text").innerHTML = "<span style='color:green'>&#9670;</span> " + green_run;
-      document.getElementById("blue-run-text").innerHTML  = "<span style='color:blue'>&#9670;</span> " + blue_run;
-      document.getElementById("red-run-text").innerHTML   = "<span style='color:red'>&#9670;</span> " + red_run;
-      document.getElementById("black-run-text").innerHTML = "<span style='color:black'>&#9670;</span> " + black_run;
+      document.getElementById("height-text").textContent = `${r.vertical_m}m`;
+      document.getElementById("lift-count-text").textContent = r.lift_count;
+      document.getElementById("run-count-text").textContent = r.run_count;
+      document.getElementById("green-run-text").innerHTML = "<span style='color:green'>&#9670;</span> " + r.green_run;
+      document.getElementById("blue-run-text").innerHTML  = "<span style='color:blue'>&#9670;</span> " + r.blue_run;
+      document.getElementById("red-run-text").innerHTML   = "<span style='color:red'>&#9670;</span> " + r.red_run;
+      document.getElementById("black-run-text").innerHTML = "<span style='color:black'>&#9670;</span> " + r.black_run;
 
       document.getElementById("info-parks-value").textContent = ["xl_park", "l_park","m_park","s_park","superpipe","minipipe","moguls"]
         .filter(f => r[f]).join(', ');
