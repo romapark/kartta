@@ -155,10 +155,10 @@
       showIfExists("red-run-text", r.red_run, "<span class='diamond red'>&#9670;</span> ");
       showIfExists("black-run-text", r.black_run, "<span class='diamond black'>&#9670;</span> ");
 
-      showIfExists("s-text", r.s_park);
-      showIfExists("m-text", r.m_park);
-      showIfExists("l-text", r.l_park);
-      showIfExists("xl-text", r.xl_park);
+      showIfExists("s-text", r.s_park, "", "S");
+      showIfExists("m-text", r.m_park, "", "M");
+      showIfExists("l-text", r.l_park, "", "L");
+      showIfExists("xl-text", r.xl_park, "", "XL");
 
       document.getElementById("info-parks-value").textContent = ["xl_park", "l_park","m_park","s_park","superpipe","minipipe","moguls"]
         .filter(f => r[f]).join(', ');
@@ -166,10 +166,14 @@
       infoBox.classList.add('visible');
     }
 
-    function showIfExists(elementId, value, prefix = "") {
+    function showIfExists(elementId, value, prefix = "", customValue = null) {
       const el = document.getElementById(elementId);
+
       if (value !== undefined && value !== null && value !== "") {
-        el.innerHTML = prefix + value;
+        // Jos value on boolean true ja customValue annettu, käytä customValuea
+        const displayValue = (value === true && customValue !== null) ? customValue : value;
+
+        el.innerHTML = prefix + displayValue;
         el.style.display = "inline-block"; // tai block tarpeen mukaan
       } else {
         el.style.display = "none";
