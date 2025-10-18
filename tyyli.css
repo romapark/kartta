@@ -11,6 +11,18 @@ body, html {
   position: relative;
 }
 
+.diamond {
+	display: inline-block;
+	transform: scaleY(1.4);
+  font-size: 1.3em;
+  margin-right: 4px;
+}
+
+.green  { color: #00aa00; }
+.blue   { color: #0066ff; }
+.red    { color: #cc0000; }
+.black  { color: #000000; }
+
 /* ---Filter laatikko----------------------------------------- */
 #filterBox {
 	width: 13em; 
