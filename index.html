@@ -34,9 +34,10 @@
 
         <fieldset>
           <legend>Parks</legend>
-          <label><input type="checkbox" id="pro"> Pro</label><br>
-          <label><input type="checkbox" id="medium"> Medium</label><br>
-          <label><input type="checkbox" id="beginner"> Beginner</label><br>
+          <label><input type="checkbox" id="xl_park"> XL</label><br>
+          <label><input type="checkbox" id="l_park"> L</label><br>
+          <label><input type="checkbox" id="m_park"> M</label><br>
+          <label><input type="checkbox" id="l_park"> S</label><br>
           <label><input type="checkbox" id="superpipe"> Superpipe</label><br>
           <label><input type="checkbox" id="minipipe"> Minipipe</label><br>
           <label><input type="checkbox" id="moguls"> Moguls</label>
@@ -134,7 +135,7 @@
     function showInfo(r) {
       document.getElementById("info-name").textContent = r.name;
       document.getElementById("info-dates-value").textContent = `${r.season_start} – ${r.season_end}`;
-      document.getElementById("info-parks-value").textContent = ["pro","medium","beginner","superpipe","minipipe","moguls"]
+      document.getElementById("info-parks-value").textContent = ["xl_park", "l_park","m_park","s_park","superpipe","minipipe","moguls"]
         .filter(f => r[f]).join(', ');
       document.getElementById("info-condition-value").textContent = r.park_condition || 'Unknown';
       infoBox.classList.add('visible');
@@ -142,7 +143,7 @@
 
     function applyFilters() {
       const country = document.getElementById('countryInput').value.trim().toLowerCase();
-      const filters = ['pro','medium','beginner','superpipe','minipipe','moguls']
+      const filters = ['xl_park', 'l_park','m_park','s_park','superpipe','minipipe','moguls']
         .reduce((acc, id) => ({ ...acc, [id]: document.getElementById(id).checked }), {});
 
       markers.forEach(m => {
