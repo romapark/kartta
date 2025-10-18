@@ -2432,7 +2432,7 @@
     "lift_count": "5",
     "lat": "44.522234",
     "lon": "-80.351553",
-    "slope_number": "37"
+    "run_count": "37"
   },
   {
     "name": "Antoine Mountin",
@@ -2459,10 +2459,10 @@
     "l_park": true,
     "m_park": true,
     "s_park": true,
-    "slope_number": "82",
-    "black": "43",
-    "red": "27",
-    "green": "11"
+    "run_count": "82",
+    "black_run": "43",
+    "red_run": "27",
+    "blue_run": "11"
   },
   {
     "name": "Asessippi",
@@ -9633,7 +9633,12 @@
     "minipipe": false,
     "park_condition": "1",
     "moguls": true,
-    "slope_number": "12"
+    "run_count": "12",
+    "black_run": "1",
+    "red_run": "4",
+    "blue_run": "3",
+    "green_run": "4",
+    "h_public_trans": true
   },
   {
     "name": "Aanemaki",
@@ -9921,10 +9926,10 @@
     "minipipe": false,
     "park_condition": "3",
     "moguls": false,
-    "slope_number": "44",
-    "black": "4",
-    "red": "23",
-    "blue": "23"
+    "run_count": "44",
+    "black_run": "4",
+    "red_run": "23",
+    "blue_run": "23"
   },
   {
     "name": "Loma-Koli",
