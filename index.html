@@ -67,6 +67,7 @@
         <div id="run-container"><span id="green-run-text"></span><span id="blue-run-text"></span><span id="red-run-text"></span><span id="black-run-text"></span></div>
 
         <h3>Terrain park</h3>
+        <div><strong>Level:</strong> <span id="info-parks-value"></span></div>
         <div><strong>Parks:</strong> <span id="info-parks-value"></span></div>
         <div><strong>Condition:</strong> <span id="info-condition-value"></span></div>
       </div>
@@ -149,8 +150,7 @@
       document.getElementById("height-text").textContent = `${r.vertical_m}m`;
       document.getElementById("lift-count-text").textContent = r.lift_count;
       document.getElementById("run-count-text").textContent = r.run_count;
-      
-      document.getElementById("green-run-text").innerHTML = "<span class='diamond green'>&#9670;</span> " + r.green_run;
+      showIfExists("green-run-text", r.green_run, "<span class='diamond green'>&#9670;</span> ");
       document.getElementById("blue-run-text").innerHTML  = "<span class='diamond blue'>&#9670;</span> " + r.blue_run;
       document.getElementById("red-run-text").innerHTML   = "<span class='diamond red'>&#9670;</span> " + r.red_run;
       document.getElementById("black-run-text").innerHTML = "<span class='diamond black'>&#9670;</span> " + r.black_run;
@@ -159,6 +159,16 @@
         .filter(f => r[f]).join(', ');
       document.getElementById("info-condition-value").textContent = r.park_condition || 'Unknown';
       infoBox.classList.add('visible');
+    }
+
+    function showIfExists(elementId, value, prefix = "") {
+      const el = document.getElementById(elementId);
+      if (value !== undefined && value !== null && value !== "") {
+        el.innerHTML = prefix + value;
+        el.style.display = "inline-block"; // tai block tarpeen mukaan
+      } else {
+        el.style.display = "none";
+      }
     }
 
     function applyFilters() {

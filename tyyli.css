@@ -109,6 +109,12 @@ h3 {
 	margin-bottom: 0.3em;
 }
 
+#run-container {
+	display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 #closeInfoButton {
 	display: inline-block;
 	width: 24px;          
