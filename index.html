@@ -151,9 +151,9 @@
       document.getElementById("lift-count-text").textContent = r.lift_count;
       document.getElementById("run-count-text").textContent = r.run_count;
       showIfExists("green-run-text", r.green_run, "<span class='diamond green'>&#9670;</span> ");
-      document.getElementById("blue-run-text").innerHTML  = "<span class='diamond blue'>&#9670;</span> " + r.blue_run;
-      document.getElementById("red-run-text").innerHTML   = "<span class='diamond red'>&#9670;</span> " + r.red_run;
-      document.getElementById("black-run-text").innerHTML = "<span class='diamond black'>&#9670;</span> " + r.black_run;
+      showIfExists("blue-run-text", r.blue_run, "<span class='diamond blue'>&#9670;</span> ");
+      showIfExists("red-run-text", r.red_run, "<span class='diamond red'>&#9670;</span> ");
+      showIfExists("black-run-text", r.black_run, "<span class='diamond black'>&#9670;</span> ");
 
       document.getElementById("info-parks-value").textContent = ["xl_park", "l_park","m_park","s_park","superpipe","minipipe","moguls"]
         .filter(f => r[f]).join(', ');
