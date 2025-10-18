@@ -15,7 +15,6 @@ body, html {
 	display: inline-block;
 	transform: scaleY(1.4);
   font-size: 1.3em;
-  margin-right: 4px;
 }
 
 .green  { color: #00aa00; }
