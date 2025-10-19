@@ -9621,6 +9621,7 @@
     "red_run": "4",
     "blue_run": "3",
     "green_run": "4",
+    "has_public_trans": true,
     "h_public_trans": true
   },
   {
@@ -19505,7 +19506,12 @@
     "superpipe": true,
     "minipipe": true,
     "park_condition": "3",
-    "moguls": false
+    "moguls": false,
+    "has_public_trans": false,
+    "h_public_trans": false,
+    "d_public_trans": false,
+    "poor_public_trans": false,
+    "car_only": true
   },
   {
     "name": "Coronet Peak",
