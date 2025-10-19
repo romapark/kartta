@@ -69,6 +69,8 @@
         <h3>Terrain park</h3>
         <div><strong>Level:</strong> <span id="s-text"></span> <span id="m-text"></span> <span id="l-text"></span> <span id="xl-text"></span></div>
         <div><strong>Condition:</strong> <span id="condition-text"></span></div>
+        <div><strong>Other features:</strong> <span id="superpipe"></span> <span id="minipipe"></span> <span id="moguls"></span> 
+
       </div>
     </div>
 
@@ -159,6 +161,9 @@
       showIfTrue("l-text", r.l_park, "L");
       showIfTrue("xl-text", r.xl_park, "XL");
       showStars("condition-text", r.park_condition, "3")
+      showIfTrue("superpipe", r.superpipe, "Superpipe");
+      showIfTrue("minipipe", r.minipipe, "Minipipe");
+      showIfTrue("moguls", r.moguls, "Moguls");
 
       
       infoBox.classList.add('visible');
