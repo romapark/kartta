@@ -154,10 +154,10 @@
       showIfExists("red-run-text", r.red_run, "<span class='diamond red'>&#9670;</span> ");
       showIfExists("black-run-text", r.black_run, "<span class='diamond black'>&#9670;</span> ");
 
-      showIfTrue("s-text", r.s_park, "S")
-      showIfTrue("m-text", r.m_park, "M")
-      showIfTrue("l-text", r.l_park, "L")
-      showIfTrue("xl-text", r.xl_park, "XL")
+      showIfTrue("s-text", r.s_park, "S");
+      showIfTrue("m-text", r.m_park, "M");
+      showIfTrue("l-text", r.l_park, "L");
+      showIfTrue("xl-text", r.xl_park, "XL");
 
       document.getElementById("info-condition-value").textContent = r.park_condition || 'Unknown';
       infoBox.classList.add('visible');
