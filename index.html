@@ -68,7 +68,6 @@
 
         <h3>Terrain park</h3>
         <div><strong>Level:</strong> <span id="s-text"></span> <span id="m-text"></span> <span id="l-text"></span> <span id="xl-text"></span></div>
-        <div><strong>Parks:</strong> <span id="info-parks-value"></span></div>
         <div><strong>Condition:</strong> <span id="info-condition-value"></span></div>
       </div>
     </div>
@@ -156,13 +155,10 @@
       showIfExists("black-run-text", r.black_run, "<span class='diamond black'>&#9670;</span> ");
 
       showIfTrue("s-text", r.s_park, "S")
-      showIfTrue("m-text", r.s_park, "M")
-      showIfTrue("l-text", r.s_park, "L")
-      showIfTrue("xl-text", r.s_park, "XL")
+      showIfTrue("m-text", r.m_park, "M")
+      showIfTrue("l-text", r.l_park, "L")
+      showIfTrue("xl-text", r.xl_park, "XL")
 
-
-      document.getElementById("info-parks-value").textContent = ["xl_park", "l_park","m_park","s_park","superpipe","minipipe","moguls"]
-        .filter(f => r[f]).join(', ');
       document.getElementById("info-condition-value").textContent = r.park_condition || 'Unknown';
       infoBox.classList.add('visible');
     }

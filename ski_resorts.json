@@ -3062,26 +3062,29 @@
     "country": "Canada",
     "region": "Alberta",
     "status": "operating",
+    "type": "skiresort",
     "vertical_m": "335",
     "lat": "50.817414",
     "lon": "-115.218528"
   },
   {
-    "name": "FQME - ÖBois Charlevoix",
+    "name": "ÖBois Charlevoix",
     "country": "Canada",
     "region": "Quebec",
     "city": "Saint-Siméon",
     "status": "operating",
+    "type": "Backcountry",
     "vertical_m": "259",
     "lat": "47.871456",
     "lon": "-69.944317"
   },
   {
-    "name": "FQME Ski - Vallée Bras-du-Nord",
+    "name": "Vallée Bras-du-Nord",
     "country": "Canada",
     "region": "Quebec",
     "city": "Saint-Raymond",
     "status": "operating",
+    "type": "Backcountry",
     "vertical_m": "320",
     "lat": "47.091768",
     "lon": "-71.880956"
@@ -3107,7 +3110,7 @@
     "lon": "-123.122063"
   },
   {
-    "name": "Georgian Peaks Club",
+    "name": "The Georgian Peaks Club",
     "country": "Canada",
     "region": "Ontario",
     "city": "The Blue Mountains",
@@ -3151,7 +3154,7 @@
     "lon": "-123.075112"
   },
   {
-    "name": "Gwynne Valley",
+    "name": "Gwynne Valley Ski Area",
     "country": "Canada",
     "region": "Alberta",
     "status": "operating",
@@ -3159,15 +3162,6 @@
     "lift_count": "1",
     "lat": "52.984950",
     "lon": "-113.216176"
-  },
-  {
-    "name": "Hallis Lake Ski Trails",
-    "country": "Canada",
-    "region": "British Columbia",
-    "status": "operating",
-    "vertical_m": "289",
-    "lat": "52.937370",
-    "lon": "-122.346782"
   },
   {
     "name": "Harper Mountain",
@@ -3180,7 +3174,7 @@
     "lon": "-120.133543"
   },
   {
-    "name": "Hart Highlands",
+    "name": "Hart Ski Hill",
     "country": "Canada",
     "region": "British Columbia",
     "city": "Prince George",
@@ -3253,17 +3247,6 @@
     "lift_count": "4",
     "lat": "54.770237",
     "lon": "-127.261482"
-  },
-  {
-    "name": "Hudson's Hope (Portage Mountain)",
-    "country": "Canada",
-    "region": "British Columbia",
-    "city": "Hudson'S Hope",
-    "status": "operating",
-    "vertical_m": "48",
-    "lift_count": "1",
-    "lat": "56.009686",
-    "lon": "-122.170204"
   },
   {
     "name": "Innisfail",
@@ -9964,7 +9947,7 @@
     "lon": "22.933978"
   },
   {
-    "name": "Messilän Lumikeskus, Messilä Skicenter",
+    "name": "Messilä",
     "country": "Finland",
     "status": "operating",
     "vertical_m": "112",
@@ -19513,7 +19496,16 @@
     "vertical_m": "610",
     "lift_count": "10",
     "lat": "-44.868267",
-    "lon": "168.951110"
+    "lon": "168.951110",
+    "has_park": true,
+    "xl_park": true,
+    "l_park": true,
+    "m_park": true,
+    "s_park": true,
+    "superpipe": true,
+    "minipipe": true,
+    "park_condition": "3",
+    "moguls": false
   },
   {
     "name": "Coronet Peak",
@@ -28665,16 +28657,6 @@
     "lon": "-79.436487"
   },
   {
-    "name": "Canaan Valley Ski Resort",
-    "country": "United States",
-    "region": "West Virginia",
-    "status": "operating",
-    "vertical_m": "254",
-    "lift_count": "6",
-    "lat": "39.003826",
-    "lon": "-79.435243"
-  },
-  {
     "name": "Cannon Mountain",
     "country": "United States",
     "region": "New Hampshire",
@@ -28723,16 +28705,6 @@
     "lift_count": "5",
     "lat": "35.558746",
     "lon": "-83.089578"
-  },
-  {
-    "name": "Cataloochee Ski Area",
-    "country": "United States",
-    "region": "North Carolina",
-    "status": "operating",
-    "vertical_m": "220",
-    "lift_count": "5",
-    "lat": "35.559197",
-    "lon": "-83.092057"
   },
   {
     "name": "Catamount Mountain Resort",
@@ -28894,23 +28866,6 @@
     "lift_count": "1",
     "lat": "34.534512",
     "lon": "-85.601227"
-  },
-  {
-    "name": "Cloudmont Ski Resort",
-    "country": "United States",
-    "region": "Alabama",
-    "status": "operating",
-    "lat": "34.538078",
-    "lon": "-85.603709"
-  },
-  {
-    "name": "Cochran's Ski Area",
-    "country": "United States",
-    "region": "Vermont",
-    "city": "Richmond",
-    "status": "operating",
-    "lat": "44.396811",
-    "lon": "-72.982049"
   },
   {
     "name": "Cochran's Ski Area",
@@ -29671,15 +29626,6 @@
     "region": "South Dakota",
     "city": "Sioux Falls",
     "status": "operating",
-    "lat": "43.582100",
-    "lon": "-96.664967"
-  },
-  {
-    "name": "Great Bear Recreation Park",
-    "country": "United States",
-    "region": "South Dakota",
-    "city": "Sioux Falls",
-    "status": "operating",
     "vertical_m": "49",
     "lift_count": "3",
     "lat": "43.577161",
@@ -29796,15 +29742,6 @@
     "lift_count": "23",
     "lat": "38.937462",
     "lon": "-119.910798"
-  },
-  {
-    "name": "Heavenly Ski Resort",
-    "country": "United States",
-    "region": "Nevada",
-    "city": "Kingsbury",
-    "status": "operating",
-    "lat": "38.940583",
-    "lon": "-119.913773"
   },
   {
     "name": "Heiliger Huegel Ski Club",
