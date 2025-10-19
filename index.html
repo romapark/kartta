@@ -155,6 +155,11 @@
       showIfExists("red-run-text", r.red_run, "<span class='diamond red'>&#9670;</span> ");
       showIfExists("black-run-text", r.black_run, "<span class='diamond black'>&#9670;</span> ");
 
+      showIfTrue("s-text", r.s_park, "S")
+      showIfTrue("m-text", r.s_park, "M")
+      showIfTrue("l-text", r.s_park, "L")
+      showIfTrue("xl-text", r.s_park, "XL")
+
 
       document.getElementById("info-parks-value").textContent = ["xl_park", "l_park","m_park","s_park","superpipe","minipipe","moguls"]
         .filter(f => r[f]).join(', ');
@@ -167,6 +172,25 @@
       if (value !== undefined && value !== null && value !== "") {
         el.innerHTML = prefix + value;
         el.style.display = "inline-block"; // tai block tarpeen mukaan
+      } else {
+        el.style.display = "none";
+      }
+    }
+
+    function showIfTrue(elementId, value, text = "") {
+      const el = document.getElementById(elementId);
+      el.innerHTML = ""; // tyhjennetään mahdollinen aiempi sisältö
+
+      if (value === true) {
+        const check = document.createElement("span");
+        check.innerHTML = "&#10004;"; // ✔
+        check.style.color = "green";
+        check.style.marginRight = "4px";
+        check.style.fontWeight = "bold";
+
+        el.appendChild(check);
+        el.append(text);
+        el.style.display = "inline-block";
       } else {
         el.style.display = "none";
       }
