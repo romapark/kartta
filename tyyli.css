@@ -115,9 +115,20 @@ h2 {
 	margin-top: 0.2em;
 }
 
-h3 {
-	font-size: 1.2em;
-	margin-bottom: 0.3em;
+#infoBox fieldset {
+	border: none;
+  border-top: 1px solid #152843;
+  margin-bottom: 0.5em;
+}
+
+#infoBox fieldset > * {
+  margin-bottom: 0.5em;
+}
+
+fieldset h3 {
+	font-size: 1.3em;
+	margin-bottom: 0.6em;
+	margin-top: 0.4em;
 }
 
 #run-container {

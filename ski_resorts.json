@@ -19729,7 +19729,7 @@
     "lon": "171.581537"
   },
   {
-    "name": "The Remarkables Ski Area",
+    "name": "The Remarkables",
     "country": "New Zealand",
     "region": "Otago Region",
     "city": "Kawarau Falls",
@@ -19737,7 +19737,18 @@
     "vertical_m": "376",
     "lift_count": "7",
     "lat": "-45.055739",
-    "lon": "168.813527"
+    "lon": "168.813527",
+    "has_park": true,
+    "xl_park": false,
+    "l_park": true,
+    "m_park": true,
+    "s_park": true,
+    "superpipe": false,
+    "minipipe": false,
+    "park_condition": "3",
+    "moguls": false,
+    "has_public_trans": true,
+    "d_public_trans": true
   },
   {
     "name": "Treble Cone Ski Area",
