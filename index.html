@@ -187,23 +187,33 @@
       }
     }
 
-    function showIfTrue(elementId, value, text = "") {
+    function showIfTrue(elementId, value, text = "", showFalseAsNone = false) {
       const el = document.getElementById(elementId);
       el.innerHTML = ""; // tyhjennetään mahdollinen aiempi sisältö
 
-      if (value === true) {
-        const check = document.createElement("span");
-        check.innerHTML = "&#10004;"; // ✔
-        check.style.color = "green";
-        check.style.marginRight = "4px";
-        check.style.fontWeight = "bold";
+      const symbol = document.createElement("span");
+      symbol.style.marginRight = "4px";
+      symbol.style.fontWeight = "bold";
 
-        el.appendChild(check);
-        el.append(text);
-        el.style.display = "inline-block";
+      if (value === true) {
+        symbol.innerHTML = "&#10004;"; // ✔
+        symbol.style.color = "green";
+      } else if (value === false) {
+        if (showFalseAsNone) {
+          el.style.display = "none"; // ei näytetä mitään
+          return;
+        } else {
+          symbol.innerHTML = "&#10008;"; // ✘
+          symbol.style.color = "red";
+        }
       } else {
-        el.style.display = "none";
+        el.style.display = "none"; // jos arvo on undefined/null, ei näytetä mitään
+        return;
       }
+
+      el.appendChild(symbol);
+      el.append(text);
+      el.style.display = "inline-block";
     }
 
     function showStars(elementId, value, maxValue) {
