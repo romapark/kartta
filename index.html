@@ -68,7 +68,7 @@
 
         <h3>Terrain park</h3>
         <div><strong>Level:</strong> <span id="s-text"></span> <span id="m-text"></span> <span id="l-text"></span> <span id="xl-text"></span></div>
-        <div><strong>Condition:</strong> <span id="info-condition-value"></span></div>
+        <div><strong>Condition:</strong> <span id="condition-text"></span></div>
       </div>
     </div>
 
@@ -158,8 +158,9 @@
       showIfTrue("m-text", r.m_park, "M");
       showIfTrue("l-text", r.l_park, "L");
       showIfTrue("xl-text", r.xl_park, "XL");
+      showStars("condition-text", r.park_condition, "3")
 
-      document.getElementById("info-condition-value").textContent = r.park_condition || 'Unknown';
+      
       infoBox.classList.add('visible');
     }
 
@@ -189,6 +190,29 @@
         el.style.display = "inline-block";
       } else {
         el.style.display = "none";
+      }
+    }
+
+    function showStars(elementId, value, maxValue) {
+      const el = document.getElementById(elementId);
+      el.innerHTML = ""; // tyhjennetään ensin
+
+      // Jos value ei ole kelvollinen, piilotetaan elementti
+      if (value === undefined || value === null || isNaN(value)) {
+        el.style.display = "n/a";
+        return;
+      }
+
+      el.style.display = "inline-block";
+
+      // Luodaan tähdet
+      for (let i = 1; i <= maxValue; i++) {
+        const star = document.createElement("span");
+        star.innerHTML = i <= value ? "&#9733;" : "&#9734;"; // ★ tai ☆
+        star.style.color = i <= value ? "gold" : "#ccc";
+        star.style.fontSize = "1.2em";
+        star.style.marginRight = "2px";
+        el.appendChild(star);
       }
     }
 
