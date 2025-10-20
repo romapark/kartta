@@ -3095,6 +3095,7 @@
     "region": "Quebec",
     "city": "Sept-Îles",
     "status": "operating",
+    "type": "skiresort",
     "vertical_m": "161",
     "lift_count": "3",
     "lat": "50.175301",
@@ -3106,6 +3107,7 @@
     "region": "British Columbia",
     "city": "Squamish",
     "status": "proposed",
+    "type": "skiresort",
     "lat": "49.815392",
     "lon": "-123.122063"
   },
@@ -3115,6 +3117,7 @@
     "region": "Ontario",
     "city": "The Blue Mountains",
     "status": "operating",
+    "type": "skiresort",
     "vertical_m": "253",
     "lift_count": "5",
     "lat": "44.531588",
@@ -3126,6 +3129,7 @@
     "region": "Ontario",
     "city": "Milton",
     "status": "operating",
+    "type": "skiresort",
     "vertical_m": "84",
     "lift_count": "6",
     "lat": "43.504567",
@@ -3137,6 +3141,7 @@
     "region": "Quebec",
     "city": "Terrebonne",
     "status": "operating",
+    "type": "skiresort",
     "vertical_m": "25",
     "lift_count": "2",
     "lat": "45.711004",
@@ -3148,6 +3153,7 @@
     "region": "British Columbia",
     "city": "North Vancouver",
     "status": "operating",
+    "type": "skiresort",
     "vertical_m": "430",
     "lift_count": "8",
     "lat": "49.380250",
@@ -3158,6 +3164,7 @@
     "country": "Canada",
     "region": "Alberta",
     "status": "operating",
+    "type": "skiresort",
     "vertical_m": "42",
     "lift_count": "1",
     "lat": "52.984950",
@@ -3168,6 +3175,7 @@
     "country": "Canada",
     "region": "British Columbia",
     "status": "operating",
+    "type": "skiresort",
     "vertical_m": "400",
     "lift_count": "4",
     "lat": "50.722090",
@@ -3179,6 +3187,7 @@
     "region": "British Columbia",
     "city": "Prince George",
     "status": "operating",
+    "type": "skiresort",
     "vertical_m": "47",
     "lift_count": "3",
     "lat": "53.982736",
@@ -3190,6 +3199,7 @@
     "region": "Ontario",
     "city": "Huntsville",
     "status": "operating",
+    "type": "skiresort",
     "vertical_m": "100",
     "lift_count": "4",
     "lat": "45.355185",
@@ -3200,6 +3210,7 @@
     "country": "Canada",
     "region": "Alberta",
     "status": "operating",
+    "type": "skiresort",
     "vertical_m": "165",
     "lift_count": "4",
     "lat": "49.653727",
@@ -3211,6 +3222,7 @@
     "region": "Ontario",
     "city": "Mono",
     "status": "operating",
+    "type": "skiresort",
     "vertical_m": "64",
     "lift_count": "4",
     "lat": "43.975283",
@@ -3222,6 +3234,7 @@
     "region": "Manitoba",
     "city": "Pembina",
     "status": "operating",
+    "type": "skiresort",
     "vertical_m": "74",
     "lift_count": "4",
     "lat": "49.235405",
@@ -3233,6 +3246,7 @@
     "region": "Ontario",
     "city": "Oro-Medonte",
     "status": "operating",
+    "type": "skiresort",
     "vertical_m": "86",
     "lift_count": "7",
     "lat": "44.546277",
@@ -3243,6 +3257,7 @@
     "country": "Canada",
     "region": "British Columbia",
     "status": "operating",
+    "type": "skiresort",
     "vertical_m": "528",
     "lift_count": "4",
     "lat": "54.770237",
@@ -3254,6 +3269,7 @@
     "region": "Alberta",
     "city": "Innisfail",
     "status": "operating",
+    "type": "skiresort",
     "vertical_m": "25",
     "lift_count": "1",
     "lat": "52.035281",
@@ -3264,11 +3280,12 @@
     "country": "Canada",
     "region": "British Columbia",
     "status": "operating",
+    "type": "catskiing",
     "lat": "49.509425",
     "lon": "-115.176759"
   },
   {
-    "name": "Kamiskotia",
+    "name": "Mount Jamieson",
     "country": "Canada",
     "region": "Ontario",
     "city": "Timmins",
@@ -3360,15 +3377,6 @@
     "lon": "-116.131218"
   },
   {
-    "name": "Larch Hills Nordic Ski Trails",
-    "country": "Canada",
-    "region": "British Columbia",
-    "status": "operating",
-    "vertical_m": "781",
-    "lat": "50.732149",
-    "lon": "-119.151307"
-  },
-  {
     "name": "Larder Lake Ski Hill",
     "country": "Canada",
     "region": "Ontario",
@@ -3389,7 +3397,7 @@
     "lon": "-79.432082"
   },
   {
-    "name": "Le Massif",
+    "name": "Le Massif de Charlevoix",
     "country": "Canada",
     "region": "Quebec",
     "city": "Petite-Rivière-Saint-François",
@@ -3409,16 +3417,6 @@
     "lift_count": "5",
     "lat": "48.655140",
     "lon": "-70.893776"
-  },
-  {
-    "name": "Les montagnes bleues du Tableau",
-    "country": "Canada",
-    "region": "Quebec",
-    "city": "Sainte-Rose-du-Nord",
-    "status": "operating",
-    "vertical_m": "128",
-    "lat": "48.400528",
-    "lon": "-70.480352"
   },
   {
     "name": "Little Mac",
@@ -3472,17 +3470,6 @@
     "lift_count": "2",
     "lat": "54.467593",
     "lon": "-112.776418"
-  },
-  {
-    "name": "Madawaska Mountain",
-    "country": "Canada",
-    "region": "Ontario",
-    "city": "Madawaska Valley",
-    "status": "operating",
-    "vertical_m": "124",
-    "lift_count": "2",
-    "lat": "45.433538",
-    "lon": "-77.660096"
   },
   {
     "name": "Manning Park Resort",
@@ -3557,7 +3544,7 @@
     "lon": "-70.490704"
   },
   {
-    "name": "Maximise (formerly: Mont Castor - Ste-Agathe)",
+    "name": "Maximise",
     "country": "Canada",
     "region": "Quebec",
     "city": "Sainte-Agathe-des-Monts",
@@ -3565,7 +3552,8 @@
     "vertical_m": "62",
     "lift_count": "1",
     "lat": "46.067804",
-    "lon": "-74.306191"
+    "lon": "-74.306191",
+    "airback": true
   },
   {
     "name": "Medicine Lodge Ski Area",
@@ -3578,7 +3566,7 @@
     "lon": "-114.259201"
   },
   {
-    "name": "Minnedosa Ski Valley",
+    "name": "Ski Valley",
     "country": "Canada",
     "region": "Manitoba",
     "city": "Minto",
