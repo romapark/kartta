@@ -164,10 +164,10 @@
       byId("lift-count-text").textContent = r.lift_count;
       byId("run-count-text").textContent = r.run_count;
 
-      setField("green-run-text", r.green_run, "green");
-      setField("blue-run-text", r.blue_run, "blue");
-      setField("red-run-text", r.red_run, "red");
-      setField("black-run-text", r.black_run, "black");
+      setDiamond("green-run-text", r.green_run, "green");
+      setDiamond("blue-run-text", r.blue_run, "blue");
+      setDiamond("red-run-text", r.red_run, "red");
+      setDiamond("black-run-text", r.black_run, "black");
 
       ["s","m","l","xl"].forEach(k => setCheck(`${k}-text`, r[`${k}_park`], k.toUpperCase()));
       showStars("condition-text", r.park_condition, 3);
@@ -178,7 +178,7 @@
       infoBox.classList.add('visible');
     }
 
-    function setField(id, val, color) {
+    function setDiamond(id, val, color) {
       const el = document.getElementById(id);
       el.innerHTML = val ? `<span class='diamond ${color}'>&#9670;</span> ${val}` : "";
     }
