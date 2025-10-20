@@ -111,7 +111,7 @@
     const suggestions = document.getElementById('suggestions');
     const datalist = document.getElementById('countryList');
 
-    closeBtn.onclick = () => infoBox.classList.remove('visible-block');
+    closeBtn.onclick = () => infoBox.classList.remove('visible');
 
     let markers = [];
     let data = [];
@@ -179,16 +179,16 @@
 
       showIfTrue("has-transport-text", r.has_public_trans, "", false);
       
-      infoBox.classList.add('visible-block');
+      infoBox.classList.add('visible');
     }
 
     function showIfExists(elementId, value, prefix = "") {
       const el = document.getElementById(elementId);
       if (value !== undefined && value !== null && value !== "") {
         el.innerHTML = prefix + value;
-        el.classList.add("visible-inline-block") // tai block tarpeen mukaan
+        el.style.display = "inline-block"; // tai block tarpeen mukaan
       } else {
-        el.classList.add("hidden");
+        el.style.display = "none";
       }
     }
 
@@ -205,20 +205,20 @@
         symbol.style.color = "green";
       } else if (value === false) {
         if (showFalseAsNone) {
-          el.classList.add("hidden"); // ei näytetä mitään
+          el.style.display = "none"; // ei näytetä mitään
           return;
         } else {
           symbol.innerHTML = "&#10008;"; // ✘
           symbol.style.color = "red";
         }
       } else {
-        el.classList.add("hidden"); // jos arvo on undefined/null, ei näytetä mitään
+        el.style.display = "none"; // jos arvo on undefined/null, ei näytetä mitään
         return;
       }
 
       el.appendChild(symbol);
       el.append(text);
-      el.classList.add("visible-inline-block")
+      el.style.display = "inline-block";
     }
 
     function showStars(elementId, value, maxValue) {
@@ -227,11 +227,11 @@
 
       // Jos value ei ole kelvollinen, piilotetaan elementti
       if (value === undefined || value === null || isNaN(value)) {
-        el.classList.add("hidden");
+        el.style.display = "n/a";
         return;
       }
 
-      el.classList.add("visible-inline-block");
+      el.style.display = "inline-block";
 
       // Luodaan tähdet
       for (let i = 1; i <= maxValue; i++) {
