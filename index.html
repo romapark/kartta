@@ -156,93 +156,53 @@
     }
 
     function showInfo(r) {
-      document.getElementById("resort-name").textContent = r.name;
-      document.getElementById("overall-description-text").textContent = r.overall_description;
-      document.getElementById("season-text").textContent = `${r.season_start} – ${r.season_end}`;
-      document.getElementById("height-text").textContent = `${r.vertical_m}m`;
-      document.getElementById("lift-count-text").textContent = r.lift_count;
-      document.getElementById("run-count-text").textContent = r.run_count;
-      showIfExists("green-run-text", r.green_run, "<span class='diamond green'>&#9670;</span> ");
-      showIfExists("blue-run-text", r.blue_run, "<span class='diamond blue'>&#9670;</span> ");
-      showIfExists("red-run-text", r.red_run, "<span class='diamond red'>&#9670;</span> ");
-      showIfExists("black-run-text", r.black_run, "<span class='diamond black'>&#9670;</span> ");
+      const byId = id => document.getElementById(id);
+      byId("resort-name").textContent = r.name;
+      byId("overall-description-text").textContent = r.overall_description;
+      byId("season-text").textContent = `${r.season_start} – ${r.season_end}`;
+      byId("height-text").textContent = `${r.vertical_m}m`;
+      byId("lift-count-text").textContent = r.lift_count;
+      byId("run-count-text").textContent = r.run_count;
 
-      showIfTrue("s-text", r.s_park, "S");
-      showIfTrue("m-text", r.m_park, "M");
-      showIfTrue("l-text", r.l_park, "L");
-      showIfTrue("xl-text", r.xl_park, "XL");
-      showStars("condition-text", r.park_condition, "3")
-      showIfTrue("superpipe-text", r.superpipe, "Superpipe");
-      showIfTrue("minipipe-text", r.minipipe, "Minipipe");
-      showIfTrue("moguls-text", r.moguls, "Moguls");
-      document.getElementById("park-description-text").textContent = r.park_description;
+      setField("green-run-text", r.green_run, "green");
+      setField("blue-run-text", r.blue_run, "blue");
+      setField("red-run-text", r.red_run, "red");
+      setField("black-run-text", r.black_run, "black");
 
-      showIfTrue("has-transport-text", r.has_public_trans, "", false);
-      
+      ["s","m","l","xl"].forEach(k => setCheck(`${k}-text`, r[`${k}_park`], k.toUpperCase()));
+      showStars("condition-text", r.park_condition, 3);
+      ["superpipe","minipipe","moguls"].forEach(k => setCheck(`${k}-text`, r[k], k));
+      byId("park-description-text").textContent = r.park_description;
+      setCheck("has-transport-text", r.has_public_trans, "Available", false);
+
       infoBox.classList.add('visible');
     }
 
-    function showIfExists(elementId, value, prefix = "") {
-      const el = document.getElementById(elementId);
-      if (value !== undefined && value !== null && value !== "") {
-        el.innerHTML = prefix + value;
-        el.style.display = "inline-block"; // tai block tarpeen mukaan
+    function setField(id, val, color) {
+      const el = document.getElementById(id);
+      el.innerHTML = val ? `<span class='diamond ${color}'>&#9670;</span> ${val}` : "";
+    }
+
+    function setCheck(id, val, label, hideFalse = true) {
+      const el = document.getElementById(id);
+      if (val === true) {
+        el.innerHTML = `<span style="color:green">✔</span> ${label}`;
+      } else if (!hideFalse && val === false) {
+        el.innerHTML = `<span style="color:red">✘</span> ${label}`;
       } else {
-        el.style.display = "none";
+        el.innerHTML = "";
       }
     }
 
-    function showIfTrue(elementId, value, text = "", showFalseAsNone = true) {
-      const el = document.getElementById(elementId);
-      el.innerHTML = ""; // tyhjennetään mahdollinen aiempi sisältö
-
-      const symbol = document.createElement("span");
-      symbol.style.marginRight = "4px";
-      symbol.style.fontWeight = "bold";
-
-      if (value === true) {
-        symbol.innerHTML = "&#10004;"; // ✔
-        symbol.style.color = "green";
-      } else if (value === false) {
-        if (showFalseAsNone) {
-          el.style.display = "none"; // ei näytetä mitään
-          return;
-        } else {
-          symbol.innerHTML = "&#10008;"; // ✘
-          symbol.style.color = "red";
-        }
-      } else {
-        el.style.display = "none"; // jos arvo on undefined/null, ei näytetä mitään
-        return;
-      }
-
-      el.appendChild(symbol);
-      el.append(text);
-      el.style.display = "inline-block";
-    }
-
-    function showStars(elementId, value, maxValue) {
-      const el = document.getElementById(elementId);
-      el.innerHTML = ""; // tyhjennetään ensin
-
-      // Jos value ei ole kelvollinen, piilotetaan elementti
-      if (value === undefined || value === null || isNaN(value)) {
-        el.style.display = "n/a";
-        return;
-      }
-
-      el.style.display = "inline-block";
-
-      // Luodaan tähdet
-      for (let i = 1; i <= maxValue; i++) {
-        const star = document.createElement("span");
-        star.innerHTML = i <= value ? "&#9733;" : "&#9734;"; // ★ tai ☆
-        star.style.color = i <= value ? "gold" : "#ccc";
-        star.style.fontSize = "1.2em";
-        star.style.marginRight = "2px";
-        el.appendChild(star);
+    function showStars(id, value, max = 3) {
+      const el = document.getElementById(id);
+      if (!value) return el.textContent = "n/a";
+      el.innerHTML = "";
+      for (let i = 1; i <= max; i++) {
+        el.innerHTML += `<span style="color:${i <= value ? 'gold' : '#ccc'}; font-size:1.2em;">${i <= value ? '★' : '☆'}</span>`;
       }
     }
+
 
     function applyFilters() {
       const country = document.getElementById('countryInput').value.trim().toLowerCase();
