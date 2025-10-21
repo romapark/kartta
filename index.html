@@ -267,6 +267,38 @@
     }
 
   });
+
+
+
+  const minSlider = document.getElementById('minSlider');
+  const maxSlider = document.getElementById('maxSlider');
+  const minVal = document.getElementById('minVal');
+  const maxVal = document.getElementById('maxVal');
+  const rangeFill = document.getElementById('rangeFill');
+  const sliderContainer = document.querySelector('.slider-container');
+
+  function updateSlider() {
+    let min = parseInt(minSlider.value);
+    let max = parseInt(maxSlider.value);
+    if (min > max) [min, max] = [max, min];
+
+    minSlider.value = min;
+    maxSlider.value = max;
+
+    minVal.textContent = min;
+    maxVal.textContent = max;
+
+    const rangeWidth = sliderContainer.offsetWidth;
+    const minPercent = (min / 100) * rangeWidth;
+    const maxPercent = (max / 100) * rangeWidth;
+    rangeFill.style.left = minPercent + 'px';
+    rangeFill.style.width = (maxPercent - minPercent) + 'px';
+  }
+
+  minSlider.addEventListener('input', updateSlider);
+  maxSlider.addEventListener('input', updateSlider);
+
+  updateSlider(); // alustus
   </script>
 
 </body>
