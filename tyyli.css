@@ -35,7 +35,7 @@ body, html {
 
 /* ---Filter laatikko----------------------------------------- */
 #filterBox {
-	width: 13em; 
+	width: 15em; 
 	max-height: 100%;
 	padding: 0.5em;
 	box-sizing: border-box;
@@ -93,7 +93,7 @@ body, html {
 	border-radius: 10px;
 	background: white;
 	position: absolute;
-	left: 13.1em;
+	left: 15.2em;
 	top: 0.1em;      /* 1em marginaali ylhäällä */
 	bottom: 0.1em;
 	z-index: 1000;
@@ -164,7 +164,7 @@ fieldset h3 {
 #searchBox {
 	position:absolute;
 	top:0.5em;
-	left: 32em;
+	left: 34em;
 	z-index:1000;
 	background:white;
 	padding:8px;
