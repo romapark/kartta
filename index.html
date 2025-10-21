@@ -39,7 +39,15 @@
           <label><input type="checkbox" id="m_park"> M</label>
           <label><input type="checkbox" id="l_park"> L</label>
           <label><input type="checkbox" id="xl_park"> XL</label><br>
+
           <strong>Condition</strong><br>
+          <div class="controls">
+            <label>Min: <span id="minVal">10</span></label>
+            <input id="minSlider" type="range" min="0" max="100" value="10">
+            <label>Max: <span id="maxVal">90</span></label>
+            <input id="maxSlider" type="range" min="0" max="100" value="90">
+          </div>
+          
           <strong>Other features</strong><br>
           <label><input type="checkbox" id="superpipe"> Superpipe</label><br>
           <label><input type="checkbox" id="minipipe"> Minipipe</label><br>
