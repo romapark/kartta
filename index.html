@@ -41,12 +41,16 @@
           <label><input type="checkbox" id="xl_park"> XL</label><br>
 
           <strong>Condition</strong><br>
-          <div class="controls">
-            <label>Min: <span id="minVal">10</span></label>
-            <input id="minSlider" type="range" min="0" max="100" value="10">
-            <label>Max: <span id="maxVal">90</span></label>
-            <input id="maxSlider" type="range" min="0" max="100" value="90">
+          <div class="slider-container">
+            <div class="range-track"></div>
+            <div class="range-fill" id="rangeFill"></div>
+            <input type="range" id="minSlider" min="0" max="100" value="20">
+            <input type="range" id="maxSlider" min="0" max="100" value="80">
           </div>
+
+          <p>
+            Alue: <span id="minVal">20</span> – <span id="maxVal">80</span>
+          </p>
           
           <strong>Other features</strong><br>
           <label><input type="checkbox" id="superpipe"> Superpipe</label><br>
