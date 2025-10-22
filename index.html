@@ -31,6 +31,10 @@
         <fieldset>
           <legend>Slopes</legend>
 
+            <div id="slider"></div>
+            <span id="range-value"></span>
+
+
             <div class="slider-container">
               <div class="range-track"></div>
               <div class="range-fill" id="rangeFill"></div>
@@ -109,6 +113,22 @@
 
   <!-- 📜 Leaflet -->
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/nouislider@15.7.1/dist/nouislider.min.js"></script>
+  <script>
+    const slider = document.getElementById('slider');
+    noUiSlider.create(slider, {
+      start: [0, 100],
+      connect: true,
+      range: { min: 0, max: 100 },
+      tooltips: [true, true],
+      step: 1
+    });
+
+    slider.noUiSlider.on('update', (values) => {
+      document.getElementById('range-value').textContent = `${Math.round(values[0])} – ${Math.round(values[1])}`;
+    });
+  </script>
 
   <!-- ⚙️ Sovelluslogiikka -->
   <script>
