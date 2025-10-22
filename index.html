@@ -7,6 +7,8 @@
 
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <link rel="stylesheet" href="tyyli.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nouislider@15.7.1/dist/nouislider.min.css">
+
 </head>
 <body>
 
@@ -32,7 +34,7 @@
           <legend>Slopes</legend>
 
             <div id="slider"></div>
-            <span id="range-value"></span>
+            <p>Arvoalue: <span id="value"></span></p>
 
 
             <div class="slider-container">
@@ -117,16 +119,21 @@
   <script src="https://cdn.jsdelivr.net/npm/nouislider@15.7.1/dist/nouislider.min.js"></script>
   <script>
     const slider = document.getElementById('slider');
+    const valueSpan = document.getElementById('value');
+
     noUiSlider.create(slider, {
-      start: [0, 100],
-      connect: true,
-      range: { min: 0, max: 100 },
-      tooltips: [true, true],
-      step: 1
+      start: [20, 80],       // alkuarvot
+      connect: true,         // täyttö värillä kahvojen väliin
+      range: {
+        'min': 0,
+        'max': 100
+      },
+      step: 1,               // liukusäätimen askel
     });
 
     slider.noUiSlider.on('update', (values) => {
-      document.getElementById('range-value').textContent = `${Math.round(values[0])} – ${Math.round(values[1])}`;
+      const [min, max] = values.map(v => Math.round(v));
+      valueSpan.textContent = `${min} – ${max}`;
     });
   </script>
 
