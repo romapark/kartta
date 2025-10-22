@@ -35,6 +35,7 @@
               <div class="range-track"></div>
               <div class="range-fill" id="rangeFill"></div>
               <input type="range" id="minSlider" min="0" max="100" value="20">
+              <span id="minTooltip" class="tooltip">20</span>
               <input type="range" id="maxSlider" min="0" max="100" value="80">
             </div>
             <p>
@@ -167,6 +168,8 @@
     const maxVal = document.getElementById('maxVal');
     const rangeFill = document.getElementById('rangeFill');
     const sliderContainer = document.querySelector('.slider-container');
+    const minTooltip = document.getElementById('minTooltip');
+
 
     function updateSlider() {
       let min = parseInt(minSlider.value);
@@ -186,8 +189,21 @@
       rangeFill.style.width = (maxPercent - minPercent) + 'px';
     }
 
+    function updateTooltip() {
+      const value = minSlider.value;
+      const sliderWidth = minSlider.offsetWidth;
+      const percent = (value - minSlider.min) / (minSlider.max - minSlider.min);
+      const offset = percent * sliderWidth;
+
+      minTooltip.style.left = offset + 'px';
+      minTooltip.textContent = value;
+    }
+
     minSlider.addEventListener('input', updateSlider);
     maxSlider.addEventListener('input', updateSlider);
+
+    minSlider.addEventListener('input', updateTooltip);
+    updateTooltip();
 
     updateSlider();
 
