@@ -35,6 +35,7 @@
 
             <div id="slider"></div>
             <p>Arvoalue: <span id="value"></span></p>
+
         </fieldset>
 
         <fieldset>
@@ -103,18 +104,18 @@
 
   <!-- 📜 Leaflet -->
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-
   <script src="https://cdn.jsdelivr.net/npm/nouislider@15.7.1/dist/nouislider.min.js"></script>
+
   <script>
     const slider = document.getElementById('slider');
     const valueSpan = document.getElementById('value');
 
     noUiSlider.create(slider, {
-      start: [20, 80],       // alkuarvot
+      start: [0, 2000],       // alkuarvot
       connect: true,         // täyttö värillä kahvojen väliin
       range: {
         'min': 0,
-        'max': 100
+        'max': 2000
       },
       step: 1,               // liukusäätimen askel
     });
@@ -235,7 +236,6 @@
         el.innerHTML += `<span style="color:${i <= value ? 'gold' : '#ccc'}; font-size:1.2em;">${i <= value ? '★' : '☆'}</span>`;
       }
     }
-
 
     function applyFilters() {
       const country = document.getElementById('countryInput').value.trim().toLowerCase();
