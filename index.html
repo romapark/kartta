@@ -189,6 +189,14 @@
       rangeFill.style.width = (maxPercent - minPercent) + 'px';
     }
 
+    function showTooltip() {
+      minTooltip.classList.add('visible');
+    }
+
+    function hideTooltip() {
+      minTooltip.classList.remove('visible');
+    }
+
     function updateTooltip() {
       const value = minSlider.value;
       const sliderWidth = minSlider.offsetWidth;
@@ -202,8 +210,13 @@
     minSlider.addEventListener('input', updateSlider);
     maxSlider.addEventListener('input', updateSlider);
 
-    minSlider.addEventListener('input', updateTooltip);
-    updateTooltip();
+    minSlider.addEventListener('input', () => {
+      showTooltip();
+      updateTooltip();
+    });
+
+    minSlider.addEventListener('mouseup', hideTooltip);
+    minSlider.addEventListener('touchend', hideTooltip);
 
     updateSlider();
 
