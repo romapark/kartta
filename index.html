@@ -44,39 +44,6 @@
 
 
 
-          <div class="container">
-            <div class="label-row">
-            <h1>Kaksipäinen liukufiltteri</h1>
-            <div class="values">
-            <span class="hint">Valitse väli:</span>
-            <output id="minVal">10</output>
-            <span class="hint">—</span>
-            <output id="maxVal">90</output>
-            </div>
-            </div>
-
-
-            <p class="hint">Tämä esimerkki käyttää kahta päällekkäistä &lt;input type="range"&gt; -elementtiä. Voit muuttaa min/max-arvoja, step:in ja tyylin oman tarpeesi mukaan.</p>
-
-
-            <div class="range-wrap" aria-label="Hinnan suodatin">
-            <div class="track" aria-hidden="true">
-            <div class="range-highlight" id="rangeHighlight" style="left:10%;right:10%"></div>
-            </div>
-
-
-            <!-- pienempi arvo (vasen nuppi) -->
-            <input id="rangeMin" type="range" min="0" max="100" step="1" value="10" aria-label="Minimiarvo">
-            <!-- suurempi arvo (oikea nuppi) -->
-            <input id="rangeMax" type="range" min="0" max="100" step="1" value="90" aria-label="Maksimiarvo">
-          </div>
-
-
-          <p class="hint">Pääominaisuudet: näppäimistötuki (nuolet), päällekkäiset liukusäätimet ja visuaalinen korostus valitulle välille.</p>
-  
-
-
-
           <strong>Other features</strong><br>
           <label><input type="checkbox" id="superpipe"> Superpipe</label><br>
           <label><input type="checkbox" id="minipipe"> Minipipe</label><br>
@@ -293,65 +260,8 @@
 
   });
 
-
-
-  // Elementit
-  const rMin = document.getElementById('rangeMin');
-  const rMax = document.getElementById('rangeMax');
-  const outMin = document.getElementById('minVal');
-  const outMax = document.getElementById('maxVal');
-  const highlight = document.getElementById('rangeHighlight');
-
-
-  const min = Number(rMin.min);
-  const max = Number(rMin.max);
-
-
-  // estetään mitta-arvojen kääntyminen yli toistensa
-  function clampValues(){
-  let a = Number(rMin.value);
-  let b = Number(rMax.value);
-  if (a > b){
-  // jos alaraja ylittää ylärajan, käännä väärä liukuri takaisin
-  if (this === rMin) { a = b; rMin.value = a; }
-  else { b = a; rMax.value = b; }
-  }
-  outMin.value = a;
-  outMax.value = b;
-  updateHighlight(a,b);
-  updateZIndices();
-  }
-
-
-  // päivitä keskikorostuksen (left/right prosentteina)
-  function updateHighlight(a,b){
-  const leftPercent = ((a - min) / (max - min)) * 100;
-  const rightPercent = 100 - ((b - min) / (max - min)) * 100;
-  highlight.style.left = leftPercent + '%';
-  highlight.style.right = rightPercent + '%';
-  }
-
-
-  // varmista että oikea thumb on päällimmäisenä kun se on lähellä
-  function updateZIndices(){
-  // aseta z-index korkein sille napille, joka on lähimpänä toisella puolella
-  if (Number(rMin.value) >= Number(rMax.value) - 1){
-  rMin.style.zIndex = 3; rMax.style.zIndex = 2;
-  } else {
-  rMin.style.zIndex = 2; rMax.style.zIndex = 3;
-  }
-  }
-
-
-  // initial
-  clampValues.call(rMin);
-
-
-  // tapahtumakäsittelijät
-  rMin.addEventListener('input', clampValues);
-  rMax.addEventListener('input', ()=> onRangeChange(Number(rMin.value), Number(rMax.value)));
   
   </script>
 
 </body>
-</html>kok
+</html>
