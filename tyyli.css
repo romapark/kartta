@@ -88,7 +88,8 @@ body, html {
 
 /*RANGE SLIDERS*/
 .slider-container { 
-	position: relative; 
+	position: relative;
+  height: 2em;
 }
 
 input[type="range"] {
@@ -130,6 +131,7 @@ input[type="range"]::-ms-thumb {
     border-radius: 3px;
     position: absolute;
     width: 100%;
+    top: 0.5em;
   }
 
   .range-fill {
@@ -137,6 +139,8 @@ input[type="range"]::-ms-thumb {
     background: #007bff;
     border-radius: 3px;
     position: absolute;
+    top: 0.5em;
+
   }
 
 .tooltip {

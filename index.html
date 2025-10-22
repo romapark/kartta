@@ -34,11 +34,10 @@
             <div class="slider-container">
               <div class="range-track"></div>
               <div class="range-fill" id="rangeFill"></div>
-              <input type="range" id="minSlider" min="0" max="100" value="20">
-              <span id="minTooltip" class="tooltip">20</span>
-              <input type="range" id="maxSlider" min="0" max="100" value="80">
-              <span id="maxTooltip" class="tooltip">80</span>
-
+              <input type="range" id="minSlider" min="0" max="100" value="0">
+              <span id="minTooltip" class="tooltip">0</span>
+              <input type="range" id="maxSlider" min="0" max="100" value="100">
+              <span id="maxTooltip" class="tooltip">100</span>
             </div>
 
 
@@ -169,7 +168,6 @@
     const minTooltip = document.getElementById('minTooltip');
     const maxTooltip = document.getElementById('maxTooltip');
 
-    // --- Sliderin päivitys ---
     function updateSlider() {
       let min = parseInt(minSlider.value);
       let max = parseInt(maxSlider.value);
@@ -186,7 +184,6 @@
       rangeFill.style.width = (maxPercent - minPercent) + 'px';
     }
 
-    // --- Tooltipit ---
     function showTooltip(tooltip) {
       tooltip.classList.add('visible');
     }
@@ -210,6 +207,7 @@
       updateSlider();
       showTooltip(minTooltip);
       updateTooltip(minSlider, minTooltip);
+      applyFilters(); // päivitys filteriin
     });
     minSlider.addEventListener('mouseup', () => hideTooltip(minTooltip));
     minSlider.addEventListener('touchend', () => hideTooltip(minTooltip));
@@ -218,9 +216,11 @@
       updateSlider();
       showTooltip(maxTooltip);
       updateTooltip(maxSlider, maxTooltip);
+      applyFilters(); // päivitys filteriin
     });
     maxSlider.addEventListener('mouseup', () => hideTooltip(maxTooltip));
     maxSlider.addEventListener('touchend', () => hideTooltip(maxTooltip));
+
 
     // --- Alustetaan ---
     updateSlider();
@@ -294,18 +294,23 @@
       const country = document.getElementById('countryInput').value.trim().toLowerCase();
       const filters = ['xl_park', 'l_park','m_park','s_park','superpipe','minipipe','moguls']
         .reduce((acc, id) => ({ ...acc, [id]: document.getElementById(id).checked }), {});
+      const minHeight = parseInt(minSlider.value);
+      const maxHeight = parseInt(maxSlider.value);
 
       markers.forEach(m => {
         const d = m.data;
         const matchCountry = !country || d.country?.toLowerCase().includes(country);
         const matchParks = Object.entries(filters).every(([k, v]) => !v || d[k]);
-        if (matchCountry && matchParks) m.addTo(map);
+        const matchHeight = d.vertical_m >= minHeight && d.vertical_m <= maxHeight;
+
+        if (matchCountry && matchParks && matchHeight) m.addTo(map);
         else map.removeLayer(m);
       });
 
       const visible = markers.filter(m => map.hasLayer(m));
       if (visible.length) map.fitBounds(L.featureGroup(visible).getBounds());
     }
+
 
     function handleSearch() {
       const query = searchInput.value.toLowerCase().trim();
