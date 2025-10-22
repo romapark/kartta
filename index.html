@@ -35,18 +35,6 @@
 
             <div id="slider"></div>
             <p>Arvoalue: <span id="value"></span></p>
-
-
-            <div class="slider-container">
-              <div class="range-track"></div>
-              <div class="range-fill" id="rangeFill"></div>
-              <input type="range" id="minSlider" min="0" max="2000" value="0">
-              <span id="minTooltip" class="tooltip">0</span>
-              <input type="range" id="maxSlider" min="0" max="2000" value="2000">
-              <span id="maxTooltip" class="tooltip">2000</span>
-            </div>
-
-
         </fieldset>
 
         <fieldset>
@@ -187,74 +175,6 @@
     // ==== HAKU ====
     searchInput.addEventListener('input', handleSearch);
 
-    // ==== SLIDER ====
-    const minSlider = document.getElementById('minSlider');
-    const maxSlider = document.getElementById('maxSlider');
-    const rangeFill = document.getElementById('rangeFill');
-    const sliderContainer = document.querySelector('.slider-container');
-    const minTooltip = document.getElementById('minTooltip');
-    const maxTooltip = document.getElementById('maxTooltip');
-
-    function updateSlider() {
-      let min = parseInt(minSlider.value);
-      let max = parseInt(maxSlider.value);
-      if (min > max) [min, max] = [max, min];
-
-      minSlider.value = min;
-      maxSlider.value = max;
-
-      const rangeWidth = sliderContainer.offsetWidth;
-      const minPercent = (min / 100) * rangeWidth;
-      const maxPercent = (max / 100) * rangeWidth;
-
-      rangeFill.style.left = minPercent + 'px';
-      rangeFill.style.width = (maxPercent - minPercent) + 'px';
-    }
-
-    function showTooltip(tooltip) {
-      tooltip.classList.add('visible');
-    }
-
-    function hideTooltip(tooltip) {
-      tooltip.classList.remove('visible');
-    }
-
-    function updateTooltip(slider, tooltip) {
-      const value = slider.value;
-      const sliderWidth = slider.offsetWidth;
-      const percent = (value - slider.min) / (slider.max - slider.min);
-      const offset = percent * sliderWidth;
-
-      tooltip.style.left = offset + 'px';
-      tooltip.textContent = value;
-    }
-
-    // --- Event listeners ---
-    minSlider.addEventListener('input', () => {
-      updateSlider();
-      showTooltip(minTooltip);
-      updateTooltip(minSlider, minTooltip);
-      applyFilters(); // päivitys filteriin
-    });
-    minSlider.addEventListener('mouseup', () => hideTooltip(minTooltip));
-    minSlider.addEventListener('touchend', () => hideTooltip(minTooltip));
-
-    maxSlider.addEventListener('input', () => {
-      updateSlider();
-      showTooltip(maxTooltip);
-      updateTooltip(maxSlider, maxTooltip);
-      applyFilters(); // päivitys filteriin
-    });
-    maxSlider.addEventListener('mouseup', () => hideTooltip(maxTooltip));
-    maxSlider.addEventListener('touchend', () => hideTooltip(maxTooltip));
-
-
-    // --- Alustetaan ---
-    updateSlider();
-    updateTooltip(minSlider, minTooltip);
-    updateTooltip(maxSlider, maxTooltip);
-
-
     // ==== FUNKTIOT ====
     function createMarker(r) {
       const marker = L.circleMarker([r.lat, r.lon], {
@@ -321,16 +241,13 @@
       const country = document.getElementById('countryInput').value.trim().toLowerCase();
       const filters = ['xl_park', 'l_park','m_park','s_park','superpipe','minipipe','moguls']
         .reduce((acc, id) => ({ ...acc, [id]: document.getElementById(id).checked }), {});
-      const minHeight = parseInt(minSlider.value);
-      const maxHeight = parseInt(maxSlider.value);
 
       markers.forEach(m => {
         const d = m.data;
         const matchCountry = !country || d.country?.toLowerCase().includes(country);
         const matchParks = Object.entries(filters).every(([k, v]) => !v || d[k]);
-        const matchHeight = d.vertical_m >= minHeight && d.vertical_m <= maxHeight;
 
-        if (matchCountry && matchParks && matchHeight) m.addTo(map);
+        if (matchCountry && matchParks) m.addTo(map);
         else map.removeLayer(m);
       });
 
