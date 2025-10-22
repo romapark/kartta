@@ -141,16 +141,22 @@ input[type="range"]::-ms-thumb {
 
 .tooltip {
   position: absolute;
-  top: -25px; /* nupin yläpuolelle */
+  top: -25px;
   transform: translateX(-50%);
   background: #007bff;
   color: white;
   padding: 2px 6px;
   border-radius: 4px;
   font-size: 12px;
-  pointer-events: none; /* ei estä nuppia */
+  pointer-events: none;
   white-space: nowrap;
   z-index: 3;
+  opacity: 0;             /* piilotetaan oletuksena */
+  transition: opacity 0.2s;
+}
+
+.tooltip.visible {
+  opacity: 1;             /* näkyy kun luokka lisätään */
 }
 
 /* ---Info laatikko-----------------------------------------------*/

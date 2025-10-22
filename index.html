@@ -37,10 +37,10 @@
               <input type="range" id="minSlider" min="0" max="100" value="20">
               <span id="minTooltip" class="tooltip">20</span>
               <input type="range" id="maxSlider" min="0" max="100" value="80">
+              <span id="maxTooltip" class="tooltip">80</span>
+
             </div>
-            <p>
-              Alue: <span id="minVal">20</span> – <span id="maxVal">80</span>
-            </p>
+
 
         </fieldset>
 
@@ -164,13 +164,12 @@
     // ==== SLIDER ====
     const minSlider = document.getElementById('minSlider');
     const maxSlider = document.getElementById('maxSlider');
-    const minVal = document.getElementById('minVal');
-    const maxVal = document.getElementById('maxVal');
     const rangeFill = document.getElementById('rangeFill');
     const sliderContainer = document.querySelector('.slider-container');
     const minTooltip = document.getElementById('minTooltip');
+    const maxTooltip = document.getElementById('maxTooltip');
 
-
+    // --- Sliderin päivitys ---
     function updateSlider() {
       let min = parseInt(minSlider.value);
       let max = parseInt(maxSlider.value);
@@ -179,46 +178,55 @@
       minSlider.value = min;
       maxSlider.value = max;
 
-      minVal.textContent = min;
-      maxVal.textContent = max;
-
       const rangeWidth = sliderContainer.offsetWidth;
       const minPercent = (min / 100) * rangeWidth;
       const maxPercent = (max / 100) * rangeWidth;
+
       rangeFill.style.left = minPercent + 'px';
       rangeFill.style.width = (maxPercent - minPercent) + 'px';
     }
 
-    function showTooltip() {
-      minTooltip.classList.add('visible');
+    // --- Tooltipit ---
+    function showTooltip(tooltip) {
+      tooltip.classList.add('visible');
     }
 
-    function hideTooltip() {
-      minTooltip.classList.remove('visible');
+    function hideTooltip(tooltip) {
+      tooltip.classList.remove('visible');
     }
 
-    function updateTooltip() {
-      const value = minSlider.value;
-      const sliderWidth = minSlider.offsetWidth;
-      const percent = (value - minSlider.min) / (minSlider.max - minSlider.min);
+    function updateTooltip(slider, tooltip) {
+      const value = slider.value;
+      const sliderWidth = slider.offsetWidth;
+      const percent = (value - slider.min) / (slider.max - slider.min);
       const offset = percent * sliderWidth;
 
-      minTooltip.style.left = offset + 'px';
-      minTooltip.textContent = value;
+      tooltip.style.left = offset + 'px';
+      tooltip.textContent = value;
     }
 
-    minSlider.addEventListener('input', updateSlider);
-    maxSlider.addEventListener('input', updateSlider);
-
+    // --- Event listeners ---
     minSlider.addEventListener('input', () => {
-      showTooltip();
-      updateTooltip();
+      updateSlider();
+      showTooltip(minTooltip);
+      updateTooltip(minSlider, minTooltip);
     });
+    minSlider.addEventListener('mouseup', () => hideTooltip(minTooltip));
+    minSlider.addEventListener('touchend', () => hideTooltip(minTooltip));
 
-    minSlider.addEventListener('mouseup', hideTooltip);
-    minSlider.addEventListener('touchend', hideTooltip);
+    maxSlider.addEventListener('input', () => {
+      updateSlider();
+      showTooltip(maxTooltip);
+      updateTooltip(maxSlider, maxTooltip);
+    });
+    maxSlider.addEventListener('mouseup', () => hideTooltip(maxTooltip));
+    maxSlider.addEventListener('touchend', () => hideTooltip(maxTooltip));
 
+    // --- Alustetaan ---
     updateSlider();
+    updateTooltip(minSlider, minTooltip);
+    updateTooltip(maxSlider, maxTooltip);
+
 
     // ==== FUNKTIOT ====
     function createMarker(r) {
