@@ -34,10 +34,10 @@
           <legend>Slopes</legend>
 
           <strong>Lift count</strong>
-          <div id="lift-slider"></div>
+          <div class="slider" id="lift-slider"></div>
 
           <strong>Resort height</strong>
-          <div id="vertical-m-slider"></div>
+          <div class="slider" id="vertical-m-slider"></div>
 
         </fieldset>
 
@@ -131,7 +131,9 @@
     const searchInput = document.getElementById('searchInput');
     const suggestions = document.getElementById('suggestions');
     const datalist = document.getElementById('countryList');
+    const slider = document.getElementById('.slider');
     const verticalSlider = document.getElementById('vertical-m-slider');
+    const liftSlider = document.getElementById('lift-slider');
 
     closeBtn.onclick = () => infoBox.classList.remove('visible');
 
@@ -174,15 +176,15 @@
     });
 
     // ✅ Näytetään tooltipit vain liikutettaessa
-    verticalSlider.noUiSlider.on('start', (values, handle) => {
-      verticalSlider.querySelectorAll('.noUi-handle')[handle].classList.add('noUi-active');
+    slider.noUiSlider.on('start', (values, handle) => {
+      slider.querySelectorAll('.noUi-handle')[handle].classList.add('noUi-active');
     });
 
-    verticalSlider.noUiSlider.on('end', (values, handle) => {
-      verticalSlider.querySelectorAll('.noUi-handle')[handle].classList.remove('noUi-active');
+    slider.noUiSlider.on('end', (values, handle) => {
+      slider.querySelectorAll('.noUi-handle')[handle].classList.remove('noUi-active');
     });
 
-    verticalSlider.noUiSlider.on('update', (values) => {
+    slider.noUiSlider.on('update', (values) => {
       applyFilters();
     });
 
