@@ -164,6 +164,11 @@
         'max': 3000
       },
       step: 1,               // liukusäätimen askel
+      tooltips: [true, true],
+      format: {
+      to: value => Math.round(value),   // Pyöristys
+      from: value => Number(value)
+      }
     });
 
     verticalSlider.noUiSlider.on('update', (values) => {
