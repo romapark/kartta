@@ -239,7 +239,12 @@
   color:#000;
   padding:5px;
   text-align:center;
-  white-space:nowrap
+  white-space:nowrap;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.noUi-active .noUi-tooltip {
+  opacity: 1; /* tooltip näkyy vain liikutettaessa */
 }
 .noUi-horizontal .noUi-tooltip {
   -webkit-transform:translate(-50%,0);

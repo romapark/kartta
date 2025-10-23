@@ -34,7 +34,6 @@
           <legend>Slopes</legend>
 
             <div id="verticl-m-slider"></div>
-            <p>Arvoalue: <span id="vertical-m-value"></span></p>
 
         </fieldset>
 
@@ -129,7 +128,6 @@
     const suggestions = document.getElementById('suggestions');
     const datalist = document.getElementById('countryList');
     const verticalSlider = document.getElementById('verticl-m-slider');
-    const verticalValueSpan = document.getElementById('vertical-m-value');
 
     closeBtn.onclick = () => infoBox.classList.remove('visible');
 
@@ -171,9 +169,16 @@
       }
     });
 
+    // ✅ Näytetään tooltipit vain liikutettaessa
+    verticalSlider.noUiSlider.on('start', (values, handle) => {
+      verticalSlider.querySelectorAll('.noUi-handle')[handle].classList.add('noUi-active');
+    });
+
+    verticalSlider.noUiSlider.on('end', (values, handle) => {
+      verticalSlider.querySelectorAll('.noUi-handle')[handle].classList.remove('noUi-active');
+    });
+
     verticalSlider.noUiSlider.on('update', (values) => {
-      const [min, max] = values.map(v => Math.round(v));
-      verticalValueSpan.textContent = `${min} – ${max} m`;
       applyFilters();
     });
 
