@@ -33,8 +33,8 @@
         <fieldset>
           <legend>Slopes</legend>
 
-            <div id="slider"></div>
-            <p>Arvoalue: <span id="value"></span></p>
+            <div id="verticl-m-slider"></div>
+            <p>Arvoalue: <span id="vertical-m-value"></span></p>
 
         </fieldset>
 
@@ -107,23 +107,7 @@
   <script src="https://cdn.jsdelivr.net/npm/nouislider@15.7.1/dist/nouislider.min.js"></script>
 
   <script>
-    const slider = document.getElementById('slider');
-    const valueSpan = document.getElementById('value');
 
-    noUiSlider.create(slider, {
-      start: [0, 2000],       // alkuarvot
-      connect: true,         // täyttö värillä kahvojen väliin
-      range: {
-        'min': 0,
-        'max': 2000
-      },
-      step: 1,               // liukusäätimen askel
-    });
-
-    slider.noUiSlider.on('update', (values) => {
-      const [min, max] = values.map(v => Math.round(v));
-      valueSpan.textContent = `${min} – ${max}`;
-    });
   </script>
 
   <!-- ⚙️ Sovelluslogiikka -->
@@ -144,6 +128,8 @@
     const searchInput = document.getElementById('searchInput');
     const suggestions = document.getElementById('suggestions');
     const datalist = document.getElementById('countryList');
+    const verticalSlider = document.getElementById('verticl-m-slider');
+    const verticalValueSpan = document.getElementById('vertical-m-value');
 
     closeBtn.onclick = () => infoBox.classList.remove('visible');
 
@@ -167,6 +153,24 @@
     // ==== TÄYTÄ MAAT DATALISTIIN ====
     const countries = [...new Set(data.map(r => r.country))].sort();
     datalist.innerHTML = countries.map(c => `<option value="${c}">`).join('');
+
+    
+    // ==== SLIDERIT ====
+    noUiSlider.create(verticalSlider, {
+      start: [0, 2000],       // alkuarvot
+      connect: true,         // täyttö värillä kahvojen väliin
+      range: {
+        'min': 0,
+        'max': 2000
+      },
+      step: 1,               // liukusäätimen askel
+    });
+
+    verticalSlider.noUiSlider.on('update', (values) => {
+      const [min, max] = values.map(v => Math.round(v));
+      verticalValueSpan.textContent = `${min} – ${max} m`;
+      applyFilters();
+    });
 
     // ==== FILTTERIT ====
     document.querySelectorAll('#filterBox input').forEach(el => {
@@ -241,19 +245,22 @@
       const country = document.getElementById('countryInput').value.trim().toLowerCase();
       const filters = ['xl_park', 'l_park','m_park','s_park','superpipe','minipipe','moguls']
         .reduce((acc, id) => ({ ...acc, [id]: document.getElementById(id).checked }), {});
+      const [minHeight, maxHeight] = verticalSlider.noUiSlider.get().map(v => parseFloat(v));
 
       markers.forEach(m => {
         const d = m.data;
         const matchCountry = !country || d.country?.toLowerCase().includes(country);
         const matchParks = Object.entries(filters).every(([k, v]) => !v || d[k]);
+        const matchHeight = d.vertical_m >= minHeight && d.vertical_m <= maxHeight;
 
-        if (matchCountry && matchParks) m.addTo(map);
+        if (matchCountry && matchParks && matchHeight) m.addTo(map);
         else map.removeLayer(m);
       });
 
       const visible = markers.filter(m => map.hasLayer(m));
       if (visible.length) map.fitBounds(L.featureGroup(visible).getBounds());
     }
+
 
 
     function handleSearch() {
