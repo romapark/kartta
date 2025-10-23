@@ -267,14 +267,16 @@
       const filters = ['xl_park', 'l_park','m_park','s_park','superpipe','minipipe','moguls']
         .reduce((acc, id) => ({ ...acc, [id]: document.getElementById(id).checked }), {});
       const [minHeight, maxHeight] = verticalSlider.noUiSlider.get().map(v => parseFloat(v));
+      const [minLift, maxLift] = liftSlider.noUiSlider.get().map(v => parseFloat(v));
 
       markers.forEach(m => {
         const d = m.data;
         const matchCountry = !country || d.country?.toLowerCase().includes(country);
         const matchParks = Object.entries(filters).every(([k, v]) => !v || d[k]);
         const matchHeight = d.vertical_m >= minHeight && d.vertical_m <= maxHeight;
+        const matchLift = d.lift_count >= minLift && d.lift_count <= maxLift;
 
-        if (matchCountry && matchParks && matchHeight) m.addTo(map);
+        if (matchCountry && matchParks && matchHeight && matchLift) m.addTo(map);
         else map.removeLayer(m);
       });
 
