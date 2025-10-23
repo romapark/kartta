@@ -157,11 +157,11 @@
     
     // ==== SLIDERIT ====
     noUiSlider.create(verticalSlider, {
-      start: [0, 2000],       // alkuarvot
+      start: [0, 3000],       // alkuarvot
       connect: true,         // täyttö värillä kahvojen väliin
       range: {
         'min': 0,
-        'max': 2000
+        'max': 3000
       },
       step: 1,               // liukusäätimen askel
     });
@@ -169,6 +169,7 @@
     verticalSlider.noUiSlider.on('update', (values) => {
       const [min, max] = values.map(v => Math.round(v));
       verticalValueSpan.textContent = `${min} – ${max} m`;
+      applyFilters();
     });
 
     // ==== FILTTERIT ====
