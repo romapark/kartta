@@ -169,7 +169,6 @@
     verticalSlider.noUiSlider.on('update', (values) => {
       const [min, max] = values.map(v => Math.round(v));
       verticalValueSpan.textContent = `${min} – ${max} m`;
-      applyFilters();
     });
 
     // ==== FILTTERIT ====
