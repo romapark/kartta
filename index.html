@@ -159,33 +159,8 @@
 
     
     // ==== SLIDERIT ====
-    noUiSlider.create(verticalSlider, {
-      start: [0, 3000],       // alkuarvot
-      connect: true,         // täyttö värillä kahvojen väliin
-      range: {
-        'min': 0,
-        'max': 3000
-      },
-      step: 1,               // liukusäätimen askel
-      tooltips: [true, true],
-      format: {
-      to: value => Math.round(value),   // Pyöristys
-      from: value => Number(value)
-      }
-    });
-
-    // ✅ Näytetään tooltipit vain liikutettaessa
-    verticalSlider.noUiSlider.on('start', (values, handle) => {
-      verticalSlider.querySelectorAll('.noUi-handle')[handle].classList.add('noUi-active');
-    });
-
-    verticalSlider.noUiSlider.on('end', (values, handle) => {
-      verticalSlider.querySelectorAll('.noUi-handle')[handle].classList.remove('noUi-active');
-    });
-
-    verticalSlider.noUiSlider.on('update', (values) => {
-      applyFilters();
-    });
+    createCustomSlider(verticalSlider, [0, 3000], 0, 3000, 1, () => applyFilters());
+    createCustomSlider(liftSlider, [0, 50], 0, 50, 1, () => applyFilters());
 
     // ==== FILTTERIT ====
     document.querySelectorAll('#filterBox input').forEach(el => {
@@ -196,6 +171,37 @@
     searchInput.addEventListener('input', handleSearch);
 
     // ==== FUNKTIOT ====
+    function createCustomSlider(element, start = [0, 100], min = 0, max = 100, step = 1, onUpdate = null) {
+    noUiSlider.create(element, {
+      start: start,
+      connect: true,
+      range: { min: min, max: max },
+      step: step,
+      tooltips: [true, true],
+      format: {
+        to: value => Math.round(value),
+        from: value => Number(value)
+      }
+    });
+
+    // Tooltipin aktiivisuus vain liikutettaessa
+    element.noUiSlider.on('start', (values, handle) => {
+      element.querySelectorAll('.noUi-handle')[handle].classList.add('noUi-active');
+    });
+
+    element.noUiSlider.on('end', (values, handle) => {
+      element.querySelectorAll('.noUi-handle')[handle].classList.remove('noUi-active');
+    });
+
+    // Päivitysfunktio
+    if (onUpdate) {
+      element.noUiSlider.on('update', onUpdate);
+    }
+
+    return element.noUiSlider;
+  }
+
+    
     function createMarker(r) {
       const marker = L.circleMarker([r.lat, r.lon], {
         radius: 4,
