@@ -159,8 +159,15 @@
 
     
     // ==== SLIDERIT ====
-    createCustomSlider(verticalSlider, [0, 3000], 0, 3000, 1, () => applyFilters());
-    createCustomSlider(liftSlider, [0, 50], 0, 50, 1, () => applyFilters());
+    createCustomSlider(verticalSlider, [0, 3000], 0, 3000, 1);
+    createCustomSlider(liftSlider, [0, 50], 0, 50, 1);
+
+    // Aja filtterit vasta, kun sliderit varmasti valmiit
+    verticalSlider.noUiSlider.on('update', applyFilters);
+    liftSlider.noUiSlider.on('update', applyFilters);
+
+    // Ensimmäinen suodatus
+    applyFilters();
 
     // ==== FILTTERIT ====
     document.querySelectorAll('#filterBox input').forEach(el => {
