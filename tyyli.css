@@ -16,6 +16,8 @@ body, html {
   flex-direction: column;        
 }
 
+
+
 #container {
   display: flex;
   height: 100%;
@@ -62,7 +64,39 @@ body, html {
 	font-size: 1.1em;
   color: #152843;
 	padding-top: 1em;
-  
+}
+
+.slider {
+  margin-bottom: 1em;
+  height: 18px; 
+}
+
+#green-run-slider .noUi-connect {
+	background:green;
+}
+#green-run-slider .noUi-handle {
+	border-color: green;
+}
+
+#blue-run-slider .noUi-connect {
+	background:blue;
+}
+#blue-run-slider .noUi-handle {
+	border-color: blue;
+}
+
+#red-run-slider .noUi-connect {
+	background:red;
+}
+#red-run-slider .noUi-handle {
+	border-color: red;
+}
+
+#black-run-slider .noUi-connect {
+	background:black;
+}
+#black-run-slider .noUi-handle {
+	border-color: black;
 }
 
 /*
