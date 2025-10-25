@@ -517,7 +517,7 @@
   },
   {
     "name": "Adelharz- und Breitensteinlifte (Kranzegg am Grünten)",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "342",
     "lift_count": "4",
@@ -526,7 +526,7 @@
   },
   {
     "name": "Aela (Maloja)",
-    "country": "Austria",
+    "country": "Switzerland",
     "status": "operating",
     "vertical_m": "313",
     "lift_count": "1",
@@ -544,7 +544,7 @@
   },
   {
     "name": "Alpe Cermis",
-    "country": "Austria",
+    "country": "Italy",
     "status": "operating",
     "vertical_m": "1388",
     "lift_count": "8",
@@ -553,7 +553,7 @@
   },
   {
     "name": "Alpe Teglio",
-    "country": "Austria",
+    "country": "Italy",
     "status": "operating",
     "vertical_m": "822",
     "lift_count": "3",
@@ -562,7 +562,7 @@
   },
   {
     "name": "Alpsteinblick",
-    "country": "Austria",
+    "country": "Switzerland",
     "status": "operating",
     "vertical_m": "206",
     "lift_count": "2",
@@ -571,7 +571,7 @@
   },
   {
     "name": "Alta Badia",
-    "country": "Austria",
+    "country": "Italy",
     "status": "operating",
     "vertical_m": "1186",
     "lift_count": "60",
@@ -589,7 +589,7 @@
   },
   {
     "name": "Antermoia, Untermoi",
-    "country": "Austria",
+    "country": "Italy",
     "status": "operating",
     "vertical_m": "160",
     "lift_count": "1",
@@ -598,7 +598,7 @@
   },
   {
     "name": "Appenzell",
-    "country": "Austria",
+    "country": "Switzerland",
     "status": "operating",
     "vertical_m": "354",
     "lift_count": "1",
@@ -607,7 +607,7 @@
   },
   {
     "name": "Aprica",
-    "country": "Austria",
+    "country": "Italy",
     "status": "operating",
     "vertical_m": "1094",
     "lift_count": "15",
@@ -616,7 +616,7 @@
   },
   {
     "name": "Arabba",
-    "country": "Austria",
+    "country": "Italy",
     "status": "operating",
     "vertical_m": "928",
     "lift_count": "20",
@@ -625,7 +625,7 @@
   },
   {
     "name": "Atzmännig",
-    "country": "Austria",
+    "country": "Switzerland",
     "status": "operating",
     "vertical_m": "369",
     "lift_count": "5",
@@ -634,7 +634,7 @@
   },
   {
     "name": "Audi Skizentrum Sonnenbichl",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "196",
     "lat": "47.703233",
@@ -667,7 +667,7 @@
   },
   {
     "name": "Balderschwang",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "484",
     "lift_count": "11",
@@ -676,7 +676,7 @@
   },
   {
     "name": "Beckenhalde",
-    "country": "Austria",
+    "country": "Switzerland",
     "status": "operating",
     "vertical_m": "57",
     "lift_count": "3",
@@ -712,7 +712,7 @@
   },
   {
     "name": "Berghalde - Penzburg",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "33",
     "lift_count": "1",
@@ -739,7 +739,7 @@
   },
   {
     "name": "Blomberg",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "520",
     "lift_count": "4",
@@ -748,7 +748,7 @@
   },
   {
     "name": "Bolsterlang (Allgäuer Hörnerbahnen)",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "777",
     "lift_count": "6",
@@ -757,7 +757,7 @@
   },
   {
     "name": "Brauneck",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "879",
     "lift_count": "18",
@@ -766,7 +766,7 @@
   },
   {
     "name": "Breitenbergbahn",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "564",
     "lift_count": "2",
@@ -775,7 +775,7 @@
   },
   {
     "name": "Brixen Plose - Plose di Bressanone, Brixen Plose, Plose di Bressanone",
-    "country": "Austria",
+    "country": "Italy",
     "status": "operating",
     "vertical_m": "1465",
     "lift_count": "8",
@@ -784,7 +784,7 @@
   },
   {
     "name": "Bromberg Alm",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "108",
     "lift_count": "1",
@@ -793,7 +793,7 @@
   },
   {
     "name": "Brülisau",
-    "country": "Austria",
+    "country": "Switzerland",
     "status": "operating",
     "vertical_m": "166",
     "lift_count": "1",
@@ -802,7 +802,7 @@
   },
   {
     "name": "Buchenberg",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "337",
     "lift_count": "1",
@@ -820,7 +820,7 @@
   },
   {
     "name": "Buchserberg",
-    "country": "Austria",
+    "country": "Switzerland",
     "status": "operating",
     "vertical_m": "106",
     "lift_count": "1",
@@ -829,7 +829,7 @@
   },
   {
     "name": "Buron",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "539",
     "lift_count": "2",
@@ -847,7 +847,7 @@
   },
   {
     "name": "Cerkno",
-    "country": "Austria",
+    "country": "Sloenia",
     "status": "operating",
     "vertical_m": "344",
     "lift_count": "7",
@@ -883,7 +883,7 @@
   },
   {
     "name": "Ellegglifte – Faistenoy",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "57",
     "lift_count": "2",
@@ -901,7 +901,7 @@
   },
   {
     "name": "Eschenlohe auf der Rieder",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "54",
     "lift_count": "1",
@@ -937,7 +937,7 @@
   },
   {
     "name": "Farchant",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "102",
     "lift_count": "1",
@@ -1096,7 +1096,7 @@
   },
   {
     "name": "Gletscher-Skigebiet Zugspitze, Ski resort Zugspitze",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "1703",
     "lift_count": "37",
@@ -1105,7 +1105,7 @@
   },
   {
     "name": "Glonn",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "32",
     "lift_count": "1",
@@ -1132,7 +1132,7 @@
   },
   {
     "name": "Gohrersberg – Kreuzthal",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "137",
     "lift_count": "1",
@@ -1168,7 +1168,7 @@
   },
   {
     "name": "Grafenherberge (Rankenlift)",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "172",
     "lift_count": "1",
@@ -1186,7 +1186,7 @@
   },
   {
     "name": "Grasgehren",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "240",
     "lift_count": "4",
@@ -1258,7 +1258,7 @@
   },
   {
     "name": "Grünsteinlift (Berchtesgaden)",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "107",
     "lift_count": "1",
@@ -1267,7 +1267,7 @@
   },
   {
     "name": "Gsieser Tal, Valle di Casies",
-    "country": "Austria",
+    "country": "Italy",
     "status": "operating",
     "vertical_m": "506",
     "lift_count": "3",
@@ -1283,7 +1283,7 @@
   },
   {
     "name": "Götschenkopf",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "400",
     "lift_count": "3",
@@ -1301,7 +1301,7 @@
   },
   {
     "name": "Haunold",
-    "country": "Austria",
+    "country": "Italy",
     "status": "operating",
     "vertical_m": "427",
     "lift_count": "5",
@@ -1337,7 +1337,7 @@
   },
   {
     "name": "Heini-Klopfer-Skiflugschanze",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "122",
     "lift_count": "1",
@@ -1346,7 +1346,7 @@
   },
   {
     "name": "Herzogstandbahn (Walchensee)",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "813",
     "lift_count": "2",
@@ -1355,7 +1355,7 @@
   },
   {
     "name": "Hindelang Oberjoch",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "428",
     "lift_count": "5",
@@ -1373,7 +1373,7 @@
   },
   {
     "name": "Hinterstaufen",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "439",
     "lift_count": "8",
@@ -1400,7 +1400,7 @@
   },
   {
     "name": "Hirschberglifte",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "409",
     "lift_count": "4",
@@ -1427,7 +1427,7 @@
   },
   {
     "name": "Hocheck (Oberaudorf)",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "359",
     "lift_count": "5",
@@ -1445,7 +1445,7 @@
   },
   {
     "name": "Hochfelln",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "577",
     "lift_count": "5",
@@ -1567,7 +1567,7 @@
   },
   {
     "name": "Hörnle (Bad Kohlgrub)",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "497",
     "lift_count": "2",
@@ -1576,7 +1576,7 @@
   },
   {
     "name": "Immenstadt",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "657",
     "lift_count": "2",
@@ -1585,7 +1585,7 @@
   },
   {
     "name": "Jenner (Berchtesgadener Land)",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "350",
     "lift_count": "3",
@@ -1612,7 +1612,7 @@
   },
   {
     "name": "Kaiserblick Sachrang (Aschau)",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "31",
     "lift_count": "6",
@@ -1630,7 +1630,7 @@
   },
   {
     "name": "Kampenwand",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "861",
     "lift_count": "6",
@@ -1709,7 +1709,7 @@
   },
   {
     "name": "Kessellifte (Inzell)",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "82",
     "lift_count": "2",
@@ -1754,7 +1754,7 @@
   },
   {
     "name": "Kolbensattel (Oberammergau)",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "120",
     "lift_count": "8",
@@ -1799,7 +1799,7 @@
   },
   {
     "name": "Laberbergbahn (Oberammergau)",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "773",
     "lift_count": "1",
@@ -1844,7 +1844,7 @@
   },
   {
     "name": "Lipno",
-    "country": "Austria",
+    "country": "Czech Republic",
     "status": "operating",
     "vertical_m": "189",
     "lift_count": "4",
@@ -1907,7 +1907,7 @@
   },
   {
     "name": "Mittenwald - Kranzberg",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "322",
     "lift_count": "7",
@@ -1916,7 +1916,7 @@
   },
   {
     "name": "Mitterdorf",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "297",
     "lift_count": "9",
@@ -1943,7 +1943,7 @@
   },
   {
     "name": "Nachwuchsförderzentrum \"Reithlift\"",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "119",
     "lift_count": "1",
@@ -1952,7 +1952,7 @@
   },
   {
     "name": "Nesselwang - Alpspitzbahnen",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "560",
     "lift_count": "7",
@@ -1961,7 +1961,7 @@
   },
   {
     "name": "Neukirchen am Teisenberg",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "105",
     "lift_count": "1",
@@ -2006,7 +2006,7 @@
   },
   {
     "name": "Oberau",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "82",
     "lift_count": "1",
@@ -2024,7 +2024,7 @@
   },
   {
     "name": "Obersalzberg",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "158",
     "lift_count": "4",
@@ -2051,7 +2051,7 @@
   },
   {
     "name": "Oedberg",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "156",
     "lift_count": "3",
@@ -2060,7 +2060,7 @@
   },
   {
     "name": "Ofterschwang",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "524",
     "lift_count": "7",
@@ -2069,7 +2069,7 @@
   },
   {
     "name": "Ohlstadt",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "37",
     "lift_count": "1",
@@ -2078,7 +2078,7 @@
   },
   {
     "name": "Paganella, Area sciistica Andalo Fai della Paganella",
-    "country": "Austria",
+    "country": "Italy",
     "status": "operating",
     "vertical_m": "1093",
     "lift_count": "16",
@@ -2087,7 +2087,7 @@
   },
   {
     "name": "Panarotta",
-    "country": "Austria",
+    "country": "Italy",
     "status": "operating",
     "vertical_m": "419",
     "lat": "46.051764",
@@ -2095,7 +2095,7 @@
   },
   {
     "name": "Passo Lavazè",
-    "country": "Austria",
+    "country": "Italy",
     "status": "operating",
     "vertical_m": "77",
     "lift_count": "2",
@@ -2104,7 +2104,7 @@
   },
   {
     "name": "Passo Rolle",
-    "country": "Austria",
+    "country": "Italy",
     "status": "operating",
     "vertical_m": "340",
     "lift_count": "6",
@@ -2113,7 +2113,7 @@
   },
   {
     "name": "Passo Stelvio - Stilfserjoch",
-    "country": "Austria",
+    "country": "Italy",
     "status": "operating",
     "vertical_m": "578",
     "lift_count": "7",
@@ -2131,7 +2131,7 @@
   },
   {
     "name": "Pejo 3000",
-    "country": "Austria",
+    "country": "Italy",
     "status": "operating",
     "vertical_m": "1576",
     "lift_count": "6",
@@ -2140,7 +2140,7 @@
   },
   {
     "name": "Petersberg - Monte San Pietro, Petersberg, Monte San Pietro",
-    "country": "Austria",
+    "country": "Italy",
     "status": "operating",
     "vertical_m": "114",
     "lift_count": "1",
