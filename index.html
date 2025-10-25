@@ -58,9 +58,8 @@
           <label><input type="checkbox" id="l_park"> L</label>
           <label><input type="checkbox" id="xl_park"> XL</label><br>
 
-          <strong>Condition</strong><br>
-
-
+          <strong>Condition</strong>
+          <div id="park-condition-slider"></div>
 
           <strong>Other features</strong><br>
           <label><input type="checkbox" id="superpipe"> Superpipe</label><br>
@@ -147,6 +146,7 @@
     const blueRunSlider = document.getElementById('blue-run-slider');
     const redRunSlider = document.getElementById('red-run-slider');
     const blackRunSlider = document.getElementById('black-run-slider');
+    const parkConditionSlider = document.getElementById('park-condition-slider');
 
     closeBtn.onclick = () => infoBox.classList.remove('visible');
 
@@ -180,6 +180,7 @@
     createCustomSlider(blueRunSlider, [0, 170], 0, 170, 1);
     createCustomSlider(redRunSlider, [0, 170], 0, 170, 1);
     createCustomSlider(blackRunSlider, [0, 170], 0, 170, 1);
+    createCustomSlider(parkConditionSlider, [1, 3], 1, 3, 1);
 
 
     // Aja filtterit vasta, kun sliderit varmasti valmiit
@@ -190,6 +191,7 @@
     blueRunSlider.noUiSlider.on('update', applyFilters);
     redRunSlider.noUiSlider.on('update', applyFilters);
     blackRunSlider.noUiSlider.on('update', applyFilters);
+    parkConditionSlider.noUiSlider.on('update', applyFilters);
 
     // Ensimmäinen suodatus
     applyFilters();
@@ -305,6 +307,7 @@
       const [minBlueRun, maxBlueRun] = blueRunSlider.noUiSlider.get().map(v => parseFloat(v));
       const [minRedRun, maxRedRun] = redRunSlider.noUiSlider.get().map(v => parseFloat(v));
       const [minBlackRun, maxBlackRun] = blackRunSlider.noUiSlider.get().map(v => parseFloat(v));
+      const [minParkCondition, maxParkCondition] = parkConditionSlider.noUiSlider.get().map(v => parseFloat(v));
 
 
       markers.forEach(m => {
@@ -325,8 +328,10 @@
         const matchRedRun = redRunCount >= minRedRun && redRunCount <= maxRedRun;
         const blackRunCount = d.black_run ?? 0; // jos undefined/null → 0
         const matchBlackRun = blackRunCount >= minBlackRun && blackRunCount <= maxBlackRun;
+        const parkConditionValue = d.park_condition ?? 1; // jos undefined/null → 0
+        const matchParkCondition = parkConditionValue >= minParkCondition && parkConditionValue <= maxParkCondition;
 
-        if (matchCountry && matchParks && matchHeight && matchLift && matchRun && matchGreenRun && matchBlueRun && matchRedRun && matchBlackRun) m.addTo(map);
+        if (matchCountry && matchParks && matchHeight && matchLift && matchRun && matchGreenRun && matchBlueRun && matchRedRun && matchBlackRun && matchParkCondition) m.addTo(map);
         else map.removeLayer(m);
       });
 
