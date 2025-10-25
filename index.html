@@ -169,25 +169,23 @@
 
     
     // ==== SLIDERIT ====
-    createCustomSlider(verticalSlider, [0, 3000], 0, 3000, 50);
-    createCustomSlider(liftSlider, [0, 170], 0, 170, 1);
-    createCustomSlider(runSlider, [0, 170], 0, 170, 1);
-    createCustomSlider(greenRunSlider, [0, 170], 0, 170, 1);
-    createCustomSlider(blueRunSlider, [0, 170], 0, 170, 1);
-    createCustomSlider(redRunSlider, [0, 170], 0, 170, 1);
-    createCustomSlider(blackRunSlider, [0, 170], 0, 170, 1);
-    createCustomSlider(parkConditionSlider, [1, 3], 1, 3, 1);
+    const SLIDER_CONFIGS = [
+      { id: 'vertical-m-slider', range:[0,3000], step:50 },
+      { id: 'lift-slider', range:[0,170], step:1 },
+      { id: 'run-slider', range:[0,170], step:1 },
+      { id: 'green-run-slider', range:[0,170], step:1 },
+      { id: 'blue-run-slider', range:[0,170], step:1 },
+      { id: 'red-run-slider', range:[0,170], step:1 },
+      { id: 'black-run-slider', range:[0,170], step:1 },
+      { id: 'park-condition-slider', range:[1,3], step:1 },
+    ];
 
-
-    // Aja filtterit vasta, kun sliderit varmasti valmiit
-    verticalSlider.noUiSlider.on('update', applyFilters);
-    liftSlider.noUiSlider.on('update', applyFilters);
-    runSlider.noUiSlider.on('update', applyFilters);
-    greenRunSlider.noUiSlider.on('update', applyFilters);
-    blueRunSlider.noUiSlider.on('update', applyFilters);
-    redRunSlider.noUiSlider.on('update', applyFilters);
-    blackRunSlider.noUiSlider.on('update', applyFilters);
-    parkConditionSlider.noUiSlider.on('update', applyFilters);
+    const sliders = {};
+    SLIDER_CONFIGS.forEach(cfg => {
+      const el = $(cfg.id);
+      sliders[cfg.id] = createCustomSlider(el, cfg.range, cfg.step);
+      sliders[cfg.id].on('update', applyFilters);
+    });
 
     // Ensimmäinen suodatus
     applyFilters();
@@ -201,17 +199,11 @@
     searchInput.addEventListener('input', handleSearch);
 
     // ==== FUNKTIOT ====
-    function createCustomSlider(element, start = [0, 100], min = 0, max = 100, step = 1, onUpdate = null) {
+    function createCustomSlider(element, [min, max], step = 1) {
       noUiSlider.create(element, {
-        start: start,
-        connect: true,
-        range: { min: min, max: max },
-        step: step,
+        start: [min, max], connect: true, range: { min, max }, step,
         tooltips: [true, true],
-        format: {
-          to: value => Math.round(value),
-          from: value => Number(value)
-        }
+        format: { to: v => Math.round(v), from: v => Number(v) }
       });
 
       // Tooltipin aktiivisuus vain liikutettaessa
