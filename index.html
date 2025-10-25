@@ -36,6 +36,15 @@
           <strong>Lift count</strong>
           <div id="lift-slider"></div>
 
+          <strong>Run count</strong>
+          <p>All</p>
+          <div id="run-slider"></div>
+          <p>Difficulty</p>
+          <div id="green-run-slider"></div>
+          <div id="blue-run-slider"></div>
+          <div id="red-run-slider"></div>
+          <div id="black-run-slider"></div>
+
           <strong>Resort height</strong>
           <div id="vertical-m-slider"></div>
 
@@ -133,6 +142,11 @@
     const datalist = document.getElementById('countryList');
     const verticalSlider = document.getElementById('vertical-m-slider');
     const liftSlider = document.getElementById('lift-slider');
+    const runSlider = document.getElementById('run-slider');
+    const greenRunSlider = document.getElementById('green-run-slider');
+    const blueRunSlider = document.getElementById('blue-run-slider');
+    const redRunSlider = document.getElementById('red-run-slider');
+    const blackRunSlider = document.getElementById('black-run-slider');
 
     closeBtn.onclick = () => infoBox.classList.remove('visible');
 
@@ -161,10 +175,21 @@
     // ==== SLIDERIT ====
     createCustomSlider(verticalSlider, [0, 3000], 0, 3000, 50);
     createCustomSlider(liftSlider, [0, 170], 0, 170, 1);
+    createCustomSlider(runSlider, [0, 170], 0, 170, 1);
+    createCustomSlider(greenRunSlider, [0, 170], 0, 170, 1);
+    createCustomSlider(blueRunSlider, [0, 170], 0, 170, 1);
+    createCustomSlider(redRunSlider, [0, 170], 0, 170, 1);
+    createCustomSlider(blackRunSlider, [0, 170], 0, 170, 1);
+
 
     // Aja filtterit vasta, kun sliderit varmasti valmiit
     verticalSlider.noUiSlider.on('update', applyFilters);
     liftSlider.noUiSlider.on('update', applyFilters);
+    runSlider.noUiSlider.on('update', applyFilters);
+    greenRunSlider.noUiSlider.on('update', applyFilters);
+    blueRunSlider.noUiSlider.on('update', applyFilters);
+    redRunSlider.noUiSlider.on('update', applyFilters);
+    blackRunSlider.noUiSlider.on('update', applyFilters);
 
     // Ensimmäinen suodatus
     applyFilters();
@@ -275,6 +300,11 @@
         .reduce((acc, id) => ({ ...acc, [id]: document.getElementById(id).checked }), {});
       const [minHeight, maxHeight] = verticalSlider.noUiSlider.get().map(v => parseFloat(v));
       const [minLift, maxLift] = liftSlider.noUiSlider.get().map(v => parseFloat(v));
+      const [minRun, maxRun] = runSlider.noUiSlider.get().map(v => parseFloat(v));
+      const [minGreenRun, maxGreenRun] = greenRunSlider.noUiSlider.get().map(v => parseFloat(v));
+      const [minBlueRun, maxBlueRun] = blueRunSlider.noUiSlider.get().map(v => parseFloat(v));
+      const [minRedRun, maxRedRun] = redRunSlider.noUiSlider.get().map(v => parseFloat(v));
+      const [minBlackRun, maxBlackRun] = blackRunSlider.noUiSlider.get().map(v => parseFloat(v));
 
 
       markers.forEach(m => {
@@ -285,9 +315,18 @@
         const matchHeight = vertical >= minHeight && vertical <= maxHeight;
         const liftCount = d.lift_count ?? 0; // jos undefined/null → 0
         const matchLift = liftCount >= minLift && liftCount <= maxLift;
+        const runCount = d.run_count ?? 0; // jos undefined/null → 0
+        const matchRun = runCount >= minRun && runCount <= maxRun;
+        const greenRunCount = d.green_run ?? 0; // jos undefined/null → 0
+        const matchGreenRun = greenRunCount >= minGreenRun && greenRunCount <= maxGreenRun;
+        const blueRunCount = d.blue_run ?? 0; // jos undefined/null → 0
+        const matchBlueRun = blueRunCount >= minBlueRun && blueRunCount <= maxBlueRun;
+        const redRunCount = d.red_run ?? 0; // jos undefined/null → 0
+        const matchRedRun = redRunCount >= minRedRun && redRunCount <= maxRedRun;
+        const blackRunCount = d.black_run ?? 0; // jos undefined/null → 0
+        const matchBlackRun = blackRunCount >= minBlackRun && blackRunCount <= maxBlackRun;
 
-
-        if (matchCountry && matchParks && matchHeight && matchLift) m.addTo(map);
+        if (matchCountry && matchParks && matchHeight && matchLift && matchRun && matchGreenRun && matchBlueRun && matchRedRun && matchBlackRun) m.addTo(map);
         else map.removeLayer(m);
       });
 
