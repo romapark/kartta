@@ -242,6 +242,7 @@
   white-space:nowrap;
   opacity: 0;
   transition: opacity 0.2s;
+  pointer-events: none;
 }
 .noUi-active .noUi-tooltip {
   opacity: 1; /* tooltip näkyy vain liikutettaessa */
