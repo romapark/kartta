@@ -169,6 +169,20 @@
       return;
     }
 
+    // 🔹 PRECOMPUTE SEASON MONTHS
+    data.forEach(r => {
+      const start = new Date(r.season_start).getMonth() + 1;
+      const end = new Date(r.season_end).getMonth() + 1;
+      const months = [];
+      if (start <= end) {
+        for (let m = start; m <= end; m++) months.push(m);
+      } else {
+        for (let m = start; m <= 12; m++) months.push(m);
+        for (let m = 1; m <= end; m++) months.push(m);
+      }
+      r.seasonMonths = months;
+    });
+
     // ==== MARKKERIT ====
     data.forEach(r => {
       const m = createMarker(r).addTo(map);
@@ -321,23 +335,7 @@
         const matchLift = inRange(d.lift_count ?? 0, minLift, maxLift);
         const matchRun = inRange(d.run_count ?? 0, minRun, maxRun);
 
-        let matchMonths = true;
-        if (selectedMonths.length > 0) {
-          const startMonth = new Date(d.season_start).getMonth() + 1; // 1–12
-          const endMonth = new Date(d.season_end).getMonth() + 1;
-          const monthsInRange = [];
-          // Jos kausi ei ylitä vuotta
-          if (startMonth <= endMonth) {
-            for (let m = startMonth; m <= endMonth; m++) monthsInRange.push(m);
-          } else { 
-            // Jos kausi ylittää vuodenvaihteen, esim. marras–maalis
-            for (let m = startMonth; m <= 12; m++) monthsInRange.push(m);
-            for (let m = 1; m <= endMonth; m++) monthsInRange.push(m);
-          }
-          // Hyväksytään vain, jos kaikki valitut kuukaudet ovat kaudella
-          matchMonths = selectedMonths.every(mo => monthsInRange.includes(mo));
-        }
-
+        let matchMonths = selectedMonths.every(mo => r.seasonMonths.includes(mo));
       
         if (matchCountry && matchParks && matchHeight && matchLift && matchRun && matchMonths) m.addTo(map);
         else map.removeLayer(m);
