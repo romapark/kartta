@@ -335,7 +335,7 @@
         const matchLift = inRange(d.lift_count ?? 0, minLift, maxLift);
         const matchRun = inRange(d.run_count ?? 0, minRun, maxRun);
 
-        let matchMonths = selectedMonths.every(mo => r.seasonMonths.includes(mo));
+        let matchMonths = selectedMonths.every(mo => d.seasonMonths.includes(mo));
       
         if (matchCountry && matchParks && matchHeight && matchLift && matchRun && matchMonths) m.addTo(map);
         else map.removeLayer(m);
