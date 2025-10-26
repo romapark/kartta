@@ -152,6 +152,8 @@
     const liftSliderValue = document.getElementById('lift-slider-value');
     const runSliderValue = document.getElementById('run-slider-value');
     const verticalSliderValue = document.getElementById('vertical-slider-value');
+    const monthCheckboxes = document.querySelectorAll('.month-checkbox');
+
 
 
     closeBtn.onclick = () => infoBox.classList.remove('visible');
@@ -191,13 +193,13 @@
     // Ensimmäinen suodatus
     applyFilters();
 
-    // ==== KUUKAUSI CHECKBOXIT ====
-    const monthCheckboxes = document.querySelectorAll('.month-checkbox');
-    monthCheckboxes.forEach(cb => cb.addEventListener('change', applyFilters));
-
     // ==== FILTTERIT ====
     document.querySelectorAll('#filterBox input').forEach(el => {
-      el.addEventListener('input', applyFilters);
+      if (el.type === "checkbox") {
+        el.addEventListener('change', applyFilters);
+      } else {
+        el.addEventListener('input', applyFilters);
+      }
     });
 
     // ==== HAKU ====
