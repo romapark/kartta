@@ -327,22 +327,27 @@
       const selectedMonths = Array.from(monthCheckboxes).filter(cb=>cb.checked).map(cb=>parseInt(cb.value));
 
       
-      markers.forEach(m => {
+      const visibleMarkers = markers.filter(m => {
         const d = m.data;
         const matchCountry = !country || d.country?.toLowerCase().includes(country);
         const matchParks = Object.entries(filters).every(([k, v]) => !v || d[k]);
         const matchHeight = inRange(d.vertical_m ?? 0, minHeight, maxHeight);
         const matchLift = inRange(d.lift_count ?? 0, minLift, maxLift);
         const matchRun = inRange(d.run_count ?? 0, minRun, maxRun);
+        const matchMonths = selectedMonths.every(mo => d.seasonMonths.includes(mo));
 
-        let matchMonths = selectedMonths.every(mo => d.seasonMonths.includes(mo));
-      
-        if (matchCountry && matchParks && matchHeight && matchLift && matchRun && matchMonths) m.addTo(map);
-        else map.removeLayer(m);
+        return matchCountry && matchParks && matchHeight && matchLift && matchRun && matchMonths;
       });
 
-      const visible = markers.filter(m => map.hasLayer(m));
-      if (visible.length) map.fitBounds(L.featureGroup(visible).getBounds());
+      // Remove all markers
+      markers.forEach(m => map.removeLayer(m));
+
+      // Add only visible markers
+      visibleMarkers.forEach(m => m.addTo(map));
+
+      // Fit map to visible markers
+      if (visibleMarkers.length) map.fitBounds(L.featureGroup(visibleMarkers).getBounds());
+
     }
 
     function getSliderRange(slider) {
