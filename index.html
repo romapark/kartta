@@ -186,7 +186,6 @@
     // ==== MARKKERIT ====
     markers = data.map(r => createMarker(r));      // luodaan markerit
     const markerLayer = L.layerGroup(markers).addTo(map);
-    });
 
     // ==== TÄYTÄ MAAT DATALISTIIN ====
     const countries = [...new Set(data.map(r => r.country))].sort();
