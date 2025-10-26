@@ -65,7 +65,7 @@ body, html {
   font-weight: bold;
 	font-size: 1.1em;
   color: #152843;
-	padding-top: 1em;
+	padding: 0.5em 0;
 }
 
 .slider {
