@@ -18,6 +18,8 @@ body, html {
 
 
 
+
+
 #container {
   display: flex;
   height: 100%;
@@ -71,7 +73,15 @@ body, html {
   height: 18px; 
 }
 
+.month-container {
+  display: flex;
+  gap: 2em;
+}
 
+.month-column {
+  display: flex;
+  flex-direction: column;
+}
 
 /*
 #filterButton {
