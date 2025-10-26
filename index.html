@@ -184,9 +184,8 @@
     });
 
     // ==== MARKKERIT ====
-    data.forEach(r => {
-      const m = createMarker(r).addTo(map);
-      markers.push(m);
+    markers = data.map(r => createMarker(r));      // luodaan markerit
+    const markerLayer = L.layerGroup(markers).addTo(map);
     });
 
     // ==== TÄYTÄ MAAT DATALISTIIN ====
@@ -338,11 +337,11 @@
         return matchCountry && matchParks && matchHeight && matchLift && matchRun && matchMonths;
       });
 
-      // Remove all markers
-      markers.forEach(m => map.removeLayer(m));
+      // Tyhjennä LayerGroup
+      markerLayer.clearLayers();
 
-      // Add only visible markers
-      visibleMarkers.forEach(m => m.addTo(map));
+      // Lisää vain näkyvät markerit LayerGroupiin
+      visibleMarkers.forEach(m => markerLayer.addLayer(m));
     }
 
     function getSliderRange(slider) {
