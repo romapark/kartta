@@ -245,7 +245,7 @@
   pointer-events: none;
 }
 .noUi-active .noUi-tooltip {
-  opacity: 1; /* tooltip näkyy vain liikutettaessa */
+  opacity: 0; /* tooltip näkyy vain liikutettaessa */
 }
 .noUi-horizontal .noUi-tooltip {
   -webkit-transform:translate(-50%,0);
