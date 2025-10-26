@@ -200,9 +200,9 @@
     createCustomSlider(runSlider, runSliderValue, [0, 170], 0, 170, 1);
 
     // Aja filtterit vasta, kun sliderit varmasti valmiit
-    verticalSlider.noUiSlider.on('update', applyFilters);
-    liftSlider.noUiSlider.on('update', applyFilters);
-    runSlider.noUiSlider.on('update', applyFilters);
+    verticalSlider.noUiSlider.on('update', debounce(applyFilters));
+    liftSlider.noUiSlider.on('update', debounce(applyFilters));
+    runSlider.noUiSlider.on('update', debounce(applyFilters));
 
     // Ensimmäinen suodatus
     applyFilters();
@@ -217,7 +217,7 @@
     });
 
     // ==== HAKU ====
-    searchInput.addEventListener('input', handleSearch);
+    searchInput.addEventListener('input', debounce(handleSearch));
 
     // ==== FUNKTIOT ====
     function createCustomSlider(element, elementValue, start = [0, 100], min = 0, max = 100, step = 1, onUpdate = null) {
@@ -385,6 +385,14 @@
       map.setView([marker.data.lat, marker.data.lon], 14);
       marker.fire('click');
     }
+
+    function debounce(fn, delay = 200) {
+    let timeout;
+    return (...args) => {
+      clearTimeout(timeout);
+      timeout = setTimeout(() => fn(...args), delay);
+    };
+  }
 
   });
 
