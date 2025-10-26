@@ -344,10 +344,6 @@
 
       // Add only visible markers
       visibleMarkers.forEach(m => m.addTo(map));
-
-      // Fit map to visible markers
-      if (visibleMarkers.length) map.fitBounds(L.featureGroup(visibleMarkers).getBounds());
-
     }
 
     function getSliderRange(slider) {
