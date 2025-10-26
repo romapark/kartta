@@ -5,6 +5,9 @@ body, html {
   font-size: 13px;
 }
 
+.chapter {
+	margin-bottom: 1.2em;
+}
 
 .alingn-left-right-flexbox {
 	display: flex; 
@@ -40,7 +43,7 @@ body, html {
 
 /* ---Filter laatikko----------------------------------------- */
 #filterBox {
-	width: 15em; 
+	width: 17em; 
 	max-height: 100%;
 	padding: 0.5em;
 	box-sizing: border-box;
@@ -71,7 +74,9 @@ body, html {
 
 .slider {
   margin-bottom: 1em;
-  height: 18px; 
+  height: 18px;
+	margin: 0.5em 0.4em;
+	margin-bottom: 1.5em;
 }
 
 .month-container {
@@ -112,7 +117,7 @@ body, html {
 	border-radius: 10px;
 	background: white;
 	position: absolute;
-	left: 15.2em;
+	left: 17.2em;
 	top: 0.1em;      /* 1em marginaali ylhäällä */
 	bottom: 0.1em;
 	z-index: 1000;
@@ -183,7 +188,7 @@ fieldset h3 {
 #searchBox {
 	position:absolute;
 	top:0.5em;
-	left: 34em;
+	left: 36em;
 	z-index:1000;
 	background:white;
 	padding:8px;
