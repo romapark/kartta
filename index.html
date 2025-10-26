@@ -307,9 +307,9 @@
       const country = document.getElementById('countryInput').value.trim().toLowerCase();
       const filters = ['xl_park', 'l_park','m_park','s_park','superpipe','minipipe','moguls']
         .reduce((acc, id) => ({ ...acc, [id]: document.getElementById(id).checked }), {});
-      const [minHeight, maxHeight] = verticalSlider.noUiSlider.get().map(v => parseFloat(v));
-      const [minLift, maxLift] = liftSlider.noUiSlider.get().map(v => parseFloat(v));
-      const [minRun, maxRun] = runSlider.noUiSlider.get().map(v => parseFloat(v));
+      const [minHeight, maxHeight] = getSliderRange(verticalSlider);
+      const [minLift, maxLift] = getSliderRange(liftSlider);
+      const [minRun, maxRun] = getSliderRange(runSlider);
       const selectedMonths = Array.from(monthCheckboxes).filter(cb=>cb.checked).map(cb=>parseInt(cb.value));
 
       
@@ -317,21 +317,15 @@
         const d = m.data;
         const matchCountry = !country || d.country?.toLowerCase().includes(country);
         const matchParks = Object.entries(filters).every(([k, v]) => !v || d[k]);
-        const vertical = d.vertical_m ?? 0; // jos ei arvoa, oletus 0
-        const matchHeight = vertical >= minHeight && vertical <= maxHeight;
-        const liftCount = d.lift_count ?? 0; // jos undefined/null → 0
-        const matchLift = liftCount >= minLift && liftCount <= maxLift;
-        const runCount = d.run_count ?? 0; // jos undefined/null → 0
-        const matchRun = runCount >= minRun && runCount <= maxRun;
+        const matchHeight = inRange(d.vertical_m ?? 0, minHeight, maxHeight);
+        const matchLift = inRange(d.lift_count ?? 0, minLift, maxLift);
+        const matchRun = inRange(d.run_count ?? 0, minRun, maxRun);
 
         let matchMonths = true;
-
         if (selectedMonths.length > 0) {
           const startMonth = new Date(d.season_start).getMonth() + 1; // 1–12
           const endMonth = new Date(d.season_end).getMonth() + 1;
-
           const monthsInRange = [];
-
           // Jos kausi ei ylitä vuotta
           if (startMonth <= endMonth) {
             for (let m = startMonth; m <= endMonth; m++) monthsInRange.push(m);
@@ -340,7 +334,6 @@
             for (let m = startMonth; m <= 12; m++) monthsInRange.push(m);
             for (let m = 1; m <= endMonth; m++) monthsInRange.push(m);
           }
-
           // Hyväksytään vain, jos kaikki valitut kuukaudet ovat kaudella
           matchMonths = selectedMonths.every(mo => monthsInRange.includes(mo));
         }
@@ -352,6 +345,14 @@
 
       const visible = markers.filter(m => map.hasLayer(m));
       if (visible.length) map.fitBounds(L.featureGroup(visible).getBounds());
+    }
+
+    function getSliderRange(slider) {
+      return slider.noUiSlider.get().map(v => parseFloat(v));
+    }
+
+    function inRange(value, min, max) {
+      return value >= min && value <= max;
     }
 
 
