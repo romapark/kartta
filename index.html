@@ -325,17 +325,26 @@
         const matchRun = runCount >= minRun && runCount <= maxRun;
 
         let matchMonths = true;
-        if(selectedMonths.length>0){
-          const start = new Date(d.season_start);
-          const end = new Date(d.season_end);
+
+        if (selectedMonths.length > 0) {
+          const startMonth = new Date(d.season_start).getMonth() + 1; // 1–12
+          const endMonth = new Date(d.season_end).getMonth() + 1;
+
           const monthsInRange = [];
-          const current = new Date(start);
-          while(current <= end){
-            monthsInRange.push(current.getMonth()+1);
-            current.setMonth(current.getMonth()+1);
+
+          // Jos kausi ei ylitä vuotta
+          if (startMonth <= endMonth) {
+            for (let m = startMonth; m <= endMonth; m++) monthsInRange.push(m);
+          } else { 
+            // Jos kausi ylittää vuodenvaihteen, esim. marras–maalis
+            for (let m = startMonth; m <= 12; m++) monthsInRange.push(m);
+            for (let m = 1; m <= endMonth; m++) monthsInRange.push(m);
           }
-          matchMonths = selectedMonths.every(mo=>monthsInRange.includes(mo));
+
+          // Hyväksytään vain, jos kaikki valitut kuukaudet ovat kaudella
+          matchMonths = selectedMonths.every(mo => monthsInRange.includes(mo));
         }
+
       
         if (matchCountry && matchParks && matchHeight && matchLift && matchRun && matchMonths) m.addTo(map);
         else map.removeLayer(m);
