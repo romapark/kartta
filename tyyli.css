@@ -20,10 +20,6 @@ body, html {
   flex-direction: column;        
 }
 
-
-
-
-
 #container {
   display: flex;
   height: 100%;
@@ -56,7 +52,7 @@ body, html {
 	background: #152843;
 	color: white;
 	font-size: 1.5em;
-	padding-left: 1em;
+	padding: 0.8em 1em;
 }
 
 #filters-content {
