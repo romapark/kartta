@@ -325,16 +325,25 @@
         const matchRun = runCount >= minRun && runCount <= maxRun;
 
         let matchMonths = true;
-        if(selectedMonths.length>0){
+
+        if (selectedMonths.length > 0) {
           const start = new Date(d.season_start);
           const end = new Date(d.season_end);
+
+          const startMonth = start.getMonth() + 1; // JS:ssä 0–11
+          const endMonth = end.getMonth() + 1;
+
           const monthsInRange = [];
-          const current = new Date(start);
-          while(current <= end){
-            monthsInRange.push(current.getMonth()+1);
-            current.setMonth(current.getMonth()+1);
+          let current = startMonth;
+
+          while (true) {
+            monthsInRange.push(current);
+            if (current === endMonth) break;
+            current = current % 12 + 1; // kierrä vuodenvaihteen yli
           }
-          matchMonths = selectedMonths.every(mo=>monthsInRange.includes(mo));
+
+          // Hyväksytään, jos edes yksi valituista kuukausista on kauden alussa, keskellä tai lopussa
+          matchMonths = selectedMonths.some(mo => monthsInRange.includes(mo));
         }
       
         if (matchCountry && matchParks && matchHeight && matchLift && matchRun && matchMonths) m.addTo(map);
