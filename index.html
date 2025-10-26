@@ -31,6 +31,19 @@
           <input id="countryInput" type="text" placeholder="Country..." list="countryList" />
           <datalist id="countryList"></datalist>
 
+          <p>Open</p>
+          <label><input type="checkbox" class="month-checkbox" value="1"> Tammi</label>
+          <label><input type="checkbox" class="month-checkbox" value="2"> Helmi</label>
+          <label><input type="checkbox" class="month-checkbox" value="3"> Maalis</label>
+          <label><input type="checkbox" class="month-checkbox" value="4"> Huhti</label>
+          <label><input type="checkbox" class="month-checkbox" value="5"> Touko</label>
+          <label><input type="checkbox" class="month-checkbox" value="6"> Kesä</label>
+          <label><input type="checkbox" class="month-checkbox" value="7"> Heinä</label>
+          <label><input type="checkbox" class="month-checkbox" value="8"> Elo</label>
+          <label><input type="checkbox" class="month-checkbox" value="9"> Syys</label>
+          <label><input type="checkbox" class="month-checkbox" value="10"> Loka</label>
+          <label><input type="checkbox" class="month-checkbox" value="11"> Marras</label>
+          <label><input type="checkbox" class="month-checkbox" value="12"> Joulu</label>
 
         </fieldset>
 
@@ -178,6 +191,10 @@
     // Ensimmäinen suodatus
     applyFilters();
 
+    // ==== KUUKAUSI CHECKBOXIT ====
+    const monthCheckboxes = document.querySelectorAll('.month-checkbox');
+    monthCheckboxes.forEach(cb => cb.addEventListener('change', applyFilters));
+
     // ==== FILTTERIT ====
     document.querySelectorAll('#filterBox input').forEach(el => {
       el.addEventListener('input', applyFilters);
@@ -291,6 +308,8 @@
       const [minHeight, maxHeight] = verticalSlider.noUiSlider.get().map(v => parseFloat(v));
       const [minLift, maxLift] = liftSlider.noUiSlider.get().map(v => parseFloat(v));
       const [minRun, maxRun] = runSlider.noUiSlider.get().map(v => parseFloat(v));
+      const selectedMonths = Array.from(monthCheckboxes).filter(cb=>cb.checked).map(cb=>parseInt(cb.value));
+
       
       markers.forEach(m => {
         const d = m.data;
@@ -302,8 +321,21 @@
         const matchLift = liftCount >= minLift && liftCount <= maxLift;
         const runCount = d.run_count ?? 0; // jos undefined/null → 0
         const matchRun = runCount >= minRun && runCount <= maxRun;
+
+        let matchMonths = true;
+        if(selectedMonths.length>0){
+          const start = new Date(d.season_start);
+          const end = new Date(d.season_end);
+          const monthsInRange = [];
+          const current = new Date(start);
+          while(current <= end){
+            monthsInRange.push(current.getMonth()+1);
+            current.setMonth(current.getMonth()+1);
+          }
+          matchMonths = selectedMonths.every(mo=>monthsInRange.includes(mo));
+        }
       
-        if (matchCountry && matchParks && matchHeight && matchLift && matchRun) m.addTo(map);
+        if (matchCountry && matchParks && matchHeight && matchLift && matchRun && matchMonths) m.addTo(map);
         else map.removeLayer(m);
       });
 
