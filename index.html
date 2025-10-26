@@ -68,14 +68,18 @@
         </fieldset>
 
         <fieldset>
-          <legend>Parks</legend>
+          <legend>PARKS</legend>
           <strong>Difficulty</strong><br>
           <label><input type="checkbox" id="s_park"> S</label>
           <label><input type="checkbox" id="m_park"> M</label>
           <label><input type="checkbox" id="l_park"> L</label>
           <label><input type="checkbox" id="xl_park"> XL</label><br>
 
-          <strong>Condition</strong>
+          <strong>Condition</strong><br>
+          <label><input type="checkbox" value="1" class="park-condition-checkbox"> ★★★</label><br>
+          <label><input type="checkbox" value="2" class="park-condition-checkbox"> ★★☆</label><br>
+          <label><input type="checkbox" value="3" class="park-condition-checkbox"> ★☆☆</label><br>
+          <label><input type="checkbox" value="none" class="park-condition-checkbox"> n/a</label><br>
           
 
           <strong>Other features</strong><br>
@@ -220,6 +224,9 @@
       }
     });
 
+    document.querySelectorAll('.park-condition-checkbox')
+    .forEach(cb => cb.addEventListener('change', debounce(applyFilters)));
+
     // ==== HAKU ====
     searchInput.addEventListener('input', debounce(handleSearch));
 
@@ -339,7 +346,14 @@
         const matchRun = inRange(d.run_count ?? 0, minRun, maxRun);
         const matchMonths = selectedMonths.every(mo => d.seasonMonths.includes(mo));
 
-        return matchCountry && matchParks && matchHeight && matchLift && matchRun && matchMonths;
+        // 🔹 PARK CONDITION FILTER
+        const selectedConditions = Array.from(document.querySelectorAll('.park-condition-checkbox'))
+                                        .filter(cb => cb.checked)
+                                        .map(cb => cb.value);
+        const parkCond = d.park_condition ?? 'none';
+        const matchCondition = selectedConditions.length === 0 || selectedConditions.includes(String(parkCond));
+
+        return matchCountry && matchParks && matchHeight && matchLift && matchRun && matchMonths && matchCondition;
       });
 
       // Tyhjennä LayerGroup
