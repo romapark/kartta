@@ -297,7 +297,7 @@
         radius: 4,
         color: '#0074D9',
         fillColor: '#0074D9',
-        fillOpacity: 0
+        fillOpacity: 1
       });
       marker.data = r;
       marker.on('click', () => showInfo(r));
@@ -388,7 +388,7 @@
           m.setStyle({
             color: '#0074D9',
             fillColor: '#0074D9',
-            fillOpacity: 0,
+            fillOpacity: 1,
             radius: 4
           });
           m.bringToFront(); // tuo marker etualalle
@@ -397,7 +397,7 @@
           m.setStyle({
             color: '#999',
             fillColor: '#999',
-            fillOpacity: 0,
+            fillOpacity: 1,
             radius: 3
           });
           m.bringToBack(); // siirrä marker taustalle
