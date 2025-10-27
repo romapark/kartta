@@ -11,13 +11,6 @@
 
 </head>
 <body>
-
-  <!-- 🔎 Haku -->
-  <div id="searchBox">
-    <input type="text" id="searchInput" placeholder="Search resort...">
-    <ul id="suggestions"></ul>
-  </div>
-
   <div id="container">
 
     <!-- 🧩 Suodattimet -->
@@ -154,6 +147,12 @@
 
 
       </div>
+    </div>
+
+    <!-- 🔎 Haku -->
+    <div id="searchBox">
+      <input type="text" id="searchInput" placeholder="Search...">
+      <ul id="suggestions"></ul>
     </div>
 
     <div id="map"></div>
@@ -382,11 +381,24 @@
         return matchCountry && matchParks && matchHeight && matchLift && matchRun && matchMonths && matchCondition;
       });
 
-      // Tyhjennä LayerGroup
-      markerLayer.clearLayers();
-
-      // Lisää vain näkyvät markerit LayerGroupiin
-      visibleMarkers.forEach(m => markerLayer.addLayer(m));
+      // Käy kaikki markerit läpi ja muuta väriä sen mukaan, täyttääkö ne filtterit
+      markers.forEach(m => {
+        if (visibleMarkers.includes(m)) {
+          // Näkyvät markerit = sininen
+          m.setStyle({
+            color: '#0074D9',
+            fillColor: '#0074D9',
+            fillOpacity: 0.8
+          });
+        } else {
+          // Suodatetut pois = harmaa ja läpikuultavampi
+          m.setStyle({
+            color: '#999',
+            fillColor: '#999',
+            fillOpacity: 0.3
+          });
+        }
+      });
     }
 
     function getSliderRange(slider) {
