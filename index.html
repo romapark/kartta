@@ -297,7 +297,6 @@
         radius: 4,
         color: '#0074D9',
         fillColor: '#0074D9',
-        fillOpacity: 0.7
       });
       marker.data = r;
       marker.on('click', () => showInfo(r));
@@ -381,25 +380,27 @@
         return matchCountry && matchParks && matchHeight && matchLift && matchRun && matchMonths && matchCondition;
       });
 
-      // Käy kaikki markerit läpi ja muuta väriä sen mukaan, täyttääkö ne filtterit
+      // Käy kaikki markerit läpi ja muuta tyyliä sen mukaan, täyttääkö ne filtterit
       markers.forEach(m => {
         if (visibleMarkers.includes(m)) {
-          // Näkyvät markerit = sininen
+          // 🔹 Näkyvät markerit — sininen, etualalle
           m.setStyle({
             color: '#0074D9',
             fillColor: '#0074D9',
-            fillOpacity: 0.8
+            radius: 4
           });
+          m.bringToFront(); // tuo marker etualalle
         } else {
-          // Suodatetut pois = harmaa ja läpikuultavampi
+          // 🔸 Suodatetut pois — harmaa ja taustalle
           m.setStyle({
             color: '#999',
             fillColor: '#999',
-            fillOpacity: 0.3
+            radius: 3
           });
+          m.bringToBack(); // siirrä marker taustalle
         }
       });
-    }
+
 
     function getSliderRange(slider) {
       return slider.noUiSlider.get().map(v => parseFloat(v));
