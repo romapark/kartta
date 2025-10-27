@@ -417,10 +417,33 @@
 
 
     async function handleSearch() {
-      const query = searchInput.value.trim();
+      const query = searchInput.value.toLowerCase().trim();
       suggestions.innerHTML = '';
       if (!query) return;
 
+      // 🔹 1. Etsi resortit markkeridatasta
+      const resortMatches = markers
+        .filter(m =>
+          m.data.name?.toLowerCase().includes(query) ||
+          m.data.country?.toLowerCase().includes(query) ||
+          m.data.city?.toLowerCase().includes(query)
+        )
+        .sort((a, b) => a.data.name.localeCompare(b.data.name))
+        .slice(0, 10);
+
+      // 🔹 2. Jos resortteja löytyi → näytä ne
+      if (resortMatches.length > 0) {
+        resortMatches.forEach(m => {
+          const li = document.createElement('li');
+          const d = m.data;
+          li.textContent = `${d.name}${d.city ? " (" + d.city + ")" : d.country ? " (" + d.country + ")" : ""}`;
+          li.onclick = () => selectMarker(m);
+          suggestions.appendChild(li);
+        });
+        return; // ✅ Lopeta tähän jos resortteja löytyi
+      }
+
+      // 🔹 3. Jos ei löytynyt — hae Nominatimista
       try {
         const res = await fetch(
           `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(query)}&limit=5`
@@ -436,7 +459,8 @@
           const li = document.createElement('li');
           li.textContent = r.display_name;
           li.onclick = () => {
-            map.setView([r.lat, r.lon], 8); // zoomaa paikkaan
+            // Zoomaa paikkaan
+            map.setView([r.lat, r.lon], 7);
             suggestions.innerHTML = '';
           };
           suggestions.appendChild(li);
