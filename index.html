@@ -416,29 +416,36 @@
     }
 
 
-
-    function handleSearch() {
-      const query = searchInput.value.toLowerCase().trim();
+    async function handleSearch() {
+      const query = searchInput.value.trim();
       suggestions.innerHTML = '';
       if (!query) return;
 
-      const matches = markers
-        .filter(m => m.data.name?.toLowerCase().includes(query))
-        .sort((a, b) => a.data.name.localeCompare(b.data.name))
-        .slice(0, 10);
+      try {
+        const res = await fetch(
+          `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(query)}&limit=5`
+        );
+        const results = await res.json();
 
-      if (!matches.length) {
-        suggestions.innerHTML = '<li class="no-results">Ei tuloksia</li>';
-        return;
+        if (!results.length) {
+          suggestions.innerHTML = '<li class="no-results">Ei tuloksia</li>';
+          return;
+        }
+
+        results.forEach(r => {
+          const li = document.createElement('li');
+          li.textContent = r.display_name;
+          li.onclick = () => {
+            map.setView([r.lat, r.lon], 8); // zoomaa paikkaan
+            suggestions.innerHTML = '';
+          };
+          suggestions.appendChild(li);
+        });
+      } catch (err) {
+        console.error('Geokoodaus epäonnistui:', err);
       }
-
-      matches.forEach(m => {
-        const li = document.createElement('li');
-        li.textContent = m.data.name;
-        li.onclick = () => selectMarker(m);
-        suggestions.appendChild(li);
-      });
     }
+
 
     function selectMarker(marker) {
       suggestions.innerHTML = '';
