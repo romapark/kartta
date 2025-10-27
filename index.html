@@ -401,6 +401,8 @@
         }
       });
 
+    };
+
 
     function getSliderRange(slider) {
       return slider.noUiSlider.get().map(v => parseFloat(v));
@@ -447,8 +449,9 @@
     return (...args) => {
       clearTimeout(timeout);
       timeout = setTimeout(() => fn(...args), delay);
-    };
-  }
+      };
+    }
+  
 
   });
 
