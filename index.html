@@ -417,27 +417,84 @@
 
 
 
-    function handleSearch() {
-      const query = searchInput.value.toLowerCase().trim();
+    let tempMarker = null; // väliaikainen marker geokoodatuille paikoille
+
+    async function handleSearch() {
+      const query = searchInput.value.trim().toLowerCase();
       suggestions.innerHTML = '';
       if (!query) return;
 
-      const matches = markers
-        .filter(m => m.data.name?.toLowerCase().includes(query))
-        .sort((a, b) => a.data.name.localeCompare(b.data.name))
-        .slice(0, 10);
+      // 1️⃣ ENSIN etsitään resortit (nimi, kaupunki, maa)
+      const resortMatches = markers.filter(m => {
+        const d = m.data;
+        return (
+          d.name?.toLowerCase().includes(query) ||
+          d.city?.toLowerCase().includes(query) ||
+          d.country?.toLowerCase().includes(query)
+        );
+      });
 
-      if (!matches.length) {
-        suggestions.innerHTML = '<li class="no-results">Ei tuloksia</li>';
+      if (resortMatches.length > 0) {
+        const title = document.createElement('li');
+        title.textContent = "🎿 Resorts";
+        title.classList.add("result-title");
+        suggestions.appendChild(title);
+
+        resortMatches.slice(0, 10).forEach(m => {
+          const li = document.createElement('li');
+          const d = m.data;
+          li.textContent = `${d.name}${d.city ? " (" + d.city + ")" : d.country ? " (" + d.country + ")" : ""}`;
+          li.onclick = () => selectMarker(m);
+          suggestions.appendChild(li);
+        });
         return;
       }
 
-      matches.forEach(m => {
-        const li = document.createElement('li');
-        li.textContent = m.data.name;
-        li.onclick = () => selectMarker(m);
-        suggestions.appendChild(li);
-      });
+      // 2️⃣ EI LÖYTYNYT RESORTTEJA → KOKEILLAAN GEOKOODAUSTA
+      try {
+        const res = await fetch(
+          `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(query)}&addressdetails=1&limit=5`
+        );
+        const results = await res.json();
+
+        if (!results.length) {
+          suggestions.innerHTML = '<li class="no-results">Ei tuloksia</li>';
+          return;
+        }
+
+        const title = document.createElement('li');
+        title.textContent = "🌍 Places";
+        title.classList.add("result-title");
+        suggestions.appendChild(title);
+
+        results.forEach(r => {
+          const li = document.createElement('li');
+          li.textContent = r.display_name;
+          li.onclick = () => {
+            // Poista vanha marker jos on
+            if (tempMarker) map.removeLayer(tempMarker);
+
+            const lat = parseFloat(r.lat);
+            const lon = parseFloat(r.lon);
+            const zoomLevel =
+              r.type === "country" ? 5 :
+              r.type === "state" ? 7 :
+              r.type === "city" ? 10 : 12;
+
+            // Lisää väliaikainen marker
+            tempMarker = L.marker([lat, lon]).addTo(map)
+              .bindPopup(`<strong>${r.display_name}</strong>`)
+              .openPopup();
+
+            // Zoomaa paikkaan
+            map.setView([lat, lon], zoomLevel);
+            suggestions.innerHTML = '';
+          };
+          suggestions.appendChild(li);
+        });
+      } catch (err) {
+        console.error("Geokoodaus epäonnistui:", err);
+      }
     }
 
     function selectMarker(marker) {
