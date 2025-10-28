@@ -1666,7 +1666,7 @@
   },
   {
     "name": "Dousberg",
-    "country": "Belgium",
+    "country": "Netherlands",
     "status": "operating",
     "lat": "50.855891",
     "lon": "5.644613"
@@ -1716,7 +1716,7 @@
   },
   {
     "name": "Goc",
-    "country": "Bosnia and Herzegovina",
+    "country": "Serbia",
     "vertical_m": "125",
     "lift_count": "1",
     "lat": "43.558629",
@@ -1778,7 +1778,7 @@
   },
   {
     "name": "Obudojevica",
-    "country": "Bosnia and Herzegovina",
+    "country": "Serbia",
     "status": "operating",
     "vertical_m": "66",
     "lift_count": "4",
@@ -1834,7 +1834,7 @@
   },
   {
     "name": "Buscat / Băișoara",
-    "country": "Bulgaria",
+    "country": "Romania",
     "status": "operating",
     "vertical_m": "234",
     "lift_count": "1",
@@ -1843,7 +1843,7 @@
   },
   {
     "name": "Casa Baraj",
-    "country": "Bulgaria",
+    "country": "Romania",
     "status": "operating",
     "vertical_m": "116",
     "lift_count": "2",
@@ -1852,7 +1852,7 @@
   },
   {
     "name": "Chrysso Elafi",
-    "country": "Bulgaria",
+    "country": "Greece",
     "lat": "40.541106",
     "lon": "22.020052"
   },
@@ -1867,7 +1867,7 @@
   },
   {
     "name": "Falakro",
-    "country": "Bulgaria",
+    "country": "Greece",
     "vertical_m": "1240",
     "lift_count": "9",
     "lat": "41.304541",
@@ -7943,13 +7943,13 @@
   },
   {
     "name": "Balkana",
-    "country": "Croatia",
+    "country": "Bosnia and Herzegovina",
     "lat": "44.417113",
     "lon": "17.046502"
   },
   {
     "name": "Brusnica – Fojnica",
-    "country": "Croatia",
+    "country": "Bosnia and Herzegovina",
     "vertical_m": "214",
     "lift_count": "2",
     "lat": "43.927974",
@@ -7965,7 +7965,7 @@
   },
   {
     "name": "Gače",
-    "country": "Croatia",
+    "country": "Slovenia",
     "status": "operating",
     "vertical_m": "284",
     "lift_count": "5",
@@ -7974,7 +7974,7 @@
   },
   {
     "name": "Izver",
-    "country": "Croatia",
+    "country": "Slovenia",
     "status": "operating",
     "vertical_m": "57",
     "lift_count": "1",
@@ -7991,7 +7991,7 @@
   },
   {
     "name": "Ostrelj Bosanski Petrovac",
-    "country": "Croatia",
+    "country": "Bosnia and Herzegovina",
     "vertical_m": "181",
     "lift_count": "1",
     "lat": "44.482091",
@@ -8007,7 +8007,7 @@
   },
   {
     "name": "Faqra",
-    "country": "Cyprus",
+    "country": "Libanon",
     "lat": "33.981261",
     "lon": "35.810032"
   },
@@ -11398,7 +11398,7 @@
   },
   {
     "name": "Ardahan",
-    "country": "Georgia",
+    "country": "Turkey",
     "status": "operating",
     "lat": "41.046771",
     "lon": "42.522171"
@@ -11454,7 +11454,7 @@
   },
   {
     "name": "Jermuk",
-    "country": "Georgia",
+    "country": "Armenia",
     "status": "operating",
     "vertical_m": "334",
     "lift_count": "1",
@@ -11472,7 +11472,7 @@
   },
   {
     "name": "Myler Mountain Resort",
-    "country": "Georgia",
+    "country": "Armenia",
     "status": "operating",
     "vertical_m": "809",
     "lift_count": "2",
@@ -11481,7 +11481,7 @@
   },
   {
     "name": "Palandöken Kayak Merkezi",
-    "country": "Georgia",
+    "country": "Turkey",
     "status": "operating",
     "vertical_m": "1218",
     "lift_count": "14",
@@ -12589,7 +12589,7 @@
   },
   {
     "name": "Globoki Klanec",
-    "country": "Hungary",
+    "country": "Slovenia",
     "lat": "46.475667",
     "lon": "16.094528"
   },
@@ -27033,7 +27033,7 @@
   },
   {
     "name": "Nemrut",
-    "country": "Syria",
+    "country": "Turkey",
     "status": "operating",
     "vertical_m": "710",
     "lift_count": "1",
@@ -27187,7 +27187,7 @@
   },
   {
     "name": "Llandudno Ski and Snowboard Centre",
-    "country": "UK",
+    "country": "United Kingdom",
     "status": "operating",
     "vertical_m": "161",
     "lift_count": "3",
@@ -27196,7 +27196,7 @@
   },
   {
     "name": "Loch Insh Watersports & Skiing Centre",
-    "country": "UK",
+    "country": "United Kingdom",
     "status": "operating",
     "vertical_m": "5",
     "lift_count": "1",
@@ -27205,7 +27205,7 @@
   },
   {
     "name": "Lowther Hills Ski Centre",
-    "country": "UK",
+    "country": "United Kingdom",
     "status": "operating",
     "vertical_m": "84",
     "lift_count": "1",
@@ -27214,7 +27214,7 @@
   },
   {
     "name": "Mendip Snowsport Centre",
-    "country": "UK",
+    "country": "United Kingdom",
     "status": "operating",
     "vertical_m": "36",
     "lift_count": "4",
@@ -27223,14 +27223,14 @@
   },
   {
     "name": "Middlesbrough Snowdome (Cool Runnings)",
-    "country": "UK",
+    "country": "United Kingdom",
     "status": "proposed",
     "lat": "54.580503",
     "lon": "-1.223713"
   },
   {
     "name": "Midland Ski Club (Ackers Adventure)",
-    "country": "UK",
+    "country": "United Kingdom",
     "status": "operating",
     "vertical_m": "16",
     "lift_count": "1",
@@ -27239,7 +27239,7 @@
   },
   {
     "name": "Midlothian Snowsports Centre (Hillend Dry Slope)",
-    "country": "UK",
+    "country": "United Kingdom",
     "status": "operating",
     "vertical_m": "100",
     "lift_count": "3",
@@ -27248,7 +27248,7 @@
   },
   {
     "name": "Nevis Range",
-    "country": "UK",
+    "country": "United Kingdom",
     "status": "operating",
     "vertical_m": "558",
     "lift_count": "13",
@@ -27257,7 +27257,7 @@
   },
   {
     "name": "Newmilns Snow & Sports Complex",
-    "country": "UK",
+    "country": "United Kingdom",
     "status": "operating",
     "vertical_m": "14",
     "lift_count": "2",
@@ -27266,7 +27266,7 @@
   },
   {
     "name": "North Staffs Ski Club (Kidsgrove)",
-    "country": "UK",
+    "country": "United Kingdom",
     "status": "operating",
     "vertical_m": "16",
     "lift_count": "1",
@@ -27328,7 +27328,7 @@
   },
   {
     "name": "Ośrodek Narciarski \"NartRaj\"",
-    "country": "Ukraine",
+    "country": "Poland",
     "status": "operating",
     "vertical_m": "17",
     "lift_count": "2",
@@ -27495,7 +27495,7 @@
   },
   {
     "name": "Knockhatch Ski & Snowboard Centre",
-    "country": "United Kingdom / UK",
+    "country": "United Kingdom",
     "status": "operating",
     "vertical_m": "18",
     "lift_count": "2",
