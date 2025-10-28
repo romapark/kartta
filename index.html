@@ -313,7 +313,10 @@
         fillOpacity: 1
       });
       marker.data = r;
-      marker.on('click', () => showInfo(r));
+      marker.on('click', () => {
+        showInfo(r);
+        map.panTo(marker.getLatLng()); // keskittää markkerin
+      });
       return marker;
     }
 
@@ -561,8 +564,7 @@
     function selectMarker(marker) {
       suggestions.innerHTML = '';
       searchInput.value = marker.data.name;
-      map.setView([marker.data.lat, marker.data.lon], 10);
-      map.panBy([200, 0]);
+      map.setView([marker.data.lat, marker.data.lon], 8);
       marker.fire('click');
     }
 
