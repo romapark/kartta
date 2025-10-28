@@ -460,8 +460,9 @@
       
       // 2️⃣ EI LÖYTYNYT RESORTTEJA → KOKEILLAAN GEOKOODAUSTA
       try {
+        // 🔹 Haetaan Nominatimista paikkoja (maita, kaupunkeja, jne.)
         const res = await fetch(
-          `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(query)}&addressdetails=1&limit=5`
+          `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(query)}&addressdetails=1&limit=10`
         );
         const results = await res.json();
 
@@ -470,14 +471,28 @@
           return;
         }
 
+        // 🔹 Lajitellaan: maat ensin, sitten kaupungit, loput viimeiseksi
+        const typePriority = { country: 1, state: 2, city: 3, town: 4, village: 5, hamlet: 6 };
+        results.sort((a, b) => {
+          const pa = typePriority[a.type] || 99;
+          const pb = typePriority[b.type] || 99;
+          return pa - pb;
+        });
+
+        // 🔹 Näytetään otsikko
         const title = document.createElement('li');
         title.textContent = "🌍 Places";
         title.classList.add("result-title");
         suggestions.appendChild(title);
 
+        // 🔹 Luodaan listaelementit
         results.forEach(r => {
           const li = document.createElement('li');
-          li.textContent = r.display_name;
+          li.innerHTML = `
+            <p>${r.display_name.split(',')[0]}</p>
+            <span class="subtext">${r.display_name}</span>
+          `;
+
           li.onclick = () => {
             // Poista vanha marker jos on
             if (tempMarker) map.removeLayer(tempMarker);
@@ -487,7 +502,7 @@
             const zoomLevel =
               r.type === "country" ? 5 :
               r.type === "state" ? 7 :
-              r.type === "city" ? 10 : 12;
+              r.type === "city" || r.type === "town" ? 10 : 12;
 
             // Lisää väliaikainen marker
             tempMarker = L.marker([lat, lon]).addTo(map)
@@ -498,11 +513,14 @@
             map.setView([lat, lon], zoomLevel);
             suggestions.innerHTML = '';
           };
+
           suggestions.appendChild(li);
         });
+
       } catch (err) {
         console.error("Geokoodaus epäonnistui:", err);
       }
+
     }
 
     function selectMarker(marker) {
