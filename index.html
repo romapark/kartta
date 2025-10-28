@@ -427,7 +427,11 @@
       // 1️⃣ ENSIN etsitään resortit (nimi, kaupunki, maa)
       const resortMatches = markers.filter(m => {
         const d = m.data;
-        return d.name?.toLowerCase().includes(query);
+        if (!d.name) return false;
+
+        // pilkotaan resortin nimi sanoiksi ja tarkistetaan, alkaako joku niistä hakusanalla
+        const words = d.name.toLowerCase().split(/\s+/);
+        return words.some(word => word.startsWith(query));
       });
 
       if (resortMatches.length > 0) {
