@@ -444,6 +444,7 @@
 
         const li = document.createElement('li');
         li.innerHTML = `
+          <img src="snowboarder-icon.png" class="list-icon" alt="icon">
           <p>${d.name}</p>
           ${d.city || d.country
             ? `<span class="subtext">${[d.city, d.country].filter(Boolean).join(', ')}</span>`
