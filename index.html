@@ -561,7 +561,8 @@
     function selectMarker(marker) {
       suggestions.innerHTML = '';
       searchInput.value = marker.data.name;
-      map.setView([marker.data.lat, marker.data.lon], 14);
+      map.setView([marker.data.lat, marker.data.lon], 10);
+      map.panBy([200, 0]);
       marker.fire('click');
     }
 
