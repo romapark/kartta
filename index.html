@@ -453,7 +453,7 @@
       }
 
       // Erotellaan maat ja kaupungit
-      const countries = results.filter(r => r.type === "country");
+      const countries = results.filter(r => r.address?.country && !r.address.city && !r.address.town);
       const cities = results.filter(r => r.type === "city" || r.type === "town");
 
       //
