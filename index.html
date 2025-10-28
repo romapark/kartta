@@ -574,7 +574,7 @@
       marker.fire('click');
     }
 
-    function debounce(fn, delay = 200) {
+    function debounce(fn, delay = 100) {
     let timeout;
     return (...args) => {
       clearTimeout(timeout);
