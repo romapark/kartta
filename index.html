@@ -430,7 +430,7 @@
           const d = m.data;
           if (!d.name) return null;
 
-          const words = d.name.toLowerCase().split(/\s+/);
+          const words = d.name.toLowerCase().split(/[\s-]+/);
           const matchIndex = words.findIndex(word => word.startsWith(query));
           return matchIndex !== -1 ? { marker: m, matchIndex } : null;
         })
