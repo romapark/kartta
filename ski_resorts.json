@@ -9099,7 +9099,7 @@
   },
   {
     "name": "Lądek-Zdrój",
-    "country": "Czech Republic",
+    "country": "Poland",
     "status": "operating",
     "vertical_m": "121",
     "lift_count": "6",
@@ -20902,7 +20902,7 @@
   },
   {
     "name": "Babos Síklub, Fogarasi Nordica Síiskola",
-    "country": "Poland",
+    "country": "Hungary",
     "status": "operating",
     "vertical_m": "2",
     "lift_count": "1",
@@ -20911,7 +20911,7 @@
   },
   {
     "name": "Bachledova dolina",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "263",
     "lift_count": "8",
@@ -20920,7 +20920,7 @@
   },
   {
     "name": "Bačova roveň",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "367",
     "lift_count": "3",
@@ -20936,7 +20936,7 @@
   },
   {
     "name": "Bane",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "104",
     "lift_count": "2",
@@ -21013,7 +21013,7 @@
   },
   {
     "name": "Bílá, Bila",
-    "country": "Poland",
+    "country": "Czech Republic",
     "status": "operating",
     "vertical_m": "231",
     "lift_count": "4",
@@ -21022,7 +21022,7 @@
   },
   {
     "name": "Biocel Zlatník",
-    "country": "Poland",
+    "country": "Czech Republic",
     "status": "operating",
     "vertical_m": "88",
     "lift_count": "2",
@@ -21031,7 +21031,7 @@
   },
   {
     "name": "Brezovica",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "170",
     "lift_count": "1",
@@ -21047,7 +21047,7 @@
   },
   {
     "name": "Bukovytsia",
-    "country": "Poland",
+    "country": "Ukraine",
     "status": "operating",
     "vertical_m": "163",
     "lift_count": "4",
@@ -21080,7 +21080,7 @@
   },
   {
     "name": "Čertovica",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "292",
     "lift_count": "3",
@@ -21089,7 +21089,7 @@
   },
   {
     "name": "Čertovica - STIV",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "130",
     "lift_count": "2",
@@ -21107,7 +21107,7 @@
   },
   {
     "name": "Chopok Jasná",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "1061",
     "lift_count": "18",
@@ -21116,7 +21116,7 @@
   },
   {
     "name": "Chopok Juh",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "704",
     "lift_count": "6",
@@ -21134,7 +21134,7 @@
   },
   {
     "name": "Čičmany",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "307",
     "lift_count": "5",
@@ -21249,7 +21249,7 @@
   },
   {
     "name": "Dolní Lomná - Armáda",
-    "country": "Poland",
+    "country": "Czech Republic",
     "status": "operating",
     "vertical_m": "184",
     "lift_count": "1",
@@ -21276,7 +21276,7 @@
   },
   {
     "name": "FELA Zlatník",
-    "country": "Poland",
+    "country": "Czech Republic",
     "status": "operating",
     "vertical_m": "102",
     "lift_count": "2",
@@ -21285,7 +21285,7 @@
   },
   {
     "name": "Fričkovce",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "96",
     "lift_count": "3",
@@ -21399,7 +21399,7 @@
   },
   {
     "name": "Heľpa",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "77",
     "lift_count": "1",
@@ -21417,7 +21417,7 @@
   },
   {
     "name": "Hlobišov",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "222",
     "lift_count": "1",
@@ -21426,7 +21426,7 @@
   },
   {
     "name": "Holý diel",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "258",
     "lift_count": "2",
@@ -21435,14 +21435,14 @@
   },
   {
     "name": "Horal",
-    "country": "Poland",
+    "country": "Czech Republic",
     "status": "operating",
     "lat": "49.374438",
     "lon": "18.391457"
   },
   {
     "name": "Hrádok",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "111",
     "lift_count": "1",
@@ -21451,7 +21451,7 @@
   },
   {
     "name": "Hronec (vlek Majer)",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "83",
     "lift_count": "1",
@@ -21466,7 +21466,7 @@
   },
   {
     "name": "Jahodná",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "137",
     "lift_count": "6",
@@ -21475,7 +21475,7 @@
   },
   {
     "name": "Jasenská dolina",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "204",
     "lift_count": "5",
@@ -21484,7 +21484,7 @@
   },
   {
     "name": "Jasna Low Tatras",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "1061",
     "lift_count": "27",
@@ -21502,7 +21502,7 @@
   },
   {
     "name": "Javorový Vrch",
-    "country": "Poland",
+    "country": "Czech Republic",
     "status": "operating",
     "vertical_m": "489",
     "lift_count": "3",
@@ -21520,7 +21520,7 @@
   },
   {
     "name": "Jezerné",
-    "country": "Poland",
+    "country": "Czech Republic",
     "status": "operating",
     "vertical_m": "60",
     "lift_count": "1",
@@ -21529,7 +21529,7 @@
   },
   {
     "name": "Július",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "187",
     "lift_count": "2",
@@ -21610,7 +21610,7 @@
   },
   {
     "name": "Kohútka",
-    "country": "Poland",
+    "country": "Czech Republic",
     "status": "operating",
     "vertical_m": "236",
     "lift_count": "8",
@@ -21619,7 +21619,7 @@
   },
   {
     "name": "Kokava - Línia",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "57",
     "lift_count": "5",
@@ -21673,7 +21673,7 @@
   },
   {
     "name": "Košútka",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "216",
     "lift_count": "3",
@@ -21700,7 +21700,7 @@
   },
   {
     "name": "Krasiya - КРАСИЯ",
-    "country": "Poland",
+    "country": "Ukraine",
     "status": "operating",
     "vertical_m": "589",
     "lift_count": "3",
@@ -21709,7 +21709,7 @@
   },
   {
     "name": "Krpáčovo",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "98",
     "lift_count": "2",
@@ -21725,7 +21725,7 @@
   },
   {
     "name": "Kubašok",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "99",
     "lift_count": "5",
@@ -21734,7 +21734,7 @@
   },
   {
     "name": "Kubínská hola",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "647",
     "lift_count": "9",
@@ -21743,7 +21743,7 @@
   },
   {
     "name": "Látky - Prašivá",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "102",
     "lift_count": "2",
@@ -21787,7 +21787,7 @@
   },
   {
     "name": "Liptovská Teplička",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "104",
     "lift_count": "3",
@@ -21796,7 +21796,7 @@
   },
   {
     "name": "Liptovská Teplička - Smrečiny",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "303",
     "lift_count": "3",
@@ -21805,7 +21805,7 @@
   },
   {
     "name": "Litmanová",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "239",
     "lift_count": "5",
@@ -21814,7 +21814,7 @@
   },
   {
     "name": "Lopušná Dolina",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "152",
     "lift_count": "5",
@@ -21839,7 +21839,7 @@
   },
   {
     "name": "Lučivná",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "98",
     "lift_count": "4",
@@ -21848,7 +21848,7 @@
   },
   {
     "name": "Lyžařský areál Kocianka",
-    "country": "Poland",
+    "country": "Czech Republic",
     "status": "operating",
     "vertical_m": "55",
     "lift_count": "2",
@@ -21857,7 +21857,7 @@
   },
   {
     "name": "Lyžařský areál Lužná",
-    "country": "Poland",
+    "country": "Czech Republic",
     "status": "operating",
     "vertical_m": "198",
     "lift_count": "2",
@@ -21866,7 +21866,7 @@
   },
   {
     "name": "Lyžařský vlek Kubiška",
-    "country": "Poland",
+    "country": "Czech Republic",
     "status": "operating",
     "vertical_m": "48",
     "lift_count": "1",
@@ -21875,7 +21875,7 @@
   },
   {
     "name": "Lyžařský vlek Visalaje",
-    "country": "Poland",
+    "country": "Czech Republic",
     "status": "operating",
     "vertical_m": "76",
     "lift_count": "2",
@@ -21884,7 +21884,7 @@
   },
   {
     "name": "Lyžiarske a rekreačné stredisko Veľké Ostré",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "87",
     "lift_count": "2",
@@ -21893,7 +21893,7 @@
   },
   {
     "name": "Lyžiarsky vlek Olešná - Potôčky",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "68",
     "lift_count": "1",
@@ -21911,7 +21911,7 @@
   },
   {
     "name": "Makov - Kasárne",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "162",
     "lift_count": "6",
@@ -21920,7 +21920,7 @@
   },
   {
     "name": "Makovica",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "183",
     "lift_count": "1",
@@ -21945,7 +21945,7 @@
   },
   {
     "name": "Malinô Brdo",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "662",
     "lift_count": "7",
@@ -21972,7 +21972,7 @@
   },
   {
     "name": "Martinské hole",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "295",
     "lift_count": "4",
@@ -22017,7 +22017,7 @@
   },
   {
     "name": "Medvedie",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "136",
     "lift_count": "3",
@@ -22026,7 +22026,7 @@
   },
   {
     "name": "Mezivodí",
-    "country": "Poland",
+    "country": "Czech Republic",
     "status": "operating",
     "vertical_m": "108",
     "lift_count": "2",
@@ -22044,7 +22044,7 @@
   },
   {
     "name": "Mosty u Jablunkova",
-    "country": "Poland",
+    "country": "Czech Republic",
     "status": "operating",
     "vertical_m": "145",
     "lift_count": "3",
@@ -22078,7 +22078,7 @@
   },
   {
     "name": "Mýto Ski & Bike",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "298",
     "lat": "48.841250",
@@ -22095,7 +22095,7 @@
   },
   {
     "name": "Nálepkovo - Krečno",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "97",
     "lift_count": "1",
@@ -22113,7 +22113,7 @@
   },
   {
     "name": "Nový Hrozenkov - Vranča",
-    "country": "Poland",
+    "country": "Czech Republic",
     "status": "operating",
     "vertical_m": "165",
     "lift_count": "2",
@@ -27876,7 +27876,7 @@
     "lon": "-120.049701"
   },
   {
-    "name": "Bears Den Mountain",
+    "name": "Bear's Den Mountain",
     "country": "United States",
     "region": "North Dakota",
     "city": "Fort Ransom",
@@ -27938,7 +27938,7 @@
     "lon": "-81.879486"
   },
   {
-    "name": "Belleayre Mountain Ski Center",
+    "name": "Belleayre",
     "country": "United States",
     "region": "New York",
     "status": "operating",
@@ -27969,7 +27969,7 @@
     "lon": "-72.872566"
   },
   {
-    "name": "Big Bear Ski Resort",
+    "name": "Ski Big Bear",
     "country": "United States",
     "region": "Pennsylvania",
     "city": "Masthope",
@@ -27980,7 +27980,7 @@
     "lon": "-75.023454"
   },
   {
-    "name": "Big Boulder Ski Resort Area",
+    "name": "Big Boulder Mountain - Jack Frost",
     "country": "United States",
     "region": "Pennsylvania",
     "city": "Kidder",
@@ -28106,15 +28106,6 @@
     "lift_count": "5",
     "lat": "44.172099",
     "lon": "-71.166356"
-  },
-  {
-    "name": "Black Mountain (formerly Evergreen Basin)",
-    "country": "United States",
-    "region": "Colorado",
-    "status": "operating",
-    "vertical_m": "383",
-    "lat": "39.535673",
-    "lon": "-105.389314"
   },
   {
     "name": "Black Mountain of Maine",
@@ -28293,7 +28284,7 @@
     "lon": "-79.748785"
   },
   {
-    "name": "Boyne Highlands Resort",
+    "name": "The Highlands",
     "country": "United States",
     "region": "Michigan",
     "city": "Pleasantview",
@@ -28314,16 +28305,7 @@
     "lon": "-84.943524"
   },
   {
-    "name": "Braintree Winter Sports Park",
-    "country": "United States",
-    "region": "Massachusetts",
-    "city": "Quincy",
-    "status": "proposed",
-    "lat": "42.218221",
-    "lon": "-71.069183"
-  },
-  {
-    "name": "Brandywine Ski Resort",
+    "name": "Boston Mills Brandywine",
     "country": "United States",
     "region": "Ohio",
     "status": "operating",
@@ -28428,7 +28410,7 @@
     "lon": "-72.937954"
   },
   {
-    "name": "Bruce Mound Winter Sports Area",
+    "name": "Bruce Mound",
     "country": "United States",
     "region": "Wisconsin",
     "city": "Dewhurst",
@@ -28471,15 +28453,7 @@
     "lon": "-93.286574"
   },
   {
-    "name": "Buckhorn Ski Club",
-    "country": "United States",
-    "region": "California",
-    "status": "operating",
-    "lat": "34.344570",
-    "lon": "-117.914370"
-  },
-  {
-    "name": "Buckskin Hills Ski + Tubing Hill",
+    "name": "Buckskin Hills",
     "country": "United States",
     "region": "Utah",
     "status": "operating",
@@ -28500,7 +28474,7 @@
     "lon": "-94.877418"
   },
   {
-    "name": "Buffalo Ski Club",
+    "name": "Buffalo Ski Center",
     "country": "United States",
     "region": "New York",
     "city": "Boston",
