@@ -191,6 +191,7 @@
     const runSliderValue = document.getElementById('run-slider-value');
     const verticalSliderValue = document.getElementById('vertical-slider-value');
     const monthCheckboxes = document.querySelectorAll('.month-checkbox');
+    let selectedMarker = null;
 
 
 
@@ -307,7 +308,7 @@
     
     function createMarker(r) {
       const marker = L.circleMarker([r.lat, r.lon], {
-        radius: 4,
+        radius: 5,
         color: '#0074D9',
         fillColor: '#0074D9',
         fillOpacity: 1
@@ -316,6 +317,7 @@
       marker.on('click', () => {
         showInfo(r);
         map.panTo(marker.getLatLng()); // keskittää markkerin
+        highlightSelectedMarker(marker);
       });
       return marker;
     }
@@ -405,16 +407,16 @@
             color: '#0074D9',
             fillColor: '#0074D9',
             fillOpacity: 1,
-            radius: 4
+            radius: 5
           });
           m.bringToFront(); // tuo marker etualalle
         } else {
           // 🔸 Suodatetut pois — harmaa ja taustalle
           m.setStyle({
-            color: '#999',
-            fillColor: '#999',
+            color: '#bbb',
+            fillColor: '#bbb',
             fillOpacity: 1,
-            radius: 3
+            radius: 4
           });
           m.bringToBack(); // siirrä marker taustalle
         }
@@ -545,13 +547,6 @@
         */
     }
 
-    function selectMarker(marker) {
-      suggestions.innerHTML = '';
-      searchInput.value = marker.data.name;
-      map.setView([marker.data.lat, marker.data.lon], 10);
-      marker.fire('click');
-    }
-
     function debounce(fn, delay = 200) {
       let timeout;
       return (...args) => {
@@ -574,6 +569,19 @@
       clearTimeout(timeout);
       timeout = setTimeout(() => fn(...args), delay);
       };
+    }
+
+    function highlightSelectedMarker(marker) {
+      // Poista edellinen valintamerkki, jos on
+      if (selectedMarker) {
+        map.removeLayer(selectedMarker);
+      }
+
+      // Luo oletus Leaflet-merkki (punainen)
+      selectedMarker = L.marker(marker.getLatLng()).addTo(map);
+
+      // Keskitetään kartta
+      map.panTo(marker.getLatLng());
     }
   
 
