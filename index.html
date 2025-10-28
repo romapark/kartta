@@ -256,7 +256,16 @@
     .forEach(cb => cb.addEventListener('change', debounce(applyFilters)));
 
     // ==== HAKU ====
+    const clearButton = document.getElementById('clear-button');
+
     searchInput.addEventListener('input', debounce(handleSearch));
+
+    clearButton.addEventListener('click', () => {
+      searchInput.value = '';        // Tyhjennä hakukenttä
+      suggestions.innerHTML = '';    // Tyhjennä ehdotukset
+      selectedIndex = -1;            // Resetoi aktiivinen valinta
+      searchInput.focus();           // Vie fokus takaisin kenttään
+    });
 
     // ==== FUNKTIOT ====
     function createCustomSlider(element, elementValue, start = [0, 100], min = 0, max = 100, step = 1, onUpdate = null) {
