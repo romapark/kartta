@@ -469,7 +469,7 @@
         // Suodatetaan maat
         const countries = results.filter(r => {
           const hasCountry = !!r.address?.country;
-          const isCountryType = r.type === "country" || (r.class === "boundary" && r.type === "administrative");
+          const isCountryType = r.type === "country";
           const noCity = !r.address?.city && !r.address?.town && !r.address?.village;
 
           return hasCountry && isCountryType && noCity;
