@@ -151,7 +151,7 @@
 
     <!-- 🔎 Haku -->
     <div id="searchBox">
-      <input type="text" id="searchInput" placeholder="Search...">
+      <input type="text" id="searchInput" placeholder="Search resort...">
       <ul id="suggestions"></ul>
     </div>
 
@@ -417,7 +417,7 @@
 
 
 
-    let tempMarker = null; // väliaikainen marker geokoodatuille paikoille
+    //let tempMarker = null; // väliaikainen marker geokoodatuille paikoille
 
     async function handleSearch() {
       const query = searchInput.value.trim().toLowerCase();
@@ -457,6 +457,20 @@
         li.onclick = () => selectMarker(m);
         suggestions.appendChild(li);
       });
+
+      // 3️⃣ Valitaan ensimmäinen ehdotus enterillä
+      searchInput.onkeydown = (e) => {
+        if (e.key === 'Enter') {
+          const firstItem = suggestions.querySelector('li');
+          if (firstItem) {
+            firstItem.click();
+          } else {
+            // Jos listassa ei ole ehdotuksia, voit suorittaa haun suoraan
+            const exactMatch = markers.find(m => m.data.name.toLowerCase() === query);
+            if (exactMatch) selectMarker(exactMatch);
+          }
+        }
+      };
 
       /*
       // 2️⃣ HAETAAN MAAT JA KAUPUNGIT GEOKOODAUKSELLA
