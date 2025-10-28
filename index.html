@@ -195,8 +195,16 @@
 
 
 
-    closeBtn.onclick = () => infoBox.classList.remove('visible');
+    closeBtn.onclick = () => {
+      infoBox.classList.remove('visible'); // piilota infobox
 
+      // 🔹 Poista valittu markkeri, jos sellainen on
+      if (selectedMarker) {
+        map.removeLayer(selectedMarker);
+        selectedMarker = null;
+      }
+    };
+    
     let markers = [];
     let data = [];
 
