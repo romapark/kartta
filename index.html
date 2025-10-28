@@ -427,26 +427,21 @@
       // 1️⃣ ENSIN etsitään resortit (nimi, kaupunki, maa)
       const resortMatches = markers.filter(m => {
         const d = m.data;
-        return (
-          d.name?.toLowerCase().includes(query) ||
-          d.city?.toLowerCase().includes(query) ||
-          d.country?.toLowerCase().includes(query)
-        );
+        return d.name?.toLowerCase().includes(query);
       });
 
       if (resortMatches.length > 0) {
-        const title = document.createElement('li');
-        title.textContent = "🎿 Resorts";
-        title.classList.add("result-title");
-        suggestions.appendChild(title);
-
         resortMatches.slice(0, 10).forEach(m => {
           const li = document.createElement('li');
           const d = m.data;
-          li.textContent = `${d.name}${d.city ? " (" + d.city + ")" : d.country ? " (" + d.country + ")" : ""}`;
+          li.innerHTML = `
+            <p>${d.name}</p>
+            ${d.city || d.country ? `<span class="subtext">${[d.city, d.country].filter(Boolean).join(', ')}</span>` : ''}
+          `;
           li.onclick = () => selectMarker(m);
           suggestions.appendChild(li);
         });
+      }
         return;
       }
 
