@@ -248,9 +248,9 @@
     createCustomSlider(runSlider, runSliderValue, [0, 170], 0, 170, 1);
 
     // Aja filtterit vasta, kun sliderit varmasti valmiit
-    verticalSlider.noUiSlider.on('update', debounce(applyFilters));
-    liftSlider.noUiSlider.on('update', debounce(applyFilters));
-    runSlider.noUiSlider.on('update', debounce(applyFilters));
+    verticalSlider.noUiSlider.on('update', applyFilters);
+    liftSlider.noUiSlider.on('update', applyFilters);
+    runSlider.noUiSlider.on('update', applyFilters);
 
     // Ensimmäinen suodatus
     applyFilters();
@@ -265,13 +265,13 @@
     });
 
     document.querySelectorAll('.park-condition-checkbox')
-    .forEach(cb => cb.addEventListener('change', debounce(applyFilters)));
+        .forEach(cb => cb.addEventListener('change', applyFilters));
 
     // ==== HAKU ====
     const clearButton = document.getElementById('clear-button');
     let selectedIndex = -1;
 
-    searchInput.addEventListener('input', debounce(handleSearch));
+    searchInput.addEventListener('input', handleSearch);
 
     clearButton.addEventListener('click', () => {
       searchInput.value = '';        // Tyhjennä hakukenttä
@@ -556,14 +556,6 @@
         console.error("Geokoodaus epäonnistui:", err);
       }
         */
-    }
-
-    function debounce(fn, delay = 200) {
-      let timeout;
-      return (...args) => {
-        clearTimeout(timeout);
-        timeout = setTimeout(() => fn(...args), delay);
-      };
     }
 
 
