@@ -424,9 +424,7 @@
       suggestions.innerHTML = '';
       if (!query) return;
 
-      //
-      // 1️⃣ ETSITÄÄN RESORTIT (nimi alkaa hakusanalla)
-      //
+      // 1️⃣ ENSIN etsitään resortit
       const resortMatches = markers
         .map(m => {
           const d = m.data;
@@ -437,101 +435,79 @@
           return matchIndex !== -1 ? { marker: m, matchIndex } : null;
         })
         .filter(Boolean)
-        .sort((a, b) => a.matchIndex - b.matchIndex); // priorisoi osuman sijainti nimen sisällä
+        .sort((a, b) => a.matchIndex - b.matchIndex);
 
-      //
-      // 2️⃣ GEOKOODATAAN (maat ja kaupungit)
-      //
-      let results = [];
+      // Lisätään resortit listaan
+      resortMatches.slice(0, 10).forEach(obj => {
+        const m = obj.marker;
+        const d = m.data;
+
+        const li = document.createElement('li');
+        li.innerHTML = `
+          <p>${d.name}</p>
+          ${d.city || d.country
+            ? `<span class="subtext">${[d.city, d.country].filter(Boolean).join(', ')}</span>`
+            : ''
+          }
+        `;
+        li.onclick = () => selectMarker(m);
+        suggestions.appendChild(li);
+      });
+
+      // 2️⃣ HAETAAN MAAT JA KAUPUNGIT GEOKOODAUKSELLA
       try {
         const res = await fetch(
-          `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(query)}&addressdetails=1&limit=10`
+          `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(query)}&addressdetails=1&limit=20`
         );
-        results = await res.json();
+        const results = await res.json();
+        if (!results.length) return;
+
+        // Suodatetaan maat
+        const countries = results.filter(r => {
+          if (!r.address?.country) return false;
+          const isCountryType = r.type === "country" || (r.class === "boundary" && r.type === "administrative");
+          const noCity = !r.address.city && !r.address.town && !r.address.village;
+          return isCountryType && noCity;
+        });
+
+        // Suodatetaan kaupungit
+        const cities = results.filter(r => r.type === "city" || r.type === "town" || r.type === "village");
+
+        const createListItem = r => {
+          const li = document.createElement('li');
+          li.innerHTML = `
+            <p>${r.display_name.split(',')[0]}</p>
+            <span class="subtext">${r.display_name}</span>
+          `;
+          li.onclick = () => {
+            if (tempMarker) map.removeLayer(tempMarker);
+
+            const lat = parseFloat(r.lat);
+            const lon = parseFloat(r.lon);
+            const zoomLevel =
+              r.type === "country" ? 5 :
+              r.type === "state" ? 7 :
+              r.type === "city" || r.type === "town" ? 10 : 12;
+
+            tempMarker = L.marker([lat, lon]).addTo(map)
+              .bindPopup(`<strong>${r.display_name}</strong>`)
+              .openPopup();
+
+            map.setView([lat, lon], zoomLevel);
+            suggestions.innerHTML = '';
+          };
+          return li;
+        };
+
+        // Lisätään maat ja kaupungit resorttien perään
+        countries.forEach(r => suggestions.appendChild(createListItem(r)));
+        cities.forEach(r => suggestions.appendChild(createListItem(r)));
+
       } catch (err) {
         console.error("Geokoodaus epäonnistui:", err);
       }
-
-      // Erotellaan maat ja kaupungit
-      const countries = results.filter(r => r.address?.country && !r.address.city && !r.address.town);
-      const cities = results.filter(r => r.type === "city" || r.type === "town");
-
-      //
-      // 3️⃣ NÄYTETÄÄN LISTA: RESORTIT → MAAT → KAUPUNGIT
-      //
-
-      // 🎿 Resortit
-      if (resortMatches.length > 0) {
-        const title = document.createElement('li');
-        title.textContent = "🎿 Resorts";
-        title.classList.add("result-title");
-        suggestions.appendChild(title);
-
-        resortMatches.slice(0, 10).forEach(obj => {
-          const m = obj.marker;
-          const d = m.data;
-          const li = document.createElement('li');
-          li.innerHTML = `
-            <p>${d.name}</p>
-            ${d.city || d.country
-              ? `<span class="subtext">${[d.city, d.country].filter(Boolean).join(', ')}</span>`
-              : ''
-            }
-          `;
-          li.onclick = () => selectMarker(m);
-          suggestions.appendChild(li);
-        });
-      }
-
-      // 🌍 Maat
-      if (countries.length > 0) {
-        const title = document.createElement('li');
-        title.textContent = "🌍 Countries";
-        title.classList.add("result-title");
-        suggestions.appendChild(title);
-
-        countries.forEach(r => {
-          const li = document.createElement('li');
-          li.innerHTML = `
-            <p>${r.display_name.split(',')[0]}</p>
-            <span class="subtext">${r.display_name}</span>
-          `;
-          li.onclick = () => selectGeocodeResult(r);
-          suggestions.appendChild(li);
-        });
-      }
-
-      // 🏙️ Kaupungit
-      if (cities.length > 0) {
-        const title = document.createElement('li');
-        title.textContent = "🏙️ Cities";
-        title.classList.add("result-title");
-        suggestions.appendChild(title);
-
-        cities.forEach(r => {
-          const li = document.createElement('li');
-          li.innerHTML = `
-            <p>${r.display_name.split(',')[0]}</p>
-            <span class="subtext">${r.display_name}</span>
-          `;
-          li.onclick = () => selectGeocodeResult(r);
-          suggestions.appendChild(li);
-        });
-      }
-
-      // Jos ei mitään löytynyt
-      if (
-        resortMatches.length === 0 &&
-        countries.length === 0 &&
-        cities.length === 0
-      ) {
-        suggestions.innerHTML = '<li class="no-results">Ei tuloksia</li>';
-      }
     }
 
-    //
-    // 🗺️ Funktio kun resortti valitaan
-    //
     function selectMarker(marker) {
       suggestions.innerHTML = '';
       searchInput.value = marker.data.name;
@@ -539,26 +515,12 @@
       marker.fire('click');
     }
 
-    //
-    // 📍 Funktio kun geokoodattu paikka valitaan
-    //
-    function selectGeocodeResult(r) {
-      if (tempMarker) map.removeLayer(tempMarker);
-
-      const lat = parseFloat(r.lat);
-      const lon = parseFloat(r.lon);
-      const zoomLevel =
-        r.type === "country" ? 5 :
-        r.type === "state" ? 7 :
-        r.type === "city" || r.type === "town" ? 10 : 12;
-
-      tempMarker = L.marker([lat, lon])
-        .addTo(map)
-        .bindPopup(`<strong>${r.display_name}</strong>`)
-        .openPopup();
-
-      map.setView([lat, lon], zoomLevel);
-      suggestions.innerHTML = '';
+    function debounce(fn, delay = 200) {
+      let timeout;
+      return (...args) => {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => fn(...args), delay);
+      };
     }
 
 
