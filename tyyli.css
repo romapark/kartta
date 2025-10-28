@@ -200,8 +200,6 @@ fieldset h3 {
 	width:220px;
 	border: 1px solid #152843;
 }
-
-
 #searchInput {
 	width:100%;
 	box-sizing:border-box;
@@ -210,7 +208,6 @@ fieldset h3 {
   outline: none;          /* poistaa sinisen korostuksen klikatessa */
   background: transparent;
 }
-
 #suggestions {
 	list-style:none;
 	margin:4px 0 0 0;
@@ -235,6 +232,16 @@ fieldset h3 {
 
 #suggestions li:hover {
   background: #eee;
+}
+#suggestions li p {
+	margin: 0
+}
+
+#suggestions li .subtext {
+  display: inline;
+  margin-left: 6px;
+  color: #777;
+  font-size: 0.9em;
 }
 
 /*---kartta-----------------------------------------------------------------*/
