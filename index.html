@@ -458,6 +458,7 @@
         suggestions.appendChild(li);
       });
 
+      /*
       // 2️⃣ HAETAAN MAAT JA KAUPUNGIT GEOKOODAUKSELLA
       try {
         const res = await fetch(
@@ -469,7 +470,7 @@
         // Suodatetaan maat
         const countries = results.filter(r => {
           const hasCountry = !!r.address?.country;
-          const isCountryType = r.type === "country";
+          const isCountryType = r.type === "country" || (r.class === "boundary" && r.type === "administrative");
           const noCity = !r.address?.city && !r.address?.town && !r.address?.village;
 
           return hasCountry && isCountryType && noCity;
@@ -511,12 +512,13 @@
       } catch (err) {
         console.error("Geokoodaus epäonnistui:", err);
       }
+        */
     }
 
     function selectMarker(marker) {
       suggestions.innerHTML = '';
       searchInput.value = marker.data.name;
-      map.setView([marker.data.lat, marker.data.lon], 14);
+      map.setView([marker.data.lat, marker.data.lon], 10);
       marker.fire('click');
     }
 
