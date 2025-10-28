@@ -468,10 +468,11 @@
 
         // Suodatetaan maat
         const countries = results.filter(r => {
-          if (!r.address?.country) return false;
+          const hasCountry = !!r.address?.country;
           const isCountryType = r.type === "country" || (r.class === "boundary" && r.type === "administrative");
-          const noCity = !r.address.city && !r.address.town && !r.address.village;
-          return isCountryType && noCity;
+          const noCity = !r.address?.city && !r.address?.town && !r.address?.village;
+
+          return hasCountry && isCountryType && noCity;
         });
 
         // Suodatetaan kaupungit
