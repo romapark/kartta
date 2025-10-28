@@ -443,13 +443,16 @@
         const d = m.data;
 
         const li = document.createElement('li');
+        li.classList.add('list-item');
         li.innerHTML = `
-          <img src="snowboarder_icon.svg" class="list-icon" alt="icon">
-          <p>${d.name}</p>
-          ${d.city || d.country
-            ? `<span class="subtext">${[d.city, d.country].filter(Boolean).join(', ')}</span>`
-            : ''
-          }
+          <img src="snowboarder_icon.svg" class="list-icon" alt="skiresort">
+          <div>
+            <span>${d.name}</span><br>
+            ${d.city || d.country
+              ? `<span class="subtext">${[d.city, d.country].filter(Boolean).join(', ')}</span>`
+              : ''
+            }
+          </div>
         `;
         li.onclick = () => selectMarker(m);
         suggestions.appendChild(li);
