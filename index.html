@@ -204,7 +204,7 @@
         selectedMarker = null;
       }
     };
-    
+
     let markers = [];
     let data = [];
 
@@ -586,7 +586,7 @@
       }
 
       // Luo oletus Leaflet-merkki (punainen)
-      selectedMarker = L.marker(marker.getLatLng()).addTo(map);
+      selectedMarker = L.marker(marker.getLatLng(), { interactive: false }).addTo(map);
 
       // Keskitetään kartta
       map.panTo(marker.getLatLng());
