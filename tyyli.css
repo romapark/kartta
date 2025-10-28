@@ -248,6 +248,22 @@ fieldset h3 {
   align-items: center; /* keskittää kuvan ja tekstin pystysuunnassa */
   gap: 8px; /* väli kuvan ja tekstin välille */
 }
+#clear-button {
+  border-radius: 50%;
+	border: 1px solid #152843;
+	color: #152843;
+	background-color: white;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#clear-button:hover {
+  background-color: #eee;
+}
+
+#clear-button:active {
+  background-color: #ddd;
+}
 
 /*---kartta-----------------------------------------------------------------*/
 #map {
