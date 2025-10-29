@@ -61,8 +61,16 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
 
     // ==== MARKKERIT ====
-    markers = data.map(r => createMarker(r));      // luodaan markerit
-    const markerLayer = L.layerGroup(markers).addTo(map);
+    const markerCluster = L.markerClusterGroup({
+      spiderfyOnEveryZoom: false,
+      showCoverageOnHover: false,
+      maxClusterRadius: 40, // pienempi = enemmän klustereita
+    });
+
+    markers = data.map(r => createMarker(r));
+    markers.forEach(m => markerCluster.addLayer(m));
+
+    map.addLayer(markerCluster);
 
     // ==== TÄYTÄ MAAT DATALISTIIN ====
     const countries = [...new Set(data.map(r => r.country))].sort();
@@ -217,7 +225,10 @@ document.addEventListener("DOMContentLoaded", async () => {
       const [minRun, maxRun] = getSliderRange(runSlider);
       const selectedMonths = Array.from(monthCheckboxes).filter(cb=>cb.checked).map(cb=>parseInt(cb.value));
 
-      
+      // Tyhjennetään klusteri ensin
+      markerCluster.clearLayers();
+
+      // Suodatetaan näkyvät markerit
       const visibleMarkers = markers.filter(m => {
         const d = m.data;
         const matchCountry = !country || d.country?.toLowerCase().includes(country);
@@ -227,7 +238,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         const matchRun = inRange(d.run_count ?? 0, minRun, maxRun);
         const matchMonths = selectedMonths.every(mo => d.seasonMonths.includes(mo));
 
-        // 🔹 PARK CONDITION FILTER
         const selectedConditions = Array.from(document.querySelectorAll('.park-condition-checkbox'))
                                         .filter(cb => cb.checked)
                                         .map(cb => cb.value);
@@ -237,28 +247,9 @@ document.addEventListener("DOMContentLoaded", async () => {
         return matchCountry && matchParks && matchHeight && matchLift && matchRun && matchMonths && matchCondition;
       });
 
-      // Käy kaikki markerit läpi ja muuta tyyliä sen mukaan, täyttääkö ne filtterit
-      markers.forEach(m => {
-        if (visibleMarkers.includes(m)) {
-          // 🔹 Näkyvät markerit — sininen, etualalle
-          m.setStyle({
-            color: '#0074D9',
-            fillColor: '#0074D9',
-            fillOpacity: 1,
-            radius: 5
-          });
-          m.bringToFront(); // tuo marker etualalle
-        } else {
-          // 🔸 Suodatetut pois — harmaa ja taustalle
-          m.setStyle({
-            color: '#bbb',
-            fillColor: '#bbb',
-            fillOpacity: 1,
-            radius: 4
-          });
-          m.bringToBack(); // siirrä marker taustalle
-        }
-      });
+      // Lisää vain näkyvät markerit klusteriin
+      visibleMarkers.forEach(m => markerCluster.addLayer(m));
+
 
     };
 
