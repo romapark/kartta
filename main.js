@@ -238,9 +238,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     const [minRun, maxRun] = getSliderRange(runSlider);
     const selectedMonths = Array.from(monthCheckboxes).filter(cb=>cb.checked).map(cb=>parseInt(cb.value));
 
-    // Tyhjennetään klusteri ensin
-    markerCluster.clearLayers();
-
     // Suodatetaan näkyvät markerit
     const visibleMarkers = markers.filter(m => {
       const d = m.data;
@@ -260,8 +257,20 @@ document.addEventListener("DOMContentLoaded", async () => {
       return matchCountry && matchParks && matchHeight && matchLift && matchRun && matchMonths && matchCondition;
     });
 
-    // Lisää vain näkyvät markerit klusteriin
+    // 🔹 Käytä Set nopeaan tarkistukseen
+    const visibleSet = new Set(visibleMarkers);
+
+    // 🔹 Tyhjennetään ja lisätään vain näkyvät markerit
+    markerCluster.clearLayers();
     visibleMarkers.forEach(m => markerCluster.addLayer(m));
+
+    // (valinnainen) jos haluat merkitä näkyvät eri värillä:
+    /*
+    markers.forEach(m => {
+      const isVisible = visibleSet.has(m);
+      m.setStyle({ opacity: isVisible ? 1 : 0.2 });
+    });
+    */
 
 
   };
