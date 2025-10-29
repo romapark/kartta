@@ -252,7 +252,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       const matchLift = inRange(d.lift_count ?? 0, minLift, maxLift);
       const matchRun = inRange(d.run_count ?? 0, minRun, maxRun);
       const matchMonths = selectedMonths.every(mo => d.seasonMonths.includes(mo));
-      const matchPublicTrans = selectedPublicTrans.length === 0 || selectedPublicTrans.includes(d.public_transport);
+      const matchPublicTrans = selectedPublicTrans.length === 0 || selectedPublicTrans.includes(d.public_trans);
 
       const selectedConditions = Array.from(document.querySelectorAll('.park-condition-checkbox'))
                                       .filter(cb => cb.checked)
