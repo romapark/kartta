@@ -1,97 +1,5 @@
 [
   {
-    "name": "Laajis",
-    "country": "Finland",
-    "region": "Central Finland",
-    "city": "Jyväskylä",
-    "status": "operating",
-    "type": "skiresort",
-    "overall_description": "Skiresot in the middle of the city.",
-    "vertical_m": "99",
-    "lift_count": "6",
-    "lat": "62.255701",
-    "lon": "25.695280",
-    "season_start": "2025-11-14",
-    "season_end": "2026-04-10",
-    "has_park": true,
-    "xl_park": false,
-    "l_park": false,
-    "m_park": true,
-    "s_park": true,
-    "superpipe": false,
-    "minipipe": false,
-    "park_condition": "1",
-    "moguls": true,
-    "run_count": "12",
-    "black_run": "1",
-    "red_run": "4",
-    "blue_run": "3",
-    "green_run": "4",
-    "has_public_trans": true,
-    "public_transport": "a"
-  },
-  {
-    "name": "Vogel",
-    "status": "operating",
-    "vertical_m": "1219",
-    "lift_count": "9",
-    "lat": "46.265234",
-    "lon": "13.822192",
-    "has_park": true,
-    "l_park": false,
-    "m_park": true,
-    "s_park": true,
-    "superpipe": false,
-    "minipipe": false,
-    "slope_length": "22",
-    "has_public_trans": true,
-    "public_transport": "a"
-  },
-  {
-    "name": "The Remarkables",
-    "country": "New Zealand",
-    "region": "Otago Region",
-    "city": "Kawarau Falls",
-    "status": "operating",
-    "vertical_m": "376",
-    "lift_count": "7",
-    "lat": "-45.055739",
-    "lon": "168.813527",
-    "has_park": true,
-    "xl_park": false,
-    "l_park": true,
-    "m_park": true,
-    "s_park": true,
-    "superpipe": false,
-    "minipipe": false,
-    "park_condition": "3",
-    "moguls": false,
-    "has_public_trans": true,
-    "public_transport": "b"
-  },
-  {
-    "name": "Cardrona Alpine Resort",
-    "country": "New Zealand",
-    "region": "Otago Region",
-    "city": "Cardrona",
-    "status": "operating",
-    "vertical_m": "610",
-    "lift_count": "10",
-    "lat": "-44.868267",
-    "lon": "168.951110",
-    "has_park": true,
-    "xl_park": true,
-    "l_park": true,
-    "m_park": true,
-    "s_park": true,
-    "superpipe": true,
-    "minipipe": true,
-    "park_condition": "3",
-    "moguls": false,
-    "has_public_trans": false,
-    "public_transport": "x"
-  },
-  {
     "name": "Chrea",
     "country": "Algeria",
     "vertical_m": "42",
@@ -448,6 +356,24 @@
     "lift_count": "4",
     "lat": "-51.574448",
     "lon": "-72.355911"
+  },
+  {
+    "name": "Jermuk",
+    "country": "Armenia",
+    "status": "operating",
+    "vertical_m": "334",
+    "lift_count": "1",
+    "lat": "39.831382",
+    "lon": "45.673617"
+  },
+  {
+    "name": "Myler Mountain Resort",
+    "country": "Armenia",
+    "status": "operating",
+    "vertical_m": "809",
+    "lift_count": "2",
+    "lat": "40.508970",
+    "lon": "44.458923"
   },
   {
     "name": "Ben Lomond",
@@ -1757,13 +1683,6 @@
     "lon": "5.734906"
   },
   {
-    "name": "Dousberg",
-    "country": "Netherlands",
-    "status": "operating",
-    "lat": "50.855891",
-    "lon": "5.644613"
-  },
-  {
     "name": "Lierneux (Le monty)",
     "country": "Belgium",
     "status": "operating",
@@ -1791,6 +1710,12 @@
     "lon": "19.698239"
   },
   {
+    "name": "Balkana",
+    "country": "Bosnia and Herzegovina",
+    "lat": "44.417113",
+    "lon": "17.046502"
+  },
+  {
     "name": "Blidinje - Risovac",
     "country": "Bosnia and Herzegovina",
     "vertical_m": "263",
@@ -1799,20 +1724,20 @@
     "lon": "17.570350"
   },
   {
+    "name": "Brusnica – Fojnica",
+    "country": "Bosnia and Herzegovina",
+    "vertical_m": "214",
+    "lift_count": "2",
+    "lat": "43.927974",
+    "lon": "17.884605"
+  },
+  {
     "name": "Busovača",
     "country": "Bosnia and Herzegovina",
     "vertical_m": "122",
     "lift_count": "1",
     "lat": "44.061457",
     "lon": "17.804320"
-  },
-  {
-    "name": "Goc",
-    "country": "Serbia",
-    "vertical_m": "125",
-    "lift_count": "1",
-    "lat": "43.558629",
-    "lon": "20.848249"
   },
   {
     "name": "Igrišta olimpijski centar",
@@ -1869,15 +1794,6 @@
     "lon": "18.247404"
   },
   {
-    "name": "Obudojevica",
-    "country": "Serbia",
-    "status": "operating",
-    "vertical_m": "66",
-    "lift_count": "4",
-    "lat": "43.723082",
-    "lon": "19.691522"
-  },
-  {
     "name": "OC Bjelašnica ZOI '84",
     "country": "Bosnia and Herzegovina",
     "status": "operating",
@@ -1885,6 +1801,14 @@
     "lift_count": "9",
     "lat": "43.710667",
     "lon": "18.273299"
+  },
+  {
+    "name": "Ostrelj Bosanski Petrovac",
+    "country": "Bosnia and Herzegovina",
+    "vertical_m": "181",
+    "lift_count": "1",
+    "lat": "44.482091",
+    "lon": "16.411781"
   },
   {
     "name": "Gramado Snowland (Serra Gaúcha)",
@@ -1925,30 +1849,6 @@
     "lon": "23.595673"
   },
   {
-    "name": "Buscat / Băișoara",
-    "country": "Romania",
-    "status": "operating",
-    "vertical_m": "234",
-    "lift_count": "1",
-    "lat": "46.539365",
-    "lon": "23.311870"
-  },
-  {
-    "name": "Casa Baraj",
-    "country": "Romania",
-    "status": "operating",
-    "vertical_m": "116",
-    "lift_count": "2",
-    "lat": "45.214763",
-    "lon": "22.030901"
-  },
-  {
-    "name": "Chrysso Elafi",
-    "country": "Greece",
-    "lat": "40.541106",
-    "lon": "22.020052"
-  },
-  {
     "name": "Dobrinishte",
     "country": "Bulgaria",
     "status": "operating",
@@ -1956,14 +1856,6 @@
     "lift_count": "4",
     "lat": "41.742055",
     "lon": "23.528466"
-  },
-  {
-    "name": "Falakro",
-    "country": "Greece",
-    "vertical_m": "1240",
-    "lift_count": "9",
-    "lat": "41.304541",
-    "lon": "24.069803"
   },
   {
     "name": "Kartala",
@@ -8034,44 +7926,12 @@
     "lon": "125.428343"
   },
   {
-    "name": "Balkana",
-    "country": "Bosnia and Herzegovina",
-    "lat": "44.417113",
-    "lon": "17.046502"
-  },
-  {
-    "name": "Brusnica – Fojnica",
-    "country": "Bosnia and Herzegovina",
-    "vertical_m": "214",
-    "lift_count": "2",
-    "lat": "43.927974",
-    "lon": "17.884605"
-  },
-  {
     "name": "Čelimbaša",
     "country": "Croatia",
     "vertical_m": "245",
     "lift_count": "1",
     "lat": "45.308825",
     "lon": "14.859807"
-  },
-  {
-    "name": "Gače",
-    "country": "Slovenia",
-    "status": "operating",
-    "vertical_m": "284",
-    "lift_count": "5",
-    "lat": "45.664705",
-    "lon": "15.089750"
-  },
-  {
-    "name": "Izver",
-    "country": "Slovenia",
-    "status": "operating",
-    "vertical_m": "57",
-    "lift_count": "1",
-    "lat": "45.753601",
-    "lon": "14.641557"
   },
   {
     "name": "Mukinje Plitvice",
@@ -8082,26 +7942,12 @@
     "lon": "15.629822"
   },
   {
-    "name": "Ostrelj Bosanski Petrovac",
-    "country": "Bosnia and Herzegovina",
-    "vertical_m": "181",
-    "lift_count": "1",
-    "lat": "44.482091",
-    "lon": "16.411781"
-  },
-  {
     "name": "Petehovac Delnice",
     "country": "Croatia",
     "vertical_m": "47",
     "lift_count": "1",
     "lat": "45.380859",
     "lon": "14.820434"
-  },
-  {
-    "name": "Faqra",
-    "country": "Libanon",
-    "lat": "33.981261",
-    "lon": "35.810032"
   },
   {
     "name": "Aldrov",
@@ -9554,6 +9400,37 @@
     "lon": "24.086061"
   },
   {
+    "name": "Laajis",
+    "country": "Finland",
+    "region": "Central Finland",
+    "city": "Jyväskylä",
+    "status": "operating",
+    "type": "skiresort",
+    "overall_description": "Skiresot in the middle of the city.",
+    "vertical_m": "99",
+    "lift_count": "6",
+    "lat": "62.255701",
+    "lon": "25.695280",
+    "season_start": "2025-11-14",
+    "season_end": "2026-04-10",
+    "has_park": true,
+    "xl_park": false,
+    "l_park": false,
+    "m_park": true,
+    "s_park": true,
+    "superpipe": false,
+    "minipipe": false,
+    "park_condition": "1",
+    "moguls": true,
+    "run_count": "12",
+    "black_run": "1",
+    "red_run": "4",
+    "blue_run": "3",
+    "green_run": "4",
+    "has_public_trans": true,
+    "public_transport": "a"
+  },
+  {
     "name": "Lakis",
     "country": "Finland",
     "status": "operating",
@@ -9817,6 +9694,24 @@
     "lon": "6.544616"
   },
   {
+    "name": "Artouste",
+    "country": "France",
+    "status": "operating",
+    "vertical_m": "698",
+    "lift_count": "10",
+    "lat": "42.900862",
+    "lon": "-0.383852"
+  },
+  {
+    "name": "Ascou",
+    "country": "France",
+    "status": "operating",
+    "vertical_m": "568",
+    "lift_count": "7",
+    "lat": "42.727328",
+    "lon": "1.964951"
+  },
+  {
     "name": "Association Téléski du Salève (A.T.S.)",
     "country": "France",
     "status": "operating",
@@ -9973,6 +9868,15 @@
     "lift_count": "5",
     "lat": "47.900241",
     "lon": "6.857083"
+  },
+  {
+    "name": "Camurac",
+    "country": "France",
+    "status": "operating",
+    "vertical_m": "263",
+    "lift_count": "7",
+    "lat": "42.774102",
+    "lon": "1.923756"
   },
   {
     "name": "Cauterets Cirque du Lys",
@@ -10192,6 +10096,15 @@
     "lift_count": "25",
     "lat": "44.081239",
     "lon": "6.948555"
+  },
+  {
+    "name": "Espace Cambre d'Aze",
+    "country": "France",
+    "status": "operating",
+    "vertical_m": "747",
+    "lift_count": "15",
+    "lat": "42.473485",
+    "lon": "2.113649"
   },
   {
     "name": "Espace Diamant",
@@ -10610,6 +10523,15 @@
     "vertical_m": "439",
     "lat": "46.278862",
     "lon": "5.855865"
+  },
+  {
+    "name": "La Pierre Saint-Martin, San Martingo Harria",
+    "country": "France",
+    "status": "operating",
+    "vertical_m": "618",
+    "lift_count": "10",
+    "lat": "42.974303",
+    "lon": "-0.739408"
   },
   {
     "name": "La Plagne",
@@ -11458,13 +11380,6 @@
     "lon": "6.475231"
   },
   {
-    "name": "Ardahan",
-    "country": "Turkey",
-    "status": "operating",
-    "lat": "41.046771",
-    "lon": "42.522171"
-  },
-  {
     "name": "Betania",
     "country": "Georgia",
     "lat": "41.668556",
@@ -11514,15 +11429,6 @@
     "lon": "42.736055"
   },
   {
-    "name": "Jermuk",
-    "country": "Armenia",
-    "status": "operating",
-    "vertical_m": "334",
-    "lift_count": "1",
-    "lat": "39.831382",
-    "lon": "45.673617"
-  },
-  {
     "name": "Kokhta - Mitarbi (Bakuriani)",
     "country": "Georgia",
     "status": "operating",
@@ -11530,24 +11436,6 @@
     "lift_count": "5",
     "lat": "41.737722",
     "lon": "43.557882"
-  },
-  {
-    "name": "Myler Mountain Resort",
-    "country": "Armenia",
-    "status": "operating",
-    "vertical_m": "809",
-    "lift_count": "2",
-    "lat": "40.508970",
-    "lon": "44.458923"
-  },
-  {
-    "name": "Palandöken Kayak Merkezi",
-    "country": "Turkey",
-    "status": "operating",
-    "vertical_m": "1218",
-    "lift_count": "14",
-    "lat": "39.845034",
-    "lon": "41.285649"
   },
   {
     "name": "Adelharz- und Breitensteinlifte (Kranzegg am Grünten)",
@@ -12512,6 +12400,12 @@
     "lon": "21.231305"
   },
   {
+    "name": "Chrysso Elafi",
+    "country": "Greece",
+    "lat": "40.541106",
+    "lon": "22.020052"
+  },
+  {
     "name": "Elatohori",
     "country": "Greece",
     "status": "operating",
@@ -12519,6 +12413,14 @@
     "lift_count": "3",
     "lat": "40.305669",
     "lon": "22.207830"
+  },
+  {
+    "name": "Falakro",
+    "country": "Greece",
+    "vertical_m": "1240",
+    "lift_count": "9",
+    "lat": "41.304541",
+    "lon": "24.069803"
   },
   {
     "name": "Kaimaktsalan",
@@ -12647,12 +12549,6 @@
     "lift_count": "1",
     "lat": "47.720117",
     "lon": "18.908635"
-  },
-  {
-    "name": "Globoki Klanec",
-    "country": "Slovenia",
-    "lat": "46.475667",
-    "lon": "16.094528"
   },
   {
     "name": "Kékestető Sícentrum",
@@ -13224,7 +13120,7 @@
   },
   {
     "name": "Brunnalm / St. Jakob",
-    "country": "Italy",
+    "country": "Austria",
     "status": "operating",
     "vertical_m": "1296",
     "lift_count": "7",
@@ -13570,7 +13466,7 @@
   },
   {
     "name": "Embach",
-    "country": "Italy",
+    "country": "Austria",
     "status": "operating",
     "vertical_m": "281",
     "lift_count": "2",
@@ -13699,7 +13595,7 @@
   },
   {
     "name": "Galtür",
-    "country": "Italy",
+    "country": "Austria",
     "status": "operating",
     "vertical_m": "667",
     "lift_count": "10",
@@ -13780,7 +13676,7 @@
   },
   {
     "name": "Hochrindl",
-    "country": "Italy",
+    "country": "Austria",
     "status": "operating",
     "vertical_m": "373",
     "lift_count": "7",
@@ -13789,7 +13685,7 @@
   },
   {
     "name": "Hochstein",
-    "country": "Italy",
+    "country": "Austria",
     "status": "operating",
     "vertical_m": "829",
     "lift_count": "3",
@@ -13798,7 +13694,7 @@
   },
   {
     "name": "Hütegglift Weerberg",
-    "country": "Italy",
+    "country": "Austria",
     "status": "operating",
     "vertical_m": "258",
     "lift_count": "1",
@@ -13807,7 +13703,7 @@
   },
   {
     "name": "Innerkrems",
-    "country": "Italy",
+    "country": "Austria",
     "status": "operating",
     "vertical_m": "79",
     "lift_count": "1",
@@ -13834,7 +13730,7 @@
   },
   {
     "name": "Kartitsch / St. Oswald",
-    "country": "Italy",
+    "country": "Austria",
     "status": "operating",
     "vertical_m": "452",
     "lift_count": "2",
@@ -13843,7 +13739,7 @@
   },
   {
     "name": "Karwendel Bergbahn",
-    "country": "Italy",
+    "country": "Austria",
     "status": "operating",
     "vertical_m": "549",
     "lift_count": "6",
@@ -13852,7 +13748,7 @@
   },
   {
     "name": "Karwendelbahn (Dammkar, Mittenwald)",
-    "country": "Italy",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "1312",
     "lift_count": "1",
@@ -13861,7 +13757,7 @@
   },
   {
     "name": "Kaunertaler Gletscher",
-    "country": "Italy",
+    "country": "Austria",
     "status": "operating",
     "vertical_m": "932",
     "lift_count": "8",
@@ -13897,7 +13793,7 @@
   },
   {
     "name": "Klippitztörl",
-    "country": "Italy",
+    "country": "Austria",
     "status": "operating",
     "vertical_m": "347",
     "lift_count": "6",
@@ -13906,7 +13802,7 @@
   },
   {
     "name": "Klug Lifte",
-    "country": "Italy",
+    "country": "Austria",
     "status": "operating",
     "vertical_m": "135",
     "lift_count": "3",
@@ -13915,7 +13811,7 @@
   },
   {
     "name": "Kope",
-    "country": "Italy",
+    "country": "Slovenia",
     "status": "operating",
     "vertical_m": "831",
     "lift_count": "11",
@@ -13924,7 +13820,7 @@
   },
   {
     "name": "Koralpe",
-    "country": "Italy",
+    "country": "Austria",
     "status": "operating",
     "vertical_m": "439",
     "lift_count": "4",
@@ -13933,7 +13829,7 @@
   },
   {
     "name": "Kozji Hrbet",
-    "country": "Italy",
+    "country": "Slovenia",
     "status": "operating",
     "vertical_m": "63",
     "lift_count": "1",
@@ -13942,7 +13838,7 @@
   },
   {
     "name": "Kranjska Gora",
-    "country": "Italy",
+    "country": "Slovenia",
     "status": "operating",
     "vertical_m": "760",
     "lift_count": "15",
@@ -13960,7 +13856,7 @@
   },
   {
     "name": "Krvavec",
-    "country": "Italy",
+    "country": "Slovenia",
     "status": "operating",
     "vertical_m": "487",
     "lift_count": "13",
@@ -14003,7 +13899,7 @@
   },
   {
     "name": "Lachtal",
-    "country": "Italy",
+    "country": "Austria",
     "status": "operating",
     "lat": "47.247778",
     "lon": "14.366667"
@@ -14037,7 +13933,7 @@
   },
   {
     "name": "Lanalift Anras",
-    "country": "Italy",
+    "country": "Austria",
     "status": "operating",
     "vertical_m": "112",
     "lift_count": "1",
@@ -14073,7 +13969,7 @@
   },
   {
     "name": "Lienzer Bergbahnen",
-    "country": "Italy",
+    "country": "Austria",
     "status": "operating",
     "vertical_m": "1591",
     "lift_count": "8",
@@ -14109,7 +14005,7 @@
   },
   {
     "name": "Macesnovc Rateče",
-    "country": "Italy",
+    "country": "Slovenia",
     "status": "operating",
     "vertical_m": "317",
     "lift_count": "1",
@@ -14153,7 +14049,7 @@
   },
   {
     "name": "Marela",
-    "country": "Italy",
+    "country": "Slovenia",
     "status": "operating",
     "vertical_m": "429",
     "lift_count": "3",
@@ -14162,7 +14058,7 @@
   },
   {
     "name": "Mariborsko Pohorje",
-    "country": "Italy",
+    "country": "Slovenia",
     "status": "operating",
     "vertical_m": "989",
     "lift_count": "16",
@@ -14198,7 +14094,7 @@
   },
   {
     "name": "Minschuns",
-    "country": "Italy",
+    "country": "Switzerland",
     "status": "operating",
     "vertical_m": "526",
     "lift_count": "4",
@@ -14216,7 +14112,7 @@
   },
   {
     "name": "Modriach-Winkel Hoislifte",
-    "country": "Italy",
+    "country": "Austria",
     "status": "operating",
     "vertical_m": "162",
     "lift_count": "4",
@@ -14225,7 +14121,7 @@
   },
   {
     "name": "Mojstrana",
-    "country": "Italy",
+    "country": "Slovenia",
     "status": "operating",
     "vertical_m": "112",
     "lift_count": "1",
@@ -14376,7 +14272,7 @@
   },
   {
     "name": "Nassfeld, Mokrine",
-    "country": "Italy",
+    "country": "Austria",
     "status": "operating",
     "vertical_m": "1384",
     "lift_count": "29",
@@ -14385,7 +14281,7 @@
   },
   {
     "name": "Nauders Bergkastel",
-    "country": "Italy",
+    "country": "Austria",
     "status": "operating",
     "vertical_m": "1392",
     "lift_count": "14",
@@ -19773,6 +19669,21 @@
     "lon": "35.773353"
   },
   {
+    "name": "AfriSki",
+    "country": "Lesotho",
+    "status": "operating",
+    "vertical_m": "193",
+    "lift_count": "2",
+    "lat": "-28.819094",
+    "lon": "28.722093"
+  },
+  {
+    "name": "Faqra",
+    "country": "Libanon",
+    "lat": "33.981261",
+    "lon": "35.810032"
+  },
+  {
     "name": "Malbun",
     "country": "Liechtenstein",
     "status": "operating",
@@ -19865,6 +19776,42 @@
     "lon": "107.044619"
   },
   {
+    "name": "Kolašin 1450 ski resort, Колашин 1450 ски резорт",
+    "country": "Montenegro",
+    "status": "operating",
+    "vertical_m": "491",
+    "lift_count": "6",
+    "lat": "42.821584",
+    "lon": "19.631421"
+  },
+  {
+    "name": "Kolašin 1600",
+    "country": "Montenegro",
+    "status": "operating",
+    "vertical_m": "445",
+    "lift_count": "1",
+    "lat": "42.844608",
+    "lon": "19.650509"
+  },
+  {
+    "name": "Kolašin 1600 ski resort, Колашин 1600 ски резорт",
+    "country": "Montenegro",
+    "status": "operating",
+    "vertical_m": "445",
+    "lift_count": "1",
+    "lat": "42.843424",
+    "lon": "19.645630"
+  },
+  {
+    "name": "Lokve",
+    "country": "Montenegro",
+    "status": "operating",
+    "vertical_m": "185",
+    "lift_count": "1",
+    "lat": "42.830400",
+    "lon": "20.020236"
+  },
+  {
     "name": "Habri ski resort",
     "country": "Morocco",
     "status": "operating",
@@ -19910,6 +19857,13 @@
     "lon": "5.646134"
   },
   {
+    "name": "Dousberg",
+    "country": "Netherlands",
+    "status": "operating",
+    "lat": "50.855891",
+    "lon": "5.644613"
+  },
+  {
     "name": "Outdoorski Bergschenhoek",
     "country": "Netherlands",
     "status": "operating",
@@ -19939,6 +19893,28 @@
     "lift_count": "7",
     "lat": "-43.122844",
     "lon": "171.683059"
+  },
+  {
+    "name": "Cardrona Alpine Resort",
+    "country": "New Zealand",
+    "region": "Otago Region",
+    "city": "Cardrona",
+    "status": "operating",
+    "vertical_m": "610",
+    "lift_count": "10",
+    "lat": "-44.868267",
+    "lon": "168.951110",
+    "has_park": true,
+    "xl_park": true,
+    "l_park": true,
+    "m_park": true,
+    "s_park": true,
+    "superpipe": true,
+    "minipipe": true,
+    "park_condition": "3",
+    "moguls": false,
+    "has_public_trans": false,
+    "public_transport": "x"
   },
   {
     "name": "Coronet Peak",
@@ -20154,6 +20130,28 @@
     "lift_count": "3",
     "lat": "-42.908597",
     "lon": "171.581537"
+  },
+  {
+    "name": "The Remarkables",
+    "country": "New Zealand",
+    "region": "Otago Region",
+    "city": "Kawarau Falls",
+    "status": "operating",
+    "vertical_m": "376",
+    "lift_count": "7",
+    "lat": "-45.055739",
+    "lon": "168.813527",
+    "has_park": true,
+    "xl_park": false,
+    "l_park": true,
+    "m_park": true,
+    "s_park": true,
+    "superpipe": false,
+    "minipipe": false,
+    "park_condition": "3",
+    "moguls": false,
+    "has_public_trans": true,
+    "public_transport": "b"
   },
   {
     "name": "Treble Cone Ski Area",
@@ -22240,6 +22238,15 @@
     "lon": "22.087710"
   },
   {
+    "name": "Ośrodek Narciarski \"NartRaj\"",
+    "country": "Poland",
+    "status": "operating",
+    "vertical_m": "17",
+    "lift_count": "2",
+    "lat": "51.147984",
+    "lon": "23.421929"
+  },
+  {
     "name": "Ośrodek Narciarski Klepki - Wisła Malinka",
     "country": "Poland",
     "status": "operating",
@@ -22457,6 +22464,15 @@
     "lon": "25.661012"
   },
   {
+    "name": "Buscat / Băișoara",
+    "country": "Romania",
+    "status": "operating",
+    "vertical_m": "234",
+    "lift_count": "1",
+    "lat": "46.539365",
+    "lon": "23.311870"
+  },
+  {
     "name": "Buşteni",
     "country": "Romania",
     "status": "operating",
@@ -22479,6 +22495,15 @@
     "lift_count": "1",
     "lat": "47.566566",
     "lon": "25.107193"
+  },
+  {
+    "name": "Casa Baraj",
+    "country": "Romania",
+    "status": "operating",
+    "vertical_m": "116",
+    "lift_count": "2",
+    "lat": "45.214763",
+    "lon": "22.030901"
   },
   {
     "name": "Clăbucet",
@@ -23439,39 +23464,20 @@
     "lon": "84.092806"
   },
   {
+    "name": "Goc",
+    "country": "Serbia",
+    "vertical_m": "125",
+    "lift_count": "1",
+    "lat": "43.558629",
+    "lon": "20.848249"
+  },
+  {
     "name": "Golijska",
     "country": "Serbia",
     "vertical_m": "399",
     "lift_count": "1",
     "lat": "43.353834",
     "lon": "20.255545"
-  },
-  {
-    "name": "Kolašin 1450 ski resort, Колашин 1450 ски резорт",
-    "country": "Montenegro",
-    "status": "operating",
-    "vertical_m": "491",
-    "lift_count": "6",
-    "lat": "42.821584",
-    "lon": "19.631421"
-  },
-  {
-    "name": "Kolašin 1600",
-    "country": "Montenegro",
-    "status": "operating",
-    "vertical_m": "445",
-    "lift_count": "1",
-    "lat": "42.844608",
-    "lon": "19.650509"
-  },
-  {
-    "name": "Kolašin 1600 ski resort, Колашин 1600 ски резорт",
-    "country": "Montenegro",
-    "status": "operating",
-    "vertical_m": "445",
-    "lift_count": "1",
-    "lat": "42.843424",
-    "lon": "19.645630"
   },
   {
     "name": "Kopaonik",
@@ -23483,13 +23489,13 @@
     "lon": "20.826256"
   },
   {
-    "name": "Lokve",
-    "country": "Montenegro",
+    "name": "Obudojevica",
+    "country": "Serbia",
     "status": "operating",
-    "vertical_m": "185",
-    "lift_count": "1",
-    "lat": "42.830400",
-    "lon": "20.020236"
+    "vertical_m": "66",
+    "lift_count": "4",
+    "lat": "43.723082",
+    "lon": "19.691522"
   },
   {
     "name": "Bachledova dolina",
@@ -23905,15 +23911,6 @@
     "lon": "19.184483"
   },
   {
-    "name": "Cerkno",
-    "country": "Slovenia",
-    "status": "operating",
-    "vertical_m": "344",
-    "lift_count": "7",
-    "lat": "46.166430",
-    "lon": "14.057429"
-  },
-  {
     "name": "Bukovica",
     "country": "Slovenia",
     "lat": "46.200222",
@@ -23929,6 +23926,30 @@
     "lon": "15.277043"
   },
   {
+    "name": "Cerkno",
+    "country": "Slovenia",
+    "status": "operating",
+    "vertical_m": "344",
+    "lift_count": "7",
+    "lat": "46.166430",
+    "lon": "14.057429"
+  },
+  {
+    "name": "Gače",
+    "country": "Slovenia",
+    "status": "operating",
+    "vertical_m": "284",
+    "lift_count": "5",
+    "lat": "45.664705",
+    "lon": "15.089750"
+  },
+  {
+    "name": "Globoki Klanec",
+    "country": "Slovenia",
+    "lat": "46.475667",
+    "lon": "16.094528"
+  },
+  {
     "name": "Golte",
     "country": "Slovenia",
     "status": "operating",
@@ -23938,6 +23959,15 @@
     "lon": "14.890773"
   },
   {
+    "name": "Izver",
+    "country": "Slovenia",
+    "status": "operating",
+    "vertical_m": "57",
+    "lift_count": "1",
+    "lat": "45.753601",
+    "lon": "14.641557"
+  },
+  {
     "name": "Javornik",
     "country": "Slovenia",
     "status": "operating",
@@ -23945,15 +23975,6 @@
     "lift_count": "1",
     "lat": "45.899558",
     "lon": "14.081054"
-  },
-  {
-    "name": "AfriSki",
-    "country": "Lesotho",
-    "status": "operating",
-    "vertical_m": "193",
-    "lift_count": "2",
-    "lat": "-28.819094",
-    "lon": "28.722093"
   },
   {
     "name": "Alpensia",
@@ -24132,24 +24153,6 @@
     "lon": "-0.270903"
   },
   {
-    "name": "Artouste",
-    "country": "France",
-    "status": "operating",
-    "vertical_m": "698",
-    "lift_count": "10",
-    "lat": "42.900862",
-    "lon": "-0.383852"
-  },
-  {
-    "name": "Ascou",
-    "country": "France",
-    "status": "operating",
-    "vertical_m": "568",
-    "lift_count": "7",
-    "lat": "42.727328",
-    "lon": "1.964951"
-  },
-  {
     "name": "Astun",
     "country": "Spain",
     "status": "operating",
@@ -24166,15 +24169,6 @@
     "lift_count": "9",
     "lat": "42.470975",
     "lon": "0.874623"
-  },
-  {
-    "name": "Camurac",
-    "country": "France",
-    "status": "operating",
-    "vertical_m": "263",
-    "lift_count": "7",
-    "lat": "42.774102",
-    "lon": "1.923756"
   },
   {
     "name": "Candanchu",
@@ -24202,15 +24196,6 @@
     "lift_count": "3",
     "lat": "42.405821",
     "lon": "-6.521758"
-  },
-  {
-    "name": "Espace Cambre d'Aze",
-    "country": "France",
-    "status": "operating",
-    "vertical_m": "747",
-    "lift_count": "15",
-    "lat": "42.473485",
-    "lon": "2.113649"
   },
   {
     "name": "Espot",
@@ -24409,15 +24394,6 @@
     "lift_count": "4",
     "lat": "40.346435",
     "lon": "-5.690496"
-  },
-  {
-    "name": "La Pierre Saint-Martin, San Martingo Harria",
-    "country": "France",
-    "status": "operating",
-    "vertical_m": "618",
-    "lift_count": "10",
-    "lat": "42.974303",
-    "lon": "-0.739408"
   },
   {
     "name": "La Pinilla",
@@ -27046,15 +27022,6 @@
     "lon": "9.823605"
   },
   {
-    "name": "Nemrut",
-    "country": "Turkey",
-    "status": "operating",
-    "vertical_m": "710",
-    "lift_count": "1",
-    "lat": "38.573557",
-    "lon": "42.275623"
-  },
-  {
     "name": "Little Ding-Dong Ski Resort",
     "country": "Taiwan",
     "region": "Hsinchu",
@@ -27089,6 +27056,13 @@
     "lift_count": "2",
     "lat": "40.872981",
     "lon": "35.914112"
+  },
+  {
+    "name": "Ardahan",
+    "country": "Turkey",
+    "status": "operating",
+    "lat": "41.046771",
+    "lon": "42.522171"
   },
   {
     "name": "Cambasi",
@@ -27200,92 +27174,22 @@
     "lon": "41.206940"
   },
   {
-    "name": "Llandudno Ski and Snowboard Centre",
-    "country": "United Kingdom",
+    "name": "Nemrut",
+    "country": "Turkey",
     "status": "operating",
-    "vertical_m": "161",
-    "lift_count": "3",
-    "lat": "53.331184",
-    "lon": "-3.834731"
-  },
-  {
-    "name": "Loch Insh Watersports & Skiing Centre",
-    "country": "United Kingdom",
-    "status": "operating",
-    "vertical_m": "5",
+    "vertical_m": "710",
     "lift_count": "1",
-    "lat": "57.117095",
-    "lon": "-3.920364"
+    "lat": "38.573557",
+    "lon": "42.275623"
   },
   {
-    "name": "Lowther Hills Ski Centre",
-    "country": "United Kingdom",
+    "name": "Palandöken Kayak Merkezi",
+    "country": "Turkey",
     "status": "operating",
-    "vertical_m": "84",
-    "lift_count": "1",
-    "lat": "55.382305",
-    "lon": "-3.757941"
-  },
-  {
-    "name": "Mendip Snowsport Centre",
-    "country": "United Kingdom",
-    "status": "operating",
-    "vertical_m": "36",
-    "lift_count": "4",
-    "lat": "51.330317",
-    "lon": "-2.813534"
-  },
-  {
-    "name": "Middlesbrough Snowdome (Cool Runnings)",
-    "country": "United Kingdom",
-    "status": "proposed",
-    "lat": "54.580503",
-    "lon": "-1.223713"
-  },
-  {
-    "name": "Midland Ski Club (Ackers Adventure)",
-    "country": "United Kingdom",
-    "status": "operating",
-    "vertical_m": "16",
-    "lift_count": "1",
-    "lat": "52.458005",
-    "lon": "-1.851707"
-  },
-  {
-    "name": "Midlothian Snowsports Centre (Hillend Dry Slope)",
-    "country": "United Kingdom",
-    "status": "operating",
-    "vertical_m": "100",
-    "lift_count": "3",
-    "lat": "55.887250",
-    "lon": "-3.211527"
-  },
-  {
-    "name": "Nevis Range",
-    "country": "United Kingdom",
-    "status": "operating",
-    "vertical_m": "558",
-    "lift_count": "13",
-    "lat": "56.830873",
-    "lon": "-4.968484"
-  },
-  {
-    "name": "Newmilns Snow & Sports Complex",
-    "country": "United Kingdom",
-    "status": "operating",
-    "vertical_m": "14",
-    "lift_count": "2",
-    "lat": "55.610201",
-    "lon": "-4.324805"
-  },
-  {
-    "name": "North Staffs Ski Club (Kidsgrove)",
-    "country": "United Kingdom",
-    "status": "operating",
-    "vertical_m": "16",
-    "lift_count": "1",
-    "lat": "53.076587",
-    "lon": "-2.244664"
+    "vertical_m": "1218",
+    "lift_count": "14",
+    "lat": "39.845034",
+    "lon": "41.285649"
   },
   {
     "name": "Bukovytsia",
@@ -27339,15 +27243,6 @@
     "lift_count": "1",
     "lat": "48.972756",
     "lon": "23.300025"
-  },
-  {
-    "name": "Ośrodek Narciarski \"NartRaj\"",
-    "country": "Poland",
-    "status": "operating",
-    "vertical_m": "17",
-    "lift_count": "2",
-    "lat": "51.147984",
-    "lon": "23.421929"
   },
   {
     "name": "Alford Snow Sports Centre",
@@ -27499,15 +27394,6 @@
     "lon": "-2.585975"
   },
   {
-    "name": "Pembrey ski centre",
-    "country": "United Kingdom",
-    "status": "operating",
-    "vertical_m": "19",
-    "lift_count": "1",
-    "lat": "51.678057",
-    "lon": "-4.300190"
-  },
-  {
     "name": "Knockhatch Ski & Snowboard Centre",
     "country": "United Kingdom",
     "status": "operating",
@@ -27515,6 +27401,103 @@
     "lift_count": "2",
     "lat": "50.860852",
     "lon": "0.226820"
+  },
+  {
+    "name": "Llandudno Ski and Snowboard Centre",
+    "country": "United Kingdom",
+    "status": "operating",
+    "vertical_m": "161",
+    "lift_count": "3",
+    "lat": "53.331184",
+    "lon": "-3.834731"
+  },
+  {
+    "name": "Loch Insh Watersports & Skiing Centre",
+    "country": "United Kingdom",
+    "status": "operating",
+    "vertical_m": "5",
+    "lift_count": "1",
+    "lat": "57.117095",
+    "lon": "-3.920364"
+  },
+  {
+    "name": "Lowther Hills Ski Centre",
+    "country": "United Kingdom",
+    "status": "operating",
+    "vertical_m": "84",
+    "lift_count": "1",
+    "lat": "55.382305",
+    "lon": "-3.757941"
+  },
+  {
+    "name": "Mendip Snowsport Centre",
+    "country": "United Kingdom",
+    "status": "operating",
+    "vertical_m": "36",
+    "lift_count": "4",
+    "lat": "51.330317",
+    "lon": "-2.813534"
+  },
+  {
+    "name": "Middlesbrough Snowdome (Cool Runnings)",
+    "country": "United Kingdom",
+    "status": "proposed",
+    "lat": "54.580503",
+    "lon": "-1.223713"
+  },
+  {
+    "name": "Midland Ski Club (Ackers Adventure)",
+    "country": "United Kingdom",
+    "status": "operating",
+    "vertical_m": "16",
+    "lift_count": "1",
+    "lat": "52.458005",
+    "lon": "-1.851707"
+  },
+  {
+    "name": "Midlothian Snowsports Centre (Hillend Dry Slope)",
+    "country": "United Kingdom",
+    "status": "operating",
+    "vertical_m": "100",
+    "lift_count": "3",
+    "lat": "55.887250",
+    "lon": "-3.211527"
+  },
+  {
+    "name": "Nevis Range",
+    "country": "United Kingdom",
+    "status": "operating",
+    "vertical_m": "558",
+    "lift_count": "13",
+    "lat": "56.830873",
+    "lon": "-4.968484"
+  },
+  {
+    "name": "Newmilns Snow & Sports Complex",
+    "country": "United Kingdom",
+    "status": "operating",
+    "vertical_m": "14",
+    "lift_count": "2",
+    "lat": "55.610201",
+    "lon": "-4.324805"
+  },
+  {
+    "name": "North Staffs Ski Club (Kidsgrove)",
+    "country": "United Kingdom",
+    "status": "operating",
+    "vertical_m": "16",
+    "lift_count": "1",
+    "lat": "53.076587",
+    "lon": "-2.244664"
+  },
+  {
+    "name": "Pembrey ski centre",
+    "country": "United Kingdom",
+    "status": "operating",
+    "vertical_m": "19",
+    "lift_count": "1",
+    "lat": "51.678057",
+    "lon": "-4.300190"
   },
   {
     "name": "76",
@@ -49202,6 +49185,23 @@
     "lift_count": "2",
     "lat": "49.135750",
     "lon": "30.788322"
+  },
+  {
+    "name": "Vogel",
+    "status": "operating",
+    "vertical_m": "1219",
+    "lift_count": "9",
+    "lat": "46.265234",
+    "lon": "13.822192",
+    "has_park": true,
+    "l_park": false,
+    "m_park": true,
+    "s_park": true,
+    "superpipe": false,
+    "minipipe": false,
+    "slope_length": "22",
+    "has_public_trans": true,
+    "public_transport": "a"
   },
   {
     "name": "Vojšín Malá Lehota",
