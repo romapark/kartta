@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const runSliderValue = document.getElementById('run-slider-value');
   const verticalSliderValue = document.getElementById('vertical-slider-value');
   const monthCheckboxes = document.querySelectorAll('.month-checkbox');
+  const publicTransCheckboxes = document.querySelectorAll('.public-trans-checkbox');
 
 
   let selectedMarker = null;
@@ -116,6 +117,9 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   document.querySelectorAll('.park-condition-checkbox')
       .forEach(cb => cb.addEventListener('change', applyFilters));
+  
+  publicTransCheckboxes.forEach(cb => cb.addEventListener('change', applyFilters));
+
 
   // ==== HAKU ====
   const clearButton = document.getElementById('clear-button');
@@ -239,10 +243,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     const [minLift, maxLift] = getSliderRange(liftSlider);
     const [minRun, maxRun] = getSliderRange(runSlider);
     const selectedMonths = Array.from(monthCheckboxes).filter(cb=>cb.checked).map(cb=>parseInt(cb.value));
-    const selectedPublicTrans = Array.from(
-      document.querySelectorAll('input[id$="public-trans-checkbox"]:checked')
-    ).map(cb => cb.id.charAt(0));
-
+    const selectedPublicTrans = new Set(Array.from(document.querySelectorAll('.public-trans-checkbox:checked')).map(cb => cb.value));    
+    
     // Suodatetaan näkyvät markerit
     const visibleMarkers = markers.filter(m => {
       const d = m.data;
@@ -252,7 +254,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       const matchLift = inRange(d.lift_count ?? 0, minLift, maxLift);
       const matchRun = inRange(d.run_count ?? 0, minRun, maxRun);
       const matchMonths = selectedMonths.every(mo => d.seasonMonths.includes(mo));
-      const matchPublicTrans = selectedPublicTrans.length === 0 || selectedPublicTrans.includes(d.public_trans);
+      const matchPublicTrans = selectedPublicTrans.size === 0 || selectedPublicTrans.has(d.public_transport);
 
       const selectedConditions = Array.from(document.querySelectorAll('.park-condition-checkbox'))
                                       .filter(cb => cb.checked)
