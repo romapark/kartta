@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", async () => {
 
   // ==== KARTTA ====
-  const map = L.map('map', { zoomControl: false }).setView([60.17, 24.94], 3);
+  const map = L.map('map', { zoomControl: false }).setView([20.00, 0.00], 1);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 20,
     attribution: '© OpenStreetMap'
@@ -67,10 +67,23 @@ document.addEventListener("DOMContentLoaded", async () => {
     maxClusterRadius: 40, // pienempi = enemmän klustereita
   });
 
-  markers = data.map(r => createMarker(r));
-  markers.forEach(m => markerCluster.addLayer(m));
-
   map.addLayer(markerCluster);
+
+  // 🔹 Luodaan markerit asynkronisesti pienissä erissä
+  async function renderMarkersGradually(data, batchSize = 500) {
+    for (let i = 0; i < data.length; i += batchSize) {
+      const batch = data.slice(i, i + batchSize);
+      const batchMarkers = batch.map(r => createMarker(r));
+      batchMarkers.forEach(m => markerCluster.addLayer(m));
+      markers.push(...batchMarkers);
+      await new Promise(r => setTimeout(r, 0)); // antaa selaimelle hengähdystauon
+    }
+    console.log("✅ Kaikki markerit lisätty:", markers.length);
+  }
+
+  // Käynnistä markkerien luonti
+  renderMarkersGradually(data);
+
 
   // ==== TÄYTÄ MAAT DATALISTIIN ====
   const countries = [...new Set(data.map(r => r.country))].sort();
