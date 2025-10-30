@@ -30,6 +30,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   closeBtn.onclick = () => {
     infoBox.classList.remove('visible'); // piilota infobox
+    document.body.classList.remove("info-open");
 
     // 🔹 Poista valittu markkeri, jos sellainen on
     if (selectedMarker) {
@@ -223,6 +224,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     setCheck("has-transport-text", r.has_public_trans, "", false);
 
     infoBox.classList.add('visible');
+    document.body.classList.add("info-open");
   }
 
   function setDiamond(id, val, color) {

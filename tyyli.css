@@ -326,6 +326,7 @@ fieldset h3 {
 	
 	#container {
 		margin-top: 4em;
+		height: calc(100vh - 4em);
 	}
 	
   #filterBox {
@@ -338,7 +339,11 @@ fieldset h3 {
 		max-width: 17em;
     display: none;
 		padding-top: 0;
+		height: calc(100vh - 4.5em); /* ottaa koko näytön korkeuden */
   }
+	#filters-content{
+		overflow-y: auto;
+	}
   #filterBox.visible {
     display: block;
 		z-index: 1000;
