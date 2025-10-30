@@ -125,7 +125,14 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   //mobiiliin
   filterButton.addEventListener('click', () => {
-    filterBox.classList.toggle('visible');
+    const isVisible = filterBox.classList.toggle('visible');
+    if (isVisible) {
+    filterButton.innerHTML = '✕';
+    filterButton.classList.add('open');
+  } else {
+    filterButton.innerHTML = '☰';
+    filterButton.classList.remove('open');
+  }
   });
 
 
