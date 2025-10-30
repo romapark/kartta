@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     maxZoom: 20,
     attribution: '© OpenStreetMap'
   }).addTo(map);
-  L.control.zoom({ position: 'topright' }).addTo(map);
+  if (window.innerWidth > 768) {L.control.zoom({ position: 'topright' }).addTo(map);}
 
   // ==== ELEMENTIT ====
   const infoBox = document.getElementById('infoBox');
@@ -425,7 +425,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   function selectMarker(marker) {
     suggestions.innerHTML = '';
     searchInput.value = marker.data.name;
-    map.setView([marker.data.lat, marker.data.lon], 10);
+    map.setView([marker.data.lat, marker.data.lon], 12);
     marker.fire('click');
   }
 
