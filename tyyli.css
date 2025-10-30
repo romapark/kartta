@@ -238,7 +238,7 @@ fieldset h3 {
 #searchBox {
 	position:absolute;
 	top:0.5em;
-	left: 36em;
+	left: 18em;
 	z-index:1000;
 	background:white;
 	padding:8px;
@@ -246,6 +246,9 @@ fieldset h3 {
 	box-shadow:0 0 5px rgba(0,0,0,0.3);
 	width:300px;
 	border: 1px solid #152843;
+}
+.info-open #searchBox {
+  left: 36em;
 }
 #searchInput {
 	width:100%;
@@ -354,7 +357,10 @@ fieldset h3 {
 	
 	#searchBox{
 		left: 0;
-		top: 5em;
+		top: 3em;
 		z-index: 999;
 	}	
+	.info-open #searchBox {
+  left: 0em;
+  }
 }
