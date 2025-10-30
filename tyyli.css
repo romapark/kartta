@@ -356,11 +356,12 @@ fieldset h3 {
   }
 	
 	#searchBox{
-		left: 0;
-		top: 3em;
+		left: 0.5em;
+		top: 1em;
+		width: calc(100% - 2em);
 		z-index: 999;
 	}	
 	.info-open #searchBox {
-  left: 0em;
+  left: 0.5em;
   }
 }
