@@ -314,6 +314,9 @@ fieldset h3 {
 
 /*---Media-----------------------------------------------------------------*/
 @media (max-width: 768px) {
+	.navbar-top{
+	}
+	
   #filterBox {
     position: fixed;
     top: 5em;
