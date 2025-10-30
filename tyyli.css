@@ -37,6 +37,52 @@ body, html {
 .red    { color: #cc0000; }
 .black  { color: #000000; }
 
+/* ---Navbar----------------------------------------- */
+.navbar-top {
+	position: fixed;
+	width: 9.3em;
+	height: 1.5em;
+	background: #152843;
+	color: white;
+	font-size: 1.5em;
+	padding: 0.8em 1em;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+  justify-content: space-between;
+}
+
+#filter-button {
+	background: none;
+	color: white;
+	border: none;
+	padding: 0;
+	font-size: 1em;
+	cursor: pointer;
+}
+#filter-button:hover {
+  color: #ccc;
+}
+#filter-button:active {
+  color: #aaa;
+}
+
+#hamburger-button {
+	background: none;
+	color: white;
+	border: none;
+	padding: 0;
+	font-size: 1em;
+	cursor: pointer;
+}
+#hamburger-button:hover {
+  color: #ccc;
+}
+#hamburger-button:active {
+  color: #aaa;
+}
+
 /* ---Filter laatikko----------------------------------------- */
 #filterBox {
 	width: 17em; 
@@ -46,13 +92,7 @@ body, html {
 	display: flex;
   flex-direction: column;
 	background: white;
-}
-
-.navbar-top {
-	background: #152843;
-	color: white;
-	font-size: 1.5em;
-	padding: 0.8em 1em;
+	padding-top: 5em
 }
 
 #filters-content {
@@ -270,3 +310,21 @@ fieldset h3 {
 	flex: 1;           
 	height: 100%;
 }
+
+/*---Media-----------------------------------------------------------------*/
+@media (max-width: 768px) {
+  .filter-box {
+    position: fixed;
+    top: 48px; /* yläpalkin alle */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+    padding: 20px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+  }
+
+  .filter-box.visible {
+    transform: translateY(0%);
+  }
