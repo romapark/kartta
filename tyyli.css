@@ -317,6 +317,10 @@ fieldset h3 {
 	.navbar-top{
 	}
 	
+	#container {
+		margin-top: 10em;
+	}
+	
   #filterBox {
     position: fixed;
     top: 5em;
