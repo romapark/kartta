@@ -410,7 +410,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   function selectMarker(marker) {
     suggestions.innerHTML = '';
     searchInput.value = marker.data.name;
-    map.setView([marker.data.lat, marker.data.lon], 8);
+    map.setView([marker.data.lat, marker.data.lon], 10);
     marker.fire('click');
   }
 
