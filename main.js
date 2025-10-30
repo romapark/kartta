@@ -107,6 +107,9 @@ document.addEventListener("DOMContentLoaded", async () => {
   applyFilters();
 
   // ==== FILTTERIT ====
+  const filterButton = document.getElementById('filter-button');
+  const filterBox = document.getElementById('filterBox');
+
   document.querySelectorAll('#filterBox input').forEach(el => {
     if (el.type === "checkbox") {
       el.addEventListener('change', applyFilters);
@@ -119,6 +122,11 @@ document.addEventListener("DOMContentLoaded", async () => {
       .forEach(cb => cb.addEventListener('change', applyFilters));
   
   publicTransCheckboxes.forEach(cb => cb.addEventListener('change', applyFilters));
+
+  //mobiiliin
+  filterButton.addEventListener('click', () => {
+    filterBox.classList.toggle('visible');
+  });
 
 
   // ==== HAKU ====
