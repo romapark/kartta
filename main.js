@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   // ==== ELEMENTIT ====
   const infoBox = document.getElementById('infoBox');
-  const handle = document.getElementById('infobox-handle');
   const closeBtn = document.getElementById('closeInfoButton');
   const searchInput = document.getElementById('searchInput');
   const suggestions = document.getElementById('suggestions');
@@ -26,12 +25,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 
   let selectedMarker = null;
-  let startY = 0;
-  let startBottom = 0;
-  let isDragging = false;
-
-  handle.addEventListener('touchstart', startDrag);
-  handle.addEventListener('mousedown', startDrag);
 
 
 
@@ -457,41 +450,6 @@ document.addEventListener("DOMContentLoaded", async () => {
       clearTimeout(timer);
       timer = setTimeout(() => fn(...args), delay);
     };
-  }
-
-  function startDrag(e) {
-    isDragging = true;
-    startY = e.touches ? e.touches[0].clientY : e.clientY;
-    const currentBottom = parseFloat(window.getComputedStyle(infoBox).bottom);
-    startBottom = currentBottom;
-    document.addEventListener('touchmove', onDrag);
-    document.addEventListener('mousemove', onDrag);
-    document.addEventListener('touchend', endDrag);
-    document.addEventListener('mouseup', endDrag);
-  }
-
-  function onDrag(e) {
-    if (!isDragging) return;
-    const currentY = e.touches ? e.touches[0].clientY : e.clientY;
-    const deltaY = startY - currentY;
-    const newBottom = Math.min(Math.max(startBottom + deltaY, -300), 0); // rajoittaa liikkeen
-    infoBox.style.transition = 'none';
-    infoBox.style.bottom = `${newBottom}px`;
-  }
-
-  function endDrag() {
-    isDragging = false;
-    infoBox.style.transition = 'bottom 0.3s ease';
-    const currentBottom = parseFloat(window.getComputedStyle(infoBox).bottom);
-    if (currentBottom > -150) {
-      infoBox.classList.add('open'); // jää auki
-    } else {
-      infoBox.classList.remove('open'); // sulkeutuu
-    }
-    document.removeEventListener('touchmove', onDrag);
-    document.removeEventListener('mousemove', onDrag);
-    document.removeEventListener('touchend', endDrag);
-    document.removeEventListener('mouseup', endDrag);
   }
 
 
