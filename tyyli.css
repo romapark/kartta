@@ -228,9 +228,13 @@ fieldset h3 {
 	cursor:pointer;
 	transition: background-color 0.2s;
 }
-
 #closeInfoButton:hover {
   background: #eee;
+}
+
+#infobox-handle svg {
+	height: 40px;
+	width: 40px;
 }
 
 
