@@ -3972,6 +3972,24 @@
     "lon": "16.902803"
   },
   {
+    "name": "Sportski centar Milići",
+    "country": "Bosnia and Herzegovina",
+    "status": "operating",
+    "vertical_m": "7",
+    "lift_count": "1",
+    "lat": "44.163839",
+    "lon": "19.075736"
+  },
+  {
+    "name": "Trebević",
+    "country": "Bosnia and Herzegovina",
+    "status": "operating",
+    "vertical_m": "575",
+    "lift_count": "1",
+    "lat": "43.848616",
+    "lon": "18.441656"
+  },
+  {
     "name": "Gramado Snowland (Serra Gaúcha)",
     "country": "Brazil",
     "region": "Rio Grande Do Sul",
@@ -21610,6 +21628,15 @@
     "lon": "17.930481"
   },
   {
+    "name": "Sípark Mátraszentistván",
+    "country": "Hungary",
+    "status": "operating",
+    "vertical_m": "136",
+    "lift_count": "8",
+    "lat": "47.924280",
+    "lon": "19.861500"
+  },
+  {
     "name": "23",
     "country": "Iceland",
     "region": "Capital Region",
@@ -29244,6 +29271,15 @@
     "lift_count": "8",
     "lat": "43.122714",
     "lon": "77.093313"
+  },
+  {
+    "name": "Ski Center Brezovica",
+    "country": "Kosovo",
+    "status": "operating",
+    "vertical_m": "562",
+    "lift_count": "8",
+    "lat": "42.179789",
+    "lon": "21.043023"
   },
   {
     "name": "33",
@@ -37445,15 +37481,6 @@
     "lon": "37.474790"
   },
   {
-    "name": "633",
-    "country": "Turkey",
-    "status": "operating",
-    "vertical_m": "307",
-    "lift_count": "1",
-    "lat": "37.571113",
-    "lon": "43.671864"
-  },
-  {
     "name": "Ски центар Копаоник, Ski Center Kopaonik",
     "country": "Serbia",
     "status": "operating",
@@ -37535,24 +37562,6 @@
     "lon": "19.537009"
   },
   {
-    "name": "964",
-    "country": "Slovakia",
-    "status": "operating",
-    "vertical_m": "38",
-    "lift_count": "1",
-    "lat": "48.599569",
-    "lon": "19.672957"
-  },
-  {
-    "name": "965",
-    "country": "Slovakia",
-    "status": "operating",
-    "vertical_m": "115",
-    "lift_count": "1",
-    "lat": "48.585499",
-    "lon": "19.757061"
-  },
-  {
     "name": "Avantura park",
     "country": "Serbia",
     "status": "operating",
@@ -37594,6 +37603,69 @@
     "lift_count": "4",
     "lat": "43.723082",
     "lon": "19.691522"
+  },
+  {
+    "name": "Ski Center Stara planina",
+    "country": "Serbia",
+    "status": "operating",
+    "vertical_m": "516",
+    "lift_count": "6",
+    "lat": "43.367617",
+    "lon": "22.607293"
+  },
+  {
+    "name": "Ski staza Aleksandar club",
+    "country": "Serbia",
+    "status": "operating",
+    "vertical_m": "23",
+    "lift_count": "1",
+    "lat": "44.778704",
+    "lon": "20.428077"
+  },
+  {
+    "name": "Skijalište Putevi Nova Varoš",
+    "country": "Serbia",
+    "status": "operating",
+    "vertical_m": "199",
+    "lift_count": "2",
+    "lat": "43.455189",
+    "lon": "19.812745"
+  },
+  {
+    "name": "Tornik, Торник",
+    "country": "Serbia",
+    "status": "operating",
+    "vertical_m": "377",
+    "lift_count": "3",
+    "lat": "43.664742",
+    "lon": "19.643250"
+  },
+  {
+    "name": "Скијалиште Ивер, Iver ski resort, Skijalište Iver",
+    "country": "Serbia",
+    "status": "operating",
+    "vertical_m": "235",
+    "lift_count": "3",
+    "lat": "43.834106",
+    "lon": "19.465351"
+  },
+  {
+    "name": "964",
+    "country": "Slovakia",
+    "status": "operating",
+    "vertical_m": "38",
+    "lift_count": "1",
+    "lat": "48.599569",
+    "lon": "19.672957"
+  },
+  {
+    "name": "965",
+    "country": "Slovakia",
+    "status": "operating",
+    "vertical_m": "115",
+    "lift_count": "1",
+    "lat": "48.585499",
+    "lon": "19.757061"
   },
   {
     "name": "Podkonice - Pleše",
@@ -37659,33 +37731,6 @@
     "lon": "19.189700"
   },
   {
-    "name": "Sípark Mátraszentistván",
-    "country": "Hungary",
-    "status": "operating",
-    "vertical_m": "136",
-    "lift_count": "8",
-    "lat": "47.924280",
-    "lon": "19.861500"
-  },
-  {
-    "name": "Ski Center Brezovica",
-    "country": "Kosovo",
-    "status": "operating",
-    "vertical_m": "562",
-    "lift_count": "8",
-    "lat": "42.179789",
-    "lon": "21.043023"
-  },
-  {
-    "name": "Ski Center Stara planina",
-    "country": "Serbia",
-    "status": "operating",
-    "vertical_m": "516",
-    "lift_count": "6",
-    "lat": "43.367617",
-    "lon": "22.607293"
-  },
-  {
     "name": "Ski centrum Dedinky",
     "country": "Slovakia",
     "status": "operating",
@@ -37702,60 +37747,6 @@
     "lift_count": "5",
     "lat": "48.854540",
     "lon": "20.560288"
-  },
-  {
-    "name": "Ski staza Aleksandar club",
-    "country": "Serbia",
-    "status": "operating",
-    "vertical_m": "23",
-    "lift_count": "1",
-    "lat": "44.778704",
-    "lon": "20.428077"
-  },
-  {
-    "name": "Skijalište Putevi Nova Varoš",
-    "country": "Serbia",
-    "status": "operating",
-    "vertical_m": "199",
-    "lift_count": "2",
-    "lat": "43.455189",
-    "lon": "19.812745"
-  },
-  {
-    "name": "Sportski centar Milići",
-    "country": "Bosnia and Herzegovina",
-    "status": "operating",
-    "vertical_m": "7",
-    "lift_count": "1",
-    "lat": "44.163839",
-    "lon": "19.075736"
-  },
-  {
-    "name": "Tornik, Торник",
-    "country": "Serbia",
-    "status": "operating",
-    "vertical_m": "377",
-    "lift_count": "3",
-    "lat": "43.664742",
-    "lon": "19.643250"
-  },
-  {
-    "name": "Trebević",
-    "country": "Bosnia and Herzegovina",
-    "status": "operating",
-    "vertical_m": "575",
-    "lift_count": "1",
-    "lat": "43.848616",
-    "lon": "18.441656"
-  },
-  {
-    "name": "Скијалиште Ивер, Iver ski resort, Skijalište Iver",
-    "country": "Serbia",
-    "status": "operating",
-    "vertical_m": "235",
-    "lift_count": "3",
-    "lat": "43.834106",
-    "lon": "19.465351"
   },
   {
     "name": "132",
@@ -38907,7 +38898,7 @@
   },
   {
     "name": "Zebegényi sí- és jégpálya",
-    "country": "Slovakia",
+    "country": "Hungary",
     "status": "operating",
     "vertical_m": "60",
     "lift_count": "2",
@@ -38916,7 +38907,7 @@
   },
   {
     "name": "Zemplen Kalandpark",
-    "country": "Slovakia",
+    "country": "Hungary",
     "status": "operating",
     "vertical_m": "163",
     "lift_count": "7",
@@ -38979,7 +38970,7 @@
   },
   {
     "name": "292",
-    "country": "Slovenia",
+    "country": "Austria",
     "status": "operating",
     "vertical_m": "78",
     "lift_count": "3",
@@ -38997,7 +38988,7 @@
   },
   {
     "name": "577",
-    "country": "Slovenia",
+    "country": "Austria",
     "status": "operating",
     "vertical_m": "69",
     "lift_count": "1",
@@ -39015,7 +39006,7 @@
   },
   {
     "name": "615",
-    "country": "Slovenia",
+    "country": "Croatia",
     "status": "operating",
     "vertical_m": "38",
     "lift_count": "1",
@@ -39024,7 +39015,7 @@
   },
   {
     "name": "640",
-    "country": "Slovenia",
+    "country": "Croatia",
     "status": "operating",
     "vertical_m": "2",
     "lift_count": "1",
@@ -39033,7 +39024,7 @@
   },
   {
     "name": "671",
-    "country": "Slovenia",
+    "country": "Italy",
     "status": "operating",
     "vertical_m": "28",
     "lift_count": "1",
@@ -39216,7 +39207,7 @@
   },
   {
     "name": "Rudnik Tršće",
-    "country": "Slovenia",
+    "country": "Croatia",
     "status": "operating",
     "vertical_m": "184",
     "lift_count": "2",
@@ -39234,7 +39225,7 @@
   },
   {
     "name": "Skiberg Mureck",
-    "country": "Slovenia",
+    "country": "Austria",
     "status": "operating",
     "vertical_m": "9",
     "lift_count": "1",
@@ -39243,7 +39234,7 @@
   },
   {
     "name": "Skigebiet Bad Kleinkirchheim",
-    "country": "Slovenia",
+    "country": "Austria",
     "status": "operating",
     "vertical_m": "1024",
     "lift_count": "25",
@@ -39252,7 +39243,7 @@
   },
   {
     "name": "Skigebiet Bodental",
-    "country": "Slovenia",
+    "country": "Austria",
     "status": "operating",
     "vertical_m": "140",
     "lift_count": "3",
@@ -39261,7 +39252,7 @@
   },
   {
     "name": "Skigebiet Dreiländereck - Arnoldstein",
-    "country": "Slovenia",
+    "country": "Austria",
     "status": "operating",
     "vertical_m": "850",
     "lift_count": "7",
@@ -39270,7 +39261,7 @@
   },
   {
     "name": "Skigebiet Fanningberg",
-    "country": "Slovenia",
+    "country": "Austria",
     "status": "operating",
     "vertical_m": "596",
     "lift_count": "5",
@@ -39279,7 +39270,7 @@
   },
   {
     "name": "Skigebiet Flattnitz",
-    "country": "Slovenia",
+    "country": "Austria",
     "status": "operating",
     "vertical_m": "126",
     "lift_count": "2",
@@ -39288,7 +39279,7 @@
   },
   {
     "name": "Skigebiet Gerlitzen Alpe",
-    "country": "Slovenia",
+    "country": "Austria",
     "status": "operating",
     "vertical_m": "906",
     "lift_count": "20",
@@ -39297,7 +39288,7 @@
   },
   {
     "name": "Skigebiet Golzentipp/Obertilliach",
-    "country": "Slovenia",
+    "country": "Austria",
     "status": "operating",
     "vertical_m": "795",
     "lift_count": "5",
@@ -39306,7 +39297,7 @@
   },
   {
     "name": "Skigebiet Lienz - Zettersfeld",
-    "country": "Slovenia",
+    "country": "Austria",
     "status": "operating",
     "vertical_m": "600",
     "lift_count": "6",
@@ -39315,7 +39306,7 @@
   },
   {
     "name": "Skigebiet Petzen",
-    "country": "Slovenia",
+    "country": "Austria",
     "status": "operating",
     "vertical_m": "1270",
     "lift_count": "5",
@@ -39324,7 +39315,7 @@
   },
   {
     "name": "Skilift Compedal",
-    "country": "Slovenia",
+    "country": "Austria",
     "status": "operating",
     "vertical_m": "355",
     "lift_count": "1",
@@ -39333,7 +39324,7 @@
   },
   {
     "name": "Skilift Mühldorf",
-    "country": "Slovenia",
+    "country": "Austria",
     "status": "operating",
     "vertical_m": "52",
     "lift_count": "1",
@@ -39342,7 +39333,7 @@
   },
   {
     "name": "Skilift Zirkitzen",
-    "country": "Slovenia",
+    "country": "Austria",
     "status": "operating",
     "vertical_m": "55",
     "lift_count": "1",
@@ -39396,19 +39387,12 @@
   },
   {
     "name": "Turracher Höhe",
-    "country": "Slovenia",
+    "country": "Austria",
     "status": "operating",
     "vertical_m": "801",
     "lift_count": "15",
     "lat": "46.925312",
     "lon": "13.871885"
-  },
-  {
-    "name": "Turracher Höhe",
-    "country": "Slovenia",
-    "status": "operating",
-    "lat": "46.913889",
-    "lon": "13.877778"
   },
   {
     "name": "Tiffindell",
@@ -45831,6 +45815,15 @@
     "lift_count": "2",
     "lat": "38.854761",
     "lon": "69.001451"
+  },
+  {
+    "name": "633",
+    "country": "Turkey",
+    "status": "operating",
+    "vertical_m": "307",
+    "lift_count": "1",
+    "lat": "37.571113",
+    "lon": "43.671864"
   },
   {
     "name": "647",
