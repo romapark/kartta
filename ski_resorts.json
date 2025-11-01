@@ -10178,7 +10178,7 @@
   },
   {
     "name": "121",
-    "country": "Czech Republic",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "45",
     "lift_count": "1",
@@ -10205,7 +10205,7 @@
   },
   {
     "name": "145",
-    "country": "Czech Republic",
+    "country": "Austria",
     "status": "operating",
     "vertical_m": "85",
     "lift_count": "1",
@@ -10232,7 +10232,7 @@
   },
   {
     "name": "164",
-    "country": "Czech Republic",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "60",
     "lift_count": "1",
@@ -10268,7 +10268,7 @@
   },
   {
     "name": "206",
-    "country": "Czech Republic",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "57",
     "lift_count": "1",
@@ -10310,15 +10310,6 @@
     "lift_count": "1",
     "lat": "49.702146",
     "lon": "16.259976"
-  },
-  {
-    "name": "271",
-    "country": "Poland",
-    "status": "operating",
-    "vertical_m": "72",
-    "lift_count": "4",
-    "lat": "50.686745",
-    "lon": "16.276718"
   },
   {
     "name": "276",
@@ -10493,7 +10484,7 @@
   },
   {
     "name": "421",
-    "country": "Czech Republic",
+    "country": "Poland",
     "status": "operating",
     "vertical_m": "35",
     "lift_count": "1",
@@ -10502,7 +10493,7 @@
   },
   {
     "name": "428",
-    "country": "Czech Republic",
+    "country": "Austria",
     "status": "operating",
     "vertical_m": "40",
     "lift_count": "2",
@@ -10727,7 +10718,7 @@
   },
   {
     "name": "655",
-    "country": "Czech Republic",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "102",
     "lift_count": "2",
@@ -10745,7 +10736,7 @@
   },
   {
     "name": "692",
-    "country": "Czech Republic",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "34",
     "lift_count": "1",
@@ -10763,7 +10754,7 @@
   },
   {
     "name": "721",
-    "country": "Czech Republic",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "130",
     "lift_count": "2",
@@ -10781,7 +10772,7 @@
   },
   {
     "name": "734",
-    "country": "Czech Republic",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "76",
     "lift_count": "1",
@@ -10808,7 +10799,7 @@
   },
   {
     "name": "742",
-    "country": "Czech Republic",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "103",
     "lift_count": "1",
@@ -10826,7 +10817,7 @@
   },
   {
     "name": "781",
-    "country": "Czech Republic",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "79",
     "lift_count": "1",
@@ -10835,7 +10826,7 @@
   },
   {
     "name": "789",
-    "country": "Czech Republic",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "66",
     "lift_count": "2",
@@ -10853,7 +10844,7 @@
   },
   {
     "name": "796",
-    "country": "Czech Republic",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "85",
     "lift_count": "2",
@@ -10862,7 +10853,7 @@
   },
   {
     "name": "830",
-    "country": "Czech Republic",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "22",
     "lift_count": "1",
@@ -10871,7 +10862,7 @@
   },
   {
     "name": "838",
-    "country": "Czech Republic",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "33",
     "lift_count": "1",
@@ -10898,7 +10889,7 @@
   },
   {
     "name": "848",
-    "country": "Czech Republic",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "87",
     "lift_count": "1",
@@ -10916,7 +10907,7 @@
   },
   {
     "name": "864",
-    "country": "Czech Republic",
+    "country": "Poland",
     "status": "operating",
     "vertical_m": "21",
     "lift_count": "3",
@@ -10925,7 +10916,7 @@
   },
   {
     "name": "887",
-    "country": "Czech Republic",
+    "country": "Poland",
     "status": "operating",
     "vertical_m": "3",
     "lift_count": "1",
@@ -10961,7 +10952,7 @@
   },
   {
     "name": "946",
-    "country": "Czech Republic",
+    "country": "Poland",
     "status": "operating",
     "vertical_m": "16",
     "lift_count": "1",
@@ -12092,7 +12083,7 @@
   },
   {
     "name": "Pietkiewiczówka",
-    "country": "Czech Republic",
+    "country": "Poland",
     "status": "operating",
     "vertical_m": "664",
     "lift_count": "11",
@@ -12110,7 +12101,7 @@
   },
   {
     "name": "Pod Wangiem",
-    "country": "Czech Republic",
+    "country": "Poland",
     "status": "operating",
     "vertical_m": "36",
     "lift_count": "6",
@@ -12162,7 +12153,7 @@
   },
   {
     "name": "Przełęcz Sokola",
-    "country": "Czech Republic",
+    "country": "Poland",
     "status": "operating",
     "vertical_m": "81",
     "lift_count": "6",
@@ -12198,7 +12189,7 @@
   },
   {
     "name": "Sebnitz",
-    "country": "Czech Republic",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "110",
     "lift_count": "3",
@@ -12477,7 +12468,7 @@
   },
   {
     "name": "Ski&Sun",
-    "country": "Czech Republic",
+    "country": "Poland",
     "status": "operating",
     "vertical_m": "441",
     "lift_count": "5",
@@ -12756,7 +12747,7 @@
   },
   {
     "name": "Skigebiet Lausche",
-    "country": "Czech Republic",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "111",
     "lift_count": "3",
@@ -12801,7 +12792,7 @@
   },
   {
     "name": "Śnieżynka",
-    "country": "Czech Republic",
+    "country": "Poland",
     "status": "operating",
     "vertical_m": "63",
     "lift_count": "1",
@@ -12828,14 +12819,14 @@
   },
   {
     "name": "Stok Karpatka",
-    "country": "Czech Republic",
+    "country": "Poland",
     "status": "operating",
     "lat": "50.780781",
     "lon": "15.749520"
   },
   {
     "name": "Stok narciarski Dolina Szczęścia",
-    "country": "Czech Republic",
+    "country": "Poland",
     "status": "operating",
     "vertical_m": "46",
     "lift_count": "3",
@@ -12844,7 +12835,7 @@
   },
   {
     "name": "Stok Relaks",
-    "country": "Czech Republic",
+    "country": "Poland",
     "status": "operating",
     "vertical_m": "42",
     "lift_count": "2",
@@ -12862,7 +12853,7 @@
   },
   {
     "name": "Strużnica",
-    "country": "Czech Republic",
+    "country": "Poland",
     "status": "operating",
     "lat": "50.834448",
     "lon": "15.887378"
@@ -12878,7 +12869,7 @@
   },
   {
     "name": "Superstacja Czarnów-Ski Pisarzowice",
-    "country": "Czech Republic",
+    "country": "Poland",
     "status": "operating",
     "vertical_m": "140",
     "lift_count": "3",
@@ -12950,7 +12941,7 @@
   },
   {
     "name": "Święta Góra",
-    "country": "Czech Republic",
+    "country": "Poland",
     "status": "operating",
     "vertical_m": "168",
     "lift_count": "1",
@@ -12959,7 +12950,7 @@
   },
   {
     "name": "Szklarska Poręba",
-    "country": "Czech Republic",
+    "country": "Poland",
     "status": "operating",
     "lat": "50.833333",
     "lon": "15.533333"
@@ -13083,7 +13074,7 @@
   },
   {
     "name": "Wielka Sowa",
-    "country": "Czech Republic",
+    "country": "Poland",
     "status": "operating",
     "vertical_m": "314",
     "lift_count": "2",
@@ -13119,28 +13110,12 @@
   },
   {
     "name": "Zieleniec",
-    "country": "Czech Republic",
+    "country": "Poland",
     "status": "operating",
     "vertical_m": "278",
     "lift_count": "29",
     "lat": "50.334343",
     "lon": "16.388407"
-  },
-  {
-    "name": "Zieleniec",
-    "country": "Czech Republic",
-    "status": "operating",
-    "lat": "50.335088",
-    "lon": "16.387075"
-  },
-  {
-    "name": "Zieleniec",
-    "country": "Czech Republic",
-    "status": "operating",
-    "vertical_m": "6",
-    "lift_count": "2",
-    "lat": "50.335379",
-    "lon": "16.386526"
   },
   {
     "name": "Zlatá Olešnice",
@@ -13153,7 +13128,7 @@
   },
   {
     "name": "Żółwik",
-    "country": "Czech Republic",
+    "country": "Poland",
     "status": "operating",
     "vertical_m": "7",
     "lift_count": "3",
@@ -32860,6 +32835,15 @@
     "lift_count": "1",
     "lat": "36.155540",
     "lon": "74.184094"
+  },
+  {
+    "name": "271",
+    "country": "Poland",
+    "status": "operating",
+    "vertical_m": "72",
+    "lift_count": "4",
+    "lat": "50.686745",
+    "lon": "16.276718"
   },
   {
     "name": "83",
