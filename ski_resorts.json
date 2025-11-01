@@ -3507,6 +3507,105 @@
     "lon": "13.216103"
   },
   {
+    "name": "Rifflsee",
+    "country": "Austria",
+    "status": "operating",
+    "vertical_m": "1129",
+    "lift_count": "5",
+    "lat": "46.961829",
+    "lon": "10.861647"
+  },
+  {
+    "name": "Sillian - Hochpustertal",
+    "country": "Austria",
+    "status": "operating",
+    "vertical_m": "1319",
+    "lift_count": "6",
+    "lat": "46.767076",
+    "lon": "12.412364"
+  },
+  {
+    "name": "Ski Juwel - Oberau (Wildschönau)",
+    "country": "Austria",
+    "status": "operating",
+    "vertical_m": "49",
+    "lift_count": "4",
+    "lat": "47.442371",
+    "lon": "12.051890"
+  },
+  {
+    "name": "Ski Juwel - Reith im Alpbachtal",
+    "country": "Austria",
+    "status": "operating",
+    "vertical_m": "574",
+    "lift_count": "4",
+    "lat": "47.403555",
+    "lon": "11.877855"
+  },
+  {
+    "name": "Ski Juwel - Roggenboden",
+    "country": "Austria",
+    "status": "operating",
+    "vertical_m": "100",
+    "lift_count": "2",
+    "lat": "47.427537",
+    "lon": "12.041761"
+  },
+  {
+    "name": "Ski Juwel Alpbachtal-Wildschönau",
+    "country": "Austria",
+    "status": "operating",
+    "vertical_m": "1207",
+    "lift_count": "22",
+    "lat": "47.377559",
+    "lon": "11.955847"
+  },
+  {
+    "name": "Vent",
+    "country": "Austria",
+    "status": "operating",
+    "vertical_m": "753",
+    "lift_count": "4",
+    "lat": "46.862569",
+    "lon": "10.909555"
+  },
+  {
+    "name": "Virgen",
+    "country": "Austria",
+    "status": "operating",
+    "vertical_m": "69",
+    "lift_count": "1",
+    "lat": "46.997091",
+    "lon": "12.445044"
+  },
+  {
+    "name": "Vorhegg",
+    "country": "Austria",
+    "status": "operating",
+    "vertical_m": "502",
+    "lift_count": "3",
+    "lat": "46.678777",
+    "lon": "12.990472"
+  },
+  {
+    "name": "Weinebene",
+    "country": "Austria",
+    "status": "operating",
+    "vertical_m": "245",
+    "lift_count": "8",
+    "lat": "46.833855",
+    "lon": "15.008327"
+  },
+  {
+    "name": "Weißbriach",
+    "country": "Austria",
+    "status": "operating",
+    "vertical_m": "318",
+    "lift_count": "3",
+    "lat": "46.682160",
+    "lon": "13.243564"
+  },
+  {
     "name": "Şahdağ Xizək Kompleksi, قريه شاهداغ الثلجية, Shahdag Mountain Resort, Горнолыжный курорт Шахдаг",
     "country": "Azerbaijan",
     "status": "operating",
@@ -23488,15 +23587,6 @@
     "lon": "12.206151"
   },
   {
-    "name": "Rifflsee",
-    "country": "Austria",
-    "status": "operating",
-    "vertical_m": "1129",
-    "lift_count": "5",
-    "lat": "46.961829",
-    "lon": "10.861647"
-  },
-  {
     "name": "Rittner Horn - Corno del Renon",
     "country": "Italy",
     "status": "operating",
@@ -23653,15 +23743,6 @@
     "lon": "12.585972"
   },
   {
-    "name": "Sella Nevea - Kanin, Sella Nevea - Canin, Kanin - Sella Nevea",
-    "country": "Slovenia",
-    "status": "operating",
-    "vertical_m": "1028",
-    "lift_count": "4",
-    "lat": "46.365826",
-    "lon": "13.483657"
-  },
-  {
     "name": "Sellata - Arioso",
     "country": "Italy",
     "status": "operating",
@@ -23687,15 +23768,6 @@
     "lift_count": "3",
     "lat": "45.780261",
     "lon": "9.757364"
-  },
-  {
-    "name": "Sillian - Hochpustertal",
-    "country": "Austria",
-    "status": "operating",
-    "vertical_m": "1319",
-    "lift_count": "6",
-    "lat": "46.767076",
-    "lon": "12.412364"
   },
   {
     "name": "Sirino Sci",
@@ -23743,42 +23815,6 @@
     "lon": "12.074440"
   },
   {
-    "name": "Ski Juwel - Oberau (Wildschönau)",
-    "country": "Austria",
-    "status": "operating",
-    "vertical_m": "49",
-    "lift_count": "4",
-    "lat": "47.442371",
-    "lon": "12.051890"
-  },
-  {
-    "name": "Ski Juwel - Reith im Alpbachtal",
-    "country": "Austria",
-    "status": "operating",
-    "vertical_m": "574",
-    "lift_count": "4",
-    "lat": "47.403555",
-    "lon": "11.877855"
-  },
-  {
-    "name": "Ski Juwel - Roggenboden",
-    "country": "Austria",
-    "status": "operating",
-    "vertical_m": "100",
-    "lift_count": "2",
-    "lat": "47.427537",
-    "lon": "12.041761"
-  },
-  {
-    "name": "Ski Juwel Alpbachtal-Wildschönau",
-    "country": "Austria",
-    "status": "operating",
-    "vertical_m": "1207",
-    "lift_count": "22",
-    "lat": "47.377559",
-    "lon": "11.955847"
-  },
-  {
     "name": "Speikboden",
     "country": "Italy",
     "status": "operating",
@@ -23795,15 +23831,6 @@
     "lift_count": "5",
     "lat": "45.962565",
     "lon": "9.962491"
-  },
-  {
-    "name": "Splügen-Tambo",
-    "country": "Switzerland",
-    "status": "operating",
-    "vertical_m": "728",
-    "lift_count": "7",
-    "lat": "46.531840",
-    "lon": "9.319195"
   },
   {
     "name": "Sulden",
@@ -23903,24 +23930,6 @@
     "lon": "14.053511"
   },
   {
-    "name": "Velika planina",
-    "country": "Slovenia",
-    "status": "operating",
-    "vertical_m": "254",
-    "lift_count": "4",
-    "lat": "46.302617",
-    "lon": "14.639241"
-  },
-  {
-    "name": "Vent",
-    "country": "Austria",
-    "status": "operating",
-    "vertical_m": "753",
-    "lift_count": "4",
-    "lat": "46.862569",
-    "lon": "10.909555"
-  },
-  {
     "name": "Verena 2000",
     "country": "Italy",
     "status": "operating",
@@ -23966,51 +23975,6 @@
     "lon": "11.716919"
   },
   {
-    "name": "Virgen",
-    "country": "Austria",
-    "status": "operating",
-    "vertical_m": "69",
-    "lift_count": "1",
-    "lat": "46.997091",
-    "lon": "12.445044"
-  },
-  {
-    "name": "Vogel",
-    "country": "Slovenia",
-    "status": "operating",
-    "vertical_m": "1219",
-    "lift_count": "9",
-    "lat": "46.265234",
-    "lon": "13.822192",
-    "has_park": true,
-    "l_park": false,
-    "m_park": true,
-    "s_park": true,
-    "superpipe": false,
-    "minipipe": false,
-    "slope_length": "22",
-    "has_public_trans": true,
-    "public_transport": "a"
-  },
-  {
-    "name": "Vorhegg",
-    "country": "Austria",
-    "status": "operating",
-    "vertical_m": "502",
-    "lift_count": "3",
-    "lat": "46.678777",
-    "lon": "12.990472"
-  },
-  {
-    "name": "Vuhred",
-    "country": "Slovenia",
-    "status": "operating",
-    "vertical_m": "115",
-    "lift_count": "1",
-    "lat": "46.592827",
-    "lon": "15.238172"
-  },
-  {
     "name": "Watles",
     "country": "Italy",
     "status": "operating",
@@ -24029,24 +23993,6 @@
     "lon": "10.494242"
   },
   {
-    "name": "Weinebene",
-    "country": "Austria",
-    "status": "operating",
-    "vertical_m": "245",
-    "lift_count": "8",
-    "lat": "46.833855",
-    "lon": "15.008327"
-  },
-  {
-    "name": "Weißbriach",
-    "country": "Austria",
-    "status": "operating",
-    "vertical_m": "318",
-    "lift_count": "3",
-    "lat": "46.682160",
-    "lon": "13.243564"
-  },
-  {
     "name": "Zambla Alta",
     "country": "Italy",
     "status": "operating",
@@ -24056,15 +24002,6 @@
     "lon": "9.800117"
   },
   {
-    "name": "Zatrnik",
-    "country": "Slovenia",
-    "status": "operating",
-    "vertical_m": "24",
-    "lift_count": "3",
-    "lat": "46.370541",
-    "lon": "14.028490"
-  },
-  {
     "name": "Zoncolan, Çoncolan",
     "country": "Italy",
     "status": "operating",
@@ -24072,6 +24009,15 @@
     "lift_count": "15",
     "lat": "46.507020",
     "lon": "12.929959"
+  },
+  {
+    "name": "475",
+    "country": "Italy",
+    "status": "operating",
+    "vertical_m": "155",
+    "lift_count": "3",
+    "lat": "44.234204",
+    "lon": "7.410977"
   },
   {
     "name": "26",
@@ -29279,33 +29225,6 @@
     "lon": "25.222654"
   },
   {
-    "name": "Pârtia de schi Cocoș Bistrița",
-    "country": "Latvia",
-    "status": "operating",
-    "vertical_m": "248",
-    "lift_count": "2",
-    "lat": "47.150741",
-    "lon": "24.561180"
-  },
-  {
-    "name": "Pârtia de schi Rarău, Rarău Ski Resort",
-    "country": "Latvia",
-    "status": "operating",
-    "vertical_m": "442",
-    "lift_count": "1",
-    "lat": "47.476279",
-    "lon": "25.561643"
-  },
-  {
-    "name": "Pârtia de schi Veresvirág, Veresvirág sípálya",
-    "country": "Latvia",
-    "status": "operating",
-    "vertical_m": "276",
-    "lift_count": "2",
-    "lat": "46.642468",
-    "lon": "25.497289"
-  },
-  {
     "name": "Reina Trase",
     "country": "Latvia",
     "status": "operating",
@@ -29340,15 +29259,6 @@
     "lift_count": "5",
     "lat": "57.300860",
     "lon": "25.231080"
-  },
-  {
-    "name": "Горнолыжный комплекс \"Мальская долина\"",
-    "country": "Latvia",
-    "status": "operating",
-    "vertical_m": "60",
-    "lift_count": "3",
-    "lat": "57.756749",
-    "lon": "27.824052"
   },
   {
     "name": "Zaarour Club",
@@ -29474,15 +29384,6 @@
     "lon": "21.817470"
   },
   {
-    "name": "Piękna Góra",
-    "country": "Lithuania",
-    "status": "operating",
-    "vertical_m": "65",
-    "lift_count": "5",
-    "lat": "54.282239",
-    "lon": "22.286120"
-  },
-  {
     "name": "Ski Snow Arena - Druskininkai",
     "country": "Lithuania",
     "status": "operating",
@@ -29490,41 +29391,6 @@
     "lift_count": "1",
     "lat": "54.032439",
     "lon": "23.960667"
-  },
-  {
-    "name": "Szelment",
-    "country": "Lithuania",
-    "status": "operating",
-    "vertical_m": "74",
-    "lift_count": "10",
-    "lat": "54.208010",
-    "lon": "22.969911"
-  },
-  {
-    "name": "Vitsi",
-    "country": "Macedonia",
-    "vertical_m": "229",
-    "lift_count": "1",
-    "lat": "40.624180",
-    "lon": "21.378061"
-  },
-  {
-    "name": "Εθνικό χιονοδρομικό κέντρο Βασιλίτσας",
-    "country": "Macedonia",
-    "status": "operating",
-    "vertical_m": "490",
-    "lift_count": "7",
-    "lat": "40.050055",
-    "lon": "21.089406"
-  },
-  {
-    "name": "Χιονοδρομικό Κέντρο 3-5 Πηγάδια, 3-5 Pigadia",
-    "country": "Macedonia",
-    "status": "operating",
-    "vertical_m": "532",
-    "lift_count": "6",
-    "lat": "40.632992",
-    "lon": "21.968108"
   },
   {
     "name": "Bosques de Monterreal",
@@ -29535,15 +29401,6 @@
     "lift_count": "1",
     "lat": "25.232182",
     "lon": "-100.435001"
-  },
-  {
-    "name": "475",
-    "country": "Monaco",
-    "status": "operating",
-    "vertical_m": "155",
-    "lift_count": "3",
-    "lat": "44.234204",
-    "lon": "7.410977"
   },
   {
     "name": "Sarkhia Tsanyn Baaz",
@@ -29617,24 +29474,6 @@
     "lift_count": "5",
     "lat": "43.119318",
     "lon": "19.091366"
-  },
-  {
-    "name": "Ски центар Копаоник, Ski Center Kopaonik",
-    "country": "Montenegro",
-    "status": "operating",
-    "vertical_m": "469",
-    "lift_count": "22",
-    "lat": "43.294348",
-    "lon": "20.830280"
-  },
-  {
-    "name": "Скијачки центар Попова шапка",
-    "country": "Montenegro",
-    "status": "operating",
-    "vertical_m": "713",
-    "lift_count": "8",
-    "lat": "42.012941",
-    "lon": "20.870495"
   },
   {
     "name": "Habri ski resort",
@@ -29765,7 +29604,7 @@
   },
   {
     "name": "Snow Valley Peer Ski & Snowboardcentre",
-    "country": "Netherlands",
+    "country": "Belgium",
     "status": "operating",
     "vertical_m": "17",
     "lift_count": "5",
@@ -29781,7 +29620,7 @@
   },
   {
     "name": "SnowWorld Antwerpen",
-    "country": "Netherlands",
+    "country": "Belgium",
     "status": "operating",
     "vertical_m": "1",
     "lift_count": "2",
@@ -30201,6 +30040,41 @@
     "lon": "128.298143"
   },
   {
+    "name": "Скијачки центар Попова шапка",
+    "country": "North Macedonia",
+    "status": "operating",
+    "vertical_m": "713",
+    "lift_count": "8",
+    "lat": "42.012941",
+    "lon": "20.870495"
+  },
+  {
+    "name": "Vitsi",
+    "country": "North Macedonia",
+    "vertical_m": "229",
+    "lift_count": "1",
+    "lat": "40.624180",
+    "lon": "21.378061"
+  },
+  {
+    "name": "Εθνικό χιονοδρομικό κέντρο Βασιλίτσας",
+    "country": "North Macedonia",
+    "status": "operating",
+    "vertical_m": "490",
+    "lift_count": "7",
+    "lat": "40.050055",
+    "lon": "21.089406"
+  },
+  {
+    "name": "Χιονοδρομικό Κέντρο 3-5 Πηγάδια, 3-5 Pigadia",
+    "country": "North Macedonia",
+    "status": "operating",
+    "vertical_m": "532",
+    "lift_count": "6",
+    "lat": "40.632992",
+    "lon": "21.968108"
+  },
+  {
     "name": "659",
     "country": "North Macedonia",
     "status": "operating",
@@ -30254,7 +30128,7 @@
   },
   {
     "name": "Ponikva",
-    "country": "North Makedonia",
+    "country": "North Macedonia",
     "status": "operating",
     "vertical_m": "120",
     "lift_count": "2",
@@ -32362,6 +32236,24 @@
     "lift_count": "1",
     "lat": "36.155540",
     "lon": "74.184094"
+  },
+  {
+    "name": "Piękna Góra",
+    "country": "Poland",
+    "status": "operating",
+    "vertical_m": "65",
+    "lift_count": "5",
+    "lat": "54.282239",
+    "lon": "22.286120"
+  },
+  {
+    "name": "Szelment",
+    "country": "Poland",
+    "status": "operating",
+    "vertical_m": "74",
+    "lift_count": "10",
+    "lat": "54.208010",
+    "lon": "22.969911"
   },
   {
     "name": "83",
@@ -35154,6 +35046,33 @@
     "lon": "-7.469699"
   },
   {
+    "name": "Pârtia de schi Cocoș Bistrița",
+    "country": "Romania",
+    "status": "operating",
+    "vertical_m": "248",
+    "lift_count": "2",
+    "lat": "47.150741",
+    "lon": "24.561180"
+  },
+  {
+    "name": "Pârtia de schi Rarău, Rarău Ski Resort",
+    "country": "Romania",
+    "status": "operating",
+    "vertical_m": "442",
+    "lift_count": "1",
+    "lat": "47.476279",
+    "lon": "25.561643"
+  },
+  {
+    "name": "Pârtia de schi Veresvirág, Veresvirág sípálya",
+    "country": "Romania",
+    "status": "operating",
+    "vertical_m": "276",
+    "lift_count": "2",
+    "lat": "46.642468",
+    "lon": "25.497289"
+  },
+  {
     "name": "306",
     "country": "Romania",
     "status": "operating",
@@ -35728,6 +35647,15 @@
     "lift_count": "1",
     "lat": "45.225055",
     "lon": "22.089845"
+  },
+  {
+    "name": "Горнолыжный комплекс \"Мальская долина\"",
+    "country": "Russia",
+    "status": "operating",
+    "vertical_m": "60",
+    "lift_count": "3",
+    "lat": "57.756749",
+    "lon": "27.824052"
   },
   {
     "name": "Veduchi",
@@ -38009,6 +37937,15 @@
     "lon": "43.671864"
   },
   {
+    "name": "Ски центар Копаоник, Ski Center Kopaonik",
+    "country": "Serbia",
+    "status": "operating",
+    "vertical_m": "469",
+    "lift_count": "22",
+    "lat": "43.294348",
+    "lon": "20.830280"
+  },
+  {
     "name": "149",
     "country": "Serbia",
     "status": "operating",
@@ -39012,6 +38949,60 @@
     "lift_count": "7",
     "lat": "48.406389",
     "lon": "21.635016"
+  },
+  {
+    "name": "Sella Nevea - Kanin, Sella Nevea - Canin, Kanin - Sella Nevea",
+    "country": "Slovenia",
+    "status": "operating",
+    "vertical_m": "1028",
+    "lift_count": "4",
+    "lat": "46.365826",
+    "lon": "13.483657"
+  },
+  {
+    "name": "Velika planina",
+    "country": "Slovenia",
+    "status": "operating",
+    "vertical_m": "254",
+    "lift_count": "4",
+    "lat": "46.302617",
+    "lon": "14.639241"
+  },
+  {
+    "name": "Vogel",
+    "country": "Slovenia",
+    "status": "operating",
+    "vertical_m": "1219",
+    "lift_count": "9",
+    "lat": "46.265234",
+    "lon": "13.822192",
+    "has_park": true,
+    "l_park": false,
+    "m_park": true,
+    "s_park": true,
+    "superpipe": false,
+    "minipipe": false,
+    "slope_length": "22",
+    "has_public_trans": true,
+    "public_transport": "a"
+  },
+  {
+    "name": "Vuhred",
+    "country": "Slovenia",
+    "status": "operating",
+    "vertical_m": "115",
+    "lift_count": "1",
+    "lat": "46.592827",
+    "lon": "15.238172"
+  },
+  {
+    "name": "Zatrnik",
+    "country": "Slovenia",
+    "status": "operating",
+    "vertical_m": "24",
+    "lift_count": "3",
+    "lat": "46.370541",
+    "lon": "14.028490"
   },
   {
     "name": "292",
@@ -41852,6 +41843,15 @@
     "lift_count": "48",
     "lat": "63.405566",
     "lon": "13.053758"
+  },
+  {
+    "name": "Splügen-Tambo",
+    "country": "Switzerland",
+    "status": "operating",
+    "vertical_m": "728",
+    "lift_count": "7",
+    "lat": "46.531840",
+    "lon": "9.319195"
   },
   {
     "name": "Walterswil",
