@@ -3606,6 +3606,150 @@
     "lon": "13.243564"
   },
   {
+    "name": "292",
+    "country": "Austria",
+    "status": "operating",
+    "vertical_m": "78",
+    "lift_count": "3",
+    "lat": "46.828959",
+    "lon": "15.126757"
+  },
+  {
+    "name": "577",
+    "country": "Austria",
+    "status": "operating",
+    "vertical_m": "69",
+    "lift_count": "1",
+    "lat": "46.920683",
+    "lon": "14.794268"
+  },
+  {
+    "name": "Skiberg Mureck",
+    "country": "Austria",
+    "status": "operating",
+    "vertical_m": "9",
+    "lift_count": "1",
+    "lat": "46.703894",
+    "lon": "15.769496"
+  },
+  {
+    "name": "Skigebiet Bad Kleinkirchheim",
+    "country": "Austria",
+    "status": "operating",
+    "vertical_m": "1024",
+    "lift_count": "25",
+    "lat": "46.814977",
+    "lon": "13.785881"
+  },
+  {
+    "name": "Skigebiet Bodental",
+    "country": "Austria",
+    "status": "operating",
+    "vertical_m": "140",
+    "lift_count": "3",
+    "lat": "46.475538",
+    "lon": "14.232631"
+  },
+  {
+    "name": "Skigebiet Dreiländereck - Arnoldstein",
+    "country": "Austria",
+    "status": "operating",
+    "vertical_m": "850",
+    "lift_count": "7",
+    "lat": "46.527953",
+    "lon": "13.718781"
+  },
+  {
+    "name": "Skigebiet Fanningberg",
+    "country": "Austria",
+    "status": "operating",
+    "vertical_m": "596",
+    "lift_count": "5",
+    "lat": "47.161164",
+    "lon": "13.675322"
+  },
+  {
+    "name": "Skigebiet Flattnitz",
+    "country": "Austria",
+    "status": "operating",
+    "vertical_m": "126",
+    "lift_count": "2",
+    "lat": "46.940510",
+    "lon": "14.010091"
+  },
+  {
+    "name": "Skigebiet Gerlitzen Alpe",
+    "country": "Austria",
+    "status": "operating",
+    "vertical_m": "906",
+    "lift_count": "20",
+    "lat": "46.699500",
+    "lon": "13.913084"
+  },
+  {
+    "name": "Skigebiet Golzentipp/Obertilliach",
+    "country": "Austria",
+    "status": "operating",
+    "vertical_m": "795",
+    "lift_count": "5",
+    "lat": "46.717477",
+    "lon": "12.620518"
+  },
+  {
+    "name": "Skigebiet Lienz - Zettersfeld",
+    "country": "Austria",
+    "status": "operating",
+    "vertical_m": "600",
+    "lift_count": "6",
+    "lat": "46.869391",
+    "lon": "12.791595"
+  },
+  {
+    "name": "Skigebiet Petzen",
+    "country": "Austria",
+    "status": "operating",
+    "vertical_m": "1270",
+    "lift_count": "5",
+    "lat": "46.524491",
+    "lon": "14.777301"
+  },
+  {
+    "name": "Skilift Compedal",
+    "country": "Austria",
+    "status": "operating",
+    "vertical_m": "355",
+    "lift_count": "1",
+    "lat": "46.793555",
+    "lon": "12.627303"
+  },
+  {
+    "name": "Skilift Mühldorf",
+    "country": "Austria",
+    "status": "operating",
+    "vertical_m": "52",
+    "lift_count": "1",
+    "lat": "46.858037",
+    "lon": "13.331443"
+  },
+  {
+    "name": "Skilift Zirkitzen",
+    "country": "Austria",
+    "status": "operating",
+    "vertical_m": "55",
+    "lift_count": "1",
+    "lat": "46.864285",
+    "lon": "12.877311"
+  },
+  {
+    "name": "Turracher Höhe",
+    "country": "Austria",
+    "status": "operating",
+    "vertical_m": "801",
+    "lift_count": "15",
+    "lat": "46.925312",
+    "lon": "13.871885"
+  },
+  {
     "name": "Şahdağ Xizək Kompleksi, قريه شاهداغ الثلجية, Shahdag Mountain Resort, Горнолыжный курорт Шахдаг",
     "country": "Azerbaijan",
     "status": "operating",
@@ -10348,6 +10492,33 @@
     "lon": "15.171416"
   },
   {
+    "name": "615",
+    "country": "Croatia",
+    "status": "operating",
+    "vertical_m": "38",
+    "lift_count": "1",
+    "lat": "46.194269",
+    "lon": "16.146393"
+  },
+  {
+    "name": "640",
+    "country": "Croatia",
+    "status": "operating",
+    "vertical_m": "2",
+    "lift_count": "1",
+    "lat": "45.393434",
+    "lon": "14.795376"
+  },
+  {
+    "name": "Rudnik Tršće",
+    "country": "Croatia",
+    "status": "operating",
+    "vertical_m": "184",
+    "lift_count": "2",
+    "lat": "45.568235",
+    "lon": "14.615744"
+  },
+  {
     "name": "Troodos Ski Resort",
     "country": "Cypros",
     "status": "operating",
@@ -14474,6 +14645,42 @@
     "lift_count": "1",
     "lat": "64.901610",
     "lon": "25.561164"
+  },
+  {
+    "name": "266",
+    "country": "Finland",
+    "status": "operating",
+    "vertical_m": "43",
+    "lift_count": "1",
+    "lat": "63.136788",
+    "lon": "22.263981"
+  },
+  {
+    "name": "783",
+    "country": "Finland",
+    "status": "operating",
+    "vertical_m": "32",
+    "lift_count": "2",
+    "lat": "61.772087",
+    "lon": "22.750237"
+  },
+  {
+    "name": "896",
+    "country": "Finland",
+    "status": "operating",
+    "vertical_m": "42",
+    "lift_count": "1",
+    "lat": "62.283184",
+    "lon": "21.625716"
+  },
+  {
+    "name": "974",
+    "country": "Finland",
+    "status": "operating",
+    "vertical_m": "161",
+    "lift_count": "1",
+    "lat": "67.555641",
+    "lon": "24.249982"
   },
   {
     "name": "273",
@@ -21637,6 +21844,24 @@
     "lon": "19.861500"
   },
   {
+    "name": "Zebegényi sí- és jégpálya",
+    "country": "Hungary",
+    "status": "operating",
+    "vertical_m": "60",
+    "lift_count": "2",
+    "lat": "47.821100",
+    "lon": "18.899989"
+  },
+  {
+    "name": "Zemplen Kalandpark",
+    "country": "Hungary",
+    "status": "operating",
+    "vertical_m": "163",
+    "lift_count": "7",
+    "lat": "48.406389",
+    "lon": "21.635016"
+  },
+  {
     "name": "23",
     "country": "Iceland",
     "region": "Capital Region",
@@ -24305,6 +24530,15 @@
     "lift_count": "3",
     "lat": "44.234204",
     "lon": "7.410977"
+  },
+  {
+    "name": "671",
+    "country": "Italy",
+    "status": "operating",
+    "vertical_m": "28",
+    "lift_count": "1",
+    "lat": "45.745939",
+    "lon": "13.691326"
   },
   {
     "name": "26",
@@ -32445,6 +32679,201 @@
     "lon": "6.281710"
   },
   {
+    "name": "593",
+    "country": "Norway",
+    "status": "operating",
+    "vertical_m": "31",
+    "lift_count": "1",
+    "lat": "65.412127",
+    "lon": "12.538785"
+  },
+  {
+    "name": "757",
+    "country": "Norway",
+    "status": "operating",
+    "vertical_m": "45",
+    "lift_count": "1",
+    "lat": "68.875802",
+    "lon": "17.860512"
+  },
+  {
+    "name": "900",
+    "country": "Norway",
+    "status": "operating",
+    "vertical_m": "72",
+    "lift_count": "1",
+    "lat": "67.326510",
+    "lon": "14.559466"
+  },
+  {
+    "name": "909",
+    "country": "Norway",
+    "status": "operating",
+    "lat": "67.384502",
+    "lon": "15.363977"
+  },
+  {
+    "name": "911",
+    "country": "Norway",
+    "status": "operating",
+    "lat": "66.768786",
+    "lon": "15.620333"
+  },
+  {
+    "name": "915",
+    "country": "Norway",
+    "status": "operating",
+    "vertical_m": "185",
+    "lift_count": "1",
+    "lat": "62.966996",
+    "lon": "11.794100"
+  },
+  {
+    "name": "956",
+    "country": "Norway",
+    "status": "operating",
+    "lat": "64.698898",
+    "lon": "12.318091"
+  },
+  {
+    "name": "957",
+    "country": "Norway",
+    "status": "operating",
+    "lat": "65.422926",
+    "lon": "13.645863"
+  },
+  {
+    "name": "963",
+    "country": "Norway",
+    "status": "operating",
+    "lat": "69.509243",
+    "lon": "17.611957"
+  },
+  {
+    "name": "Børgefjellsenteret",
+    "country": "Norway",
+    "status": "operating",
+    "vertical_m": "119",
+    "lift_count": "2",
+    "lat": "64.890487",
+    "lon": "13.520706"
+  },
+  {
+    "name": "Fulufjellet alpinsenter",
+    "country": "Norway",
+    "status": "operating",
+    "vertical_m": "222",
+    "lift_count": "2",
+    "lat": "61.391267",
+    "lon": "12.754086"
+  },
+  {
+    "name": "Kjemsasen",
+    "country": "Norway",
+    "status": "operating",
+    "vertical_m": "215",
+    "lift_count": "1",
+    "lat": "65.842318",
+    "lon": "13.353188"
+  },
+  {
+    "name": "Skillevollen",
+    "country": "Norway",
+    "status": "operating",
+    "vertical_m": "255",
+    "lift_count": "4",
+    "lat": "66.337766",
+    "lon": "14.092515"
+  },
+  {
+    "name": "Sollifjellet alpinsenter",
+    "country": "Norway",
+    "status": "operating",
+    "vertical_m": "313",
+    "lift_count": "1",
+    "lat": "68.803924",
+    "lon": "16.396641"
+  },
+  {
+    "name": "Steilia",
+    "country": "Norway",
+    "status": "operating",
+    "lat": "68.852947",
+    "lon": "18.400401"
+  },
+  {
+    "name": "Sulitjelma Fjellandsby",
+    "country": "Norway",
+    "status": "operating",
+    "vertical_m": "155",
+    "lift_count": "1",
+    "lat": "67.088115",
+    "lon": "16.070709"
+  },
+  {
+    "name": "Såslia alpinanlegg",
+    "country": "Norway",
+    "status": "operating",
+    "vertical_m": "109",
+    "lift_count": "1",
+    "lat": "63.282005",
+    "lon": "11.054270"
+  },
+  {
+    "name": "Torsbustaden alpinsenter",
+    "country": "Norway",
+    "status": "operating",
+    "vertical_m": "172",
+    "lift_count": "2",
+    "lat": "63.683339",
+    "lon": "11.308286"
+  },
+  {
+    "name": "Trysil",
+    "country": "Norway",
+    "status": "operating",
+    "vertical_m": "697",
+    "lift_count": "39",
+    "lat": "61.313727",
+    "lon": "12.204371"
+  },
+  {
+    "name": "Vassfjellet skisenter",
+    "country": "Norway",
+    "status": "operating",
+    "vertical_m": "462",
+    "lift_count": "11",
+    "lat": "63.264733",
+    "lon": "10.390159"
+  },
+  {
+    "name": "Vestvatnlia alpinanlegg",
+    "country": "Norway",
+    "status": "operating",
+    "vertical_m": "309",
+    "lift_count": "1",
+    "lat": "67.075145",
+    "lon": "14.959885"
+  },
+  {
+    "name": "Vinterlandet Namsskogan",
+    "country": "Norway",
+    "status": "operating",
+    "vertical_m": "43",
+    "lift_count": "1",
+    "lat": "64.748482",
+    "lon": "12.859906"
+  },
+  {
+    "name": "Vintervasskleiva",
+    "country": "Norway",
+    "status": "operating",
+    "vertical_m": "154",
+    "lift_count": "1",
+    "lat": "63.417189",
+    "lon": "10.254627"
+  },
+  {
     "name": "Kala Bagh (Nathiagali)",
     "country": "Pakistan",
     "region": "Khyber Pakhtunkhwa",
@@ -38897,24 +39326,6 @@
     "lon": "18.591583"
   },
   {
-    "name": "Zebegényi sí- és jégpálya",
-    "country": "Hungary",
-    "status": "operating",
-    "vertical_m": "60",
-    "lift_count": "2",
-    "lat": "47.821100",
-    "lon": "18.899989"
-  },
-  {
-    "name": "Zemplen Kalandpark",
-    "country": "Hungary",
-    "status": "operating",
-    "vertical_m": "163",
-    "lift_count": "7",
-    "lat": "48.406389",
-    "lon": "21.635016"
-  },
-  {
     "name": "Sella Nevea - Kanin, Sella Nevea - Canin, Kanin - Sella Nevea",
     "country": "Slovenia",
     "status": "operating",
@@ -38969,15 +39380,6 @@
     "lon": "14.028490"
   },
   {
-    "name": "292",
-    "country": "Austria",
-    "status": "operating",
-    "vertical_m": "78",
-    "lift_count": "3",
-    "lat": "46.828959",
-    "lon": "15.126757"
-  },
-  {
     "name": "318",
     "country": "Slovenia",
     "status": "operating",
@@ -38987,15 +39389,6 @@
     "lon": "15.644468"
   },
   {
-    "name": "577",
-    "country": "Austria",
-    "status": "operating",
-    "vertical_m": "69",
-    "lift_count": "1",
-    "lat": "46.920683",
-    "lon": "14.794268"
-  },
-  {
     "name": "594",
     "country": "Slovenia",
     "status": "operating",
@@ -39003,33 +39396,6 @@
     "lift_count": "1",
     "lat": "46.166839",
     "lon": "15.109799"
-  },
-  {
-    "name": "615",
-    "country": "Croatia",
-    "status": "operating",
-    "vertical_m": "38",
-    "lift_count": "1",
-    "lat": "46.194269",
-    "lon": "16.146393"
-  },
-  {
-    "name": "640",
-    "country": "Croatia",
-    "status": "operating",
-    "vertical_m": "2",
-    "lift_count": "1",
-    "lat": "45.393434",
-    "lon": "14.795376"
-  },
-  {
-    "name": "671",
-    "country": "Italy",
-    "status": "operating",
-    "vertical_m": "28",
-    "lift_count": "1",
-    "lat": "45.745939",
-    "lon": "13.691326"
   },
   {
     "name": "710",
@@ -39206,15 +39572,6 @@
     "lon": "15.331865"
   },
   {
-    "name": "Rudnik Tršće",
-    "country": "Croatia",
-    "status": "operating",
-    "vertical_m": "184",
-    "lift_count": "2",
-    "lat": "45.568235",
-    "lon": "14.615744"
-  },
-  {
     "name": "Rudno",
     "country": "Slovenia",
     "status": "operating",
@@ -39222,123 +39579,6 @@
     "lift_count": "2",
     "lat": "46.237409",
     "lon": "14.166930"
-  },
-  {
-    "name": "Skiberg Mureck",
-    "country": "Austria",
-    "status": "operating",
-    "vertical_m": "9",
-    "lift_count": "1",
-    "lat": "46.703894",
-    "lon": "15.769496"
-  },
-  {
-    "name": "Skigebiet Bad Kleinkirchheim",
-    "country": "Austria",
-    "status": "operating",
-    "vertical_m": "1024",
-    "lift_count": "25",
-    "lat": "46.814977",
-    "lon": "13.785881"
-  },
-  {
-    "name": "Skigebiet Bodental",
-    "country": "Austria",
-    "status": "operating",
-    "vertical_m": "140",
-    "lift_count": "3",
-    "lat": "46.475538",
-    "lon": "14.232631"
-  },
-  {
-    "name": "Skigebiet Dreiländereck - Arnoldstein",
-    "country": "Austria",
-    "status": "operating",
-    "vertical_m": "850",
-    "lift_count": "7",
-    "lat": "46.527953",
-    "lon": "13.718781"
-  },
-  {
-    "name": "Skigebiet Fanningberg",
-    "country": "Austria",
-    "status": "operating",
-    "vertical_m": "596",
-    "lift_count": "5",
-    "lat": "47.161164",
-    "lon": "13.675322"
-  },
-  {
-    "name": "Skigebiet Flattnitz",
-    "country": "Austria",
-    "status": "operating",
-    "vertical_m": "126",
-    "lift_count": "2",
-    "lat": "46.940510",
-    "lon": "14.010091"
-  },
-  {
-    "name": "Skigebiet Gerlitzen Alpe",
-    "country": "Austria",
-    "status": "operating",
-    "vertical_m": "906",
-    "lift_count": "20",
-    "lat": "46.699500",
-    "lon": "13.913084"
-  },
-  {
-    "name": "Skigebiet Golzentipp/Obertilliach",
-    "country": "Austria",
-    "status": "operating",
-    "vertical_m": "795",
-    "lift_count": "5",
-    "lat": "46.717477",
-    "lon": "12.620518"
-  },
-  {
-    "name": "Skigebiet Lienz - Zettersfeld",
-    "country": "Austria",
-    "status": "operating",
-    "vertical_m": "600",
-    "lift_count": "6",
-    "lat": "46.869391",
-    "lon": "12.791595"
-  },
-  {
-    "name": "Skigebiet Petzen",
-    "country": "Austria",
-    "status": "operating",
-    "vertical_m": "1270",
-    "lift_count": "5",
-    "lat": "46.524491",
-    "lon": "14.777301"
-  },
-  {
-    "name": "Skilift Compedal",
-    "country": "Austria",
-    "status": "operating",
-    "vertical_m": "355",
-    "lift_count": "1",
-    "lat": "46.793555",
-    "lon": "12.627303"
-  },
-  {
-    "name": "Skilift Mühldorf",
-    "country": "Austria",
-    "status": "operating",
-    "vertical_m": "52",
-    "lift_count": "1",
-    "lat": "46.858037",
-    "lon": "13.331443"
-  },
-  {
-    "name": "Skilift Zirkitzen",
-    "country": "Austria",
-    "status": "operating",
-    "vertical_m": "55",
-    "lift_count": "1",
-    "lat": "46.864285",
-    "lon": "12.877311"
   },
   {
     "name": "Soriška planina",
@@ -39384,15 +39624,6 @@
     "lift_count": "2",
     "lat": "46.437750",
     "lon": "15.457250"
-  },
-  {
-    "name": "Turracher Höhe",
-    "country": "Austria",
-    "status": "operating",
-    "vertical_m": "801",
-    "lift_count": "15",
-    "lat": "46.925312",
-    "lon": "13.871885"
   },
   {
     "name": "Tiffindell",
@@ -39989,15 +40220,6 @@
     "lon": "20.977688"
   },
   {
-    "name": "266",
-    "country": "Sweden",
-    "status": "operating",
-    "vertical_m": "43",
-    "lift_count": "1",
-    "lat": "63.136788",
-    "lon": "22.263981"
-  },
-  {
     "name": "267",
     "country": "Sweden",
     "status": "operating",
@@ -40169,15 +40391,6 @@
     "lon": "18.789727"
   },
   {
-    "name": "593",
-    "country": "Sweden",
-    "status": "operating",
-    "vertical_m": "31",
-    "lift_count": "1",
-    "lat": "65.412127",
-    "lon": "12.538785"
-  },
-  {
     "name": "613",
     "country": "Sweden",
     "status": "operating",
@@ -40277,15 +40490,6 @@
     "lon": "16.674686"
   },
   {
-    "name": "757",
-    "country": "Sweden",
-    "status": "operating",
-    "vertical_m": "45",
-    "lift_count": "1",
-    "lat": "68.875802",
-    "lon": "17.860512"
-  },
-  {
     "name": "759",
     "country": "Sweden",
     "status": "operating",
@@ -40311,15 +40515,6 @@
     "lift_count": "1",
     "lat": "60.693006",
     "lon": "15.935194"
-  },
-  {
-    "name": "783",
-    "country": "Sweden",
-    "status": "operating",
-    "vertical_m": "32",
-    "lift_count": "2",
-    "lat": "61.772087",
-    "lon": "22.750237"
   },
   {
     "name": "787",
@@ -40421,15 +40616,6 @@
     "lon": "15.784018"
   },
   {
-    "name": "896",
-    "country": "Sweden",
-    "status": "operating",
-    "vertical_m": "42",
-    "lift_count": "1",
-    "lat": "62.283184",
-    "lon": "21.625716"
-  },
-  {
     "name": "897",
     "country": "Sweden",
     "status": "operating",
@@ -40457,15 +40643,6 @@
     "lon": "16.090235"
   },
   {
-    "name": "900",
-    "country": "Sweden",
-    "status": "operating",
-    "vertical_m": "72",
-    "lift_count": "1",
-    "lat": "67.326510",
-    "lon": "14.559466"
-  },
-  {
     "name": "905",
     "country": "Sweden",
     "status": "operating",
@@ -40473,29 +40650,6 @@
     "lift_count": "1",
     "lat": "59.161594",
     "lon": "17.877496"
-  },
-  {
-    "name": "909",
-    "country": "Sweden",
-    "status": "operating",
-    "lat": "67.384502",
-    "lon": "15.363977"
-  },
-  {
-    "name": "911",
-    "country": "Sweden",
-    "status": "operating",
-    "lat": "66.768786",
-    "lon": "15.620333"
-  },
-  {
-    "name": "915",
-    "country": "Sweden",
-    "status": "operating",
-    "vertical_m": "185",
-    "lift_count": "1",
-    "lat": "62.966996",
-    "lon": "11.794100"
   },
   {
     "name": "935",
@@ -40551,20 +40705,6 @@
     "lon": "13.946084"
   },
   {
-    "name": "956",
-    "country": "Sweden",
-    "status": "operating",
-    "lat": "64.698898",
-    "lon": "12.318091"
-  },
-  {
-    "name": "957",
-    "country": "Sweden",
-    "status": "operating",
-    "lat": "65.422926",
-    "lon": "13.645863"
-  },
-  {
     "name": "962",
     "country": "Sweden",
     "status": "operating",
@@ -40572,22 +40712,6 @@
     "lift_count": "1",
     "lat": "62.372121",
     "lon": "17.329017"
-  },
-  {
-    "name": "963",
-    "country": "Sweden",
-    "status": "operating",
-    "lat": "69.509243",
-    "lon": "17.611957"
-  },
-  {
-    "name": "974",
-    "country": "Sweden",
-    "status": "operating",
-    "vertical_m": "161",
-    "lift_count": "1",
-    "lat": "67.555641",
-    "lon": "24.249982"
   },
   {
     "name": "977",
@@ -40794,15 +40918,6 @@
     "lon": "20.526513"
   },
   {
-    "name": "Børgefjellsenteret",
-    "country": "Sweden",
-    "status": "operating",
-    "vertical_m": "119",
-    "lift_count": "2",
-    "lat": "64.890487",
-    "lon": "13.520706"
-  },
-  {
     "name": "Dackestupet",
     "country": "Sweden",
     "status": "operating",
@@ -40912,15 +41027,6 @@
     "lift_count": "1",
     "lat": "60.078891",
     "lon": "15.891870"
-  },
-  {
-    "name": "Fulufjellet alpinsenter",
-    "country": "Sweden",
-    "status": "operating",
-    "vertical_m": "222",
-    "lift_count": "2",
-    "lat": "61.391267",
-    "lon": "12.754086"
   },
   {
     "name": "Funäsdalen",
@@ -41140,15 +41246,6 @@
     "lift_count": "5",
     "lat": "65.256357",
     "lon": "15.492282"
-  },
-  {
-    "name": "Kjemsasen",
-    "country": "Sweden",
-    "status": "operating",
-    "vertical_m": "215",
-    "lift_count": "1",
-    "lat": "65.842318",
-    "lon": "13.353188"
   },
   {
     "name": "Klacken",
@@ -41437,15 +41534,6 @@
     "lon": "16.020041"
   },
   {
-    "name": "Skillevollen",
-    "country": "Sweden",
-    "status": "operating",
-    "vertical_m": "255",
-    "lift_count": "4",
-    "lat": "66.337766",
-    "lon": "14.092515"
-  },
-  {
     "name": "Skistar Hammarbybacken",
     "country": "Sweden",
     "status": "operating",
@@ -41473,15 +41561,6 @@
     "lon": "17.627023"
   },
   {
-    "name": "Sollifjellet alpinsenter",
-    "country": "Sweden",
-    "status": "operating",
-    "vertical_m": "313",
-    "lift_count": "1",
-    "lat": "68.803924",
-    "lon": "16.396641"
-  },
-  {
     "name": "Spökbacken",
     "country": "Sweden",
     "status": "operating",
@@ -41489,13 +41568,6 @@
     "lift_count": "1",
     "lat": "58.949987",
     "lon": "16.269262"
-  },
-  {
-    "name": "Steilia",
-    "country": "Sweden",
-    "status": "operating",
-    "lat": "68.852947",
-    "lon": "18.400401"
   },
   {
     "name": "Stenkällegården",
@@ -41542,15 +41614,6 @@
     "lon": "12.893609"
   },
   {
-    "name": "Sulitjelma Fjellandsby",
-    "country": "Sweden",
-    "status": "operating",
-    "vertical_m": "155",
-    "lift_count": "1",
-    "lat": "67.088115",
-    "lon": "16.070709"
-  },
-  {
     "name": "Sunnerstaåsens friluftsområde",
     "country": "Sweden",
     "status": "operating",
@@ -41576,15 +41639,6 @@
     "lift_count": "1",
     "lat": "63.023562",
     "lon": "16.079344"
-  },
-  {
-    "name": "Såslia alpinanlegg",
-    "country": "Sweden",
-    "status": "operating",
-    "vertical_m": "109",
-    "lift_count": "1",
-    "lat": "63.282005",
-    "lon": "11.054270"
   },
   {
     "name": "Säfsen",
@@ -41631,15 +41685,6 @@
     "lon": "15.619186"
   },
   {
-    "name": "Torsbustaden alpinsenter",
-    "country": "Sweden",
-    "status": "operating",
-    "vertical_m": "172",
-    "lift_count": "2",
-    "lat": "63.683339",
-    "lon": "11.308286"
-  },
-  {
     "name": "Trillevallen",
     "country": "Sweden",
     "vertical_m": "329",
@@ -41655,22 +41700,6 @@
     "lift_count": "1",
     "lat": "57.127158",
     "lon": "12.704277"
-  },
-  {
-    "name": "Trysil",
-    "country": "Sweden",
-    "status": "operating",
-    "vertical_m": "697",
-    "lift_count": "39",
-    "lat": "61.313727",
-    "lon": "12.204371"
-  },
-  {
-    "name": "Trysil",
-    "country": "Sweden",
-    "status": "operating",
-    "lat": "61.310000",
-    "lon": "12.315000"
   },
   {
     "name": "Tänndalen",
@@ -41717,15 +41746,6 @@
     "lon": "13.108529"
   },
   {
-    "name": "Vassfjellet skisenter",
-    "country": "Sweden",
-    "status": "operating",
-    "vertical_m": "462",
-    "lift_count": "11",
-    "lat": "63.264733",
-    "lon": "10.390159"
-  },
-  {
     "name": "Vedbobacken",
     "country": "Sweden",
     "status": "operating",
@@ -41742,33 +41762,6 @@
     "lift_count": "13",
     "lat": "62.486961",
     "lon": "13.957659"
-  },
-  {
-    "name": "Vestvatnlia alpinanlegg",
-    "country": "Sweden",
-    "status": "operating",
-    "vertical_m": "309",
-    "lift_count": "1",
-    "lat": "67.075145",
-    "lon": "14.959885"
-  },
-  {
-    "name": "Vinterlandet Namsskogan",
-    "country": "Sweden",
-    "status": "operating",
-    "vertical_m": "43",
-    "lift_count": "1",
-    "lat": "64.748482",
-    "lon": "12.859906"
-  },
-  {
-    "name": "Vintervasskleiva",
-    "country": "Sweden",
-    "status": "operating",
-    "vertical_m": "154",
-    "lift_count": "1",
-    "lat": "63.417189",
-    "lon": "10.254627"
   },
   {
     "name": "Värmullsåsen",
@@ -41866,7 +41859,7 @@
   },
   {
     "name": "85",
-    "country": "Switzerland",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "33",
     "lift_count": "1",
@@ -41875,7 +41868,7 @@
   },
   {
     "name": "117",
-    "country": "Switzerland",
+    "country": "Austria",
     "status": "operating",
     "vertical_m": "27",
     "lift_count": "1",
@@ -41902,7 +41895,7 @@
   },
   {
     "name": "236",
-    "country": "Switzerland",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "94",
     "lift_count": "2",
@@ -41911,7 +41904,7 @@
   },
   {
     "name": "237",
-    "country": "Switzerland",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "14",
     "lift_count": "1",
@@ -41920,7 +41913,7 @@
   },
   {
     "name": "238",
-    "country": "Switzerland",
+    "country": "Austria",
     "status": "operating",
     "vertical_m": "135",
     "lift_count": "2",
@@ -41938,7 +41931,7 @@
   },
   {
     "name": "265",
-    "country": "Switzerland",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "61",
     "lift_count": "1",
@@ -41956,7 +41949,7 @@
   },
   {
     "name": "313",
-    "country": "Switzerland",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "53",
     "lift_count": "1",
@@ -41983,7 +41976,7 @@
   },
   {
     "name": "362",
-    "country": "Switzerland",
+    "country": "France",
     "status": "operating",
     "vertical_m": "296",
     "lift_count": "1",
@@ -41992,7 +41985,7 @@
   },
   {
     "name": "403",
-    "country": "Switzerland",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "41",
     "lift_count": "1",
@@ -42010,7 +42003,7 @@
   },
   {
     "name": "419",
-    "country": "Switzerland",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "47",
     "lift_count": "1",
@@ -42055,7 +42048,7 @@
   },
   {
     "name": "489",
-    "country": "Switzerland",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "160",
     "lift_count": "3",
@@ -42073,7 +42066,7 @@
   },
   {
     "name": "495",
-    "country": "Switzerland",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "81",
     "lift_count": "1",
@@ -42091,7 +42084,7 @@
   },
   {
     "name": "510",
-    "country": "Switzerland",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "64",
     "lift_count": "2",
@@ -42100,7 +42093,7 @@
   },
   {
     "name": "511",
-    "country": "Switzerland",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "39",
     "lift_count": "1",
@@ -42109,7 +42102,7 @@
   },
   {
     "name": "513",
-    "country": "Switzerland",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "77",
     "lift_count": "2",
@@ -42118,7 +42111,7 @@
   },
   {
     "name": "519",
-    "country": "Switzerland",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "87",
     "lift_count": "1",
@@ -42127,7 +42120,7 @@
   },
   {
     "name": "529",
-    "country": "Switzerland",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "128",
     "lift_count": "1",
@@ -42136,7 +42129,7 @@
   },
   {
     "name": "534",
-    "country": "Switzerland",
+    "country": "Austria",
     "status": "operating",
     "vertical_m": "161",
     "lift_count": "1",
@@ -42145,7 +42138,7 @@
   },
   {
     "name": "535",
-    "country": "Switzerland",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "34",
     "lift_count": "1",
@@ -42154,7 +42147,7 @@
   },
   {
     "name": "536",
-    "country": "Switzerland",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "44",
     "lift_count": "1",
@@ -42163,7 +42156,7 @@
   },
   {
     "name": "546",
-    "country": "Switzerland",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "39",
     "lift_count": "1",
@@ -42190,7 +42183,7 @@
   },
   {
     "name": "563",
-    "country": "Switzerland",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "73",
     "lift_count": "1",
@@ -42208,7 +42201,7 @@
   },
   {
     "name": "584",
-    "country": "Switzerland",
+    "country": "France",
     "status": "operating",
     "vertical_m": "116",
     "lift_count": "2",
@@ -42298,7 +42291,7 @@
   },
   {
     "name": "673",
-    "country": "Switzerland",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "56",
     "lift_count": "1",
@@ -42307,7 +42300,7 @@
   },
   {
     "name": "675",
-    "country": "Switzerland",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "110",
     "lift_count": "2",
@@ -42316,7 +42309,7 @@
   },
   {
     "name": "697",
-    "country": "Switzerland",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "37",
     "lift_count": "1",
@@ -42325,7 +42318,7 @@
   },
   {
     "name": "699",
-    "country": "Switzerland",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "113",
     "lift_count": "3",
@@ -42334,7 +42327,7 @@
   },
   {
     "name": "700",
-    "country": "Switzerland",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "41",
     "lift_count": "1",
@@ -42343,7 +42336,7 @@
   },
   {
     "name": "705",
-    "country": "Switzerland",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "128",
     "lift_count": "1",
@@ -42352,7 +42345,7 @@
   },
   {
     "name": "725",
-    "country": "Switzerland",
+    "country": "France",
     "status": "operating",
     "vertical_m": "43",
     "lift_count": "1",
@@ -42361,7 +42354,7 @@
   },
   {
     "name": "747",
-    "country": "Switzerland",
+    "country": "Italy",
     "status": "operating",
     "vertical_m": "209",
     "lift_count": "2",
@@ -42370,7 +42363,7 @@
   },
   {
     "name": "769",
-    "country": "Switzerland",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "89",
     "lift_count": "2",
@@ -42397,7 +42390,7 @@
   },
   {
     "name": "799",
-    "country": "Switzerland",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "51",
     "lift_count": "2",
@@ -42406,7 +42399,7 @@
   },
   {
     "name": "814",
-    "country": "Switzerland",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "39",
     "lift_count": "1",
@@ -42415,7 +42408,7 @@
   },
   {
     "name": "815",
-    "country": "Switzerland",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "116",
     "lift_count": "1",
@@ -42424,7 +42417,7 @@
   },
   {
     "name": "872",
-    "country": "Switzerland",
+    "country": "France",
     "status": "operating",
     "vertical_m": "52",
     "lift_count": "2",
@@ -42433,7 +42426,7 @@
   },
   {
     "name": "884",
-    "country": "Switzerland",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "55",
     "lift_count": "1",
@@ -42442,7 +42435,7 @@
   },
   {
     "name": "886",
-    "country": "Switzerland",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "54",
     "lift_count": "1",
@@ -42451,7 +42444,7 @@
   },
   {
     "name": "891",
-    "country": "Switzerland",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "172",
     "lift_count": "2",
@@ -44318,7 +44311,7 @@
   },
   {
     "name": "Pfänder",
-    "country": "Switzerland",
+    "country": "Austria",
     "status": "operating",
     "vertical_m": "609",
     "lift_count": "1",
@@ -44327,7 +44320,7 @@
   },
   {
     "name": "Pian Benot",
-    "country": "Switzerland",
+    "country": "Italy",
     "status": "operating",
     "vertical_m": "427",
     "lift_count": "5",
@@ -44345,7 +44338,7 @@
   },
   {
     "name": "Pian del Frais",
-    "country": "Switzerland",
+    "country": "Italy",
     "status": "operating",
     "vertical_m": "424",
     "lift_count": "6",
@@ -44354,7 +44347,7 @@
   },
   {
     "name": "Pian delle Betulle",
-    "country": "Switzerland",
+    "country": "Italy",
     "status": "operating",
     "vertical_m": "264",
     "lift_count": "4",
@@ -44363,14 +44356,14 @@
   },
   {
     "name": "Pian di Sole",
-    "country": "Switzerland",
+    "country": "Italy",
     "status": "operating",
     "lat": "45.984912",
     "lon": "8.600210"
   },
   {
     "name": "Pian Munè",
-    "country": "Switzerland",
+    "country": "Italy",
     "status": "operating",
     "vertical_m": "555",
     "lift_count": "2",
@@ -44379,7 +44372,7 @@
   },
   {
     "name": "Piana di Vigezzo",
-    "country": "Switzerland",
+    "country": "Italy",
     "status": "operating",
     "vertical_m": "807",
     "lift_count": "5",
@@ -44388,7 +44381,7 @@
   },
   {
     "name": "Piani dell'Avaro",
-    "country": "Switzerland",
+    "country": "Italy",
     "status": "operating",
     "vertical_m": "393",
     "lift_count": "2",
@@ -44397,7 +44390,7 @@
   },
   {
     "name": "Piani di Artavaggio",
-    "country": "Switzerland",
+    "country": "Italy",
     "status": "operating",
     "vertical_m": "22",
     "lift_count": "5",
@@ -44406,7 +44399,7 @@
   },
   {
     "name": "Piani di Bobbio - Valtorta Skiarea",
-    "country": "Switzerland",
+    "country": "Italy",
     "status": "operating",
     "vertical_m": "533",
     "lift_count": "12",
@@ -44415,7 +44408,7 @@
   },
   {
     "name": "Piazzatorre Ski Area",
-    "country": "Switzerland",
+    "country": "Italy",
     "status": "operating",
     "vertical_m": "710",
     "lift_count": "3",
@@ -44424,7 +44417,7 @@
   },
   {
     "name": "Pierrefontaine Les Varans",
-    "country": "Switzerland",
+    "country": "France",
     "status": "operating",
     "vertical_m": "146",
     "lift_count": "1",
@@ -44433,7 +44426,7 @@
   },
   {
     "name": "Pila ski",
-    "country": "Switzerland",
+    "country": "Italy",
     "status": "operating",
     "vertical_m": "1509",
     "lift_count": "15",
@@ -44460,7 +44453,7 @@
   },
   {
     "name": "Pitztaler Gletscher",
-    "country": "Switzerland",
+    "country": "Austria",
     "status": "operating",
     "vertical_m": "1747",
     "lift_count": "9",
@@ -44478,7 +44471,7 @@
   },
   {
     "name": "Plateau de Retord",
-    "country": "Switzerland",
+    "country": "France",
     "status": "operating",
     "vertical_m": "231",
     "lift_count": "9",
@@ -44487,7 +44480,7 @@
   },
   {
     "name": "Plateau du Revard",
-    "country": "Switzerland",
+    "country": "France",
     "status": "operating",
     "vertical_m": "273",
     "lift_count": "5",
@@ -44496,7 +44489,7 @@
   },
   {
     "name": "Ponte di Legno - Passo Tonale",
-    "country": "Switzerland",
+    "country": "Italy",
     "status": "operating",
     "vertical_m": "1877",
     "lift_count": "29",
@@ -44505,7 +44498,7 @@
   },
   {
     "name": "Pontechianale",
-    "country": "Switzerland",
+    "country": "Italy",
     "status": "operating",
     "vertical_m": "1055",
     "lift_count": "4",
@@ -44550,7 +44543,7 @@
   },
   {
     "name": "Praz de Lys Sommand",
-    "country": "Switzerland",
+    "country": "France",
     "status": "operating",
     "vertical_m": "1061",
     "lift_count": "23",
@@ -44559,7 +44552,7 @@
   },
   {
     "name": "Raggal",
-    "country": "Switzerland",
+    "country": "Austria",
     "status": "operating",
     "vertical_m": "499",
     "lift_count": "3",
@@ -44568,7 +44561,7 @@
   },
   {
     "name": "Ramudla",
-    "country": "Switzerland",
+    "country": "Italy",
     "status": "operating",
     "vertical_m": "81",
     "lift_count": "1",
@@ -44595,7 +44588,7 @@
   },
   {
     "name": "Ratschings-Jaufen",
-    "country": "Switzerland",
+    "country": "Italy",
     "status": "operating",
     "vertical_m": "851",
     "lift_count": "12",
@@ -44631,7 +44624,7 @@
   },
   {
     "name": "Rhemes - Notre Dame",
-    "country": "Switzerland",
+    "country": "Italy",
     "status": "operating",
     "vertical_m": "405",
     "lift_count": "2",
@@ -44676,7 +44669,7 @@
   },
   {
     "name": "Roc d'Enfer",
-    "country": "Switzerland",
+    "country": "France",
     "status": "operating",
     "vertical_m": "849",
     "lift_count": "16",
@@ -44694,7 +44687,7 @@
   },
   {
     "name": "Romme",
-    "country": "Switzerland",
+    "country": "France",
     "status": "operating",
     "vertical_m": "369",
     "lift_count": "3",
@@ -44730,7 +44723,7 @@
   },
   {
     "name": "Roubion-Les-Buisses",
-    "country": "Switzerland",
+    "country": "France",
     "status": "operating",
     "vertical_m": "489",
     "lift_count": "6",
@@ -44739,7 +44732,7 @@
   },
   {
     "name": "Rouge Gazon",
-    "country": "Switzerland",
+    "country": "France",
     "status": "operating",
     "vertical_m": "227",
     "lift_count": "5",
@@ -44748,7 +44741,7 @@
   },
   {
     "name": "Rucaski",
-    "country": "Switzerland",
+    "country": "Italy",
     "status": "operating",
     "vertical_m": "306",
     "lift_count": "3",
@@ -44829,7 +44822,7 @@
   },
   {
     "name": "Saint Grée di Viola",
-    "country": "Switzerland",
+    "country": "Italy",
     "status": "operating",
     "vertical_m": "680",
     "lift_count": "4",
@@ -44856,7 +44849,7 @@
   },
   {
     "name": "Saint-Maurice-sur-Moselle",
-    "country": "Switzerland",
+    "country": "France",
     "status": "operating",
     "vertical_m": "60",
     "lift_count": "1",
@@ -44890,7 +44883,7 @@
   },
   {
     "name": "Sainte-Foy Tarentaise",
-    "country": "Switzerland",
+    "country": "France",
     "status": "operating",
     "vertical_m": "1112",
     "lift_count": "6",
@@ -44987,7 +44980,7 @@
   },
   {
     "name": "Schauinsland - Hofsgrund",
-    "country": "Switzerland",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "220",
     "lift_count": "8",
@@ -44996,7 +44989,7 @@
   },
   {
     "name": "Scheidegg",
-    "country": "Switzerland",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "112",
     "lift_count": "2",
@@ -45032,7 +45025,7 @@
   },
   {
     "name": "Schneesport-Saigs",
-    "country": "Switzerland",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "71",
     "lift_count": "1",
@@ -45041,7 +45034,7 @@
   },
   {
     "name": "Schneiderkopflifte",
-    "country": "Switzerland",
+    "country": "Austria",
     "status": "operating",
     "vertical_m": "171",
     "lift_count": "2",
@@ -45059,7 +45052,7 @@
   },
   {
     "name": "Schuttannen",
-    "country": "Switzerland",
+    "country": "Austria",
     "status": "operating",
     "vertical_m": "168",
     "lift_count": "2",
@@ -45095,7 +45088,7 @@
   },
   {
     "name": "Schöneben - Belpiano, Schöneben",
-    "country": "Switzerland",
+    "country": "Italy",
     "status": "operating",
     "vertical_m": "922",
     "lift_count": "13",
@@ -45113,7 +45106,7 @@
   },
   {
     "name": "Scopello / Alpe di Mera",
-    "country": "Switzerland",
+    "country": "Italy",
     "status": "operating",
     "vertical_m": "1055",
     "lift_count": "6",
@@ -45158,7 +45151,7 @@
   },
   {
     "name": "Silvretta Arena Ischgl/Samnaun",
-    "country": "Switzerland",
+    "country": "Austria",
     "status": "operating",
     "vertical_m": "1516",
     "lift_count": "44",
@@ -45167,7 +45160,7 @@
   },
   {
     "name": "Silvretta Montafon",
-    "country": "Switzerland",
+    "country": "Austria",
     "status": "operating",
     "vertical_m": "1734",
     "lift_count": "37",
@@ -45176,7 +45169,7 @@
   },
   {
     "name": "Silvretta-Bielerhöhe",
-    "country": "Switzerland",
+    "country": "Austria",
     "status": "operating",
     "vertical_m": "116",
     "lift_count": "1",
@@ -45185,7 +45178,7 @@
   },
   {
     "name": "Site du Meix Musy",
-    "country": "Switzerland",
+    "country": "France",
     "status": "operating",
     "vertical_m": "300",
     "lift_count": "3",
@@ -45194,7 +45187,7 @@
   },
   {
     "name": "Site nordique de Mouthe",
-    "country": "Switzerland",
+    "country": "France",
     "status": "operating",
     "vertical_m": "520",
     "lat": "46.652489",
@@ -45202,7 +45195,7 @@
   },
   {
     "name": "Ski Arlberg",
-    "country": "Switzerland",
+    "country": "Austria",
     "status": "operating",
     "vertical_m": "1490",
     "lat": "47.146185",
@@ -45210,7 +45203,7 @@
   },
   {
     "name": "Skiarea San Domenico",
-    "country": "Switzerland",
+    "country": "Italy",
     "status": "operating",
     "vertical_m": "1070",
     "lift_count": "8",
@@ -45219,7 +45212,7 @@
   },
   {
     "name": "Skiarea Valchiavenna Madesimo/Campodolcino",
-    "country": "Switzerland",
+    "country": "Italy",
     "status": "operating",
     "vertical_m": "1683",
     "lift_count": "15",
@@ -45308,7 +45301,7 @@
   },
   {
     "name": "Stade de neige du Col du Feu",
-    "country": "Switzerland",
+    "country": "France",
     "status": "operating",
     "vertical_m": "78",
     "lift_count": "1",
@@ -45317,7 +45310,7 @@
   },
   {
     "name": "Stade des Neiges du Barioz",
-    "country": "Switzerland",
+    "country": "France",
     "status": "operating",
     "vertical_m": "327",
     "lift_count": "3",
@@ -45326,7 +45319,7 @@
   },
   {
     "name": "Station d'Entre-les-Fourgs",
-    "country": "Switzerland",
+    "country": "France",
     "status": "operating",
     "vertical_m": "152",
     "lift_count": "2",
@@ -45362,7 +45355,7 @@
   },
   {
     "name": "Sulzberg",
-    "country": "Switzerland",
+    "country": "Austria",
     "status": "operating",
     "vertical_m": "34",
     "lift_count": "1",
@@ -45371,7 +45364,7 @@
   },
   {
     "name": "Sölden",
-    "country": "Switzerland",
+    "country": "Austria",
     "status": "operating",
     "vertical_m": "1899",
     "lift_count": "38",
@@ -45434,7 +45427,7 @@
   },
   {
     "name": "Thanner Hubel",
-    "country": "Switzerland",
+    "country": "France",
     "status": "operating",
     "vertical_m": "157",
     "lift_count": "1",
@@ -45442,15 +45435,8 @@
     "lon": "7.029742"
   },
   {
-    "name": "Thollon-les-Memises",
-    "country": "Switzerland",
-    "status": "operating",
-    "lat": "46.388889",
-    "lon": "6.699722"
-  },
-  {
     "name": "Thollon-les-Mémises",
-    "country": "Switzerland",
+    "country": "France",
     "status": "operating",
     "vertical_m": "668",
     "lift_count": "16",
@@ -45459,7 +45445,7 @@
   },
   {
     "name": "Thoma",
-    "country": "Switzerland",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "213",
     "lift_count": "3",
@@ -45468,7 +45454,7 @@
   },
   {
     "name": "Tignes - Val d'Isère",
-    "country": "Switzerland",
+    "country": "France",
     "status": "operating",
     "vertical_m": "1896",
     "lift_count": "90",
@@ -45477,14 +45463,14 @@
   },
   {
     "name": "Todtmoos",
-    "country": "Switzerland",
+    "country": "Germany",
     "status": "operating",
     "lat": "47.750509",
     "lon": "7.999137"
   },
   {
     "name": "Todtnauberg",
-    "country": "Switzerland",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "393",
     "lift_count": "6",
@@ -45492,15 +45478,8 @@
     "lon": "7.952207"
   },
   {
-    "name": "Todtnauberg",
-    "country": "Switzerland",
-    "status": "operating",
-    "lat": "47.852770",
-    "lon": "7.943648"
-  },
-  {
     "name": "Torgnon",
-    "country": "Switzerland",
+    "country": "Italy",
     "status": "operating",
     "vertical_m": "714",
     "lift_count": "6",
@@ -45518,7 +45497,7 @@
   },
   {
     "name": "Trafoi",
-    "country": "Switzerland",
+    "country": "Italy",
     "status": "operating",
     "vertical_m": "858",
     "lift_count": "3",
@@ -45545,7 +45524,7 @@
   },
   {
     "name": "Tschardund – Nenzing",
-    "country": "Switzerland",
+    "country": "Austria",
     "status": "operating",
     "vertical_m": "144",
     "lift_count": "1",
@@ -45581,7 +45560,7 @@
   },
   {
     "name": "Val Cenis",
-    "country": "Switzerland",
+    "country": "France",
     "status": "operating",
     "vertical_m": "1433",
     "lift_count": "33",
@@ -45590,7 +45569,7 @@
   },
   {
     "name": "Val Formazza",
-    "country": "Switzerland",
+    "country": "Italy",
     "status": "operating",
     "vertical_m": "502",
     "lift_count": "3",
@@ -45599,7 +45578,7 @@
   },
   {
     "name": "Valgrisenche Ski",
-    "country": "Switzerland",
+    "country": "Italy",
     "status": "operating",
     "vertical_m": "182",
     "lift_count": "3",
@@ -45608,7 +45587,7 @@
   },
   {
     "name": "Valmalenco Bernina",
-    "country": "Switzerland",
+    "country": "Italy",
     "status": "operating",
     "vertical_m": "965",
     "lift_count": "10",
@@ -45626,7 +45605,7 @@
   },
   {
     "name": "Valsavarenche",
-    "country": "Switzerland",
+    "country": "Italy",
     "status": "operating",
     "vertical_m": "142",
     "lat": "45.586057",
@@ -45634,7 +45613,7 @@
   },
   {
     "name": "Valtournenche",
-    "country": "Switzerland",
+    "country": "Italy",
     "status": "operating",
     "vertical_m": "1531",
     "lift_count": "6",
@@ -45643,7 +45622,7 @@
   },
   {
     "name": "Ventron",
-    "country": "Switzerland",
+    "country": "France",
     "status": "operating",
     "vertical_m": "246",
     "lat": "47.923591",
@@ -45694,7 +45673,7 @@
   },
   {
     "name": "Vormaine",
-    "country": "Switzerland",
+    "country": "France",
     "status": "operating",
     "vertical_m": "138",
     "lift_count": "4",
