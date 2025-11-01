@@ -2,13 +2,15 @@
   box-sizing: border-box;
 }
 
-body, html {
+html, body {
   height: 100%;
   margin: 0;
-  font-family: "Arial", sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 13px;
+  color: #000;
 }
 
+/* ---Yleiset luokat----------------------------------------- */
 .chapter {
 	margin-bottom: 1.2em;
 }
@@ -59,35 +61,29 @@ body, html {
   justify-content: space-between;
 }
 
-#filter-button {
-	background: none;
-	color: white;
-	border: none;
-	padding: 0;
-	font-size: 1em;
-	cursor: pointer;
-	display: none;
-}
-#filter-button:hover {
-  color: #ccc;
-}
-#filter-button:active {
-  color: #aaa;
+#filter-button,
+#hamburger-button {
+  background: none;
+  color: white;
+  border: none;
+  padding: 0;
+  font-size: 1em;
+  cursor: pointer;
+  transition: color 0.2s;
 }
 
-#hamburger-button {
-	background: none;
-	color: white;
-	border: none;
-	padding: 0;
-	font-size: 1em;
-	cursor: pointer;
-}
+#filter-button:hover,
 #hamburger-button:hover {
   color: #ccc;
 }
+
+#filter-button:active,
 #hamburger-button:active {
   color: #aaa;
+}
+
+#filter-button {
+  display: none;
 }
 
 /* ---Filter laatikko----------------------------------------- */
@@ -123,10 +119,8 @@ body, html {
 }
 
 .slider {
-  margin-bottom: 1em;
+  margin: 0.5em 0.4em 1.5em;
   height: 18px;
-	margin: 0.5em 0.4em;
-	margin-bottom: 1.5em;
 }
 
 .month-container {
@@ -172,8 +166,7 @@ body, html {
 	bottom: 0.2em;
 	z-index: 1000;
 	width: 18em;
-	padding: 0.5em;
-	padding-top: 0.8em;
+	padding: 0.8em 0.5em 0.5em;
 	box-sizing: border-box;
 	box-shadow:0 0 5px rgba(0,0,0,0.3);
 	overflow-y: auto;
@@ -200,9 +193,8 @@ h2 {
 }
 
 fieldset h3 {
-	font-size: 1.3em;
-	margin-bottom: 0.6em;
-	margin-top: 0.4em;
+  font-size: 1.3em;
+  margin: 0.4em 0 0.6em;
 }
 
 #run-container {
@@ -237,7 +229,7 @@ fieldset h3 {
   height: 0.2em;          
   background-color: #bbb;
   border-radius: 3px;     
-  margin: 1em 0;
+  margin: 1em auto;
 }
 
 
@@ -260,7 +252,6 @@ fieldset h3 {
 #searchInput {
 	width:100%;
 	box-sizing:border-box;
-	z-index: 9999;
 	border: none;           /* poistaa reunaviivan */
   outline: none;          /* poistaa sinisen korostuksen klikatessa */
   background: transparent;
@@ -307,11 +298,12 @@ fieldset h3 {
 }
 #clear-button {
   border-radius: 50%;
-	border: 1px solid #152843;
-	color: #152843;
-	background-color: white;
-	font-weight: bold;
-	cursor: pointer;
+  border: 1px solid #152843;
+  color: #152843;
+  background-color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
 }
 
 #clear-button:hover {
@@ -335,8 +327,8 @@ fieldset h3 {
 	}
 	
 	#container {
-		margin-top: 4em;
-		height: calc(100vh - 4em);
+		margin-top: 3em;
+		height: calc(100vh - 3em);
 	}
 	
   #filterBox {
@@ -346,14 +338,12 @@ fieldset h3 {
     right: 0;
     bottom: 0;
 		width: 100%;
-		max-width: 17em;
+		max-width: 30em;
     display: none;
 		padding-top: 0;
 		height: calc(100vh - 4.5em); /* ottaa koko näytön korkeuden */
   }
-	#filters-content{
-		overflow-y: auto;
-	}
+	
   #filterBox.visible {
     display: block;
 		z-index: 1000;
@@ -376,9 +366,9 @@ fieldset h3 {
 		position: fixed;
 		left: 0;
 		width: 100%;
-		height: 10em;
+		height: calc(100% - 4em);
 		top: auto;
-		bottom: -5em;
+		bottom: -0em;
 			
 	}
 }
