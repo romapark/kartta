@@ -1,7 +1,7 @@
 [
   {
     "name": "659",
-    "country": "Albania",
+    "country": "North Macedonia",
     "status": "operating",
     "vertical_m": "32",
     "lift_count": "1",
@@ -19,7 +19,7 @@
   },
   {
     "name": "Tottis Vigla",
-    "country": "Albania",
+    "country": "Greece",
     "status": "operating",
     "vertical_m": "497",
     "lift_count": "3",
@@ -573,7 +573,7 @@
   },
   {
     "name": "107",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "14",
     "lift_count": "1",
@@ -663,7 +663,7 @@
   },
   {
     "name": "210",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "68",
     "lift_count": "1",
@@ -672,7 +672,7 @@
   },
   {
     "name": "211",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "25",
     "lift_count": "1",
@@ -744,7 +744,7 @@
   },
   {
     "name": "260",
-    "country": "Austria",
+    "country": "Italy",
     "status": "operating",
     "vertical_m": "287",
     "lift_count": "1",
@@ -807,7 +807,7 @@
   },
   {
     "name": "325",
-    "country": "Austria",
+    "country": "Hungary",
     "status": "operating",
     "vertical_m": "51",
     "lift_count": "1",
@@ -816,7 +816,7 @@
   },
   {
     "name": "330",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "53",
     "lift_count": "1",
@@ -825,7 +825,7 @@
   },
   {
     "name": "333",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "60",
     "lift_count": "4",
@@ -879,7 +879,7 @@
   },
   {
     "name": "416",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "63",
     "lift_count": "1",
@@ -888,7 +888,7 @@
   },
   {
     "name": "427",
-    "country": "Austria",
+    "country": "Italy",
     "status": "operating",
     "vertical_m": "764",
     "lift_count": "1",
@@ -897,7 +897,7 @@
   },
   {
     "name": "437",
-    "country": "Austria",
+    "country": "Italy",
     "status": "operating",
     "vertical_m": "69",
     "lift_count": "1",
@@ -915,7 +915,7 @@
   },
   {
     "name": "444",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "64",
     "lift_count": "1",
@@ -924,7 +924,7 @@
   },
   {
     "name": "466",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "15",
     "lift_count": "1",
@@ -951,7 +951,7 @@
   },
   {
     "name": "487",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "45",
     "lift_count": "1",
@@ -969,7 +969,7 @@
   },
   {
     "name": "503",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "190",
     "lift_count": "1",
@@ -987,7 +987,7 @@
   },
   {
     "name": "542",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "18",
     "lift_count": "1",
@@ -996,7 +996,7 @@
   },
   {
     "name": "543",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "41",
     "lift_count": "1",
@@ -1005,7 +1005,7 @@
   },
   {
     "name": "544",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "101",
     "lift_count": "2",
@@ -1023,7 +1023,7 @@
   },
   {
     "name": "553",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "110",
     "lift_count": "2",
@@ -1041,7 +1041,7 @@
   },
   {
     "name": "558",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "89",
     "lift_count": "1",
@@ -1059,7 +1059,7 @@
   },
   {
     "name": "572",
-    "country": "Austria",
+    "country": "Czech Republic",
     "status": "operating",
     "vertical_m": "59",
     "lift_count": "1",
@@ -1068,7 +1068,7 @@
   },
   {
     "name": "573",
-    "country": "Austria",
+    "country": "Czech Republic",
     "status": "operating",
     "vertical_m": "73",
     "lift_count": "1",
@@ -1122,7 +1122,7 @@
   },
   {
     "name": "605",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "27",
     "lift_count": "1",
@@ -1131,7 +1131,7 @@
   },
   {
     "name": "607",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "44",
     "lift_count": "1",
@@ -1140,7 +1140,7 @@
   },
   {
     "name": "614",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "62",
     "lift_count": "1",
@@ -1149,7 +1149,7 @@
   },
   {
     "name": "619",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "32",
     "lift_count": "1",
@@ -1185,7 +1185,7 @@
   },
   {
     "name": "644",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "16",
     "lift_count": "1",
@@ -1203,7 +1203,7 @@
   },
   {
     "name": "657",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "99",
     "lift_count": "2",
@@ -1248,7 +1248,7 @@
   },
   {
     "name": "722",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "190",
     "lift_count": "2",
@@ -1275,7 +1275,7 @@
   },
   {
     "name": "740",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "47",
     "lift_count": "1",
@@ -1293,7 +1293,7 @@
   },
   {
     "name": "837",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "86",
     "lift_count": "1",
@@ -1320,7 +1320,7 @@
   },
   {
     "name": "885",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "27",
     "lift_count": "1",
@@ -1338,7 +1338,7 @@
   },
   {
     "name": "895",
-    "country": "Austria",
+    "country": "Czech Republic",
     "status": "operating",
     "vertical_m": "62",
     "lift_count": "1",
@@ -2691,7 +2691,7 @@
   },
   {
     "name": "Pfannilift am Schliersee",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "35",
     "lift_count": "1",
@@ -2700,7 +2700,7 @@
   },
   {
     "name": "Pfelders",
-    "country": "Austria",
+    "country": "Italy",
     "status": "operating",
     "vertical_m": "901",
     "lift_count": "4",
@@ -2727,7 +2727,7 @@
   },
   {
     "name": "Planica",
-    "country": "Austria",
+    "country": "Slovenia",
     "status": "operating",
     "vertical_m": "63",
     "lift_count": "4",
@@ -2745,7 +2745,7 @@
   },
   {
     "name": "Pokljuka",
-    "country": "Austria",
+    "country": "Slovenia",
     "status": "operating",
     "vertical_m": "302",
     "lift_count": "6",
@@ -2763,7 +2763,7 @@
   },
   {
     "name": "Prachatice - Libín",
-    "country": "Austria",
+    "country": "Czech Republic",
     "status": "operating",
     "vertical_m": "53",
     "lift_count": "3",
@@ -2826,7 +2826,7 @@
   },
   {
     "name": "Reiserhang",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "136",
     "lift_count": "2",
@@ -2844,7 +2844,7 @@
   },
   {
     "name": "Riedbergerhorn",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "lat": "47.457925",
     "lon": "10.132829"
@@ -2878,7 +2878,7 @@
   },
   {
     "name": "Rossfeld",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "361",
     "lift_count": "5",
@@ -3022,7 +3022,7 @@
   },
   {
     "name": "Schwarzenlifte Eschach",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "62",
     "lift_count": "8",
@@ -3139,7 +3139,7 @@
   },
   {
     "name": "Skiarena Steibis",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "485",
     "lift_count": "14",
@@ -3202,7 +3202,7 @@
   },
   {
     "name": "Skigebiet Eckbauer",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "496",
     "lift_count": "2",
@@ -3220,7 +3220,7 @@
   },
   {
     "name": "Skigebiet Fellhorn/Kanzelwand",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "1050",
     "lift_count": "13",
@@ -3238,7 +3238,7 @@
   },
   {
     "name": "Skigebiet Garmisch-Classic",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "1322",
     "lift_count": "17",
@@ -3355,7 +3355,7 @@
   },
   {
     "name": "Skigebiet Nebelhorn",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "1391",
     "lift_count": "9",
@@ -3382,7 +3382,7 @@
   },
   {
     "name": "Skigebiet Ramsau - Hirscheck",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "346",
     "lift_count": "4",
@@ -3427,7 +3427,7 @@
   },
   {
     "name": "Skigebiet Spitzingsee - Tegernsee",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "601",
     "lift_count": "13",
@@ -3454,7 +3454,7 @@
   },
   {
     "name": "Skigebiet Söllereck",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "500",
     "lift_count": "9",
@@ -3472,7 +3472,7 @@
   },
   {
     "name": "Skilift Au",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "33",
     "lift_count": "1",
@@ -3481,7 +3481,7 @@
   },
   {
     "name": "Skilift Beuerberg",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "39",
     "lift_count": "1",
@@ -3499,7 +3499,7 @@
   },
   {
     "name": "Skilift Elbach",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "lat": "47.738800",
     "lon": "11.960664"
@@ -3524,7 +3524,7 @@
   },
   {
     "name": "Skilifte Geiersberg",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "266",
     "lift_count": "5",
@@ -3533,7 +3533,7 @@
   },
   {
     "name": "Skilifte Geiersberg",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "lat": "48.684544",
     "lon": "13.665682"
@@ -3549,7 +3549,7 @@
   },
   {
     "name": "Skilifte Sinswang",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "78",
     "lift_count": "3",
@@ -3558,7 +3558,7 @@
   },
   {
     "name": "Skipark Frymburk",
-    "country": "Austria",
+    "country": "Czech Republic",
     "status": "operating",
     "vertical_m": "85",
     "lift_count": "4",
@@ -3585,7 +3585,7 @@
   },
   {
     "name": "Skizentrum Pfronten",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "401",
     "lift_count": "6",
@@ -3621,7 +3621,7 @@
   },
   {
     "name": "Sonnenhanglifte",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "103",
     "lift_count": "2",
@@ -3648,7 +3648,7 @@
   },
   {
     "name": "Sonnenlifte Röfleuten/Halden",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "77",
     "lift_count": "4",
@@ -3675,7 +3675,7 @@
   },
   {
     "name": "Speicher",
-    "country": "Austria",
+    "country": "Switzerland",
     "status": "operating",
     "vertical_m": "105",
     "lift_count": "2",
@@ -3684,7 +3684,7 @@
   },
   {
     "name": "Speikboden",
-    "country": "Austria",
+    "country": "Italy",
     "status": "operating",
     "vertical_m": "1460",
     "lift_count": "9",
@@ -3702,7 +3702,7 @@
   },
   {
     "name": "Spieserlifte",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "306",
     "lift_count": "2",
@@ -3711,7 +3711,7 @@
   },
   {
     "name": "Spitze",
-    "country": "Austria",
+    "country": "Switzerland",
     "status": "operating",
     "vertical_m": "47",
     "lift_count": "1",
@@ -3765,7 +3765,7 @@
   },
   {
     "name": "Steckenberg",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "142",
     "lift_count": "6",
@@ -3774,7 +3774,7 @@
   },
   {
     "name": "Steibis - Hochgratbahn",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "844",
     "lift_count": "1",
@@ -3810,7 +3810,7 @@
   },
   {
     "name": "Stinesser",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "80",
     "lift_count": "2",
@@ -3819,7 +3819,7 @@
   },
   {
     "name": "Strážný",
-    "country": "Austria",
+    "country": "Czech Republic",
     "status": "operating",
     "vertical_m": "57",
     "lift_count": "2",
@@ -3837,7 +3837,7 @@
   },
   {
     "name": "Sudelfeld - Bayrischzell",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "642",
     "lift_count": "13",
@@ -3846,7 +3846,7 @@
   },
   {
     "name": "Sulzberg",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "100",
     "lift_count": "1",
@@ -3882,7 +3882,7 @@
   },
   {
     "name": "Tegelbergbahn",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "901",
     "lift_count": "6",
@@ -3900,7 +3900,7 @@
   },
   {
     "name": "Thaler Höhe",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "239",
     "lift_count": "4",
@@ -3945,7 +3945,7 @@
   },
   {
     "name": "Unternberg (Ruhpolding)",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "218",
     "lift_count": "3",
@@ -3997,7 +3997,7 @@
   },
   {
     "name": "Wallbergbahn (Tegernsee)",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "825",
     "lift_count": "1",
@@ -4024,7 +4024,7 @@
   },
   {
     "name": "Wendelstein",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "931",
     "lift_count": "51",
@@ -4033,7 +4033,7 @@
   },
   {
     "name": "Wengen",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "100",
     "lift_count": "1",
@@ -4051,7 +4051,7 @@
   },
   {
     "name": "Westernberg (Ruhpolding)",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "205",
     "lift_count": "4",
@@ -4078,7 +4078,7 @@
   },
   {
     "name": "Wildhaus",
-    "country": "Austria",
+    "country": "Switzerland",
     "status": "operating",
     "vertical_m": "1054",
     "lift_count": "7",
@@ -4105,7 +4105,7 @@
   },
   {
     "name": "Wolfsberg (Siegsdorf)",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "136",
     "lift_count": "1",
@@ -4114,7 +4114,7 @@
   },
   {
     "name": "Wolzenalp",
-    "country": "Austria",
+    "country": "Switzerland",
     "status": "operating",
     "vertical_m": "727",
     "lift_count": "6",
@@ -4123,7 +4123,7 @@
   },
   {
     "name": "Wolzenalp (Krummenau)",
-    "country": "Austria",
+    "country": "Switzerland",
     "status": "operating",
     "lat": "47.224718",
     "lon": "9.196062"
@@ -4202,7 +4202,7 @@
   },
   {
     "name": "Ötzlifte-Kochel",
-    "country": "Austria",
+    "country": "Germany",
     "status": "operating",
     "vertical_m": "213",
     "lift_count": "3",
@@ -48376,18 +48376,7 @@
     "lon": "-89.504027"
   },
   {
-    "name": "Camp Ethan Allen",
-    "country": "United States",
-    "region": "Vermont",
-    "city": "Jericho",
-    "status": "operating",
-    "vertical_m": "66",
-    "lift_count": "1",
-    "lat": "44.476482",
-    "lon": "-72.944798"
-  },
-  {
-    "name": "Campgaw Mountain Ski Area",
+    "name": "Campgaw Mountain",
     "country": "United States",
     "region": "New Jersey",
     "status": "operating",
@@ -48397,7 +48386,7 @@
     "lon": "-74.197176"
   },
   {
-    "name": "Campton Mountain",
+    "name": "Campton Mountain Ski Area",
     "country": "United States",
     "region": "New Hampshire",
     "city": "Campton",
@@ -48506,7 +48495,7 @@
     "lon": "-84.881683"
   },
   {
-    "name": "Chapman Hill Recreation Area",
+    "name": "Chapman Hill Ski Area",
     "country": "United States",
     "region": "Colorado",
     "city": "Durango",
@@ -48517,7 +48506,7 @@
     "lon": "-107.867906"
   },
   {
-    "name": "Chatham Hill",
+    "name": "Hiwatha Slopes",
     "country": "United States",
     "region": "Michigan",
     "city": "Rock River",
@@ -48526,7 +48515,7 @@
     "lon": "-86.881106"
   },
   {
-    "name": "Cherry Peak Ski Area",
+    "name": "Cherry Peak",
     "country": "United States",
     "region": "Utah",
     "status": "operating",
@@ -53082,6 +53071,7 @@
     "region": "New Hampshire",
     "city": "Sargents",
     "status": "operating",
+    "type": "backcountry",
     "lat": "44.262228",
     "lon": "-71.297793"
   },
@@ -53107,24 +53097,17 @@
     "lon": "-77.752617"
   },
   {
-    "name": "Twin Farms Ski Hill",
+    "name": "Twin Farms",
     "country": "United States",
     "region": "Vermont",
     "status": "operating",
+    "type": "backcountry",
     "vertical_m": "113",
     "lat": "43.723364",
     "lon": "-72.584883"
   },
   {
     "name": "Tyrol Basin",
-    "country": "United States",
-    "region": "Wisconsin",
-    "status": "operating",
-    "lat": "43.042747",
-    "lon": "-89.777719"
-  },
-  {
-    "name": "Tyrol Basin Ski And Snowboard Area",
     "country": "United States",
     "region": "Wisconsin",
     "status": "operating",
@@ -53166,7 +53149,7 @@
     "lon": "-75.249953"
   },
   {
-    "name": "Veterans Memorial Ski Area",
+    "name": "The Vets - Veterans Memorial",
     "country": "United States",
     "region": "New Hampshire",
     "city": "Franklin",
@@ -53177,7 +53160,7 @@
     "lon": "-71.691123"
   },
   {
-    "name": "Victor Constant Ski Area",
+    "name": "Victor Constant Ski Area - West Point",
     "country": "United States",
     "region": "New York",
     "city": "West Point",
@@ -53199,7 +53182,7 @@
     "lon": "-88.220875"
   },
   {
-    "name": "Villa Roma Ski Area",
+    "name": "The Villa Roma",
     "country": "United States",
     "region": "New York",
     "status": "operating",
@@ -53214,12 +53197,13 @@
     "region": "Michigan",
     "city": "Eagle Harbor",
     "status": "operating",
+    "type": "snowcat",
     "vertical_m": "219",
     "lat": "47.456589",
     "lon": "-88.025717"
   },
   {
-    "name": "Wachusett Mountain Ski Area",
+    "name": "Wachusett Mountain",
     "country": "United States",
     "region": "Massachusetts",
     "status": "operating",
@@ -53229,7 +53213,7 @@
     "lon": "-71.886784"
   },
   {
-    "name": "Warner Canyon Ski Area",
+    "name": "Warner Canyon",
     "country": "United States",
     "region": "Oregon",
     "status": "operating",
@@ -53249,7 +53233,7 @@
     "lon": "-111.830268"
   },
   {
-    "name": "Waterville Valley Resort",
+    "name": "Waterville Valley",
     "country": "United States",
     "region": "New Hampshire",
     "status": "operating",
@@ -53257,16 +53241,6 @@
     "lift_count": "10",
     "lat": "43.962971",
     "lon": "-71.535051"
-  },
-  {
-    "name": "Waterville Valley Resort Nordic",
-    "country": "United States",
-    "region": "New Hampshire",
-    "status": "operating",
-    "vertical_m": "417",
-    "lift_count": "1",
-    "lat": "43.961571",
-    "lon": "-71.503911"
   },
   {
     "name": "Welch Village",
@@ -53279,7 +53253,7 @@
     "lon": "-92.730753"
   },
   {
-    "name": "West Mountain Ski Resort",
+    "name": "West Mountain",
     "country": "United States",
     "region": "New York",
     "status": "operating",
@@ -53300,7 +53274,7 @@
     "lon": "-72.183498"
   },
   {
-    "name": "White Pass Ski Area",
+    "name": "White Pass",
     "country": "United States",
     "region": "Washington",
     "status": "operating",
@@ -53310,7 +53284,7 @@
     "lon": "-121.396901"
   },
   {
-    "name": "White Pine Resort",
+    "name": "White Pine",
     "country": "United States",
     "region": "Wyoming",
     "status": "operating",
@@ -53331,7 +53305,7 @@
     "lon": "-90.400336"
   },
   {
-    "name": "Whiteface Mountain Ski Center",
+    "name": "Whiteface Mountain",
     "country": "United States",
     "region": "New York",
     "city": "Wilmington",
@@ -53357,17 +53331,6 @@
     "region": "Pennsylvania",
     "city": "Montgomery",
     "status": "operating",
-    "vertical_m": "279",
-    "lift_count": "5",
-    "lat": "39.743382",
-    "lon": "-77.937699"
-  },
-  {
-    "name": "Whitetail Resort",
-    "country": "United States",
-    "region": "Pennsylvania",
-    "city": "Montgomery",
-    "status": "operating",
     "vertical_m": "282",
     "lift_count": "8",
     "lat": "39.741550",
@@ -53381,17 +53344,6 @@
     "status": "operating",
     "lat": "44.021775",
     "lon": "-90.721584"
-  },
-  {
-    "name": "Wild Chutes Snow Tubing",
-    "country": "United States",
-    "region": "Minnesota",
-    "city": "Amador",
-    "status": "operating",
-    "vertical_m": "28",
-    "lift_count": "1",
-    "lat": "45.482816",
-    "lon": "-92.703012"
   },
   {
     "name": "Wild Mountain",
@@ -53459,16 +53411,7 @@
     "lon": "-74.258395"
   },
   {
-    "name": "Winter park",
-    "country": "United States",
-    "region": "South Dakota",
-    "city": "Wessington Springs",
-    "status": "operating",
-    "lat": "44.075161",
-    "lon": "-98.573833"
-  },
-  {
-    "name": "Winter Park Resort",
+    "name": "Winter Park",
     "country": "United States",
     "region": "Colorado",
     "city": "Winter Park",
@@ -53479,7 +53422,7 @@
     "lon": "-105.779117"
   },
   {
-    "name": "Wintergreen Ski Resort",
+    "name": "Wintergreen Resort",
     "country": "United States",
     "region": "Virginia",
     "city": "Wintergreen",
@@ -53513,7 +53456,7 @@
     "name": "Wissahickon Ski Club",
     "country": "United States",
     "region": "Pennsylvania",
-    "status": "operating",
+    "status": "closed",
     "vertical_m": "66",
     "lift_count": "1",
     "lat": "40.075773",
@@ -53530,7 +53473,7 @@
     "lon": "-106.790450"
   },
   {
-    "name": "Wolf Ridge Ski Resort",
+    "name": "Hatley Pointe",
     "country": "United States",
     "region": "North Carolina",
     "status": "operating",
@@ -53551,16 +53494,7 @@
     "lon": "-75.380327"
   },
   {
-    "name": "Woodstream",
-    "country": "United States",
-    "region": "New York",
-    "city": "West End",
-    "status": "operating",
-    "lat": "42.472073",
-    "lon": "-75.084450"
-  },
-  {
-    "name": "Woodward",
+    "name": "Woodward Park City",
     "country": "United States",
     "region": "Utah",
     "city": "Summit Park",
@@ -53581,7 +53515,7 @@
     "lon": "-91.802584"
   },
   {
-    "name": "Yawgoo Valley Ski Area",
+    "name": "Yawgoo Valley",
     "country": "United States",
     "region": "Rhode Island",
     "city": "Exeter",
