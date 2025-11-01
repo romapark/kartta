@@ -3726,6 +3726,24 @@
     "lon": "6.100382"
   },
   {
+    "name": "Snow Valley Peer Ski & Snowboardcentre",
+    "country": "Belgium",
+    "status": "operating",
+    "vertical_m": "17",
+    "lift_count": "5",
+    "lat": "51.123485",
+    "lon": "5.469305"
+  },
+  {
+    "name": "SnowWorld Antwerpen",
+    "country": "Belgium",
+    "status": "operating",
+    "vertical_m": "1",
+    "lift_count": "2",
+    "lat": "51.159980",
+    "lon": "4.373903"
+  },
+  {
     "name": "180",
     "country": "Bosnia and Herzegovina",
     "status": "operating",
@@ -21155,6 +21173,32 @@
     "lon": "23.086023"
   },
   {
+    "name": "Vitsi",
+    "country": "Greece",
+    "vertical_m": "229",
+    "lift_count": "1",
+    "lat": "40.624180",
+    "lon": "21.378061"
+  },
+  {
+    "name": "Εθνικό χιονοδρομικό κέντρο Βασιλίτσας",
+    "country": "Greece",
+    "status": "operating",
+    "vertical_m": "490",
+    "lift_count": "7",
+    "lat": "40.050055",
+    "lon": "21.089406"
+  },
+  {
+    "name": "Χιονοδρομικό Κέντρο 3-5 Πηγάδια, 3-5 Pigadia",
+    "country": "Greece",
+    "status": "operating",
+    "vertical_m": "532",
+    "lift_count": "6",
+    "lat": "40.632992",
+    "lon": "21.968108"
+  },
+  {
     "name": "22",
     "country": "Greenland",
     "region": "Kommuneqarfik Sermersooq",
@@ -29603,29 +29647,11 @@
     "lon": "5.060333"
   },
   {
-    "name": "Snow Valley Peer Ski & Snowboardcentre",
-    "country": "Belgium",
-    "status": "operating",
-    "vertical_m": "17",
-    "lift_count": "5",
-    "lat": "51.123485",
-    "lon": "5.469305"
-  },
-  {
     "name": "SnowWorld Amsterdam",
     "country": "Netherlands",
     "status": "operating",
     "lat": "52.449550",
     "lon": "4.678600"
-  },
-  {
-    "name": "SnowWorld Antwerpen",
-    "country": "Belgium",
-    "status": "operating",
-    "vertical_m": "1",
-    "lift_count": "2",
-    "lat": "51.159980",
-    "lon": "4.373903"
   },
   {
     "name": "SnowWorld Rucphen-Breda",
@@ -30049,32 +30075,6 @@
     "lon": "20.870495"
   },
   {
-    "name": "Vitsi",
-    "country": "North Macedonia",
-    "vertical_m": "229",
-    "lift_count": "1",
-    "lat": "40.624180",
-    "lon": "21.378061"
-  },
-  {
-    "name": "Εθνικό χιονοδρομικό κέντρο Βασιλίτσας",
-    "country": "North Macedonia",
-    "status": "operating",
-    "vertical_m": "490",
-    "lift_count": "7",
-    "lat": "40.050055",
-    "lon": "21.089406"
-  },
-  {
-    "name": "Χιονοδρομικό Κέντρο 3-5 Πηγάδια, 3-5 Pigadia",
-    "country": "North Macedonia",
-    "status": "operating",
-    "vertical_m": "532",
-    "lift_count": "6",
-    "lat": "40.632992",
-    "lon": "21.968108"
-  },
-  {
     "name": "659",
     "country": "North Macedonia",
     "status": "operating",
@@ -30366,15 +30366,6 @@
     "lift_count": "1",
     "lat": "59.840228",
     "lon": "10.655344"
-  },
-  {
-    "name": "723",
-    "country": "Norway",
-    "status": "operating",
-    "vertical_m": "1",
-    "lift_count": "1",
-    "lat": "58.484381",
-    "lon": "11.693449"
   },
   {
     "name": "768",
@@ -32077,15 +32068,6 @@
     "lon": "9.429247"
   },
   {
-    "name": "Valfjället Skicenter",
-    "country": "Norway",
-    "status": "operating",
-    "vertical_m": "206",
-    "lift_count": "4",
-    "lat": "59.826723",
-    "lon": "12.243831"
-  },
-  {
     "name": "Varingskollen",
     "country": "Norway",
     "vertical_m": "367",
@@ -32266,7 +32248,7 @@
   },
   {
     "name": "103",
-    "country": "Poland",
+    "country": "Czech Republic",
     "status": "operating",
     "vertical_m": "121",
     "lift_count": "1",
@@ -32284,7 +32266,7 @@
   },
   {
     "name": "132",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "180",
     "lift_count": "4",
@@ -32293,7 +32275,7 @@
   },
   {
     "name": "141",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "61",
     "lift_count": "3",
@@ -32311,7 +32293,7 @@
   },
   {
     "name": "243",
-    "country": "Poland",
+    "country": "Czech Republic",
     "status": "operating",
     "vertical_m": "2",
     "lift_count": "2",
@@ -32356,7 +32338,7 @@
   },
   {
     "name": "300",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "510",
     "lift_count": "4",
@@ -32401,7 +32383,7 @@
   },
   {
     "name": "418",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "46",
     "lift_count": "2",
@@ -32446,7 +32428,7 @@
   },
   {
     "name": "566",
-    "country": "Poland",
+    "country": "Czech Republic",
     "status": "operating",
     "vertical_m": "92",
     "lift_count": "1",
@@ -32455,7 +32437,7 @@
   },
   {
     "name": "620",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "65",
     "lift_count": "1",
@@ -32473,7 +32455,7 @@
   },
   {
     "name": "730",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "219",
     "lift_count": "3",
@@ -32509,7 +32491,7 @@
   },
   {
     "name": "856",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "93",
     "lift_count": "1",
@@ -32536,7 +32518,7 @@
   },
   {
     "name": "919",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "lat": "49.030518",
     "lon": "19.667834"
@@ -32567,15 +32549,6 @@
     "lift_count": "1",
     "lat": "49.629707",
     "lon": "18.914828"
-  },
-  {
-    "name": "928",
-    "country": "Poland",
-    "status": "operating",
-    "vertical_m": "80",
-    "lift_count": "3",
-    "lat": "49.128079",
-    "lon": "20.058664"
   },
   {
     "name": "946",
@@ -33712,7 +33685,7 @@
   },
   {
     "name": "Podbreziny",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "114",
     "lift_count": "1",
@@ -33747,7 +33720,7 @@
   },
   {
     "name": "Polhorský Hrádok",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "151",
     "lift_count": "5",
@@ -33774,7 +33747,7 @@
   },
   {
     "name": "Racibor",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "234",
     "lift_count": "1",
@@ -33783,7 +33756,7 @@
   },
   {
     "name": "Regetovka",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "164",
     "lift_count": "2",
@@ -33792,7 +33765,7 @@
   },
   {
     "name": "Renčišov – Búče",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "242",
     "lift_count": "7",
@@ -33801,7 +33774,7 @@
   },
   {
     "name": "Resort Levočská dolina",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "242",
     "lift_count": "3",
@@ -33810,7 +33783,7 @@
   },
   {
     "name": "Roháče - Spálená",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "460",
     "lift_count": "5",
@@ -33862,7 +33835,7 @@
   },
   {
     "name": "Šerkov",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "192",
     "lift_count": "1",
@@ -33898,7 +33871,7 @@
   },
   {
     "name": "Skalka",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "241",
     "lift_count": "2",
@@ -33907,7 +33880,7 @@
   },
   {
     "name": "Ski aerál Skalka",
-    "country": "Poland",
+    "country": "Czech Republic",
     "status": "operating",
     "vertical_m": "56",
     "lift_count": "4",
@@ -33916,7 +33889,7 @@
   },
   {
     "name": "Ski areál Karolinka",
-    "country": "Poland",
+    "country": "Czech Republic",
     "status": "operating",
     "vertical_m": "211",
     "lift_count": "3",
@@ -33925,7 +33898,7 @@
   },
   {
     "name": "Ski areál Kyčerka",
-    "country": "Poland",
+    "country": "Czech Republic",
     "status": "operating",
     "vertical_m": "181",
     "lift_count": "9",
@@ -33934,7 +33907,7 @@
   },
   {
     "name": "Ski areál Na Čele",
-    "country": "Poland",
+    "country": "Czech Republic",
     "status": "operating",
     "vertical_m": "108",
     "lift_count": "2",
@@ -33943,7 +33916,7 @@
   },
   {
     "name": "Ski areál Opálená",
-    "country": "Poland",
+    "country": "Czech Republic",
     "status": "operating",
     "vertical_m": "91",
     "lift_count": "3",
@@ -33952,7 +33925,7 @@
   },
   {
     "name": "Ski areál Palkovice",
-    "country": "Poland",
+    "country": "Czech Republic",
     "status": "operating",
     "vertical_m": "104",
     "lift_count": "2",
@@ -33961,7 +33934,7 @@
   },
   {
     "name": "Ski areál Rališka",
-    "country": "Poland",
+    "country": "Czech Republic",
     "status": "operating",
     "vertical_m": "130",
     "lift_count": "6",
@@ -33970,7 +33943,7 @@
   },
   {
     "name": "Ski areál Razula",
-    "country": "Poland",
+    "country": "Czech Republic",
     "status": "operating",
     "vertical_m": "201",
     "lift_count": "2",
@@ -33979,7 +33952,7 @@
   },
   {
     "name": "SKI Bukovina Turzovka",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "116",
     "lift_count": "2",
@@ -33988,7 +33961,7 @@
   },
   {
     "name": "SKI centrum Demänová",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "47",
     "lift_count": "2",
@@ -33997,7 +33970,7 @@
   },
   {
     "name": "Ski centrum Kozinec",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "290",
     "lift_count": "3",
@@ -34006,7 +33979,7 @@
   },
   {
     "name": "Ski centrum Strachan",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "144",
     "lift_count": "4",
@@ -34015,7 +33988,7 @@
   },
   {
     "name": "Ski Čertov Javorníky",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "322",
     "lift_count": "6",
@@ -34024,7 +33997,7 @@
   },
   {
     "name": "Ski Dubovica",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "262",
     "lift_count": "2",
@@ -34033,7 +34006,7 @@
   },
   {
     "name": "Ski Grúniky",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "147",
     "lift_count": "3",
@@ -34042,7 +34015,7 @@
   },
   {
     "name": "SKI Krušetnica",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "162",
     "lift_count": "3",
@@ -34051,7 +34024,7 @@
   },
   {
     "name": "Ski Lysá",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "436",
     "lift_count": "5",
@@ -34060,7 +34033,7 @@
   },
   {
     "name": "Ski Makov",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "288",
     "lift_count": "3",
@@ -34069,7 +34042,7 @@
   },
   {
     "name": "Ski Malenovice",
-    "country": "Poland",
+    "country": "Czech Republic",
     "status": "operating",
     "vertical_m": "201",
     "lift_count": "3",
@@ -34078,7 +34051,7 @@
   },
   {
     "name": "Ski Park Grůň",
-    "country": "Poland",
+    "country": "Czech Republic",
     "status": "operating",
     "vertical_m": "144",
     "lift_count": "4",
@@ -34087,7 +34060,7 @@
   },
   {
     "name": "Ski Podjavorník",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "263",
     "lift_count": "3",
@@ -34096,7 +34069,7 @@
   },
   {
     "name": "Ski Ráztoka",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "207",
     "lift_count": "3",
@@ -34105,7 +34078,7 @@
   },
   {
     "name": "Ski Uhliská",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "255",
     "lift_count": "3",
@@ -34114,7 +34087,7 @@
   },
   {
     "name": "Ski Vitanová",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "226",
     "lift_count": "2",
@@ -34123,7 +34096,7 @@
   },
   {
     "name": "Ski Zábava Hruštín",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "216",
     "lift_count": "3",
@@ -34141,7 +34114,7 @@
   },
   {
     "name": "Skiareál Severka",
-    "country": "Poland",
+    "country": "Czech Republic",
     "status": "operating",
     "vertical_m": "243",
     "lift_count": "4",
@@ -34150,7 +34123,7 @@
   },
   {
     "name": "Skiareál Zděchov",
-    "country": "Poland",
+    "country": "Czech Republic",
     "status": "operating",
     "vertical_m": "74",
     "lift_count": "1",
@@ -34159,7 +34132,7 @@
   },
   {
     "name": "Skicentrum Pavčina Lehota",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "126",
     "lift_count": "2",
@@ -34168,7 +34141,7 @@
   },
   {
     "name": "Skicentrum Žiar-Dolinky",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "85",
     "lift_count": "1",
@@ -34177,7 +34150,7 @@
   },
   {
     "name": "Skipark Meander Oravice",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "227",
     "lift_count": "3",
@@ -34186,7 +34159,7 @@
   },
   {
     "name": "Skipark Vyšné Ružbachy",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "243",
     "lift_count": "5",
@@ -34195,7 +34168,7 @@
   },
   {
     "name": "Skitatry Zadná Lopušná dolina",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "237",
     "lift_count": "2",
@@ -34265,7 +34238,7 @@
   },
   {
     "name": "Snowsun Horný Vadičov",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "89",
     "lift_count": "3",
@@ -34274,7 +34247,7 @@
   },
   {
     "name": "Soláň",
-    "country": "Poland",
+    "country": "Czech Republic",
     "status": "operating",
     "vertical_m": "162",
     "lift_count": "4",
@@ -34310,7 +34283,7 @@
   },
   {
     "name": "Športcentrum Oščadnica",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "101",
     "lift_count": "1",
@@ -34436,7 +34409,7 @@
   },
   {
     "name": "Starý Smokovec",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "120",
     "lift_count": "2",
@@ -34542,7 +34515,7 @@
   },
   {
     "name": "Štrbské Pleso",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "447",
     "lift_count": "7",
@@ -34551,7 +34524,7 @@
   },
   {
     "name": "Strednica",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "116",
     "lift_count": "7",
@@ -34653,7 +34626,7 @@
   },
   {
     "name": "Tatrapoma F Ťaskovka",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "76",
     "lat": "49.451541",
@@ -34670,7 +34643,7 @@
   },
   {
     "name": "TJ Radegast Sihly",
-    "country": "Poland",
+    "country": "Czech Republic",
     "status": "operating",
     "vertical_m": "108",
     "lift_count": "1",
@@ -34706,7 +34679,7 @@
   },
   {
     "name": "U Bambuchů",
-    "country": "Poland",
+    "country": "Czech Republic",
     "status": "operating",
     "vertical_m": "175",
     "lift_count": "3",
@@ -34724,7 +34697,7 @@
   },
   {
     "name": "u Lišáka",
-    "country": "Poland",
+    "country": "Czech Republic",
     "status": "operating",
     "vertical_m": "18",
     "lift_count": "1",
@@ -34733,7 +34706,7 @@
   },
   {
     "name": "U Sachovy Studanky",
-    "country": "Poland",
+    "country": "Czech Republic",
     "status": "operating",
     "vertical_m": "106",
     "lift_count": "4",
@@ -34778,7 +34751,7 @@
   },
   {
     "name": "Valčianska dolina",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "346",
     "lift_count": "7",
@@ -34787,7 +34760,7 @@
   },
   {
     "name": "Vaňkův kopec",
-    "country": "Poland",
+    "country": "Czech Republic",
     "status": "operating",
     "vertical_m": "94",
     "lift_count": "5",
@@ -34796,7 +34769,7 @@
   },
   {
     "name": "Veľká Rača",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "405",
     "lift_count": "6",
@@ -34805,7 +34778,7 @@
   },
   {
     "name": "Vrátna",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "917",
     "lift_count": "13",
@@ -34814,7 +34787,7 @@
   },
   {
     "name": "Vsacký cáb",
-    "country": "Poland",
+    "country": "Czech Republic",
     "status": "operating",
     "vertical_m": "52",
     "lift_count": "1",
@@ -34823,7 +34796,7 @@
   },
   {
     "name": "Vyšné Krátke",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "160",
     "lift_count": "1",
@@ -34832,7 +34805,7 @@
   },
   {
     "name": "Vysoké Tatry - Tatranská Lomnica",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "1296",
     "lift_count": "10",
@@ -34934,7 +34907,7 @@
   },
   {
     "name": "Závažná Poruba - Opalisko",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "280",
     "lift_count": "5",
@@ -34943,7 +34916,7 @@
   },
   {
     "name": "Ždiar - Deny",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "250",
     "lift_count": "8",
@@ -34952,7 +34925,7 @@
   },
   {
     "name": "Zetocha",
-    "country": "Poland",
+    "country": "Czech Republic",
     "status": "operating",
     "vertical_m": "42",
     "lift_count": "1",
@@ -34997,7 +34970,7 @@
   },
   {
     "name": "Zuberec - Janovky",
-    "country": "Poland",
+    "country": "Slovakia",
     "status": "operating",
     "vertical_m": "232",
     "lift_count": "4",
@@ -39940,6 +39913,24 @@
     "status": "operating",
     "lat": "40.400000",
     "lon": "-0.600000"
+  },
+  {
+    "name": "723",
+    "country": "Sweden",
+    "status": "operating",
+    "vertical_m": "1",
+    "lift_count": "1",
+    "lat": "58.484381",
+    "lon": "11.693449"
+  },
+  {
+    "name": "Valfjället Skicenter",
+    "country": "Sweden",
+    "status": "operating",
+    "vertical_m": "206",
+    "lift_count": "4",
+    "lat": "59.826723",
+    "lon": "12.243831"
   },
   {
     "name": "Svanstein",
